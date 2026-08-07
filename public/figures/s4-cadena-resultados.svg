@@ -1,0 +1,104 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 399.24 158.328" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 158.328 
+L 399.24 158.328 
+L 399.24 0 
+L 0 0 
+L 0 158.328 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 4.32 154.008 
+L 394.92 154.008 
+L 394.92 4.32 
+L 4.32 4.32 
+L 4.32 154.008 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 12.132 107.4384 
+L 129.312 107.4384 
+L 129.312 20.952 
+L 12.132 20.952 
+z
+" clip-path="url(#pf3911820bb)" style="fill: var(--fig-accent); opacity: 0.16; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 141.03 107.4384 
+L 258.21 107.4384 
+L 258.21 20.952 
+L 141.03 20.952 
+z
+" clip-path="url(#pf3911820bb)" style="fill: var(--fig-ramp-3); opacity: 0.16; stroke: var(--fig-ramp-3); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 269.928 107.4384 
+L 387.108 107.4384 
+L 387.108 20.952 
+L 269.928 20.952 
+z
+" clip-path="url(#pf3911820bb)" style="fill: var(--fig-ramp-1); opacity: 0.16; stroke: var(--fig-ramp-1); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="70.722" y="66.457887" transform="rotate(-0 70.722 66.457887)">Producto</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="70.722" y="87.48" transform="rotate(-0 70.722 87.48)">60 nodos instalados</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="70.722" y="130.7232" transform="rotate(-0 70.722 130.7232)">responde el proyecto</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 133.267588 64.1952 
+Q 135.172383 64.1952 135.623734 64.1952 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 132.023734 62.3952 
+L 135.623734 64.1952 
+L 132.023734 65.9952 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="199.62" y="66.457887" transform="rotate(-0 199.62 66.457887)">Resultado</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="199.62" y="87.48" transform="rotate(-0 199.62 87.48)">el apicultor decide con el dato</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="199.62" y="130.7232" transform="rotate(-0 199.62 130.7232)">responde en parte</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 262.165588 64.1952 
+Q 264.070383 64.1952 264.521734 64.1952 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 260.921734 62.3952 
+L 264.521734 64.1952 
+L 260.921734 65.9952 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="328.518" y="66.457887" transform="rotate(-0 328.518 66.457887)">Impacto</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="328.518" y="87.48" transform="rotate(-0 328.518 87.48)">menos colonias perdidas</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="328.518" y="130.7232" transform="rotate(-0 328.518 130.7232)">no responde solo</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf3911820bb">
+   <rect x="4.32" y="4.32" width="390.6" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

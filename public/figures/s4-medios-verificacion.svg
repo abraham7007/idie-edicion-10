@@ -1,0 +1,84 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 472.184682 181.006375" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 181.006375 
+L 472.184682 181.006375 
+L 472.184682 0 
+L 0 0 
+L 0 181.006375 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 99.584682 165.096 
+L 467.864682 165.096 
+L 467.864682 4.32 
+L 99.584682 4.32 
+L 99.584682 165.096 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: var(--fig-muted); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="283.724682" y="175.064219" transform="rotate(-0 283.724682 175.064219)">costo de obtener el dato</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 99.584682 37.815 
+L 339.767291 37.815 
+L 339.767291 60.145 
+L 99.584682 60.145 
+z
+" clip-path="url(#pdeff993870)" style="fill: var(--fig-ok); opacity: 0.85"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="93.179812" y="51.264469" transform="rotate(-0 93.179812 51.264469)">Ya existe</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="346.17216" y="51.016156" transform="rotate(-0 346.17216 51.016156)">registro del apiario</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 99.584682 82.475 
+L 259.706421 82.475 
+L 259.706421 104.805 
+L 99.584682 104.805 
+z
+" clip-path="url(#pdeff993870)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="93.179812" y="95.916141" transform="rotate(-0 93.179812 95.916141)">Hay que pedirlo</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="266.111291" y="95.701594" transform="rotate(-0 266.111291 95.701594)">informe del laboratorio</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 99.584682 127.135 
+L 179.645552 127.135 
+L 179.645552 149.465 
+L 99.584682 149.465 
+z
+" clip-path="url(#pdeff993870)" style="fill: var(--fig-accent); opacity: 0.85"/>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="93.179812" y="140.576141" transform="rotate(-0 93.179812 140.576141)">Hay que producirlo</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="186.050421" y="140.489937" transform="rotate(-0 186.050421 140.489937)">campaña de medición propia</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-accent); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="227.682073" y="15.485" transform="rotate(-0 227.682073 15.485)">producirlo es una actividad y va en el presupuesto</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdeff993870">
+   <rect x="99.584682" y="4.32" width="368.28" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -4670,6 +4670,501 @@ FIGURAS += [fig_tipos_convocatoria, fig_rangos_monto,
             fig_estacionalidad_cierres, fig_temas_convocatoria]
 
 
+# ==========================================================================
+# SESIÓN 4 · formulación de proyectos
+# ==========================================================================
+# El caso que atraviesa la sesión es un nodo electrónico para monitorear
+# colmenas. Sus magnitudes son didácticas y se declaran como tales; las del
+# sector apícola peruano vienen de la estadística del MIDAGRI.
+
+SECCIONES_DOC = [
+    ("Datos generales", 9), ("Resumen", 11), ("Problema", 1), ("Estado del arte", 2),
+    ("Objetivos", 3), ("Marco lógico", 4), ("Metodología", 5), ("Cronograma", 6),
+    ("Presupuesto", 7), ("Resultados", 8), ("Anexos", 10),
+]
+
+
+def fig_orden_secciones():
+    """El documento se lee en un orden y se escribe en otro."""
+    fig, ax = plt.subplots(figsize=(6.9, 3.6))
+    for i, (nombre, orden) in enumerate(SECCIONES_DOC):
+        tardio = orden >= 9
+        ax.barh(i, 1, height=0.62, color=ACCENT if tardio else RAMPA[0],
+                alpha=0.18 if tardio else 0.30, zorder=2)
+        ax.text(0.02, i, f"{i + 1:02d}  {nombre}", va="center", fontsize=8.4,
+                color=INK, zorder=3)
+        ax.text(0.97, i, f"se escribe {orden}.º", va="center", ha="right",
+                fontsize=7.6, color=ACCENT if tardio else MUTED,
+                fontweight="bold" if tardio else "normal", zorder=3)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(-0.6, len(SECCIONES_DOC) - 0.4)
+    ax.invert_yaxis()
+    ax.set_xticks([]); ax.set_yticks([])
+    for l in ax.spines.values():
+        l.set_visible(False)
+    escribir(fig, "s4-orden-secciones")
+
+
+def fig_caso_nodo():
+    """Las cuatro variables que registra el nodo dentro de la colmena."""
+    fig, ax = plt.subplots(figsize=(6.2, 3.4))
+    VARS = [("Peso", "detecta cosecha y robo"), ("Temperatura", "estado de la cría"),
+            ("Humedad", "riesgo sanitario"), ("Sonido", "señal de enjambrazón")]
+    for i, (v, para) in enumerate(VARS):
+        y = len(VARS) - 1 - i
+        ax.add_patch(Rectangle((0.04, y - 0.3), 0.42, 0.6, facecolor=RAMPA[0],
+                               alpha=0.20, edgecolor=RAMPA[2], linewidth=1.1))
+        ax.text(0.25, y + 0.06, v, ha="center", fontsize=8.6, color=INK, fontweight="bold")
+        ax.text(0.25, y - 0.15, para, ha="center", fontsize=7.2, color=MUTED)
+        ax.annotate("", xy=(0.62, 1.5), xytext=(0.47, y),
+                    arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.1))
+    ax.add_patch(Rectangle((0.62, 0.95), 0.35, 1.15, facecolor=ACCENT, alpha=0.14,
+                           edgecolor=ACCENT, linewidth=1.3))
+    ax.text(0.795, 1.80, "Nodo en la colmena", ha="center", va="center",
+            fontsize=8.4, color=ACCENT, fontweight="bold")
+    ax.text(0.795, 1.35, "enlace de radio\nhasta el tablero\ndel apicultor", ha="center",
+            va="center", fontsize=7.4, color=MUTED, linespacing=1.6)
+    ax.set_xlim(0, 1); ax.set_ylim(-0.6, 3.6)
+    ax.set_xticks([]); ax.set_yticks([])
+    for l in ax.spines.values():
+        l.set_visible(False)
+    escribir(fig, "s4-caso-nodo")
+
+
+def fig_resumen_movimientos():
+    """Los cuatro movimientos del resumen y el espacio que merece cada uno."""
+    fig, ax = plt.subplots(figsize=(6.2, 2.7))
+    PARTES = [("Problema", 30, ACCENT), ("Solución", 20, RAMPA[2]),
+              ("Resultado", 30, RAMPA[1]), ("Impacto", 20, RAMPA[0])]
+    izq = 0
+    for nombre, p, color in PARTES:
+        ax.barh(0, p, left=izq, height=0.4, color=color, alpha=0.88, zorder=3)
+        ax.text(izq + p / 2, 0, f"{p} %", ha="center", va="center",
+                fontsize=8.4, color="#ffffff", fontweight="bold")
+        ax.text(izq + p / 2, 0.3, nombre, ha="center", va="bottom",
+                fontsize=8.2, color=INK)
+        izq += p
+    ax.text(50, -0.34, "las actividades no aparecen en el resumen",
+            ha="center", va="top", fontsize=7.6, color=MUTED)
+    ax.set_xlim(-2, 102); ax.set_ylim(-0.62, 0.66)
+    ax.set_xticks([]); ax.set_yticks([])
+    for l in ax.spines.values():
+        l.set_visible(False)
+    escribir(fig, "s4-resumen-movimientos")
+
+
+# MIDAGRI, estadística apícola nacional con datos del Censo Nacional
+# Agropecuario. El potencial es una estimación del propio ministerio.
+APICOLA = [("En producción", 214276, RAMPA[1]), ("Instaladas", 252329, RAMPA[2]),
+           ("Potencial estimado", 500000, ACCENT)]
+
+
+def fig_brecha_apicola():
+    """Entre las colmenas en producción y el potencial hay más del doble."""
+    fig, ax = plt.subplots(figsize=(6.6, 2.9))
+    for i, (nombre, v, color) in enumerate(APICOLA):
+        ax.barh(i, v, height=0.55, color=color, alpha=0.9, zorder=3)
+        ax.text(-9000, i, nombre, ha="right", va="center", fontsize=8.4, color=INK)
+        ax.text(v + 9000, i, f"{v:,}".replace(",", " "), ha="left", va="center",
+                fontsize=8.4, color=color, fontweight="bold")
+    ax.set_xlim(0, 640000)
+    ax.set_ylim(-0.7, len(APICOLA) - 0.3)
+    ax.invert_yaxis()
+    ax.set_yticks([]); ax.set_xticks([])
+    ax.set_xlabel("colmenas", fontsize=8.0, color=MUTED)
+    for l in ax.spines.values():
+        l.set_visible(False)
+    escribir(fig, "s4-brecha-apicola")
+
+
+FIGURAS += [fig_orden_secciones, fig_caso_nodo, fig_resumen_movimientos,
+            fig_brecha_apicola]
+
+
+def _panel(ax, x, y, w, h, texto, color, sub="", fs=8.2):
+    ax.add_patch(Rectangle((x, y), w, h, facecolor=color, alpha=0.16,
+                           edgecolor=color, linewidth=1.2))
+    ax.text(x + w / 2, y + h * (0.62 if sub else 0.5), texto, ha="center",
+            va="center", fontsize=fs, color=INK, fontweight="bold")
+    if sub:
+        ax.text(x + w / 2, y + h * 0.26, sub, ha="center", va="center",
+                fontsize=7.0, color=MUTED)
+
+
+def _limpio(ax, xl, yl):
+    ax.set_xlim(*xl); ax.set_ylim(*yl)
+    ax.set_xticks([]); ax.set_yticks([])
+    for l in ax.spines.values():
+        l.set_visible(False)
+
+
+def fig_problema_vs():
+    """Dos formulaciones del mismo problema y qué permite hacer cada una."""
+    fig, ax = plt.subplots(figsize=(6.6, 3.1))
+    _panel(ax, 0.02, 1.15, 0.45, 0.72, "Difuso", MUTED,
+           "«Falta de tecnología en el sector»")
+    _panel(ax, 0.53, 1.15, 0.45, 0.72, "Acotado", ACCENT,
+           "«214 276 colmenas sin medición de peso»")
+    for i, (izq, der) in enumerate([("no dice a quién afecta", "nombra al apicultor"),
+                                    ("no tiene magnitud", "tiene cifra y unidad"),
+                                    ("no se puede cerrar", "admite indicador")]):
+        y = 0.85 - i * 0.3
+        ax.text(0.245, y, izq, ha="center", fontsize=7.6, color=MUTED)
+        ax.text(0.755, y, der, ha="center", fontsize=7.6, color=ACCENT)
+    _limpio(ax, (0, 1), (-0.15, 2.0))
+    escribir(fig, "s4-problema-vs")
+
+
+ARBOL_CASO = {
+    "efectos": ["Ingreso menor del apicultor", "Pérdida de colonias sin aviso"],
+    "central": "El apicultor no sabe qué ocurre dentro de la colmena",
+    "causas": ["Revisión manual y esporádica", "Sin registro de peso ni clima",
+               "Equipos importados y caros"],
+}
+
+
+def _arbol(nombre, arriba, centro, abajo, ctop, cbot, archivo):
+    fig, ax = plt.subplots(figsize=(7.0, 3.5))
+    for i, t in enumerate(arriba):
+        _panel(ax, 0.06 + i * 0.48, 2.35, 0.42, 0.5, "", ctop)
+        ax.text(0.27 + i * 0.48, 2.60, textwrap.fill(t, 26), ha="center",
+                va="center", fontsize=7.2, color=INK, linespacing=1.35)
+    _panel(ax, 0.10, 1.35, 0.80, 0.62, "", ACCENT)
+    ax.text(0.50, 1.66, textwrap.fill(centro, 46), ha="center", va="center",
+            fontsize=8.2, color=ACCENT, fontweight="bold", linespacing=1.3)
+    for i, t in enumerate(abajo):
+        _panel(ax, 0.03 + i * 0.33, 0.30, 0.29, 0.62, "", cbot)
+        ax.text(0.175 + i * 0.33, 0.61, textwrap.fill(t, 20), ha="center",
+                va="center", fontsize=6.8, color=INK, linespacing=1.35)
+    for i in range(len(arriba)):
+        ax.annotate("", xy=(0.27 + i * 0.48, 2.33), xytext=(0.5, 1.99),
+                    arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.1))
+    for i in range(len(abajo)):
+        ax.annotate("", xy=(0.5, 1.33), xytext=(0.175 + i * 0.33, 0.94),
+                    arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.1))
+    ax.text(0.02, 2.95, nombre, fontsize=7.4, color=MUTED)
+    _limpio(ax, (0, 1), (0.05, 3.15))
+    escribir(fig, archivo)
+
+
+def fig_arbol_problemas():
+    """Causas abajo, problema central en medio y efectos arriba."""
+    _arbol("efectos ↑   ·   problema central   ·   causas ↓",
+           ARBOL_CASO["efectos"], ARBOL_CASO["central"], ARBOL_CASO["causas"],
+           MUTED, RAMPA[1], "s4-arbol-problemas")
+
+
+def fig_arbol_objetivos():
+    """La misma estructura, reformulada en positivo."""
+    _arbol("fines ↑   ·   propósito   ·   medios ↓",
+           ["Ingreso del apicultor sostenido", "Colonias con aviso temprano"],
+           "El apicultor conoce el estado de la colmena a distancia",
+           ["Medición continua instalada", "Registro de peso y clima",
+            "Nodo de bajo costo disponible"],
+           RAMPA[0], OK, "s4-arbol-objetivos")
+
+
+def fig_objetivo_partes():
+    """Verbo, objeto y condición de logro."""
+    fig, ax = plt.subplots(figsize=(6.8, 2.6))
+    PARTES = [("Verbo", "Detectar", RAMPA[2]), ("Objeto", "la pérdida de peso de la colmena", RAMPA[1]),
+              ("Condición de logro", "con error menor a 200 g, en 90 días", ACCENT)]
+    x = 0.02
+    for rot, txt, color in PARTES:
+        w = 0.20 if rot == "Verbo" else (0.36 if rot == "Objeto" else 0.40)
+        _panel(ax, x, 0.35, w, 0.55, "", color)
+        ax.text(x + w / 2, 0.72, rot, ha="center", fontsize=7.2, color=color,
+                fontweight="bold")
+        ax.text(x + w / 2, 0.50, textwrap.fill(txt, 24), ha="center",
+                va="center", fontsize=7.0, color=INK, linespacing=1.35)
+        x += w + 0.01
+    ax.text(0.5, 0.16, "sin la tercera parte el objetivo no se puede cerrar",
+            ha="center", fontsize=7.6, color=MUTED)
+    _limpio(ax, (0, 1), (0.05, 1.05))
+    escribir(fig, "s4-objetivo-partes")
+
+
+def fig_objetivos_jerarquia():
+    """Un general y tres específicos que lo suman."""
+    fig, ax = plt.subplots(figsize=(6.8, 3.0))
+    _panel(ax, 0.16, 1.5, 0.68, 0.55, "", ACCENT)
+    ax.text(0.5, 1.775, "General · monitoreo remoto de colmenas en operación",
+            ha="center", va="center", fontsize=8.2, color=ACCENT, fontweight="bold")
+    ESP = ["Caracterizar la señal", "Construir el nodo", "Validar en apiario"]
+    for i, t in enumerate(ESP):
+        _panel(ax, 0.03 + i * 0.33, 0.35, 0.29, 0.55, "", RAMPA[1])
+        ax.text(0.175 + i * 0.33, 0.625, t, ha="center", va="center",
+                fontsize=7.6, color=INK)
+        ax.annotate("", xy=(0.5, 1.48), xytext=(0.175 + i * 0.33, 0.92),
+                    arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.1))
+    ax.text(0.5, 0.14, "si se cumplen los tres y el general no, la jerarquía está mal escrita",
+            ha="center", fontsize=7.4, color=MUTED)
+    _limpio(ax, (0, 1), (0.05, 2.2))
+    escribir(fig, "s4-objetivos-jerarquia")
+
+
+FILAS_ML = ["Fin", "Propósito", "Componentes", "Actividades"]
+COLS_ML = ["Resumen narrativo", "Indicadores", "Medios de verificación", "Supuestos"]
+
+
+def fig_matriz_ml():
+    """La matriz completa: cuatro filas y cuatro columnas."""
+    fig, ax = plt.subplots(figsize=(7.2, 3.2))
+    for j, c in enumerate(COLS_ML):
+        ax.text(0.20 + j * 0.20, 0.93, c, ha="center", fontsize=7.6,
+                color=NAVY, fontweight="bold")
+    for i, f in enumerate(FILAS_ML):
+        y = 0.74 - i * 0.185
+        ax.text(0.005, y, f, ha="left", va="center", fontsize=8.0,
+                color=ACCENT, fontweight="bold")
+        for j in range(4):
+            ax.add_patch(Rectangle((0.115 + j * 0.20, y - 0.075), 0.19, 0.15,
+                                   facecolor=NAVY, alpha=0.07,
+                                   edgecolor=GRID, linewidth=0.8))
+    ax.annotate("", xy=(-0.05, 0.80), xytext=(-0.05, 0.16),
+                arrowprops=dict(arrowstyle="->", color=ACCENT, linewidth=1.4))
+    ax.text(-0.075, 0.48, "lógica vertical", rotation=90, ha="center", va="center",
+            fontsize=6.8, color=ACCENT)
+    ax.annotate("", xy=(0.70, 0.045), xytext=(0.13, 0.045),
+                arrowprops=dict(arrowstyle="->", color=NAVY, linewidth=1.4))
+    ax.text(0.42, 0.005, "lógica horizontal", ha="center", fontsize=7.2, color=NAVY)
+    _limpio(ax, (-0.10, 1), (-0.02, 1.0))
+    escribir(fig, "s4-matriz-ml")
+
+
+def fig_logica_vertical():
+    """Cada nivel se sostiene en el de abajo más su supuesto."""
+    fig, ax = plt.subplots(figsize=(6.2, 3.4))
+    for i, f in enumerate(FILAS_ML):
+        y = 3 - i
+        _panel(ax, 0.05, y - 0.32, 0.52, 0.6, f, ACCENT if i < 2 else RAMPA[1])
+        if i < 3:
+            ax.text(0.63, y - 0.5, "+ supuesto", fontsize=7.4, color=MUTED)
+            ax.annotate("", xy=(0.31, y - 0.34), xytext=(0.31, y - 0.68),
+                        arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.2))
+    ax.text(0.05, -0.42, "se lee de abajo arriba: si el supuesto falla, la cadena se corta ahí",
+            fontsize=7.4, color=MUTED)
+    _limpio(ax, (0, 1), (-0.6, 3.5))
+    escribir(fig, "s4-logica-vertical")
+
+
+def fig_logica_horizontal():
+    """Las dos condiciones que hacen cerrar una fila."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.6))
+    for i, (t, c) in enumerate([("Objetivo", ACCENT), ("Indicador", RAMPA[2]),
+                                ("Medio de verificación", NAVY)]):
+        _panel(ax, 0.03 + i * 0.33, 0.42, 0.29, 0.48, t, c)
+        if i < 2:
+            ax.annotate("", xy=(0.355 + i * 0.33, 0.66), xytext=(0.325 + i * 0.33, 0.66),
+                        arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.3))
+    ax.text(0.5, 0.26, "el medio basta para calcular el indicador",
+            ha="center", fontsize=7.6, color=NAVY)
+    ax.text(0.5, 0.10, "y el indicador basta para evaluar el objetivo",
+            ha="center", fontsize=7.6, color=ACCENT)
+    _limpio(ax, (0, 1), (0.0, 1.05))
+    escribir(fig, "s4-logica-horizontal")
+
+
+def fig_medios_verificacion():
+    """De dónde sale el dato de cada indicador y qué cuesta."""
+    fig, ax = plt.subplots(figsize=(6.6, 2.9))
+    M = [("Ya existe", 3, OK, "registro del apiario"),
+         ("Hay que pedirlo", 2, RAMPA[1], "informe del laboratorio"),
+         ("Hay que producirlo", 1, ACCENT, "campaña de medición propia")]
+    for i, (t, n, c, ej) in enumerate(M):
+        ax.barh(i, n, height=0.5, color=c, alpha=0.85, zorder=3)
+        ax.text(-0.08, i, t, ha="right", va="center", fontsize=8.2, color=INK)
+        ax.text(n + 0.08, i, ej, ha="left", va="center", fontsize=7.4, color=MUTED)
+    ax.text(1.6, -0.75, "producirlo es una actividad y va en el presupuesto",
+            ha="center", fontsize=7.4, color=ACCENT)
+    ax.set_xlim(0, 4.6); ax.set_ylim(-1.0, 2.6)
+    ax.invert_yaxis(); ax.set_yticks([]); ax.set_xticks([])
+    ax.set_xlabel("costo de obtener el dato", fontsize=7.8, color=MUTED)
+    for l in ax.spines.values():
+        l.set_visible(False)
+    escribir(fig, "s4-medios-verificacion")
+
+
+def fig_supuestos():
+    """Cuándo un factor externo deja de ser supuesto y pasa a riesgo."""
+    fig, ax = plt.subplots(figsize=(6.2, 3.1))
+    ax.axhline(0.5, color=GRID, linewidth=1); ax.axvline(0.5, color=GRID, linewidth=1)
+    Q = [(0.25, 0.75, "No se escribe", MUTED), (0.75, 0.75, "Supuesto", NAVY),
+         (0.25, 0.25, "Se ignora", MUTED), (0.75, 0.25, "Riesgo, con mitigación", ACCENT)]
+    for x, y, t, c in Q:
+        ax.text(x, y, t, ha="center", va="center", fontsize=8.4, color=c,
+                fontweight="bold")
+    ax.set_xlabel("probabilidad de que ocurra", fontsize=8.0, color=MUTED)
+    ax.set_ylabel("impacto si ocurre", fontsize=8.0, color=MUTED)
+    ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+    ax.set_xticks([]); ax.set_yticks([])
+    limpiar_ejes(ax)
+    escribir(fig, "s4-supuestos")
+
+
+CRONO = [("Caracterizar la señal", 1, 5, True), ("Diseñar el nodo", 3, 8, True),
+         ("Fabricar prototipos", 8, 11, True), ("Instalar en apiario", 11, 14, True),
+         ("Redactar manual", 12, 16, False), ("Difusión", 15, 18, False)]
+
+
+def fig_cronograma():
+    """Actividades, hitos y ruta crítica."""
+    fig, ax = plt.subplots(figsize=(7.0, 3.0))
+    for i, (t, a, b, critica) in enumerate(CRONO):
+        ax.barh(i, b - a, left=a, height=0.5,
+                color=ACCENT if critica else RAMPA[0],
+                alpha=0.9 if critica else 0.55, zorder=3)
+        ax.text(a - 0.4, i, t, ha="right", va="center", fontsize=7.8, color=INK)
+        if critica:
+            ax.plot(b, i, marker="D", color=ACCENT, markersize=5, zorder=4)
+    ax.set_xlim(-7, 19); ax.set_ylim(-0.8, len(CRONO) - 0.2)
+    ax.invert_yaxis(); ax.set_yticks([])
+    ax.set_xticks(range(0, 19, 3))
+    ax.set_xlabel("mes de ejecución · el rombo marca el hito", fontsize=7.8, color=MUTED)
+    ax.tick_params(labelsize=7.6, colors=MUTED, length=0)
+    ax.grid(True, axis="x", color=GRID, linewidth=0.6, alpha=0.6)
+    ax.set_axisbelow(True)
+    limpiar_ejes(ax)
+    escribir(fig, "s4-cronograma")
+
+
+def fig_hito():
+    """Actividad frente a hito."""
+    fig, ax = plt.subplots(figsize=(6.4, 2.6))
+    _panel(ax, 0.03, 0.35, 0.44, 0.55, "Actividad", MUTED, "consume tiempo y dinero")
+    _panel(ax, 0.53, 0.35, 0.44, 0.55, "Hito", ACCENT, "produce un documento fechado")
+    ax.text(0.25, 0.20, "«realizar pruebas de campo»", ha="center", fontsize=7.4, color=MUTED)
+    ax.text(0.75, 0.20, "«acta de validación, mes 14»", ha="center", fontsize=7.4, color=ACCENT)
+    ax.text(0.5, 0.04, "el desembolso por tramos se libera contra hito, no contra actividad",
+            ha="center", fontsize=7.4, color=NAVY)
+    _limpio(ax, (0, 1), (0.0, 1.02))
+    escribir(fig, "s4-hito")
+
+
+def fig_novedad():
+    """Qué acredita una afirmación de novedad."""
+    fig, ax = plt.subplots(figsize=(6.6, 2.7))
+    N = [("«No hay antecedentes»", 0, MUTED), ("Cita tres trabajos", 1, RAMPA[0]),
+         ("Declara dónde buscó", 2, RAMPA[1]), ("Declara qué descartó", 3, ACCENT)]
+    for t, v, c in N:
+        ax.barh(v, v + 0.4, height=0.5, color=c, alpha=0.85, zorder=3)
+        ax.text(-0.1, v, t, ha="right", va="center", fontsize=8.0, color=INK)
+    ax.set_xlim(0, 4.6); ax.set_ylim(-0.7, 3.6)
+    ax.invert_yaxis(); ax.set_yticks([]); ax.set_xticks([])
+    ax.set_xlabel("cuánto puede comprobar el evaluador", fontsize=7.8, color=MUTED)
+    for l in ax.spines.values():
+        l.set_visible(False)
+    escribir(fig, "s4-novedad")
+
+
+def fig_prisma():
+    """El flujo de PRISMA con los descartes contados."""
+    fig, ax = plt.subplots(figsize=(6.0, 3.4))
+    P = [("Identificados", 412), ("Cribados por título", 168),
+         ("Leídos completos", 41), ("Incluidos", 12)]
+    for i, (t, n) in enumerate(P):
+        y = 3 - i
+        w = 0.30 + 0.42 * (n / P[0][1])
+        _panel(ax, 0.5 - w / 2, y - 0.30, w, 0.56, f"{t} · {n}", RAMPA[min(i, 2)] if i < 3 else ACCENT)
+        if i < 3:
+            ax.annotate("", xy=(0.5, y - 0.33), xytext=(0.5, y - 0.70),
+                        arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.2))
+            ax.text(0.90, y - 0.52, f"−{P[i][1] - P[i + 1][1]}", fontsize=7.4,
+                    color=MUTED, ha="right")
+    _limpio(ax, (0, 1), (-0.35, 3.55))
+    escribir(fig, "s4-prisma")
+
+
+def fig_mapeo():
+    """Grupos temáticos en la literatura del monitoreo apícola."""
+    fig, ax = plt.subplots(figsize=(6.4, 3.2))
+    NODOS = [(0.25, 0.70, 700, "sensores", RAMPA[2]), (0.45, 0.82, 420, "IoT", RAMPA[2]),
+             (0.70, 0.68, 520, "acústica", ACCENT), (0.80, 0.42, 300, "enjambrazón", ACCENT),
+             (0.30, 0.35, 480, "peso", RAMPA[1]), (0.55, 0.25, 260, "clima", RAMPA[1])]
+    for x1, y1, _, _, _ in NODOS:
+        for x2, y2, _, _, _ in NODOS:
+            if (x1, y1) < (x2, y2) and abs(x1 - x2) < 0.32:
+                ax.plot([x1, x2], [y1, y2], color=GRID, linewidth=0.8, zorder=1)
+    for x, y, s, t, c in NODOS:
+        ax.scatter(x, y, s=s, color=c, alpha=0.45, edgecolors=c, linewidths=1.2, zorder=3)
+        ax.text(x, y, t, ha="center", va="center", fontsize=7.6, color=INK, zorder=4)
+    _limpio(ax, (0.08, 0.95), (0.10, 0.98))
+    escribir(fig, "s4-mapeo")
+
+
+def fig_cadena_resultados():
+    """Producto, resultado e impacto."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.7))
+    C = [("Producto", "60 nodos instalados", ACCENT, "responde el proyecto"),
+         ("Resultado", "el apicultor decide con el dato", RAMPA[2], "responde en parte"),
+         ("Impacto", "menos colonias perdidas", RAMPA[0], "no responde solo")]
+    for i, (t, ej, c, quien) in enumerate(C):
+        _panel(ax, 0.02 + i * 0.33, 0.40, 0.30, 0.52, t, c)
+        ax.text(0.17 + i * 0.33, 0.52, ej, ha="center", fontsize=7.2, color=INK)
+        ax.text(0.17 + i * 0.33, 0.26, quien, ha="center", fontsize=7.0, color=MUTED)
+        if i < 2:
+            ax.annotate("", xy=(0.345 + i * 0.33, 0.66), xytext=(0.325 + i * 0.33, 0.66),
+                        arrowprops=dict(arrowstyle="->", color=GRID, linewidth=1.3))
+    _limpio(ax, (0, 1), (0.12, 1.02))
+    escribir(fig, "s4-cadena-resultados")
+
+
+def fig_teoria_cambio():
+    """Los supuestos causales entre eslabones."""
+    fig, ax = plt.subplots(figsize=(6.6, 2.7))
+    for i, t in enumerate(["Producto", "Resultado", "Impacto"]):
+        _panel(ax, 0.03 + i * 0.34, 0.48, 0.28, 0.44, t, RAMPA[1])
+        if i < 2:
+            x = 0.345 + i * 0.34
+            ax.annotate("", xy=(x + 0.02, 0.70), xytext=(x - 0.015, 0.70),
+                        arrowprops=dict(arrowstyle="->", color=ACCENT, linewidth=1.4))
+            ax.text(x, 0.34, "¿por qué\\ncreemos esto?", ha="center", va="top",
+                    fontsize=7.0, color=ACCENT, linespacing=1.4)
+    ax.text(0.5, 0.06, "la teoría del cambio escribe esos dos porqués y su evidencia",
+            ha="center", fontsize=7.4, color=MUTED)
+    _limpio(ax, (0, 1), (0.0, 1.02))
+    escribir(fig, "s4-teoria-cambio")
+
+
+def fig_limite_ml():
+    """Avance previsto frente a avance real."""
+    fig, ax = plt.subplots(figsize=(6.4, 2.9))
+    x = list(range(0, 19))
+    prev = [i * 100 / 18 for i in x]
+    real = [0, 2, 5, 8, 8, 7, 12, 22, 26, 26, 24, 34, 52, 61, 66, 74, 86, 94, 100]
+    ax.plot(x, prev, color=MUTED, linewidth=1.6, linestyle="--", label="previsto por la matriz")
+    ax.plot(x, real, color=ACCENT, linewidth=2.2, label="avance real típico")
+    ax.fill_between(x, real, prev, color=ACCENT, alpha=0.08)
+    ax.set_xlabel("mes", fontsize=8.0, color=MUTED)
+    ax.set_ylabel("avance (%)", fontsize=8.0, color=MUTED)
+    ax.tick_params(labelsize=7.6, colors=MUTED)
+    ax.grid(True, color=GRID, linewidth=0.6, alpha=0.6)
+    ax.set_axisbelow(True)
+    ax.legend(fontsize=7.4, frameon=False, loc="upper left")
+    limpiar_ejes(ax)
+    escribir(fig, "s4-limite-ml")
+
+
+def fig_toc_tramite():
+    """Señales de una teoría del cambio hecha para cumplir."""
+    fig, ax = plt.subplots(figsize=(6.6, 2.8))
+    S = ["Se escribió una vez, al postular", "Nadie la revisó durante la ejecución",
+         "No declara en qué evidencia se apoya", "Ningún supuesto se corrigió nunca"]
+    for i, t in enumerate(S):
+        ax.text(0.05, 3 - i, "✕", fontsize=9, color=ACCENT, va="center")
+        ax.text(0.12, 3 - i, t, fontsize=8.2, color=INK, va="center")
+    _limpio(ax, (0, 1), (-0.5, 3.5))
+    escribir(fig, "s4-toc-tramite")
+
+
+FIGURAS += [fig_problema_vs, fig_arbol_problemas, fig_arbol_objetivos,
+            fig_objetivo_partes, fig_objetivos_jerarquia, fig_matriz_ml,
+            fig_logica_vertical, fig_logica_horizontal, fig_medios_verificacion,
+            fig_supuestos, fig_cronograma, fig_hito, fig_novedad, fig_prisma,
+            fig_mapeo, fig_cadena_resultados, fig_teoria_cambio, fig_limite_ml,
+            fig_toc_tramite]
+
+
 def main() -> None:
     print(f"Generando {len(FIGURAS)} figuras en {SALIDA.relative_to(RAIZ)}/")
     for figura in FIGURAS:

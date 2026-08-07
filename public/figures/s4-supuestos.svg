@@ -1,0 +1,75 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 366.385 192.30525" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 192.30525 
+L 366.385 192.30525 
+L 366.385 0 
+L 0 0 
+L 0 192.30525 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 16.105 176.184 
+L 362.065 176.184 
+L 362.065 4.32 
+L 16.105 4.32 
+L 16.105 176.184 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: var(--fig-muted); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="189.085" y="186.30525" transform="rotate(-0 189.085 186.30525)">probabilidad de que ocurra</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_2">
+     <text style="fill: var(--fig-muted); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="10.44125" y="90.252" transform="rotate(-90 10.44125 90.252)">impacto si ocurre</text>
+    </g>
+   </g>
+   <g id="line2d_1">
+    <path d="M 16.105 90.252 
+L 362.065 90.252 
+" clip-path="url(#pa5c8ede999)" style="fill: none; stroke: var(--fig-grid); stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 189.085 176.184 
+L 189.085 4.32 
+" clip-path="url(#pa5c8ede999)" style="fill: none; stroke: var(--fig-grid); stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 16.105 176.184 
+L 16.105 4.32 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 16.105 176.184 
+L 362.065 176.184 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="102.595" y="49.603875" transform="rotate(-0 102.595 49.603875)">No se escribe</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-navy); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="275.575" y="49.603875" transform="rotate(-0 275.575 49.603875)">Supuesto</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-muted); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="102.595" y="135.755063" transform="rotate(-0 102.595 135.755063)">Se ignora</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-accent); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="275.575" y="135.755063" transform="rotate(-0 275.575 135.755063)">Riesgo, con mitigación</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa5c8ede999">
+   <rect x="16.105" y="4.32" width="345.96" height="171.864"/>
+  </clipPath>
+ </defs>
+</svg>

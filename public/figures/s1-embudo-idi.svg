@@ -20,7 +20,7 @@ L 348.213333 37.501867
 L 348.213333 17.1328 
 L 17.546667 17.1328 
 z
-" clip-path="url(#p45d55ed89d)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#p0953655991)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_3">
     <path d="M 106.826667 70.3552 
@@ -28,7 +28,7 @@ L 258.933333 70.3552
 L 258.933333 49.986133 
 L 106.826667 49.986133 
 z
-" clip-path="url(#p45d55ed89d)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#p0953655991)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_4">
     <path d="M 133.28 103.208533 
@@ -36,7 +36,7 @@ L 232.48 103.208533
 L 232.48 82.839467 
 L 133.28 82.839467 
 z
-" clip-path="url(#p45d55ed89d)" style="fill: var(--fig-ramp-2)"/>
+" clip-path="url(#p0953655991)" style="fill: var(--fig-ramp-2)"/>
    </g>
    <g id="patch_5">
     <path d="M 163.04 136.061867 
@@ -44,7 +44,7 @@ L 202.72 136.061867
 L 202.72 115.6928 
 L 163.04 115.6928 
 z
-" clip-path="url(#p45d55ed89d)" style="fill: var(--fig-ramp-3)"/>
+" clip-path="url(#p0953655991)" style="fill: var(--fig-ramp-3)"/>
    </g>
    <g id="patch_6">
     <path d="M 176.266667 168.9152 
@@ -52,7 +52,7 @@ L 189.493333 168.9152
 L 189.493333 148.546133 
 L 176.266667 148.546133 
 z
-" clip-path="url(#p45d55ed89d)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#p0953655991)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-paper); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="182.88" y="29.68538" transform="rotate(-0 182.88 29.68538)">Ideas de proyecto · 100</text>
@@ -72,7 +72,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p45d55ed89d">
+  <clipPath id="p0953655991">
    <rect x="4.32" y="4.32" width="357.12" height="177.408"/>
   </clipPath>
  </defs>

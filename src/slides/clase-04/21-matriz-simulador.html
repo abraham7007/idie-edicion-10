@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 4 · Formulación de proyectos · Cuándo cierra una fila de la matriz y cuándo deja de sostenerse</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="40">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					01 · §6 Marco lógico
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Cuándo cierra una fila de la matriz y cuándo deja de sostenerse</h1>
+				<div class="sim sim--stack" data-sim="matriz" data-animate="fade-up">
+					<div class="sim__controls">
+						<label class="sim__label" for="m-partes">Partes declaradas del indicador</label>
+						<input class="sim__range" id="m-partes" type="range" min="0" max="5" step="1" value="2" />
+						<div class="sim__readout">
+							<span class="sim__value" id="m-nivel">Propósito</span>
+							<span class="sim__badge" id="m-veredicto" data-estado="warn">La fila no cierra</span>
+						</div>
+						<div class="picker">
+							<button class="picker__btn" type="button" data-fila="fin">Fin</button>
+							<button class="picker__btn is-on" type="button" data-fila="proposito">Propósito</button>
+							<button class="picker__btn" type="button" data-fila="componente">Componente</button>
+							<button class="picker__btn" type="button" data-fila="actividad">Actividad</button>
+						</div>
+						<label class="crit__box">
+							<input type="checkbox" id="m-medio" checked />
+							<span><b>Existe el medio de verificación</b><span class="crit__help">Documento, quién lo emite y cada cuánto</span></span>
+						</label>
+						<p class="sim__what" id="m-detalle"></p>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Lo que el indicador declara</h3>
+							<ul id="m-ok"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Lo que le falta</h3>
+							<ul id="m-no"></ul>
+						</div>
+					</div>
+				</div>
+				<p class="sim-caption" data-animate="fade-up">Con el indicador completo,
+				desmarcar el medio de verificación tumba la fila igual: la lógica horizontal
+				exige las dos cosas.</p>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>ILPES-CEPAL, <i>Metodología del marco lógico para la planificación, el seguimiento y la evaluación de proyectos</i> · serie manuales 42</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="20-supuestos.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>
+					<span>Supuestos</span>
+				</a>
+				<a class="slide-nav__link" href="22-herramientas-02.html">
+					<span>Herramientas 02</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Tres condiciones deciden si una fila de la matriz cierra: que el
+			// indicador tenga sus cinco partes, que el medio de verificación exista
+			// y que el supuesto sea razonable. Cada control cambia el veredicto de
+			// extremo a extremo (METODOLOGIA.md §3.3).
+			const raiz = document.querySelector('[data-sim="matriz"]');
+			const mando = raiz.querySelector("#m-partes");
+			const nivel = raiz.querySelector("#m-nivel");
+			const veredicto = raiz.querySelector("#m-veredicto");
+			const detalle = raiz.querySelector("#m-detalle");
+			const ok = raiz.querySelector("#m-ok");
+			const no = raiz.querySelector("#m-no");
+			const medio = raiz.querySelector("#m-medio");
+			const botones = [...raiz.querySelectorAll(".picker__btn")];
+			const PARTES = ["cantidad", "calidad", "tiempo", "lugar", "línea base"];
+			const NIVEL = { fin: "Fin", proposito: "Propósito",
+				componente: "Componente", actividad: "Actividad" };
+			let fila = "proposito";
+
+			function pintar() {
+				const n = Number(mando.value);
+				const hay = medio.checked;
+				nivel.textContent = NIVEL[fila] + " · " + n + " de 5 partes";
+				const tiene = PARTES.slice(0, n), falta = PARTES.slice(n);
+				ok.innerHTML = tiene.map((x) => "<li>" + x + "</li>").join("")
+					|| "<li>El indicador no declara ninguna de las cinco partes.</li>";
+				no.innerHTML = falta.map((x) => "<li>falta " + x + "</li>").join("")
+					+ (hay ? "" : "<li>sin medio de verificación que produzca el dato</li>");
+				if (!hay) {
+					veredicto.textContent = "La fila no cierra";
+					veredicto.dataset.estado = "danger";
+					detalle.textContent = "Sin medio de verificación no hay con qué calcular el indicador, aunque el indicador esté completo. La lógica horizontal exige las dos cosas.";
+				} else if (n < 3) {
+					veredicto.textContent = "Indicador declarativo";
+					veredicto.dataset.estado = "danger";
+					detalle.textContent = "Con menos de tres partes el indicador no se puede verificar: el evaluador no sabe cuándo darlo por cumplido.";
+				} else if (n < 5) {
+					veredicto.textContent = "Verificable, con reparos";
+					veredicto.dataset.estado = "warn";
+					detalle.textContent = "Se puede medir, pero sin línea base se mide un estado y no un cambio, y sin cambio no hay nada que atribuir al proyecto.";
+				} else {
+					veredicto.textContent = "La fila cierra";
+					veredicto.dataset.estado = "ok";
+					detalle.textContent = "Indicador completo y medio que lo produce: la lógica horizontal de esta fila se sostiene.";
+				}
+			}
+			for (const b of botones) {
+				b.addEventListener("click", () => {
+					fila = b.dataset.fila;
+					for (const o of botones) o.classList.toggle("is-on", o === b);
+					pintar();
+				});
+			}
+			mando.addEventListener("input", pintar);
+			medio.addEventListener("change", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

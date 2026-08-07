@@ -174,7 +174,7 @@ for (const s of sesiones) {
 			// expone: no consume los tres minutos y medio que consume una lámina
 			// de contenido. Por eso admite más láminas que las demás, y por eso
 			// la excepción va por sesión y no para todo el mazo (§4.6).
-			["láminas", html.length, 40, s === "03" ? 62 : 50],
+			["láminas", html.length, 40, ["03"].includes(s) ? 62 : 50],
 			// Sin techo de figuras: lo tuvo y marcaba fuera de norma a la
 			// sesión 1 con 31, que es justo la densidad que se pedía (§4.4).
 			// La sesión 3 inventaría fondos con una ficha por lámina, y una

@@ -1,0 +1,81 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 473.126062 181.201" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 181.201 
+L 473.126063 181.201 
+L 473.126063 0 
+L -0 0 
+L -0 181.201 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 100.526063 165.096 
+L 468.806063 165.096 
+L 468.806063 4.32 
+L 100.526063 4.32 
+L 100.526063 165.096 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: var(--fig-muted); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="284.666063" y="175.21725" transform="rotate(-0 284.666063 175.21725)">colmenas</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 100.526063 24.417 
+L 223.828508 24.417 
+L 223.828508 50.424882 
+L 100.526063 50.424882 
+z
+" clip-path="url(#p213b49c8d4)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.347125" y="39.906816" transform="rotate(-0 95.347125 39.906816)">En producción</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ramp-2); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="229.007446" y="39.738816" transform="rotate(-0 229.007446 39.738816)">214 276</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 100.526063 71.704059 
+L 245.725631 71.704059 
+L 245.725631 97.711941 
+L 100.526063 97.711941 
+z
+" clip-path="url(#p213b49c8d4)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.347125" y="87.048188" transform="rotate(-0 95.347125 87.048188)">Instaladas</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ramp-3); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="250.904569" y="87.025875" transform="rotate(-0 250.904569 87.025875)">252 329</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 100.526063 118.991118 
+L 388.244813 118.991118 
+L 388.244813 144.999 
+L 100.526063 144.999 
+z
+" clip-path="url(#p213b49c8d4)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.347125" y="134.335246" transform="rotate(-0 95.347125 134.335246)">Potencial estimado</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-accent); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="393.42375" y="134.312934" transform="rotate(-0 393.42375 134.312934)">500 000</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p213b49c8d4">
+   <rect x="100.526063" y="4.32" width="368.28" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

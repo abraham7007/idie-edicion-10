@@ -1,0 +1,83 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 486.067337 170.188937" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 170.188937 
+L 486.067337 170.188937 
+L 486.067337 0 
+L 0 0 
+L 0 170.188937 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 113.467337 154.008 
+L 481.747337 154.008 
+L 481.747337 4.32 
+L 113.467337 4.32 
+L 113.467337 154.008 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: var(--fig-muted); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="297.607337" y="164.246781" transform="rotate(-0 297.607337 164.246781)">cuánto puede comprobar el evaluador</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 113.467337 19.985023 
+L 145.491685 19.985023 
+L 145.491685 37.390605 
+L 113.467337 37.390605 
+z
+" clip-path="url(#pad6fbaf4e7)" style="fill: var(--fig-muted); opacity: 0.85"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="30.916564" transform="rotate(-0 105.46125 30.916564)">«No hay antecedentes»</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 113.467337 54.796186 
+L 225.552554 54.796186 
+L 225.552554 72.201767 
+L 113.467337 72.201767 
+z
+" clip-path="url(#pad6fbaf4e7)" style="fill: var(--fig-ramp-1); opacity: 0.85"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="65.727727" transform="rotate(-0 105.46125 65.727727)">Cita tres trabajos</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 113.467337 89.607349 
+L 305.613424 89.607349 
+L 305.613424 107.01293 
+L 113.467337 107.01293 
+z
+" clip-path="url(#pad6fbaf4e7)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="100.53889" transform="rotate(-0 105.46125 100.53889)">Declara dónde buscó</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 113.467337 124.418512 
+L 385.674293 124.418512 
+L 385.674293 141.824093 
+L 113.467337 141.824093 
+z
+" clip-path="url(#pad6fbaf4e7)" style="fill: var(--fig-accent); opacity: 0.85"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="135.480677" transform="rotate(-0 105.46125 135.480677)">Declara qué descartó</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pad6fbaf4e7">
+   <rect x="113.467337" y="4.32" width="368.28" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

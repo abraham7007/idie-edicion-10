@@ -1,0 +1,54 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 376.92 163.872" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 163.872 
+L 376.92 163.872 
+L 376.92 0 
+L 0 0 
+L 0 163.872 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 4.32 159.552 
+L 372.6 159.552 
+L 372.6 4.32 
+L 4.32 4.32 
+L 4.32 159.552 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="fill: var(--fig-accent); font: 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="22.734" y="26.231344" transform="rotate(-0 22.734 26.231344)">✕</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="48.5136" y="26.150687" transform="rotate(-0 48.5136 26.150687)">Se escribió una vez, al postular</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-accent); font: 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="22.734" y="65.039344" transform="rotate(-0 22.734 65.039344)">✕</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="48.5136" y="64.958687" transform="rotate(-0 48.5136 64.958687)">Nadie la revisó durante la ejecución</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-accent); font: 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="22.734" y="103.847344" transform="rotate(-0 22.734 103.847344)">✕</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="48.5136" y="103.758359" transform="rotate(-0 48.5136 103.758359)">No declara en qué evidencia se apoya</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-accent); font: 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="22.734" y="142.655344" transform="rotate(-0 22.734 142.655344)">✕</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="48.5136" y="142.5465" transform="rotate(-0 48.5136 142.5465)">Ningún supuesto se corrigió nunca</text>
+   </g>
+  </g>
+ </g>
+</svg>

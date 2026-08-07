@@ -56,7 +56,7 @@ L 164.710737 53.502316
 L 164.710737 46.610526 
 L 157.818947 46.610526 
 z
-" clip-path="url(#pf201ae0d96)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#p934ac0d577)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_5">
     <path d="M 157.818947 92.346947 
@@ -64,7 +64,7 @@ L 164.710737 92.346947
 L 164.710737 85.455158 
 L 157.818947 85.455158 
 z
-" clip-path="url(#pf201ae0d96)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#p934ac0d577)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
@@ -93,7 +93,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pf201ae0d96">
+  <clipPath id="p934ac0d577">
    <rect x="4.32" y="4.32" width="357.12" height="137.835789"/>
   </clipPath>
  </defs>

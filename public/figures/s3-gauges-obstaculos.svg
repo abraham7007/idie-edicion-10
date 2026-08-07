@@ -26,7 +26,7 @@ C 68.343432 47.075684 77.265602 43.38 86.558894 43.38
 C 95.852187 43.38 104.774356 47.075684 111.345707 53.647034 
 C 117.917057 60.218384 121.61274 69.140554 121.61274 78.433846 
 z
-" clip-path="url(#p93b52b57e0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pab39bb5cbd)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 132.391356 58.257532 
@@ -40,7 +40,7 @@ C 64.40759 50.100728 71.472874 45.786368 79.342618 44.130822
 C 87.212362 42.475275 95.417084 43.577307 102.571051 47.25079 
 C 109.725017 50.924273 115.401445 56.950059 118.641617 64.310426 
 z
-" clip-path="url(#p93b52b57e0)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#pab39bb5cbd)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="patch_4">
     <path d="M 264.331971 78.433846 
@@ -54,7 +54,7 @@ C 196.039586 47.075684 204.961756 43.38 214.255048 43.38
 C 223.548341 43.38 232.47051 47.075684 239.04186 53.647034 
 C 245.613211 60.218384 249.308894 69.140554 249.308894 78.433846 
 z
-" clip-path="url(#p93b52b57e0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pab39bb5cbd)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 239.202625 35.013613 
@@ -68,7 +68,7 @@ C 186.958844 55.598139 191.376492 51.173546 196.696344 48.094696
 C 202.016196 45.015845 208.053438 43.389698 214.199986 43.380043 
 C 220.346533 43.370388 226.388854 44.977561 231.718352 48.039683 
 z
-" clip-path="url(#p93b52b57e0)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#pab39bb5cbd)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="patch_6">
     <path d="M 392.028125 78.433846 
@@ -82,7 +82,7 @@ C 323.73574 47.075684 332.657909 43.38 341.951202 43.38
 C 351.244494 43.38 360.166664 47.075684 366.738014 53.647034 
 C 373.309364 60.218384 377.005048 69.140554 377.005048 78.433846 
 z
-" clip-path="url(#p93b52b57e0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#pab39bb5cbd)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 364.123172 33.532822 
@@ -96,7 +96,7 @@ C 314.209034 56.192761 318.386118 51.807157 323.448187 48.661198
 C 328.510255 45.515239 334.292006 43.711657 340.24494 43.421551 
 C 346.197875 43.131446 352.127601 44.36429 357.471581 47.003129 
 z
-" clip-path="url(#p93b52b57e0)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#pab39bb5cbd)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-navy); font: 700 13px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="86.558894" y="67.717945" transform="rotate(-0 86.558894 67.717945)">43,4 %</text>
@@ -143,7 +143,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p93b52b57e0">
+  <clipPath id="pab39bb5cbd">
    <rect x="18.955048" y="4.32" width="390.6" height="129.198462"/>
   </clipPath>
  </defs>

@@ -31,7 +31,7 @@ L 389.34 9.4878
 L 389.34 20.5362 
 L 4.32 20.5362 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-accent); opacity: 0.18"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-accent); opacity: 0.18"/>
    </g>
    <g id="patch_4">
     <path d="M 4.32 27.3078 
@@ -39,7 +39,7 @@ L 389.34 27.3078
 L 389.34 38.3562 
 L 4.32 38.3562 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-accent); opacity: 0.18"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-accent); opacity: 0.18"/>
    </g>
    <g id="patch_5">
     <path d="M 4.32 45.1278 
@@ -47,7 +47,7 @@ L 389.34 45.1278
 L 389.34 56.1762 
 L 4.32 56.1762 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_6">
     <path d="M 4.32 62.9478 
@@ -55,7 +55,7 @@ L 389.34 62.9478
 L 389.34 73.9962 
 L 4.32 73.9962 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_7">
     <path d="M 4.32 80.7678 
@@ -63,7 +63,7 @@ L 389.34 80.7678
 L 389.34 91.8162 
 L 4.32 91.8162 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_8">
     <path d="M 4.32 98.5878 
@@ -71,7 +71,7 @@ L 389.34 98.5878
 L 389.34 109.6362 
 L 4.32 109.6362 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_9">
     <path d="M 4.32 116.4078 
@@ -79,7 +79,7 @@ L 389.34 116.4078
 L 389.34 127.4562 
 L 4.32 127.4562 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_10">
     <path d="M 4.32 134.2278 
@@ -87,7 +87,7 @@ L 389.34 134.2278
 L 389.34 145.2762 
 L 4.32 145.2762 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_11">
     <path d="M 4.32 152.0478 
@@ -95,7 +95,7 @@ L 389.34 152.0478
 L 389.34 163.0962 
 L 4.32 163.0962 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_12">
     <path d="M 4.32 169.8678 
@@ -103,7 +103,7 @@ L 389.34 169.8678
 L 389.34 180.9162 
 L 4.32 180.9162 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-ramp-1); opacity: 0.3"/>
    </g>
    <g id="patch_13">
     <path d="M 4.32 187.6878 
@@ -111,7 +111,7 @@ L 389.34 187.6878
 L 389.34 198.7362 
 L 4.32 198.7362 
 z
-" clip-path="url(#p89e0c2f4db)" style="fill: var(--fig-accent); opacity: 0.18"/>
+" clip-path="url(#p55513056a9)" style="fill: var(--fig-accent); opacity: 0.18"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.0204" y="17.323313" transform="rotate(-0 12.0204 17.323313)">01  Datos generales</text>
@@ -182,7 +182,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p89e0c2f4db">
+  <clipPath id="p55513056a9">
    <rect x="4.32" y="4.32" width="385.02" height="199.584"/>
   </clipPath>
  </defs>

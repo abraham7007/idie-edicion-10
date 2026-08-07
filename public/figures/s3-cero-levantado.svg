@@ -26,7 +26,7 @@ C 64.18438 41.252477 75.2716 36.66 86.82 36.66
 C 98.3684 36.66 109.45562 41.252477 117.621571 49.418429 
 C 125.787523 57.58438 130.38 68.6716 130.38 80.22 
 z
-" clip-path="url(#p9d6d1f6158)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#pe80f4d24a3)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_3">
     <path d="M 130.466583 30.712669 
@@ -40,7 +40,7 @@ C 54.771994 49.55001 61.255516 43.968377 68.894435 40.519273
 C 76.533353 37.070169 85.007828 35.898007 93.296171 37.144104 
 C 101.584514 38.390201 109.339696 42.002383 115.626745 47.545162 
 z
-" clip-path="url(#p9d6d1f6158)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#pe80f4d24a3)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-accent); font: 700 20px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="86.82" y="69.460625" transform="rotate(-0 86.82 69.460625)">73 %</text>
@@ -74,7 +74,7 @@ C 265.06438 41.252477 276.1516 36.66 287.7 36.66
 C 299.2484 36.66 310.33562 41.252477 318.501571 49.418429 
 C 326.667523 57.58438 331.26 68.6716 331.26 80.22 
 z
-" clip-path="url(#p80b0a6b5b1)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#p41ddb6b4d9)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_5">
     <path d="M 265.343297 18.121869 
@@ -84,7 +84,7 @@ L 244.14 80.22
 C 244.14 71.255946 246.90702 62.50671 252.061398 55.172771 
 C 257.215776 47.838833 264.51047 42.271699 272.944576 39.235234 
 z
-" clip-path="url(#p80b0a6b5b1)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#p41ddb6b4d9)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="text_7">
     <text style="fill: var(--fig-accent); font: 700 20px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="287.7" y="69.460625" transform="rotate(-0 287.7 69.460625)">39 %</text>
@@ -107,10 +107,10 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p9d6d1f6158">
+  <clipPath id="pe80f4d24a3">
    <rect x="4.32" y="4.32" width="165" height="138.6"/>
   </clipPath>
-  <clipPath id="p80b0a6b5b1">
+  <clipPath id="p41ddb6b4d9">
    <rect x="205.2" y="4.32" width="165" height="138.6"/>
   </clipPath>
  </defs>

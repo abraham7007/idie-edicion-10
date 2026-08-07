@@ -35,8 +35,8 @@ reiniciar_alternancia()
 
 SESION = "Sesión 4 · Formulación de proyectos"
 
-TEMA_A = "Del problema a la matriz: las secciones que sostienen la propuesta"
-TEMA_B = "La evidencia y los resultados que el evaluador califica"
+TEMA_A = "Secciones que sostienen la propuesta técnica"
+TEMA_B = "Evidencia y resultados de la propuesta"
 
 # ==========================================================================
 # FUENTES
@@ -59,17 +59,30 @@ F_CASO = ("Caso de clase · magnitudes didácticas del prototipo, no medidas en 
 # ==========================================================================
 # APERTURA
 # ==========================================================================
-PORTADA = envolver(
-    f"""\t\t\t\t<p class="slide__eyebrow">Sesión 4</p>
-\t\t\t\t<h1 class="slide__title">Formulación de proyectos</h1>
-\t\t\t\t<ol class="topic">
-\t\t\t\t\t<li><b>01</b>{TEMA_A}</li>
-\t\t\t\t\t<li><b>02</b>{TEMA_B}</li>
-\t\t\t\t</ol>"""
-)
+PORTADA = f"""			<div class="slide__content stagger">
+				<div class="cover">
+					<div class="cover__main">
+						<span class="badge" data-animate="fade-up">{ico("i-project")}Sesión 4</span>
+
+						<h1 class="slide__title" data-animate="fade-up">Formulación de proyectos</h1>
+
+						<div class="cover__topics" data-animate="fade-up">
+							<span class="topic"><span class="topic__n">01</span>{TEMA_A}</span>
+							<span class="topic topic--b"><span class="topic__n">02</span>{TEMA_B}</span>
+						</div>
+
+{colofon()}
+					</div>
+
+{mapa_ecosistema(
+    activos=("academia", "empresa"),
+    aristas=("estado-fondos", "fondos-academia"),
+)}
+				</div>
+			</div>"""
 
 AGENDA = envolver(
-    cabecera("Agenda", "Las once secciones de una propuesta y el orden en que se escriben", "i-flow")
+    cabecera("Agenda", "Contenidos de los dos temas y las cuatro paradas de herramientas", "i-flow")
     + "\n"
     + f"""\t\t\t\t<div class="agenda" data-animate="fade-up">
 \t\t\t\t\t<div class="agenda__block">
@@ -118,7 +131,7 @@ AGENDA = envolver(
 
 ORDEN_ESCRITURA = envolver(
     cabecera("Punto de partida",
-             "Las once secciones del documento y el orden real en que se escriben",
+             "Principales secciones de un proyecto de I+D+i",
              "i-file")
     + "\n"
     + figura("s4-orden-secciones",
@@ -137,7 +150,7 @@ ORDEN_ESCRITURA = envolver(
 
 CASO = envolver(
     cabecera("Punto de partida",
-             "El proyecto que se formula en clase: monitoreo electrónico de colmenas",
+             "Proyecto de trabajo: monitoreo electrónico de colmenas",
              "i-target")
     + "\n"
     + duo(
@@ -175,7 +188,7 @@ SECCION_B = seccion("02", TEMA_B,
 # ==========================================================================
 DATOS_GENERALES = envolver(
     cabecera("01 · §1 Datos generales",
-             "Los cinco campos que deciden si la propuesta llega a leerse",
+             "Campos de la sección de datos generales",
              "i-rubric")
     + "\n"
     + tabla(
@@ -202,7 +215,7 @@ DATOS_GENERALES = envolver(
 
 RESUMEN_SECCION = envolver(
     cabecera("01 · §2 Resumen",
-             "Los cuatro movimientos del resumen y por qué se escribe el último",
+             "Estructura del resumen ejecutivo",
              "i-quote")
     + "\n"
     + duo(
@@ -230,7 +243,7 @@ RESUMEN_SECCION = envolver(
 # ==========================================================================
 PROBLEMA_MAL = envolver(
     cabecera("01 · §3 Problema",
-             "Un problema mal planteado no se corrige con una buena metodología",
+             "Formulación del problema: difusa frente a acotada",
              "i-alert")
     + "\n"
     + duo(
@@ -254,7 +267,7 @@ PROBLEMA_MAL = envolver(
 
 ARBOL_PROBLEMAS = envolver(
     cabecera("01 · §3 Problema",
-             "El árbol de problemas del caso: causas, problema central y efectos",
+             "Árbol de problemas: causas, problema central y efectos",
              "i-diagram")
     + "\n"
     + figura("s4-arbol-problemas",
@@ -272,7 +285,7 @@ ARBOL_PROBLEMAS = envolver(
 
 ARBOL_OBJETIVOS = envolver(
     cabecera("01 · §3 Problema",
-             "Del árbol de problemas al árbol de objetivos, y dónde se rompe",
+             "Conversión del árbol de problemas en árbol de objetivos",
              "i-flow")
     + "\n"
     + figura("s4-arbol-objetivos",
@@ -290,7 +303,7 @@ ARBOL_OBJETIVOS = envolver(
 
 BRECHA = envolver(
     cabecera("01 · §3 Problema",
-             "Cuantificar la brecha: la apicultura peruana en cifras",
+             "Cuantificación de la brecha: apicultura peruana",
              "i-chart")
     + "\n"
     + figura("s4-brecha-apicola",
@@ -311,7 +324,7 @@ BRECHA = envolver(
 # ==========================================================================
 OBJETIVOS = envolver(
     cabecera("01 · §5 Objetivos",
-             "Verbo, objeto y condición de logro: las tres partes de un objetivo",
+             "Partes de un objetivo específico",
              "i-target")
     + "\n"
     + duo(
@@ -336,7 +349,7 @@ OBJETIVOS = envolver(
 
 OBJETIVOS_JERARQUIA = envolver(
     cabecera("01 · §5 Objetivos",
-             "Objetivo general y específicos: qué relación tienen entre sí",
+             "Jerarquía entre objetivo general y específicos",
              "i-ladder")
     + "\n"
     + figura("s4-objetivos-jerarquia",
@@ -357,7 +370,7 @@ OBJETIVOS_JERARQUIA = envolver(
 # ==========================================================================
 MATRIZ = envolver(
     cabecera("01 · §6 Marco lógico",
-             "La matriz: cuatro filas de objetivos y cuatro columnas de prueba",
+             "Matriz de marco lógico: filas y columnas",
              "i-rubric")
     + "\n"
     + figura("s4-matriz-ml",
@@ -376,7 +389,7 @@ MATRIZ = envolver(
 
 LOGICA_VERTICAL = envolver(
     cabecera("01 · §6 Marco lógico",
-             "Lógica vertical: si las actividades, entonces los componentes",
+             "Lógica vertical de la matriz",
              "i-ladder")
     + "\n"
     + duo(
@@ -401,7 +414,7 @@ LOGICA_VERTICAL = envolver(
 
 LOGICA_HORIZONTAL = envolver(
     cabecera("01 · §6 Marco lógico",
-             "Lógica horizontal: objetivo, indicador y medio tienen que cerrar",
+             "Lógica horizontal de la matriz",
              "i-arrow-right")
     + "\n"
     + figura("s4-logica-horizontal",
@@ -419,7 +432,7 @@ LOGICA_HORIZONTAL = envolver(
 
 INDICADORES = envolver(
     cabecera("01 · §6 Marco lógico",
-             "Qué distingue un indicador verificable de uno declarativo",
+             "Partes de un indicador verificable",
              "i-scale")
     + "\n"
     + tabla(
@@ -441,7 +454,7 @@ INDICADORES = envolver(
 
 MEDIOS = envolver(
     cabecera("01 · §6 Marco lógico",
-             "Medios de verificación: quién produce el dato y quién lo paga",
+             "Medios de verificación y su costo de obtención",
              "i-search")
     + "\n"
     + duo(
@@ -466,7 +479,7 @@ MEDIOS = envolver(
 
 SUPUESTOS = envolver(
     cabecera("01 · §6 Marco lógico",
-             "Supuestos: lo que está fuera de control y aun así hay que declarar",
+             "Supuestos y riesgos del proyecto",
              "i-alert")
     + "\n"
     + figura("s4-supuestos",
@@ -493,7 +506,7 @@ SUPUESTOS = envolver(
 # ==========================================================================
 METODO_POR_OBJETIVO = envolver(
     cabecera("01 · §7 Metodología",
-             "Una metodología por objetivo específico, no una general",
+             "Metodología por objetivo específico",
              "i-layers")
     + "\n"
     + tabla(
@@ -517,7 +530,7 @@ METODO_POR_OBJETIVO = envolver(
 
 CRONOGRAMA = envolver(
     cabecera("01 · §7 Metodología",
-             "Actividades, hitos y la ruta que no admite retraso",
+             "Cronograma, hitos y ruta crítica",
              "i-gantt")
     + "\n"
     + figura("s4-cronograma",
@@ -534,7 +547,7 @@ CRONOGRAMA = envolver(
 
 HITO_VERIFICABLE = envolver(
     cabecera("01 · §7 Metodología",
-             "Qué convierte una actividad en un hito verificable",
+             "Actividad frente a hito verificable",
              "i-milestone")
     + "\n"
     + duo(
@@ -561,7 +574,7 @@ HITO_VERIFICABLE = envolver(
 # ==========================================================================
 NOVEDAD = envolver(
     cabecera("02 · §4 Estado del arte",
-             "Qué sostiene el criterio de novedad ante el evaluador",
+             "Evidencia que acredita la novedad",
              "i-book")
     + "\n"
     + duo(
@@ -586,7 +599,7 @@ NOVEDAD = envolver(
 
 PRISMA_FLUJO = envolver(
     cabecera("02 · §4 Estado del arte",
-             "El flujo de PRISMA 2020 aplicado a la revisión de una propuesta",
+             "Flujo PRISMA 2020 aplicado a una propuesta",
              "i-flow")
     + "\n"
     + figura("s4-prisma",
@@ -604,7 +617,7 @@ PRISMA_FLUJO = envolver(
 
 MAPEO = envolver(
     cabecera("02 · §4 Estado del arte",
-             "Mapeo bibliométrico: lo que la lectura no alcanza a mostrar",
+             "Mapeo bibliométrico del campo",
              "i-network")
     + "\n"
     + figura("s4-mapeo",
@@ -624,7 +637,7 @@ MAPEO = envolver(
 # ==========================================================================
 CADENA = envolver(
     cabecera("02 · §9 Resultados",
-             "Producto, resultado e impacto: tres cosas que se puntúan aparte",
+             "Cadena de resultados: producto, resultado e impacto",
              "i-ladder")
     + "\n"
     + figura("s4-cadena-resultados",
@@ -642,7 +655,7 @@ CADENA = envolver(
 
 TEORIA_CAMBIO = envolver(
     cabecera("02 · §9 Resultados",
-             "Teoría del cambio: qué añade sobre la matriz de marco lógico",
+             "Teoría del cambio y su aporte sobre la matriz",
              "i-diagram")
     + "\n"
     + duo(
@@ -661,7 +674,7 @@ TEORIA_CAMBIO = envolver(
 
 LIMITE_ML = envolver(
     cabecera("02 · §9 Resultados",
-             "El límite del marco lógico, dicho por la literatura que lo estudia",
+             "Límites del marco lógico",
              "i-alert")
     + "\n"
     + duo(
@@ -687,7 +700,7 @@ LIMITE_ML = envolver(
 
 TOC_TRAMITE = envolver(
     cabecera("02 · §9 Resultados",
-             "Cuándo la teoría del cambio se convierte en un trámite",
+             "Señales de una teoría del cambio formal",
              "i-alert")
     + "\n"
     + figura("s4-toc-tramite",
@@ -708,7 +721,7 @@ TOC_TRAMITE = envolver(
 # ==========================================================================
 HERR_01 = bloque_herramientas(
     ref="01", total="04",
-    titulo="Tres gestores de referencias y lo que decide la elección entre ellos",
+    titulo="Gestores de referencias",
     para_que=(
         "El estado del arte hay que citarlo aquí, en el presupuesto y en la "
         "sustentación. Lo decide una sola prueba: qué cuesta sacar la biblioteca "
@@ -740,7 +753,7 @@ HERR_01 = bloque_herramientas(
 
 HERR_02 = bloque_herramientas(
     ref="02", total="04",
-    titulo="Tres formas de dibujar el árbol, la matriz y el cronograma",
+    titulo="Diagramación del árbol, la matriz y el cronograma",
     para_que=(
         "El árbol de problemas y la matriz se discuten en equipo y cambian veinte "
         "veces antes de quedar. Lo que se necesita es rehacerlos rápido, no "
@@ -772,7 +785,7 @@ HERR_02 = bloque_herramientas(
 
 HERR_03 = bloque_herramientas(
     ref="03", total="04",
-    titulo="Tres apoyos para construir y validar la cadena de resultados",
+    titulo="Apoyos para la cadena de resultados",
     para_que=(
         "La cadena de resultados y la teoría del cambio se discuten con el socio y "
         "con el equipo. Lo que hace falta es una plantilla común y una guía que "
@@ -804,7 +817,7 @@ HERR_03 = bloque_herramientas(
 
 HERR_04 = bloque_herramientas(
     ref="04", total="04",
-    titulo="Tres revisiones que conviene hacer antes de enviar el documento",
+    titulo="Revisiones previas al envío del documento",
     para_que=(
         "La propuesta se pierde por defectos que no son de fondo: una cifra sin "
         "fuente, un anexo sin firmar, un formato que no abre. Se revisan con "
@@ -839,7 +852,7 @@ HERR_04 = bloque_herramientas(
 # ==========================================================================
 RESUMEN_FINAL = envolver(
     cabecera("Cierre",
-             "Cinco puntos establecidos sobre cómo se formula una propuesta",
+             "Puntos establecidos de la sesión",
              "i-check")
     + "\n"
     + f"""\t\t\t\t<div class="compare" data-animate="fade-up">
@@ -878,7 +891,7 @@ def _grupo_glosario(rotulo, entradas, variante=""):
 
 
 GLOSARIO = envolver(
-    cabecera("Cierre", "Doce términos para escribir y para leer una propuesta", "i-book")
+    cabecera("Cierre", "Glosario de formulación de proyectos", "i-book")
     + "\n"
     + '\t\t\t\t<div class="glossary glossary--grouped" data-animate="fade-up">\n'
     + _grupo_glosario("Del problema a la matriz", [
@@ -915,7 +928,7 @@ GLOSARIO = envolver(
 )
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Las seis fuentes de la sesión, con su enlace y su vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
     + "\n"
     + tabla(
         ["Fuente", "Sirve a", "Dónde está"],
@@ -1007,7 +1020,7 @@ MATRIZ_JS = """\t\t<script type="module">
 
 MATRIZ_SIM = envolver(
     cabecera("01 · §6 Marco lógico",
-             "Cuándo cierra una fila de la matriz y cuándo deja de sostenerse",
+             "Simulación: cierre de una fila de la matriz",
              "i-sliders")
     + "\n"
     + f"""\t\t\t\t<div class="sim sim--stack" data-sim="matriz" data-animate="fade-up">
@@ -1056,7 +1069,7 @@ REVISION_JS = MATRIZ_JS.replace('data-sim="matriz"', 'data-sim="revision"').repl
 
 REVISION_SIM = envolver(
     cabecera("Cierre",
-             "Revisar la propuesta con los criterios con que se va a evaluar",
+             "Simulación: revisión con criterios de evaluación",
              "i-rubric")
     + "\n"
     + f"""\t\t\t\t<div class="sim sim--stack" data-sim="revision" data-animate="fade-up">
@@ -1102,7 +1115,7 @@ REVISION_SIM = envolver(
 
 ERRORES = envolver(
     cabecera("Cierre",
-             "Cinco defectos que tumban una propuesta antes que el contenido",
+             "Defectos frecuentes de una propuesta",
              "i-alert")
     + "\n"
     + fichas([
@@ -1144,48 +1157,48 @@ def L(slug, titulo, nav, icono, contenido, clases="slide", scripts=""):
 
 LAMINAS = [
     L("portada", "Portada", "Portada", "i-project", PORTADA, "slide slide--start"),
-    L("agenda", "Las once secciones de una propuesta y el orden en que se escriben", "Agenda", "i-flow", AGENDA),
-    L("orden-secciones", "Las once secciones del documento y el orden real en que se escriben", "Orden", "i-file", ORDEN_ESCRITURA),
-    L("caso", "El proyecto que se formula en clase: monitoreo electrónico de colmenas", "El caso", "i-target", CASO),
+    L("agenda", "Contenidos de los dos temas y las cuatro paradas de herramientas", "Agenda", "i-flow", AGENDA),
+    L("orden-secciones", "Principales secciones de un proyecto de I+D+i", "Orden", "i-file", ORDEN_ESCRITURA),
+    L("caso", "Proyecto de trabajo: monitoreo electrónico de colmenas", "El caso", "i-target", CASO),
 
     L("tema-01", TEMA_A, "Tema 01", "i-project", SECCION_A),
-    L("datos-generales", "Los cinco campos que deciden si la propuesta llega a leerse", "Datos generales", "i-rubric", DATOS_GENERALES),
-    L("resumen-seccion", "Los cuatro movimientos del resumen y por qué se escribe el último", "Resumen", "i-quote", RESUMEN_SECCION),
-    L("problema-mal", "Un problema mal planteado no se corrige con una buena metodología", "Problema", "i-alert", PROBLEMA_MAL),
-    L("arbol-problemas", "El árbol de problemas del caso: causas, problema central y efectos", "Árbol", "i-diagram", ARBOL_PROBLEMAS),
-    L("arbol-objetivos", "Del árbol de problemas al árbol de objetivos, y dónde se rompe", "Objetivos del árbol", "i-flow", ARBOL_OBJETIVOS),
-    L("brecha", "Cuantificar la brecha: la apicultura peruana en cifras", "La brecha", "i-chart", BRECHA),
+    L("datos-generales", "Campos de la sección de datos generales", "Datos generales", "i-rubric", DATOS_GENERALES),
+    L("resumen-seccion", "Estructura del resumen ejecutivo", "Resumen", "i-quote", RESUMEN_SECCION),
+    L("problema-mal", "Formulación del problema: difusa frente a acotada", "Problema", "i-alert", PROBLEMA_MAL),
+    L("arbol-problemas", "Árbol de problemas: causas, problema central y efectos", "Árbol", "i-diagram", ARBOL_PROBLEMAS),
+    L("arbol-objetivos", "Conversión del árbol de problemas en árbol de objetivos", "Objetivos del árbol", "i-flow", ARBOL_OBJETIVOS),
+    L("brecha", "Cuantificación de la brecha: apicultura peruana", "La brecha", "i-chart", BRECHA),
     L("herramientas-01", "Herramientas 01 · Gestores de referencias", "Herramientas 01", "i-sliders", HERR_01),
-    L("objetivos", "Verbo, objeto y condición de logro: las tres partes de un objetivo", "Objetivos", "i-target", OBJETIVOS),
-    L("objetivos-jerarquia", "Objetivo general y específicos: qué relación tienen entre sí", "Jerarquía", "i-ladder", OBJETIVOS_JERARQUIA),
-    L("matriz", "La matriz: cuatro filas de objetivos y cuatro columnas de prueba", "La matriz", "i-rubric", MATRIZ),
-    L("logica-vertical", "Lógica vertical: si las actividades, entonces los componentes", "Lógica vertical", "i-ladder", LOGICA_VERTICAL),
-    L("logica-horizontal", "Lógica horizontal: objetivo, indicador y medio tienen que cerrar", "Lógica horizontal", "i-arrow-right", LOGICA_HORIZONTAL),
-    L("indicadores", "Qué distingue un indicador verificable de uno declarativo", "Indicadores", "i-scale", INDICADORES),
-    L("medios", "Medios de verificación: quién produce el dato y quién lo paga", "Medios", "i-search", MEDIOS),
-    L("supuestos", "Supuestos: lo que está fuera de control y aun así hay que declarar", "Supuestos", "i-alert", SUPUESTOS),
-    L("matriz-simulador", "Cuándo cierra una fila de la matriz y cuándo deja de sostenerse", "Simular la matriz", "i-sliders", MATRIZ_SIM, "slide", MATRIZ_JS),
+    L("objetivos", "Partes de un objetivo específico", "Objetivos", "i-target", OBJETIVOS),
+    L("objetivos-jerarquia", "Jerarquía entre objetivo general y específicos", "Jerarquía", "i-ladder", OBJETIVOS_JERARQUIA),
+    L("matriz", "Matriz de marco lógico: filas y columnas", "La matriz", "i-rubric", MATRIZ),
+    L("logica-vertical", "Lógica vertical de la matriz", "Lógica vertical", "i-ladder", LOGICA_VERTICAL),
+    L("logica-horizontal", "Lógica horizontal de la matriz", "Lógica horizontal", "i-arrow-right", LOGICA_HORIZONTAL),
+    L("indicadores", "Partes de un indicador verificable", "Indicadores", "i-scale", INDICADORES),
+    L("medios", "Medios de verificación y su costo de obtención", "Medios", "i-search", MEDIOS),
+    L("supuestos", "Supuestos y riesgos del proyecto", "Supuestos", "i-alert", SUPUESTOS),
+    L("matriz-simulador", "Simulación: cierre de una fila de la matriz", "Simular la matriz", "i-sliders", MATRIZ_SIM, "slide", MATRIZ_JS),
     L("herramientas-02", "Herramientas 02 · Diagramación del árbol y la matriz", "Herramientas 02", "i-sliders", HERR_02),
-    L("metodo-por-objetivo", "Una metodología por objetivo específico, no una general", "Metodología", "i-layers", METODO_POR_OBJETIVO),
-    L("cronograma", "Actividades, hitos y la ruta que no admite retraso", "Cronograma", "i-gantt", CRONOGRAMA),
-    L("hito-verificable", "Qué convierte una actividad en un hito verificable", "Hitos", "i-milestone", HITO_VERIFICABLE),
+    L("metodo-por-objetivo", "Metodología por objetivo específico", "Metodología", "i-layers", METODO_POR_OBJETIVO),
+    L("cronograma", "Cronograma, hitos y ruta crítica", "Cronograma", "i-gantt", CRONOGRAMA),
+    L("hito-verificable", "Actividad frente a hito verificable", "Hitos", "i-milestone", HITO_VERIFICABLE),
 
     L("tema-02", TEMA_B, "Tema 02", "i-book", SECCION_B),
-    L("novedad", "Qué sostiene el criterio de novedad ante el evaluador", "Novedad", "i-book", NOVEDAD),
-    L("prisma", "El flujo de PRISMA 2020 aplicado a la revisión de una propuesta", "PRISMA", "i-flow", PRISMA_FLUJO),
-    L("mapeo", "Mapeo bibliométrico: lo que la lectura no alcanza a mostrar", "Mapeo", "i-network", MAPEO),
+    L("novedad", "Evidencia que acredita la novedad", "Novedad", "i-book", NOVEDAD),
+    L("prisma", "Flujo PRISMA 2020 aplicado a una propuesta", "PRISMA", "i-flow", PRISMA_FLUJO),
+    L("mapeo", "Mapeo bibliométrico del campo", "Mapeo", "i-network", MAPEO),
     L("herramientas-03", "Herramientas 03 · Teoría del cambio y cadena de resultados", "Herramientas 03", "i-sliders", HERR_03),
-    L("cadena", "Producto, resultado e impacto: tres cosas que se puntúan aparte", "Cadena", "i-ladder", CADENA),
-    L("teoria-cambio", "Teoría del cambio: qué añade sobre la matriz de marco lógico", "Teoría del cambio", "i-diagram", TEORIA_CAMBIO),
-    L("limite-ml", "El límite del marco lógico, dicho por la literatura que lo estudia", "El límite", "i-alert", LIMITE_ML),
-    L("toc-tramite", "Cuándo la teoría del cambio se convierte en un trámite", "Cuándo es trámite", "i-alert", TOC_TRAMITE),
+    L("cadena", "Cadena de resultados: producto, resultado e impacto", "Cadena", "i-ladder", CADENA),
+    L("teoria-cambio", "Teoría del cambio y su aporte sobre la matriz", "Teoría del cambio", "i-diagram", TEORIA_CAMBIO),
+    L("limite-ml", "Límites del marco lógico", "El límite", "i-alert", LIMITE_ML),
+    L("toc-tramite", "Señales de una teoría del cambio formal", "Cuándo es trámite", "i-alert", TOC_TRAMITE),
     L("herramientas-04", "Herramientas 04 · Revisión del documento antes de enviarlo", "Herramientas 04", "i-sliders", HERR_04),
-    L("revision-simulador", "Revisar la propuesta con los criterios con que se va a evaluar", "Revisar", "i-rubric", REVISION_SIM, "slide", REVISION_JS),
-    L("errores", "Cinco defectos que tumban una propuesta antes que el contenido", "Errores", "i-alert", ERRORES),
+    L("revision-simulador", "Simulación: revisión con criterios de evaluación", "Revisar", "i-rubric", REVISION_SIM, "slide", REVISION_JS),
+    L("errores", "Defectos frecuentes de una propuesta", "Errores", "i-alert", ERRORES),
 
-    L("queda-establecido", "Cinco puntos establecidos sobre cómo se formula una propuesta", "Resumen", "i-check", RESUMEN_FINAL),
-    L("glosario", "Doce términos para escribir y para leer una propuesta", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Las seis fuentes de la sesión, con su enlace y su vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("queda-establecido", "Puntos establecidos de la sesión", "Resumen", "i-check", RESUMEN_FINAL),
+    L("glosario", "Glosario de formulación de proyectos", "Glosario", "i-book", GLOSARIO),
+    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 generar_desde({

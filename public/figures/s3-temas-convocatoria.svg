@@ -35,7 +35,7 @@ L 460.854187 16.973667
 L 460.854187 33.349 
 L 161.626687 33.349 
 z
-" clip-path="url(#p0a534e855b)" style="fill: var(--fig-ramp-1); opacity: 0.9"/>
+" clip-path="url(#p9bd051c68e)" style="fill: var(--fig-ramp-1); opacity: 0.9"/>
    </g>
    <g id="text_2">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="27.445802" transform="rotate(-0 152.419687 27.445802)">Medio ambiente</text>
@@ -49,7 +49,7 @@ L 383.909973 46.747
 L 383.909973 63.122333 
 L 161.626687 63.122333 
 z
-" clip-path="url(#p0a534e855b)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+" clip-path="url(#p9bd051c68e)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
    </g>
    <g id="text_4">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="57.219135" transform="rotate(-0 152.419687 57.219135)">Diversidad e inclusión</text>
@@ -63,7 +63,7 @@ L 323.40683 76.520333
 L 323.40683 92.895667 
 L 161.626687 92.895667 
 z
-" clip-path="url(#p0a534e855b)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+" clip-path="url(#p9bd051c68e)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
    </g>
    <g id="text_6">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="87.1065" transform="rotate(-0 152.419687 87.1065)">Tecnología e innovación social</text>
@@ -77,7 +77,7 @@ L 286.57883 106.293667
 L 286.57883 122.669 
 L 161.626687 122.669 
 z
-" clip-path="url(#p0a534e855b)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+" clip-path="url(#p9bd051c68e)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
    </g>
    <g id="text_8">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="116.879833" transform="rotate(-0 152.419687 116.879833)">Migración y movilidad</text>
@@ -91,7 +91,7 @@ L 285.921187 136.067
 L 285.921187 152.442333 
 L 161.626687 152.442333 
 z
-" clip-path="url(#p0a534e855b)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+" clip-path="url(#p9bd051c68e)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
    </g>
    <g id="text_10">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="146.539135" transform="rotate(-0 152.419687 146.539135)">Jóvenes</text>
@@ -102,7 +102,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p0a534e855b">
+  <clipPath id="p9bd051c68e">
    <rect x="161.626687" y="4.32" width="368.28" height="160.776"/>
   </clipPath>
  </defs>

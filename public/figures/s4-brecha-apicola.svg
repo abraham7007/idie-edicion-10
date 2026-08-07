@@ -35,7 +35,7 @@ L 223.828508 24.417
 L 223.828508 50.424882 
 L 100.526063 50.424882 
 z
-" clip-path="url(#p213b49c8d4)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+" clip-path="url(#p8536e5a93f)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
    </g>
    <g id="text_2">
     <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.347125" y="39.906816" transform="rotate(-0 95.347125 39.906816)">En producción</text>
@@ -49,7 +49,7 @@ L 245.725631 71.704059
 L 245.725631 97.711941 
 L 100.526063 97.711941 
 z
-" clip-path="url(#p213b49c8d4)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+" clip-path="url(#p8536e5a93f)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
    </g>
    <g id="text_4">
     <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.347125" y="87.048188" transform="rotate(-0 95.347125 87.048188)">Instaladas</text>
@@ -63,7 +63,7 @@ L 388.244813 118.991118
 L 388.244813 144.999 
 L 100.526063 144.999 
 z
-" clip-path="url(#p213b49c8d4)" style="fill: var(--fig-accent); opacity: 0.9"/>
+" clip-path="url(#p8536e5a93f)" style="fill: var(--fig-accent); opacity: 0.9"/>
    </g>
    <g id="text_6">
     <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.347125" y="134.335246" transform="rotate(-0 95.347125 134.335246)">Potencial estimado</text>
@@ -74,7 +74,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p213b49c8d4">
+  <clipPath id="p8536e5a93f">
    <rect x="100.526063" y="4.32" width="368.28" height="160.776"/>
   </clipPath>
  </defs>

@@ -20,7 +20,7 @@ L 205.0016 66.779741
 L 205.0016 8.946647 
 L 36.3616 8.946647 
 z
-" clip-path="url(#p04fdc29a03)" style="fill: var(--fig-navy); opacity: 0.08; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p3961c19d0c)" style="fill: var(--fig-navy); opacity: 0.08; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 205.0016 66.779741 
@@ -28,7 +28,7 @@ L 373.6416 66.779741
 L 373.6416 8.946647 
 L 205.0016 8.946647 
 z
-" clip-path="url(#p04fdc29a03)" style="fill: var(--fig-ok); opacity: 0.1; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p3961c19d0c)" style="fill: var(--fig-ok); opacity: 0.1; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 36.3616 124.612835 
@@ -36,7 +36,7 @@ L 205.0016 124.612835
 L 205.0016 66.779741 
 L 36.3616 66.779741 
 z
-" clip-path="url(#p04fdc29a03)" style="fill: var(--fig-muted); opacity: 0.08; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p3961c19d0c)" style="fill: var(--fig-muted); opacity: 0.08; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 205.0016 124.612835 
@@ -44,27 +44,27 @@ L 373.6416 124.612835
 L 373.6416 66.779741 
 L 205.0016 66.779741 
 z
-" clip-path="url(#p04fdc29a03)" style="fill: var(--fig-accent); opacity: 0.18; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p3961c19d0c)" style="fill: var(--fig-accent); opacity: 0.18; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 36.3616 146.011079 
 Q 205.0016 146.011079 371.405532 146.011079 
-" clip-path="url(#p04fdc29a03)" style="fill: none; stroke: var(--fig-accent); stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#p3961c19d0c)" style="fill: none; stroke: var(--fig-accent); stroke-width: 2; stroke-linecap: round"/>
     <path d="M 367.005532 143.811079 
 L 371.405532 146.011079 
 L 367.005532 148.211079 
 z
-" clip-path="url(#p04fdc29a03)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#p3961c19d0c)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_1">
     <path d="M 36.3616 124.612835 
 L 373.6416 124.612835 
-" clip-path="url(#p04fdc29a03)" style="fill: none; stroke: var(--fig-grid)"/>
+" clip-path="url(#p3961c19d0c)" style="fill: none; stroke: var(--fig-grid)"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 36.3616 124.612835 
 L 36.3616 8.946647 
-" clip-path="url(#p04fdc29a03)" style="fill: none; stroke: var(--fig-grid)"/>
+" clip-path="url(#p3961c19d0c)" style="fill: none; stroke: var(--fig-grid)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-navy); font: 700 9.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="120.6816" y="28.890388" transform="rotate(-0 120.6816 28.890388)">Demanda sin solución</text>
@@ -108,7 +108,7 @@ L 36.3616 8.946647
    </g>
    <g id="PathCollection_1">
     <defs>
-     <path id="m570620ec97" d="M 0 4.1833 
+     <path id="m4df4152b54" d="M 0 4.1833 
 C 1.109424 4.1833 2.173559 3.742521 2.95804 2.95804 
 C 3.742521 2.173559 4.1833 1.109424 4.1833 0 
 C 4.1833 -1.109424 3.742521 -2.173559 2.95804 -2.95804 
@@ -120,14 +120,14 @@ C -2.173559 3.742521 -1.109424 4.1833 0 4.1833
 z
 " style="stroke: var(--fig-accent)"/>
     </defs>
-    <g clip-path="url(#p04fdc29a03)">
-     <use xlink:href="#m570620ec97" x="358.464" y="119.407856" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#p3961c19d0c)">
+     <use xlink:href="#m4df4152b54" x="358.464" y="119.407856" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p04fdc29a03">
+  <clipPath id="p3961c19d0c">
    <rect x="4.32" y="4.32" width="379.44" height="160.776"/>
   </clipPath>
  </defs>

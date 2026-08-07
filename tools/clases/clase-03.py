@@ -558,7 +558,7 @@ ARITMETICA_CONTRAPARTIDA = envolver(
 
 QUIEN_APORTA = envolver(
     cabecera("01 · La contrapartida",
-             "Partidas con las que cada tipo de entidad postulante aporta su contrapartida",
+             "Partidas de contrapartida por tipo de entidad postulante",
              "i-users")
     + "\n"
     + figura(
@@ -586,7 +586,7 @@ QUIEN_APORTA = envolver(
 
 ENTIDAD_ASOCIADA = envolver(
     cabecera("01 · La contrapartida",
-             "Entidad asociada: aporte que compromete y documento que lo acredita",
+             "Entidad asociada: aporte comprometido y documento que lo acredita",
              "i-agreement")
     + "\n"
     + tabla(
@@ -1659,7 +1659,7 @@ GARANTIA_COBERTURA = envolver(
 
 HERRAMIENTAS_09 = bloque_herramientas(
     ref="01", total="04",
-    titulo="Tres portales donde se comprueba qué convocatoria está abierta hoy",
+    titulo="Portales oficiales de convocatoria",
     para_que=(
         "Las bases cambian en cada edición y un monto citado sin fecha caduca antes de "
         "que la propuesta llegue a presentarse. Estos portales son la única fuente que "
@@ -1691,7 +1691,7 @@ HERRAMIENTAS_09 = bloque_herramientas(
 
 HERRAMIENTAS_10 = bloque_herramientas(
     ref="02", total="04",
-    titulo="Tres buscadores de convocatorias que no salen en los portales oficiales",
+    titulo="Buscadores de convocatorias no oficiales",
     para_que=(
         "Los portales del Estado publican lo suyo y nada más. Fundaciones, embajadas, "
         "cámaras de comercio y organismos internacionales convocan por su cuenta, y "
@@ -1723,7 +1723,7 @@ HERRAMIENTAS_10 = bloque_herramientas(
 
 HERRAMIENTAS_11 = bloque_herramientas(
     ref="03", total="04",
-    titulo="Tres bases de datos donde se consulta qué se ha invertido y quién lo puso",
+    titulo="Bases de datos de operaciones de inversión",
     para_que=(
         "Antes de sentarse con un inversor conviene saber qué se invirtió en el sector, "
         "en qué etapa y quién puso el dinero. Las tres publican operaciones y ninguna "
@@ -1755,7 +1755,7 @@ HERRAMIENTAS_11 = bloque_herramientas(
 
 HERRAMIENTAS_12 = bloque_herramientas(
     ref="04", total="04",
-    titulo="Tres vías para localizar fondos de cooperación fuera del presupuesto nacional",
+    titulo="Vías de acceso a fondos de cooperación internacional",
     para_que=(
         "El capital privado no agota lo que hay fuera del presupuesto público. La "
         "cooperación internacional entra al país por canales propios, con reglas de "
@@ -1871,7 +1871,7 @@ GLOSARIO = envolver(
 
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Las siete fuentes de la sesión, con su enlace y su vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
     + "\n"
     + tabla(
         ["Fuente", "Sirve a", "Dónde está"],
@@ -2118,7 +2118,7 @@ FONDO_CULTURA = envolver(
 )
 
 FONDO_RED_CITE = envolver(
-    cabecera("01 · Fondos del Estado", "Red CITE del ITP: servicios tecnológicos que se contratan", "i-fund")
+    cabecera("01 · Fondos del Estado", "Red CITE del ITP: servicios tecnológicos por contrato", "i-fund")
     + "\n"
     + ficha_fondo(
         operador="Instituto Tecnológico de la Producción",
@@ -2167,7 +2167,7 @@ FONDO_LEY_30309 = envolver(
 
 
 F02_PREINCUBACION = envolver(
-    cabecera("02 · Dónde más hay dinero", "Preincubación e incubación: acompañamiento antes que dinero", "i-fund")
+    cabecera("02 · Dónde más hay dinero", "Preincubación e incubación: acompañamiento sin capital", "i-fund")
     + "\n"
     + ficha_fondo(
         operador="Incubadoras universitarias y privadas de la red de ProInnóvate",
@@ -2403,7 +2403,7 @@ F02_BID = envolver(
 )
 
 F02_CLIMA = envolver(
-    cabecera("02 · Dónde más hay dinero", "Green Climate Fund: se entra por una entidad acreditada", "i-fund")
+    cabecera("02 · Dónde más hay dinero", "Green Climate Fund: acceso por entidad acreditada", "i-fund")
     + "\n"
     + ficha_fondo(
         operador="Green Climate Fund · con Profonanpe como entidad peruana acreditada",
@@ -2427,7 +2427,7 @@ F02_CLIMA = envolver(
 )
 
 F02_ESPECIE = envolver(
-    cabecera("02 · Dónde más hay dinero", "Financiamiento en especie: lo que no llega como dinero", "i-fund")
+    cabecera("02 · Dónde más hay dinero", "Financiamiento en especie: equipamiento, ensayos y horas", "i-fund")
     + "\n"
     + ficha_fondo(
         operador="Centros tecnológicos, universidades, empresas y programas de nube",
@@ -2452,7 +2452,7 @@ F02_ESPECIE = envolver(
 
 MAPA_ETAPA_FONDO = envolver(
     cabecera("02 · Dónde más hay dinero",
-             "Qué familia de fondos corresponde a cada momento del proyecto",
+             "Familias de fondos por momento del proyecto",
              "i-ladder")
     + "\n"
     + figura("s3-etapa-fondo",
@@ -2470,7 +2470,7 @@ MAPA_ETAPA_FONDO = envolver(
 
 QUE_PIDE_CADA_UNO = envolver(
     cabecera("02 · Dónde más hay dinero",
-             "Qué pide a cambio cada familia, de no pedir nada a pedir control",
+             "Contraprestación exigida por familia de financiamiento",
              "i-scale")
     + "\n"
     + figura("s3-que-pide",
@@ -2488,7 +2488,7 @@ QUE_PIDE_CADA_UNO = envolver(
 
 CALENDARIO_CONVOCATORIAS = envolver(
     cabecera("02 · Dónde más hay dinero",
-             "En qué meses del año abre cada familia de convocatorias",
+             "Temporada de apertura por familia de convocante",
              "i-calendar")
     + "\n"
     + figura("s3-calendario-fondos",
@@ -2506,7 +2506,7 @@ CALENDARIO_CONVOCATORIAS = envolver(
 
 COOPERACION_ORIGEN = envolver(
     cabecera("02 · Dónde más hay dinero",
-             "De dónde viene la cooperación internacional que entra al Perú",
+             "Origen de la cooperación internacional recibida por el Perú",
              "i-globe")
     + "\n"
     + figura("s3-cooperacion-origen",
@@ -2621,7 +2621,7 @@ CATALOGO_JS = """\t\t<script type="module">
 
 CATALOGO_SIM = envolver(
     cabecera("02 · Dónde más hay dinero",
-             "Qué familias del catálogo admiten el proyecto según etapa y figura",
+             "Simulación: familias admisibles según etapa y figura",
              "i-sliders")
     + "\n"
     + f"""\t\t\t\t<div class="sim sim--stack" data-sim="catalogo" data-animate="fade-up">
@@ -2664,7 +2664,7 @@ CATALOGO_SIM = envolver(
 
 RADIO_TIPOS = envolver(
     cabecera("02 · El mercado del financiamiento",
-             "Qué tipo de oportunidad son las convocatorias que se publican en un año",
+             "Tipos de convocatoria publicados en un año",
              "i-chart")
     + "\n"
     + figura("s3-tipos-convocatoria",
@@ -2682,7 +2682,7 @@ RADIO_TIPOS = envolver(
 
 RADIO_MONTOS = envolver(
     cabecera("02 · El mercado del financiamiento",
-             "Cuánto dinero da de verdad cada tipo de convocatoria",
+             "Rangos de monto por tipo de convocatoria",
              "i-budget")
     + "\n"
     + figura("s3-rangos-monto",
@@ -2701,7 +2701,7 @@ RADIO_MONTOS = envolver(
 
 RADIO_CALENDARIO = envolver(
     cabecera("02 · El mercado del financiamiento",
-             "En qué meses del año se concentran los cierres de convocatoria",
+             "Estacionalidad de los cierres de convocatoria",
              "i-calendar")
     + "\n"
     + figura("s3-estacionalidad-cierres",
@@ -2719,7 +2719,7 @@ RADIO_CALENDARIO = envolver(
 
 RADIO_TEMAS = envolver(
     cabecera("02 · El mercado del financiamiento",
-             "Qué temas concentran las convocatorias y cuáles emergen",
+             "Temas dominantes y emergentes en las convocatorias",
              "i-globe")
     + "\n"
     + figura("s3-temas-convocatoria",
@@ -2760,13 +2760,13 @@ LAMINAS = [
     L("fondo-fondoempleo", "FONDOEMPLEO: proyectos de empleo y capacitación laboral", "FONDOEMPLEO", "i-fund", FONDO_FONDOEMPLEO),
     L("fondo-turismo-emprende", "Turismo Emprende: emprendimientos de servicios turísticos", "Turismo Emprende", "i-fund", FONDO_TURISMO_EMPRENDE),
     L("fondo-cultura", "Estímulos económicos del Ministerio de Cultura", "Cultura", "i-fund", FONDO_CULTURA),
-    L("fondo-red-cite", "Red CITE del ITP: servicios tecnológicos que se contratan", "Red CITE", "i-fund", FONDO_RED_CITE),
+    L("fondo-red-cite", "Red CITE del ITP: servicios tecnológicos por contrato", "Red CITE", "i-fund", FONDO_RED_CITE),
     L("fondo-ley-30309", "Ley 30309: deducción adicional del impuesto sobre el gasto en I+D+i", "Ley 30309", "i-fund", FONDO_LEY_30309),
     L("herramientas-01", "Herramientas 01 · Portales de convocatoria", "Herramientas 01", "i-sliders", HERRAMIENTAS_09),
     L("contrapartida", "Contrapartida en un instrumento de cofinanciamiento: efectivo y especie", "Contrapartida", "i-agreement", CONTRAPARTIDA),
     L("aritmetica-contrapartida", "Reparto del costo de un proyecto entre subvención y contrapartida", "Cuánto se aporta", "i-budget", ARITMETICA_CONTRAPARTIDA),
-    L("quien-aporta", "Partidas con las que cada tipo de entidad postulante aporta su contrapartida", "Quién aporta", "i-users", QUIEN_APORTA),
-    L("entidad-asociada", "Entidad asociada: aporte que compromete y documento que lo acredita", "Entidad asociada", "i-agreement", ENTIDAD_ASOCIADA),
+    L("quien-aporta", "Partidas de contrapartida por tipo de entidad postulante", "Quién aporta", "i-users", QUIEN_APORTA),
+    L("entidad-asociada", "Entidad asociada: aporte comprometido y documento que lo acredita", "Entidad asociada", "i-agreement", ENTIDAD_ASOCIADA),
     L("herramientas-02", "Herramientas 02 · Buscadores de convocatorias", "Herramientas 02", "i-sliders", HERRAMIENTAS_10),
     L("desembolso-y-caja", "Momento del desembolso de cada forma y efecto en la caja", "Desembolso", "i-clock", DESEMBOLSO_Y_CAJA),
     L("admisibilidad", "Filtros de admisibilidad previos a la evaluación técnica de una propuesta", "Admisibilidad", "i-rubric", ADMISIBILIDAD),
@@ -2775,16 +2775,16 @@ LAMINAS = [
     # ── 02 · INVERSIÓN PRIVADA ──
 
     L("tema-02", TEMA_B, "Tema 02", "i-rocket", SECCION_B),
-    L("radio-tipos", "Qué tipo de oportunidad son las convocatorias que se publican en un año", "Tipos", "i-chart", RADIO_TIPOS),
-    L("radio-montos", "Cuánto dinero da de verdad cada tipo de convocatoria", "Montos", "i-budget", RADIO_MONTOS),
-    L("radio-calendario", "En qué meses del año se concentran los cierres de convocatoria", "Cierres", "i-calendar", RADIO_CALENDARIO),
-    L("radio-temas", "Qué temas concentran las convocatorias y cuáles emergen", "Temas", "i-globe", RADIO_TEMAS),
-    L("mapa-etapa-fondo", "Qué familia de fondos corresponde a cada momento del proyecto", "Etapa y fondo", "i-ladder", MAPA_ETAPA_FONDO),
-    L("tipo-preincubacion", "Preincubación e incubación: acompañamiento antes que dinero", "Incubación", "i-fund", F02_PREINCUBACION),
+    L("radio-tipos", "Tipos de convocatoria publicados en un año", "Tipos", "i-chart", RADIO_TIPOS),
+    L("radio-montos", "Rangos de monto por tipo de convocatoria", "Montos", "i-budget", RADIO_MONTOS),
+    L("radio-calendario", "Estacionalidad de los cierres de convocatoria", "Cierres", "i-calendar", RADIO_CALENDARIO),
+    L("radio-temas", "Temas dominantes y emergentes en las convocatorias", "Temas", "i-globe", RADIO_TEMAS),
+    L("mapa-etapa-fondo", "Familias de fondos por momento del proyecto", "Etapa y fondo", "i-ladder", MAPA_ETAPA_FONDO),
+    L("tipo-preincubacion", "Preincubación e incubación: acompañamiento sin capital", "Incubación", "i-fund", F02_PREINCUBACION),
     L("tipo-aceleradora", "Aceleradoras: cohorte cerrada, plazo corto y capital de entrada", "Aceleradoras", "i-fund", F02_ACELERADORA),
     L("tipo-angeles", "Inversores ángeles: patrimonio propio en etapa temprana", "Ángeles", "i-fund", F02_ANGELES),
     L("tipo-capital-riesgo", "Capital de riesgo: fondo con tesis, plazo de salida y consejo", "Capital de riesgo", "i-fund", F02_CAPITAL_RIESGO),
-    L("que-pide-cada-uno", "Qué pide a cambio cada familia, de no pedir nada a pedir control", "Qué pide cada uno", "i-scale", QUE_PIDE_CADA_UNO),
+    L("que-pide-cada-uno", "Contraprestación exigida por familia de financiamiento", "Qué pide cada uno", "i-scale", QUE_PIDE_CADA_UNO),
     L("fondo-kunan", "Desafío Kunan: el premio de emprendimiento social del país", "Kunan", "i-fund", F02_KUNAN),
     L("fondo-wiese", "Fondo Emprendedor de la Fundación Wiese", "Fundación Wiese", "i-fund", F02_WIESE),
     L("fondo-dap-australia", "Direct Aid Program: fondos de la Embajada de Australia", "Embajada de Australia", "i-fund", F02_DAP_AUSTRALIA),
@@ -2794,11 +2794,11 @@ LAMINAS = [
     L("fondo-iaf", "Inter American Foundation: donaciones a organizaciones de base", "IAF", "i-fund", F02_IAF),
     L("fondo-union-europea", "Delegación de la Unión Europea y los programas marco", "Unión Europea", "i-fund", F02_UNION_EUROPEA),
     L("fondo-bid", "Banca multilateral: BID y Banco Mundial", "BID", "i-fund", F02_BID),
-    L("cooperacion-origen", "De dónde viene la cooperación internacional que entra al Perú", "Cooperación", "i-globe", COOPERACION_ORIGEN),
-    L("fondo-clima", "Green Climate Fund: se entra por una entidad acreditada", "Fondos climáticos", "i-fund", F02_CLIMA),
-    L("tipo-especie", "Financiamiento en especie: lo que no llega como dinero", "En especie", "i-fund", F02_ESPECIE),
-    L("catalogo-simulador", "Qué familias del catálogo admiten el proyecto según etapa y figura", "Qué familia admite", "i-sliders", CATALOGO_SIM, "slide", CATALOGO_JS),
-    L("calendario-convocatorias", "En qué meses del año abre cada familia de convocatorias", "Calendario", "i-calendar", CALENDARIO_CONVOCATORIAS),
+    L("cooperacion-origen", "Origen de la cooperación internacional recibida por el Perú", "Cooperación", "i-globe", COOPERACION_ORIGEN),
+    L("fondo-clima", "Green Climate Fund: acceso por entidad acreditada", "Fondos climáticos", "i-fund", F02_CLIMA),
+    L("tipo-especie", "Financiamiento en especie: equipamiento, ensayos y horas", "En especie", "i-fund", F02_ESPECIE),
+    L("catalogo-simulador", "Simulación: familias admisibles según etapa y figura", "Qué familia admite", "i-sliders", CATALOGO_SIM, "slide", CATALOGO_JS),
+    L("calendario-convocatorias", "Temporada de apertura por familia de convocante", "Calendario", "i-calendar", CALENDARIO_CONVOCATORIAS),
     # ── 02 · CRITERIOS DEL INVERSOR ÁNGEL ──
     # ── 02 · CAPITAL DE RIESGO EN LA REGIÓN ──
     # ── 02 · GARANTÍAS PARCIALES DE CRÉDITO ──
@@ -2809,7 +2809,7 @@ LAMINAS = [
     # ── CIERRE ──
     L("queda-establecido", "Cinco puntos establecidos sobre dónde buscar el dinero de un proyecto", "Resumen", "i-check", RESUMEN),
     L("glosario", "Doce términos para leer una convocatoria y una hoja de términos", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Las siete fuentes de la sesión, con su enlace y su vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 if __name__ == "__main__":

@@ -230,7 +230,7 @@ CONVERSION = envolver(
 
 TRES_VIAS = envolver(
     cabecera("01 · Las tres vías de salida",
-             "Tres vías de salida de un resultado y el requisito propio de cada una", "i-layers")
+             "Vías de salida de un resultado y su requisito propio", "i-layers")
     + "\n"
     + definicion(
         "Vía de salida",
@@ -309,7 +309,7 @@ LICENCIA_SPINOFF = envolver(
 
 STARTUP_INDEPENDIENTE = envolver(
     cabecera("01 · Las tres vías de salida",
-             "Constitución de una <i>startup</i> cuando el resultado no pertenece a la universidad", "i-rocket")
+             "Constitución de una <i>startup</i> con resultado ajeno a la universidad", "i-rocket")
     + "\n"
     + definicion(
         "<i>Startup</i>",
@@ -442,7 +442,7 @@ DONDE_SE_FIJA = envolver(
 
 CEDER_O_LICENCIAR = envolver(
     cabecera("01 · Titular y explotador",
-             "Cesión y licencia de explotación: efecto sobre la titularidad y las opciones posteriores", "i-agreement")
+             "Cesión y licencia: efecto sobre la titularidad", "i-agreement")
     + "\n"
     + definicion(
         "Cesión",
@@ -1017,7 +1017,7 @@ OTT_RUTA = envolver(
 
 
 OTT_FACTORES = envolver(
-    cabecera("02 · Oficina de transferencia", "Factores organizativos que condicionan el desempeño de una oficina de transferencia tecnológica", "i-rubric")
+    cabecera("02 · Oficina de transferencia", "Factores organizativos de una oficina de transferencia", "i-rubric")
     + "\n"
     + tabla(
         ["Factor", "Qué exige de la oficina", "Cómo se comprueba desde fuera"],
@@ -1043,7 +1043,7 @@ OTT_FACTORES = envolver(
 
 OTT_LIMITES = envolver(
     cabecera("02 · Oficina de transferencia",
-             "Tareas de la transferencia que retiene el grupo de investigación", "i-users")
+             "Reparto de tareas entre el grupo y la oficina de transferencia", "i-users")
     + "\n"
     + figura(
         "s2-reparto-transferencia",
@@ -1605,7 +1605,7 @@ PERU_PALANCAS = envolver(
 
 HERRAMIENTAS_05 = bloque_herramientas(
     ref="01", total="04",
-    titulo="Tres formas de trabajar con un resultado que todavía no está protegido",
+    titulo="Modelos locales para trabajar sin divulgar el resultado",
     para_que=(
         "Subir un resultado sin expediente presentado a un servicio ajeno no es "
         "divulgación pública y no destruye la novedad por sí solo, pero sí compromete "
@@ -1637,7 +1637,7 @@ HERRAMIENTAS_05 = bloque_herramientas(
 
 HERRAMIENTAS_06 = bloque_herramientas(
     ref="02", total="04",
-    titulo="Tres buscadores de patentes y la cobertura que ofrece cada uno",
+    titulo="Buscadores de patentes y su cobertura",
     para_que=(
         "El estado de la técnica decide si hay novedad y la novedad decide si hay "
         "patente. La búsqueda se hace antes de redactar el artículo, porque después "
@@ -1669,7 +1669,7 @@ HERRAMIENTAS_06 = bloque_herramientas(
 
 HERRAMIENTAS_07 = bloque_herramientas(
     ref="03", total="04",
-    titulo="Tres repositorios que dan DOI, fecha y dirección estable a un resultado",
+    titulo="Repositorios con DOI, fecha y dirección estable",
     para_que=(
         "Con el expediente ya presentado toca publicar. Un repositorio con DOI deja "
         "constancia de autoría y fecha, y da la dirección estable que el convenio de "
@@ -1701,7 +1701,7 @@ HERRAMIENTAS_07 = bloque_herramientas(
 
 HERRAMIENTAS_08 = bloque_herramientas(
     ref="04", total="04",
-    titulo="Tres trámites en línea entre decidir proteger y tener el expediente",
+    titulo="Trámites en línea del expediente de propiedad industrial",
     para_que=(
         "Entre saber que hay algo que proteger y tener la solicitud presentada median "
         "pasos concretos. Los tres se hacen en línea y cada uno tiene su propio reloj."
@@ -1816,7 +1816,7 @@ GLOSARIO = envolver(
 
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Siete fuentes citadas, su cobertura temática y su vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
     + "\n"
     + tabla(
         ["Fuente", "Sirve a", "Acceso"],
@@ -1870,9 +1870,9 @@ LAMINAS = [
     L("conversion-investigacion", "Cadena de conversión de investigación a empresa en América Latina, 2023", "De la investigación a la empresa", "i-chart", CONVERSION),
 
     # las tres vías de salida
-    L("tres-vias-de-salida", "Tres vías de salida de un resultado y el requisito propio de cada una", "Las tres vías", "i-layers", TRES_VIAS),
+    L("tres-vias-de-salida", "Vías de salida de un resultado y su requisito propio", "Las tres vías", "i-layers", TRES_VIAS),
     L("licencia-o-spinoff", "Licencia y spin-off: titular, riesgo y retorno de cada vía", "Licencia o spin-off", "i-scale", LICENCIA_SPINOFF),
-    L("startup-independiente", "Constitución de una startup cuando el resultado no pertenece a la universidad", "La startup", "i-rocket", STARTUP_INDEPENDIENTE),
+    L("startup-independiente", "Constitución de una startup con resultado ajeno a la universidad", "La startup", "i-rocket", STARTUP_INDEPENDIENTE),
     L("obstaculos-de-salida", "Nueve obstáculos al acceso a inversión institucional en deep tech, 2023", "Obstáculos", "i-alert", OBSTACULOS_SALIDA),
 
     # titular y explotador
@@ -1880,7 +1880,7 @@ LAMINAS = [
     L("donde-se-fija-la-titularidad", "Titularidad según el origen del resultado: reglamento, convenio y acuerdo de cesión", "Dónde se fija", "i-file", DONDE_SE_FIJA),
     L("titularidad-simulador", "Documentos de titularidad exigidos según las cuatro condiciones de origen del resultado", "Titularidad · simulación", "i-sliders", TITULARIDAD_SIM, "slide", TITULARIDAD_JS),
     L("herramientas-01", "Herramientas 01 · Trabajar sin divulgar el resultado", "Herramientas 01", "i-sliders", HERRAMIENTAS_05),
-    L("ceder-o-licenciar", "Cesión y licencia de explotación: efecto sobre la titularidad y las opciones posteriores", "Ceder o licenciar", "i-agreement", CEDER_O_LICENCIAR),
+    L("ceder-o-licenciar", "Cesión y licencia: efecto sobre la titularidad", "Ceder o licenciar", "i-agreement", CEDER_O_LICENCIAR),
 
     # la patente
     L("patente-como-requisito", "Orden entre solicitud de patente y divulgación pública del resultado", "El reloj de la patente", "i-calendar", PATENTE_REQUISITO),
@@ -1905,9 +1905,9 @@ LAMINAS = [
 
     # ── 02 · LA OFICINA DE TRANSFERENCIA ──
     L("ott-ruta", "Recorrido del resultado en la oficina de transferencia", "La ruta", "i-network", OTT_RUTA),
-    L("ott-factores", "Factores organizativos que condicionan el desempeño de una oficina de transferencia tecnológica", "Cinco factores", "i-rubric", OTT_FACTORES),
-    L("ott-limites", "Tareas de la transferencia que retiene el grupo de investigación", "Qué no resuelve", "i-users", OTT_LIMITES),
-    L("herramientas-03", "Herramientas 03 · Repositorios que dan DOI y fecha", "Herramientas 03", "i-sliders", HERRAMIENTAS_07),
+    L("ott-factores", "Factores organizativos de una oficina de transferencia", "Cinco factores", "i-rubric", OTT_FACTORES),
+    L("ott-limites", "Reparto de tareas entre el grupo y la oficina de transferencia", "Qué no resuelve", "i-users", OTT_LIMITES),
+    L("herramientas-03", "Herramientas 03 · Repositorios con DOI y fecha", "Herramientas 03", "i-sliders", HERRAMIENTAS_07),
 
     # ── 02 · DETERMINANTES MEDIDOS ──
     L("spinoff-embudo", "Creación de spin-offs por universidad y su dispersión, Reino Unido, curso 2017/18", "El embudo", "i-flow", SPINOFF_EMBUDO),
@@ -1936,7 +1936,7 @@ LAMINAS = [
     # ── CIERRE ──
     L("queda-establecido", "Cinco puntos establecidos sobre explotación del resultado, titularidad y transferencia tecnológica", "Resumen", "i-check", RESUMEN),
     L("glosario", "Doce términos de explotación y transferencia", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Siete fuentes citadas, su cobertura temática y su vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 if __name__ == "__main__":

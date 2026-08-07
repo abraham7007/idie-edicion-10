@@ -371,7 +371,7 @@ TRL_SIM_JS = """\t\t<script type="module">
 \t\t</script>"""
 
 TRL_SIM = envolver(
-    cabecera("01 · Medir la madurez", "Instrumentos que admiten y que excluyen cada nivel de la escala TRL", "i-sliders")
+    cabecera("01 · Medir la madurez", "Instrumentos admisibles por nivel de la escala TRL", "i-sliders")
     + "\n"
     + f"""\t\t\t\t<div class="sim" data-sim="trl" data-animate="fade-up">
 \t\t\t\t\t<div class="sim__controls">
@@ -444,7 +444,7 @@ TRL_LIMITES = envolver(
 
 HERRAMIENTAS_01 = bloque_herramientas(
     ref="01", total="04",
-    titulo="Tres buscadores académicos y el tipo de búsqueda que resuelve cada uno",
+    titulo="Buscadores académicos y su tipo de búsqueda",
     para_que=(
         "El primero de los cinco criterios de Frascati es la novedad, y la novedad se "
         "sostiene con el estado del arte. Un asistente de chat devuelve referencias "
@@ -476,7 +476,7 @@ HERRAMIENTAS_01 = bloque_herramientas(
 
 HERRAMIENTAS_02 = bloque_herramientas(
     ref="02", total="04",
-    titulo="Tres asistentes de chat generalistas y la tarea en que destaca cada uno",
+    titulo="Asistentes de chat generalistas y su especialidad",
     para_que=(
         "Redactar borradores, clasificar actividades y ordenar información suelta. Es la "
         "familia que todos van a usar y por fuera las tres se parecen; se eligen por lo "
@@ -655,7 +655,7 @@ PORTADILLA_B = seccion(
 )
 
 ACTORES = envolver(
-    cabecera("02 · Quién decide", "Los seis organismos del SINACTI y el instrumento que opera cada uno", "i-building")
+    cabecera("02 · Quién decide", "Organismos del SINACTI y el instrumento de cada uno", "i-building")
     + "\n"
     + tabla(
         ["Organismo", "Papel en el sistema", "Qué opera", "Enlace oficial"],
@@ -848,7 +848,7 @@ QUIEN_SIM_JS = """\t\t<script type="module">
 \t\t</script>"""
 
 QUIEN_SIM = envolver(
-    cabecera("02 · Quién decide", "Tipos de entidad postulante y los instrumentos que admite cada uno", "i-users")
+    cabecera("02 · Quién decide", "Instrumentos admitidos por tipo de entidad postulante", "i-users")
     + "\n"
     + f"""\t\t\t\t<div class="sim sim--stack" data-sim="quien" data-animate="fade-up">
 \t\t\t\t\t<div class="picker">
@@ -892,7 +892,7 @@ QUIEN_SIM = envolver(
 
 HERRAMIENTAS_03 = bloque_herramientas(
     ref="03", total="04",
-    titulo="Tres vías para comprobar qué norma está vigente y en qué versión",
+    titulo="Vías de consulta de la norma vigente y su versión",
     para_que=(
         "La arquitectura normativa cambia y media de ella es de la última década. Citar "
         "un decreto derogado o una versión anterior de un artículo invalida el apartado "
@@ -924,7 +924,7 @@ HERRAMIENTAS_03 = bloque_herramientas(
 
 HERRAMIENTAS_04 = bloque_herramientas(
     ref="04", total="04",
-    titulo="Tres registros donde se comprueba quién investiga y qué produce el país",
+    titulo="Registros de investigadores y producción del país",
     para_que=(
         "Las convocatorias puntúan la calificación del investigador principal y el "
         "párrafo de contexto se cae si una cifra no se puede seguir hasta su fuente. "
@@ -956,7 +956,7 @@ HERRAMIENTAS_04 = bloque_herramientas(
 
 
 PROBLEMAS = envolver(
-    cabecera("Cierre", "Seis errores frecuentes en una postulación y su forma de detectarlos", "i-alert")
+    cabecera("Cierre", "Errores frecuentes en una postulación y su detección", "i-alert")
     + "\n"
     + '\t\t\t\t<div class="problem-grid" data-animate="fade-up">\n'
     + "\n".join([
@@ -1097,7 +1097,7 @@ RESUMEN = envolver(
 )
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Las siete fuentes citadas, con su aportación y su vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
     + "\n"
     + tabla(
         ["Fuente", "Sirve a", "Acceso"],
@@ -1427,7 +1427,7 @@ MATRIZ = envolver(
 
 
 EMBUDO = envolver(
-    cabecera("01 · Punto de partida", "Las cinco etapas entre una idea de proyecto y su uso por terceros", "i-flow")
+    cabecera("01 · Punto de partida", "Etapas entre la idea de proyecto y su uso por terceros", "i-flow")
     + "\n"
     + figura(
         "s1-embudo-idi",
@@ -1739,7 +1739,7 @@ LAMINAS = [
     L("agenda", "Contenidos de los dos temas y las cuatro paradas de herramientas", "Agenda", "i-target", AGENDA),
 
     # ── 01 · PUNTO DE PARTIDA ──
-    L("embudo", "Las cinco etapas entre una idea de proyecto y su uso por terceros", "El embudo", "i-flow", EMBUDO),
+    L("embudo", "Etapas entre la idea de proyecto y su uso por terceros", "El embudo", "i-flow", EMBUDO),
     L("situacion-de-partida", "Gasto en I+D como porcentaje del PBI: Perú y países seleccionados, 2018", "Gasto en I+D", "i-chart", PARTIDA),
     L("brecha-regional", "Perú frente a Chile en cuatro indicadores de innovación, 2010-2025", "Brecha regional", "i-scale", BRECHA),
 
@@ -1755,7 +1755,7 @@ LAMINAS = [
     # ── 01 · MEDIR LA MADUREZ ──
     L("trl-escala", "Escala TRL: tramos de laboratorio, entorno relevante y entorno real", "Qué acredita el tramo", "i-ladder", TRL_TABLA),
     L("trl-figura", "Los nueve niveles de madurez tecnológica y los cortes 3-4 y 6-7", "Los dos cortes", "i-ladder", TRL_FIGURA),
-    L("trl-instrumentos", "Instrumentos que admiten y que excluyen cada nivel de la escala TRL", "TRL · simulación", "i-sliders", TRL_SIM, "slide", TRL_SIM_JS),
+    L("trl-instrumentos", "Instrumentos admisibles por nivel de la escala TRL", "TRL · simulación", "i-sliders", TRL_SIM, "slide", TRL_SIM_JS),
     L("trl-comercial", "Los tres tramos de madurez comercial frente a los tres tramos de TRL", "Madurez comercial", "i-scale", TRL_COMERCIAL),
     L("trl-limites", "Los cuatro cuadrantes de madurez técnica y disposición a adoptar", "Límites", "i-alert", TRL_LIMITES),
 
@@ -1774,12 +1774,12 @@ LAMINAS = [
     L("herramientas-02", "Herramientas 02 · Asistentes de chat generalistas", "Herramientas 02", "i-sliders", HERRAMIENTAS_02),
 
     # ── 02 · QUIÉN DECIDE ──
-    L("actores-del-sinacti", "Los seis organismos del SINACTI y el instrumento que opera cada uno", "Actores", "i-building", ACTORES),
+    L("actores-del-sinacti", "Organismos del SINACTI y el instrumento de cada uno", "Actores", "i-building", ACTORES),
     L("hitos-normativos", "Seis hitos normativos del sistema peruano de CTI, 1968-2025", "Hitos", "i-calendar", HITOS),
-    L("herramientas-03", "Herramientas 03 · Dónde se comprueba la norma vigente", "Herramientas 03", "i-sliders", HERRAMIENTAS_03),
+    L("herramientas-03", "Herramientas 03 · Consulta de la norma vigente", "Herramientas 03", "i-sliders", HERRAMIENTAS_03),
     L("concentracion-gasto", "Distribución del presupuesto público de CTI entre 164 instrumentos, 2012-2018", "Concentración", "i-fund", CONCENTRACION),
     L("instrumentos-sector", "Instrumentos de financiamiento de CTI por sector del Estado, 2012-2018", "Por sector", "i-building", SECTORES),
-    L("quien-postula", "Tipos de entidad postulante y los instrumentos que admite cada uno", "Quién postula", "i-users", QUIEN_SIM, "slide", QUIEN_SIM_JS),
+    L("quien-postula", "Instrumentos admitidos por tipo de entidad postulante", "Quién postula", "i-users", QUIEN_SIM, "slide", QUIEN_SIM_JS),
 
     # ── 02 · CUÁNTO Y DÓNDE ──
     L("alianza-del-pacifico", "Gasto en I+D sobre el PBI en la Alianza del Pacífico, 2018", "Alianza", "i-chart", ALIANZA),
@@ -1803,9 +1803,9 @@ LAMINAS = [
     # ── TALLERES DEL TEMA 02 ──
 
     # ── CIERRE ──
-    L("problemas-frecuentes", "Seis errores frecuentes en una postulación y su forma de detectarlos", "Problemas", "i-alert", PROBLEMAS),
+    L("problemas-frecuentes", "Errores frecuentes en una postulación y su detección", "Problemas", "i-alert", PROBLEMAS),
     L("glosario", "Doce términos de los dos temas, con su equivalente en inglés", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Las siete fuentes citadas, con su aportación y su vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 

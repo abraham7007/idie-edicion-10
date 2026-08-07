@@ -36,12 +36,12 @@ z
    <g id="line2d_1">
     <path d="M 16.105 90.252 
 L 362.065 90.252 
-" clip-path="url(#pf2e03e098d)" style="fill: none; stroke: var(--fig-grid); stroke-linecap: square"/>
+" clip-path="url(#p583f5d6f76)" style="fill: none; stroke: var(--fig-grid); stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 189.085 176.184 
 L 189.085 4.32 
-" clip-path="url(#pf2e03e098d)" style="fill: none; stroke: var(--fig-grid); stroke-linecap: square"/>
+" clip-path="url(#p583f5d6f76)" style="fill: none; stroke: var(--fig-grid); stroke-linecap: square"/>
    </g>
    <g id="patch_3">
     <path d="M 16.105 176.184 
@@ -68,7 +68,7 @@ L 362.065 176.184
   </g>
  </g>
  <defs>
-  <clipPath id="pf2e03e098d">
+  <clipPath id="p583f5d6f76">
    <rect x="16.105" y="4.32" width="345.96" height="171.864"/>
   </clipPath>
  </defs>

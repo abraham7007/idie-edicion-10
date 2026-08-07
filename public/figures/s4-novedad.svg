@@ -35,7 +35,7 @@ L 145.491685 19.985023
 L 145.491685 37.390605 
 L 113.467337 37.390605 
 z
-" clip-path="url(#pc53b7c195e)" style="fill: var(--fig-muted); opacity: 0.85"/>
+" clip-path="url(#pfef400d576)" style="fill: var(--fig-muted); opacity: 0.85"/>
    </g>
    <g id="text_2">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="30.916564" transform="rotate(-0 105.46125 30.916564)">«No hay antecedentes»</text>
@@ -46,7 +46,7 @@ L 225.552554 54.796186
 L 225.552554 72.201767 
 L 113.467337 72.201767 
 z
-" clip-path="url(#pc53b7c195e)" style="fill: var(--fig-ramp-1); opacity: 0.85"/>
+" clip-path="url(#pfef400d576)" style="fill: var(--fig-ramp-1); opacity: 0.85"/>
    </g>
    <g id="text_3">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="65.727727" transform="rotate(-0 105.46125 65.727727)">Cita tres trabajos</text>
@@ -57,7 +57,7 @@ L 305.613424 89.607349
 L 305.613424 107.01293 
 L 113.467337 107.01293 
 z
-" clip-path="url(#pc53b7c195e)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+" clip-path="url(#pfef400d576)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
    </g>
    <g id="text_4">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="100.53889" transform="rotate(-0 105.46125 100.53889)">Declara dónde buscó</text>
@@ -68,7 +68,7 @@ L 385.674293 124.418512
 L 385.674293 141.824093 
 L 113.467337 141.824093 
 z
-" clip-path="url(#pc53b7c195e)" style="fill: var(--fig-accent); opacity: 0.85"/>
+" clip-path="url(#pfef400d576)" style="fill: var(--fig-accent); opacity: 0.85"/>
    </g>
    <g id="text_5">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="105.46125" y="135.480677" transform="rotate(-0 105.46125 135.480677)">Declara qué descartó</text>
@@ -76,7 +76,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pc53b7c195e">
+  <clipPath id="pfef400d576">
    <rect x="113.467337" y="4.32" width="368.28" height="149.688"/>
   </clipPath>
  </defs>

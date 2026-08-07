@@ -29,7 +29,7 @@ L 195.463672 81.936
 L 195.463672 4.32 
 L 16.903672 4.32 
 z
-" clip-path="url(#paa241b3082)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p7d41cb4da7)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 195.463672 81.936 
@@ -37,7 +37,7 @@ L 374.023672 81.936
 L 374.023672 4.32 
 L 195.463672 4.32 
 z
-" clip-path="url(#paa241b3082)" style="fill: var(--fig-accent); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p7d41cb4da7)" style="fill: var(--fig-accent); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 16.903672 159.552 
@@ -45,7 +45,7 @@ L 195.463672 159.552
 L 195.463672 81.936 
 L 16.903672 81.936 
 z
-" clip-path="url(#paa241b3082)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p7d41cb4da7)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 195.463672 159.552 
@@ -53,7 +53,7 @@ L 374.023672 159.552
 L 374.023672 81.936 
 L 195.463672 81.936 
 z
-" clip-path="url(#paa241b3082)" style="fill: var(--fig-warn); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+" clip-path="url(#p7d41cb4da7)" style="fill: var(--fig-warn); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="text_1">
@@ -110,7 +110,7 @@ L 374.023672 159.552
   </g>
  </g>
  <defs>
-  <clipPath id="paa241b3082">
+  <clipPath id="p7d41cb4da7">
    <rect x="16.903672" y="4.32" width="357.12" height="155.232"/>
   </clipPath>
  </defs>

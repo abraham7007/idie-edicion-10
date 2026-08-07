@@ -94,7 +94,11 @@ def tabla(cabeceras, filas, titulo="", clases=""):
 
 def seccion(numero, rotulo, sumario):
     """Portadilla de tema. Frase nominal, sin verbos ni interrogaciones."""
-    return f"""\t\t\t<div class="slide__content slide__content--narrow stagger">
+    # Sin `--narrow`: esa variante acota el contenido a 56 rem y, como el marco
+    # de la lámina se dibuja sobre el propio contenido, encogía la diapositiva
+    # entera y la portadilla se veía casi cuadrada sobre una pantalla 16:9. El
+    # marco se queda completo y lo que se acota es la medida del texto.
+    return f"""\t\t\t<div class="slide__content slide__content--seccion stagger">
 \t\t\t\t<div class="sectioncard" data-animate="fade-up">
 \t\t\t\t\t<span class="sectioncard__n">{numero}</span>
 \t\t\t\t\t<h1 class="sectioncard__title">{rotulo}</h1>

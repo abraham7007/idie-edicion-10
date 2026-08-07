@@ -3669,17 +3669,17 @@ input[type="checkbox"] {
 	min-height: 100vh;
 	background: var(--color-bg);
 	color: var(--color-text);
-	padding: var(--space-2xl) var(--space-lg);
+	padding: var(--space-lg) var(--space-lg);
 }
 
 .idx__wrap {
-	max-width: 72rem;
+	max-width: 78rem;
 	margin: 0 auto;
 }
 
 .idx__head {
-	padding-bottom: var(--space-lg);
-	margin-bottom: var(--space-xl);
+	padding-bottom: var(--space-xs);
+	margin-bottom: var(--space-sm);
 	border-bottom: 1px solid var(--color-border);
 }
 
@@ -3696,7 +3696,7 @@ input[type="checkbox"] {
 
 .idx__h1 {
 	font-family: var(--font-mono);
-	font-size: clamp(2rem, 4.2vw, 3.2rem);
+	font-size: clamp(1.7rem, 3.2vw, 2.5rem);
 	font-weight: 700;
 	line-height: 1.05;
 	letter-spacing: -0.02em;
@@ -3738,7 +3738,7 @@ input[type="checkbox"] {
 
 .idx__grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: var(--space-md);
 }
 
@@ -3748,7 +3748,7 @@ input[type="checkbox"] {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-3xs);
-	padding: var(--space-md);
+	padding: var(--space-xs) var(--space-md) var(--space-2xs);
 	border: 1px solid var(--color-border);
 	border-left: 3px solid var(--color-accent);
 	border-radius: var(--radius-md);
@@ -3797,9 +3797,13 @@ input[type="checkbox"] {
 
 .idx__lede {
 	font-size: var(--fs-small);
-	line-height: 1.45;
+	line-height: 1.38;
 	color: var(--color-text-muted);
 	flex: 1 1 auto;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .idx__estado {
@@ -4514,4 +4518,23 @@ input[type="checkbox"] {
 		border-top: 2px solid var(--color-navy);
 		padding-top: var(--space-2xs);
 	}
+}
+
+/* Portadilla de tema. El marco ocupa la diapositiva entera —16:9, como las
+   demás— y el bloque se centra verticalmente. Lo que se acota es la medida
+   del texto, que es lo que hay que acotar para que se lea. */
+.slide__content--seccion {
+	justify-content: center;
+}
+
+.slide__content--seccion .sectioncard {
+	padding: var(--space-xl) var(--space-lg);
+}
+
+.slide__content--seccion .sectioncard__title {
+	max-width: 26ch;
+}
+
+.slide__content--seccion .sectioncard__lede {
+	max-width: 58ch;
 }

@@ -20,7 +20,7 @@ C 186.640931 24.356976 186.640931 8.772661 258.304733 8.772661
 L 258.304733 72.594142 
 C 186.640931 72.594142 186.640931 88.178457 114.977129 88.178457 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-accent); opacity: 0.42"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-accent); opacity: 0.42"/>
    </g>
    <g id="patch_3">
     <path d="M 114.977129 88.178457 
@@ -28,7 +28,7 @@ C 186.640931 88.178457 186.640931 82.983685 258.304733 82.983685
 L 258.304733 130.47874 
 C 186.640931 130.47874 186.640931 135.673512 114.977129 135.673512 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-3); opacity: 0.42"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-ramp-3); opacity: 0.42"/>
    </g>
    <g id="patch_4">
     <path d="M 114.977129 135.673512 
@@ -36,7 +36,7 @@ C 186.640931 135.673512 186.640931 140.868283 258.304733 140.868283
 L 258.304733 163.131591 
 C 186.640931 163.131591 186.640931 157.936819 114.977129 157.936819 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-2); opacity: 0.42"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-ramp-2); opacity: 0.42"/>
    </g>
    <g id="patch_5">
     <path d="M 114.977129 157.936819 
@@ -44,7 +44,7 @@ C 186.640931 157.936819 186.640931 173.521134 258.304733 173.521134
 L 258.304733 188.363339 
 C 186.640931 188.363339 186.640931 172.779024 114.977129 172.779024 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-1); opacity: 0.42"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-ramp-1); opacity: 0.42"/>
    </g>
    <g id="patch_6">
     <path d="M 106.104468 172.779024 
@@ -52,7 +52,7 @@ L 114.977129 172.779024
 L 114.977129 24.356976 
 L 106.104468 24.356976 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ink)"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-ink)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(4.32 95.864341)">Presupuesto público</text>
@@ -64,7 +64,7 @@ L 267.177394 72.594142
 L 267.177394 8.772661 
 L 258.304733 8.772661 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="text_2">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(271.272468 28.007478)">Programa Nacional de Becas</text>
@@ -79,7 +79,7 @@ L 267.177394 130.47874
 L 267.177394 82.983685 
 L 258.304733 82.983685 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-3)"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-ramp-3)"/>
    </g>
    <g id="text_4">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(271.272468 94.055289)">Los doce siguientes</text>
@@ -94,7 +94,7 @@ L 267.177394 163.131591
 L 267.177394 140.868283 
 L 258.304733 140.868283 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-2)"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-ramp-2)"/>
    </g>
    <g id="text_6">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="148.945389" transform="rotate(-0 271.272468 148.945389)">Los treinta y dos siguientes</text>
@@ -108,7 +108,7 @@ L 267.177394 188.363339
 L 267.177394 173.521134 
 L 258.304733 173.521134 
 z
-" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#pe24eefb6bd)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="text_8">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="177.942688" transform="rotate(-0 271.272468 177.942688)">Los ciento diecinueve restantes</text>
@@ -119,7 +119,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pa3bc94347c">
+  <clipPath id="pe24eefb6bd">
    <rect x="29.66308" y="4.32" width="412.92" height="188.496"/>
   </clipPath>
  </defs>

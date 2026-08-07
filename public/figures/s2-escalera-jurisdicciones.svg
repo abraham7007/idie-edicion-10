@@ -17,17 +17,17 @@ z
    <g id="LineCollection_1">
     <path d="M 125.350177 111.910737 
 L 125.350177 77.426526 
-" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2"/>
+" clip-path="url(#p0d4e061cc0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 234.860442 77.426526 
 L 234.860442 42.942316 
-" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2"/>
+" clip-path="url(#p0d4e061cc0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2"/>
    </g>
    <g id="line2d_1">
     <path d="M 8.586634 111.910737 
 L 125.350177 111.910737 
-" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-accent); stroke-width: 3.4"/>
+" clip-path="url(#p0d4e061cc0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 3.4"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-accent); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.853267" y="88.421018" transform="rotate(-0 12.853267 88.421018)">1 jurisdicción</text>
@@ -42,7 +42,7 @@ L 125.350177 111.910737
    <g id="line2d_2">
     <path d="M 125.350177 77.426526 
 L 234.860442 77.426526 
-" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-navy); stroke-width: 3.4"/>
+" clip-path="url(#p0d4e061cc0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 3.4"/>
    </g>
    <g id="text_4">
     <text style="fill: var(--fig-navy); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="129.61681" y="53.936808" transform="rotate(-0 129.61681 53.936808)">5 jurisdicciones</text>
@@ -57,7 +57,7 @@ L 234.860442 77.426526
    <g id="line2d_3">
     <path d="M 234.860442 42.942316 
 L 349.704 42.942316 
-" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-ok); stroke-width: 3.4"/>
+" clip-path="url(#p0d4e061cc0)" style="fill: none; stroke: var(--fig-ok); stroke-width: 3.4"/>
    </g>
    <g id="text_7">
     <text style="fill: var(--fig-ok); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="239.127076" y="19.452597" transform="rotate(-0 239.127076 19.452597)">25 jurisdicciones</text>
@@ -75,7 +75,7 @@ L 349.704 42.942316
   </g>
  </g>
  <defs>
-  <clipPath id="p216d323532">
+  <clipPath id="p0d4e061cc0">
    <rect x="4.32" y="4.32" width="345.384" height="144.144"/>
   </clipPath>
  </defs>

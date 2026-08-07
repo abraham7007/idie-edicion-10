@@ -138,8 +138,8 @@ def main() -> None:
 \t\t\t\t<span class="idx__eyebrow">Programa de Iniciación Tecnológica · OTI-UNI</span>
 \t\t\t\t<h1 class="idx__h1">Diseño y Gestión de Proyectos I+D+i+e</h1>
 \t\t\t\t<p class="idx__sub">
-\t\t\t\t\tDécima edición · seis sesiones de tres horas · veinticuatro talleres
-\t\t\t\t\tde formulación
+\t\t\t\t\tDécima edición · seis sesiones de tres horas · fondos, instrumentos
+\t\t\t\t\ty herramientas para formular un proyecto
 \t\t\t\t</p>
 {presentar}
 \t\t\t</header>

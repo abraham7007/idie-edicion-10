@@ -20,7 +20,7 @@ L 147.253846 172.878923
 L 147.253846 7.625077 
 L 8.183077 7.625077 
 z
-" clip-path="url(#p1c5f35a589)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p26b8ce29c3)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 158.843077 52.25209 
@@ -28,7 +28,7 @@ L 201.336923 52.25209
 L 201.336923 9.608123 
 L 158.843077 9.608123 
 z
-" clip-path="url(#p1c5f35a589)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#p26b8ce29c3)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="patch_4">
     <path d="M 158.843077 77.675759 
@@ -36,7 +36,7 @@ L 201.336923 77.675759
 L 201.336923 56.218182 
 L 158.843077 56.218182 
 z
-" clip-path="url(#p1c5f35a589)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#p26b8ce29c3)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_5">
     <path d="M 158.843077 98.862149 
@@ -44,7 +44,7 @@ L 201.336923 98.862149
 L 201.336923 81.641851 
 L 158.843077 81.641851 
 z
-" clip-path="url(#p1c5f35a589)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#p26b8ce29c3)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="patch_6">
     <path d="M 158.843077 115.811262 
@@ -52,7 +52,7 @@ L 201.336923 115.811262
 L 201.336923 102.828241 
 L 158.843077 102.828241 
 z
-" clip-path="url(#p1c5f35a589)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#p26b8ce29c3)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_7">
     <path d="M 158.843077 132.760374 
@@ -60,7 +60,7 @@ L 201.336923 132.760374
 L 201.336923 119.777354 
 L 158.843077 119.777354 
 z
-" clip-path="url(#p1c5f35a589)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#p26b8ce29c3)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="patch_8">
     <path d="M 158.843077 170.895877 
@@ -68,7 +68,7 @@ L 201.336923 170.895877
 L 201.336923 136.726466 
 L 158.843077 136.726466 
 z
-" clip-path="url(#p1c5f35a589)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#p26b8ce29c3)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-paper); font: 700 10.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="77.718462" y="83.508097" transform="rotate(-0 77.718462 83.508097)">Biotecnología</text>
@@ -118,7 +118,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p1c5f35a589">
+  <clipPath id="p26b8ce29c3">
    <rect x="4.32" y="4.32" width="401.76" height="171.864"/>
   </clipPath>
  </defs>

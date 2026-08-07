@@ -29,7 +29,7 @@ L 413.56557 152.496
 L 413.56557 119.929846 
 L 184.807031 119.929846 
 z
-" clip-path="url(#p31c9a2dbce)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#pe0dd037b84)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="patch_4">
     <path d="M 184.807031 98.219077 
@@ -37,7 +37,7 @@ L 420.647877 98.219077
 L 420.647877 65.652923 
 L 184.807031 65.652923 
 z
-" clip-path="url(#p31c9a2dbce)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#pe0dd037b84)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_5">
     <path d="M 184.807031 43.942154 
@@ -45,19 +45,19 @@ L 492.179185 43.942154
 L 492.179185 11.376 
 L 184.807031 11.376 
 z
-" clip-path="url(#p31c9a2dbce)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#pe0dd037b84)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m74090d35be" d="M 0 0 
+       <path id="m030651525d" d="M 0 0 
 L -3 0 
 " style="stroke: var(--fig-ink); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m74090d35be" x="184.807031" y="136.212923" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#m030651525d" x="184.807031" y="136.212923" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -67,7 +67,7 @@ L -3 0
     <g id="ytick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m74090d35be" x="184.807031" y="81.936" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#m030651525d" x="184.807031" y="81.936" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -77,7 +77,7 @@ L -3 0
     <g id="ytick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m74090d35be" x="184.807031" y="27.659077" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#m030651525d" x="184.807031" y="27.659077" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -97,7 +97,7 @@ L -3 0
   </g>
  </g>
  <defs>
-  <clipPath id="p31c9a2dbce">
+  <clipPath id="pe0dd037b84">
    <rect x="184.807031" y="4.32" width="368.28" height="155.232"/>
   </clipPath>
  </defs>

@@ -28,16 +28,16 @@ z
      <g id="line2d_1">
       <path d="M 163.727406 187.272 
 L 163.727406 4.32 
-" clip-path="url(#p960562a6fb)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_2">
       <defs>
-       <path id="m7379de800e" d="M 0 0 
+       <path id="mbba44e0e77" d="M 0 0 
 L 0 3 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m7379de800e" x="163.727406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#mbba44e0e77" x="163.727406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -48,11 +48,11 @@ L 0 3
      <g id="line2d_3">
       <path d="M 247.427406 187.272 
 L 247.427406 4.32 
-" clip-path="url(#p960562a6fb)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m7379de800e" x="247.427406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#mbba44e0e77" x="247.427406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -63,11 +63,11 @@ L 247.427406 4.32
      <g id="line2d_5">
       <path d="M 331.127406 187.272 
 L 331.127406 4.32 
-" clip-path="url(#p960562a6fb)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m7379de800e" x="331.127406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#mbba44e0e77" x="331.127406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -78,11 +78,11 @@ L 331.127406 4.32
      <g id="line2d_7">
       <path d="M 414.827406 187.272 
 L 414.827406 4.32 
-" clip-path="url(#p960562a6fb)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m7379de800e" x="414.827406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#mbba44e0e77" x="414.827406" y="187.272" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -107,7 +107,7 @@ L 163.727406 15.445459
 L 163.727406 27.807081 
 L 134.432406 27.807081 
 z
-" clip-path="url(#p960562a6fb)" style="fill: var(--fig-ok); opacity: 0.75"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: var(--fig-ok); opacity: 0.75"/>
    </g>
    <g id="text_5">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="127.736406" y="23.910739" transform="rotate(-0 127.736406 23.910739)">Premios y concursos</text>
@@ -121,7 +121,7 @@ L 247.427406 40.168703
 L 247.427406 52.530324 
 L 134.432406 52.530324 
 z
-" clip-path="url(#p960562a6fb)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
    </g>
    <g id="text_7">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="127.736406" y="48.776201" transform="rotate(-0 127.736406 48.776201)">Fondos públicos</text>
@@ -135,7 +135,7 @@ L 247.427406 64.891946
 L 247.427406 77.253568 
 L 134.432406 77.253568 
 z
-" clip-path="url(#p960562a6fb)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
    </g>
    <g id="text_9">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="127.736406" y="73.499444" transform="rotate(-0 127.736406 73.499444)">Cooperación y filantropía</text>
@@ -149,7 +149,7 @@ L 247.427406 89.615189
 L 247.427406 101.976811 
 L 134.432406 101.976811 
 z
-" clip-path="url(#p960562a6fb)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
    </g>
    <g id="text_11">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="127.736406" y="98.080469" transform="rotate(-0 127.736406 98.080469)">Incubadoras</text>
@@ -163,7 +163,7 @@ L 331.127406 114.338432
 L 331.127406 126.700054 
 L 134.432406 126.700054 
 z
-" clip-path="url(#p960562a6fb)" style="fill: var(--fig-accent); opacity: 0.75"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: var(--fig-accent); opacity: 0.75"/>
    </g>
    <g id="text_13">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="127.736406" y="122.803712" transform="rotate(-0 127.736406 122.803712)">Aceleradoras</text>
@@ -177,7 +177,7 @@ L 331.127406 139.061676
 L 331.127406 151.423297 
 L 134.432406 151.423297 
 z
-" clip-path="url(#p960562a6fb)" style="fill: var(--fig-accent); opacity: 0.75"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: var(--fig-accent); opacity: 0.75"/>
    </g>
    <g id="text_15">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="127.736406" y="147.640986" transform="rotate(-0 127.736406 147.640986)">Inversores ángeles</text>
@@ -191,7 +191,7 @@ L 414.827406 163.784919
 L 414.827406 176.146541 
 L 134.432406 176.146541 
 z
-" clip-path="url(#p960562a6fb)" style="fill: var(--fig-accent); opacity: 0.75"/>
+" clip-path="url(#p40dc6b3a9c)" style="fill: var(--fig-accent); opacity: 0.75"/>
    </g>
    <g id="text_17">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="127.736406" y="172.222011" transform="rotate(-0 127.736406 172.222011)">Capital de riesgo</text>
@@ -202,7 +202,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p960562a6fb">
+  <clipPath id="p40dc6b3a9c">
    <rect x="134.432406" y="4.32" width="368.28" height="182.952"/>
   </clipPath>
  </defs>

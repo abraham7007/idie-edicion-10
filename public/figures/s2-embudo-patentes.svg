@@ -29,7 +29,7 @@ L 415.491875 45.219158
 L 415.491875 22.654105 
 L 172.261106 22.654105 
 z
-" clip-path="url(#p924b50dec6)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#pc96ad5de67)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_4">
     <path d="M 235.116961 80.477053 
@@ -37,7 +37,7 @@ L 352.636019 80.477053
 L 352.636019 57.912 
 L 235.116961 57.912 
 z
-" clip-path="url(#p924b50dec6)" style="fill: var(--fig-ramp-2)"/>
+" clip-path="url(#pc96ad5de67)" style="fill: var(--fig-ramp-2)"/>
    </g>
    <g id="patch_5">
     <path d="M 246.495646 115.734947 
@@ -45,7 +45,7 @@ L 341.257334 115.734947
 L 341.257334 93.169895 
 L 246.495646 93.169895 
 z
-" clip-path="url(#p924b50dec6)" style="fill: var(--fig-ramp-3)"/>
+" clip-path="url(#pc96ad5de67)" style="fill: var(--fig-ramp-3)"/>
    </g>
    <g id="patch_6">
     <path d="M 268.52478 150.992842 
@@ -53,19 +53,19 @@ L 319.2282 150.992842
 L 319.2282 128.427789 
 L 268.52478 128.427789 
 z
-" clip-path="url(#p924b50dec6)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#pc96ad5de67)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m05a691a127" d="M 0 0 
+       <path id="me028c1dcde" d="M 0 0 
 L -3 0 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m05a691a127" x="162.531875" y="139.710316" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#me028c1dcde" x="162.531875" y="139.710316" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -75,7 +75,7 @@ L -3 0
     <g id="ytick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m05a691a127" x="162.531875" y="104.452421" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#me028c1dcde" x="162.531875" y="104.452421" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -85,7 +85,7 @@ L -3 0
     <g id="ytick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m05a691a127" x="162.531875" y="69.194526" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#me028c1dcde" x="162.531875" y="69.194526" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -95,7 +95,7 @@ L -3 0
     <g id="ytick_4">
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m05a691a127" x="162.531875" y="33.936632" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#me028c1dcde" x="162.531875" y="33.936632" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -121,7 +121,7 @@ L -3 0
   </g>
  </g>
  <defs>
-  <clipPath id="p924b50dec6">
+  <clipPath id="pc96ad5de67">
    <rect x="162.531875" y="4.32" width="379.44" height="160.776"/>
   </clipPath>
  </defs>

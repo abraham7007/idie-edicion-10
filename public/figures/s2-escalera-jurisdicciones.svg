@@ -1,0 +1,82 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 354.024 152.784" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 152.784 
+L 354.024 152.784 
+L 354.024 0 
+L 0 0 
+L 0 152.784 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="LineCollection_1">
+    <path d="M 125.350177 111.910737 
+L 125.350177 77.426526 
+" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 234.860442 77.426526 
+L 234.860442 42.942316 
+" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 8.586634 111.910737 
+L 125.350177 111.910737 
+" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-accent); stroke-width: 3.4"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-accent); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.853267" y="88.421018" transform="rotate(-0 12.853267 88.421018)">1 jurisdicción</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(12.853267 96.016257)">el competidor fabrica</text>
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(12.853267 105.199137)">en todas las demás</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.853267" y="122.865632" transform="rotate(-0 12.853267 122.865632)">consecuencia de registrar en un solo país</text>
+   </g>
+   <g id="line2d_2">
+    <path d="M 125.350177 77.426526 
+L 234.860442 77.426526 
+" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-navy); stroke-width: 3.4"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-navy); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="129.61681" y="53.936808" transform="rotate(-0 129.61681 53.936808)">5 jurisdicciones</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(129.61681 61.532046)">tres de mercado y</text>
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(129.61681 70.714926)">dos de fabricación</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="129.61681" y="88.286859" transform="rotate(-0 129.61681 88.286859)">criterio de cobertura</text>
+   </g>
+   <g id="line2d_3">
+    <path d="M 234.860442 42.942316 
+L 349.704 42.942316 
+" clip-path="url(#p216d323532)" style="fill: none; stroke: var(--fig-ok); stroke-width: 3.4"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ok); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="239.127076" y="19.452597" transform="rotate(-0 239.127076 19.452597)">25 jurisdicciones</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(239.127076 27.047836)">200 solicitudes</text>
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(239.127076 36.230715)">en 25 familias</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="239.127076" y="53.802648" transform="rotate(-0 239.127076 53.802648)">cartera publicada, 2023</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="8.586634" y="143.628752" transform="rotate(-0 8.586634 143.628752)">cobertura territorial de la cartera  →</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p216d323532">
+   <rect x="4.32" y="4.32" width="345.384" height="144.144"/>
+  </clipPath>
+ </defs>
+</svg>

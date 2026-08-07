@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 2 · Startups, spin-offs y transferencia · Perfil institucional según los seis determinantes medidos de la creación de spin-offs</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="47">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					02 · Determinantes medidos
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Perfil institucional según los seis determinantes medidos de la creación de <i>spin-offs</i></h1>
+				<div class="sim sim--stack" data-sim="determinantes" data-animate="fade-up">
+					<div class="crit">
+						<label class="crit__box">
+							<input type="checkbox" data-det="financiamiento" checked />
+							<span><b>Financiamiento de I+D adjudicado</b><span class="crit__help">Convenio o resolución</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-det="patente" checked />
+							<span><b>Cartera de patentes propia</b><span class="crit__help">Expediente o patente concedida</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-det="recompensa" checked />
+							<span><b>Esquema de recompensas al investigador</b><span class="crit__help">Porcentaje en el reglamento</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-det="doctorado" checked />
+							<span><b>Matrícula doctoral en el tramo intermedio</b><span class="crit__help">Proporción de doctorandos</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-det="especializacion" checked />
+							<span><b>Especialización alta o muy amplia</b><span class="crit__help">Concentración por campo</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-det="matriculas" checked />
+							<span><b>Baja dependencia de los ingresos por matrícula</b><span class="crit__help">Peso de las pensiones</span></span>
+						</label>
+					</div>
+					<div class="sim__readout">
+						<span class="sim__badge" id="dt-veredicto" data-estado="ok">Seis de seis</span>
+						<span class="sim__what" id="dt-detalle"></span>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Determinantes reunidos, con su cifra publicada</h3>
+							<ul id="dt-reunidos"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Determinantes ausentes</h3>
+							<ul id="dt-ausentes"></ul>
+						</div>
+					</div>
+				</div>
+				<p class="sim-caption" data-animate="fade-up">Al desmarcar la cartera de
+				patentes el veredicto pasa a rojo.</p>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>Odei y Novák (2022), <i>Economic Research-Ekonomska Istraživanja</i> · CC BY 4.0</li>
+						<li>Hunady et al. (2019), <i>Business Systems Research</i> 10(1) · CC BY-NC-ND 3.0</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="31-spinoff-no-lineal.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-scale" /></svg>
+					<span>Relación en U</span>
+				</a>
+				<a class="slide-nav__link" href="33-barreras-fases.html">
+					<span>Barreras</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Los seis determinantes que las dos fuentes miden como significativos se
+			// marcan uno a uno y el veredicto cambia. Hay tres estados y la casilla de
+			// la patente decide por sí sola el paso al tercero: es la trayectoria con
+			// el mayor tamaño de efecto del modelo y además media el efecto del
+			// financiamiento, así que su ausencia no se compensa con las otras cinco.
+			//
+			// Cada entrada guarda la cifra PUBLICADA, no una puntuación inventada: los
+			// coeficientes de los dos estudios se estimaron en modelos distintos y
+			// sumarlos daría un número sin significado (METODOLOGIA.md §17.15).
+			const DETERMINANTES = {
+				financiamiento: { rotulo: "Financiamiento de I+D", efecto: 0.186,
+					nota: "coeficiente de 0,299 hacia la <i>spin-off</i>" },
+				patente: { rotulo: "Cartera de patentes", efecto: 0.724,
+					nota: "f² de 0,724, el mayor de las cinco vías" },
+				recompensa: { rotulo: "Recompensas", efecto: 0.029,
+					nota: "presente en el 79 % de 164 universidades" },
+				doctorado: { rotulo: "Matrícula doctoral", efecto: 0,
+					nota: "el máximo del modelo cae en el 1,4 %" },
+				especializacion: { rotulo: "Especialización", efecto: 0,
+					nota: "el mínimo cae en un índice de 0,70" },
+				matriculas: { rotulo: "Ingresos por matrícula", efecto: 0,
+					nota: "coeficiente de \u22124,61 al 1 %" },
+			};
+
+			// El recuento se escribe en palabra y no en cifra: la insignia dice «Cinco
+			// de seis» y no «5 de seis», que era la mezcla que quedaba al redactar el
+			// estado completo aparte del parcial.
+			const PALABRAS = ["Ninguno", "Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"];
+
+			const casillas = [...document.querySelectorAll('.crit__box input[data-det]')];
+			const veredicto = document.getElementById("dt-veredicto");
+			const detalle = document.getElementById("dt-detalle");
+			const reunidos = document.getElementById("dt-reunidos");
+			const ausentes = document.getElementById("dt-ausentes");
+
+			function fila(clave) {
+				const d = DETERMINANTES[clave];
+				return "<li><b>" + d.rotulo + "</b> · " + d.nota + "</li>";
+			}
+
+			function pintar() {
+				const si = casillas.filter((c) => c.checked).map((c) => c.dataset.det);
+				const no = casillas.filter((c) => !c.checked).map((c) => c.dataset.det);
+				reunidos.innerHTML = si.length ? si.map(fila).join("")
+					: "<li>Ninguno de los seis está acreditado.</li>";
+				ausentes.innerHTML = no.length ? no.map(fila).join("")
+					: "<li>Ninguno: el perfil está completo.</li>";
+
+				if (no.length === 0) {
+					veredicto.textContent = "Seis de seis";
+					veredicto.dataset.estado = "ok";
+					detalle.innerHTML = "El perfil reúne los seis determinantes que los dos estudios miden como significativos sobre la creación de <i>spin-offs</i>.";
+				} else if (no.includes("patente")) {
+					veredicto.textContent = "Falta la vía de mayor peso";
+					veredicto.dataset.estado = "danger";
+					detalle.innerHTML = "Sin cartera de patentes queda fuera la trayectoria de mayor tamaño de efecto del modelo, f² de 0,724, que además media el efecto del financiamiento sobre la creación de <i>spin-offs</i>.";
+				} else {
+					// Se nombra el ausente de mayor tamaño de efecto publicado. Los tres
+					// determinantes de Hunady et al. llevan efecto 0 porque su artículo no
+					// publica f²: van al final del orden, no al principio.
+					const peor = no.slice().sort(
+						(a, b) => DETERMINANTES[b].efecto - DETERMINANTES[a].efecto)[0];
+					// Construcción con dos puntos y sin artículo: los seis rótulos tienen
+					// género distinto y «Falta el/la ...» obligaría a concordar en código.
+					veredicto.textContent = PALABRAS[si.length] + " de seis";
+					veredicto.dataset.estado = "warn";
+					detalle.innerHTML = (no.length === 1
+						? "Determinante ausente: "
+						: "Faltan " + PALABRAS[no.length].toLowerCase() +
+						  " determinantes, y el de mayor efecto publicado es: ") +
+						DETERMINANTES[peor].rotulo + " · " + DETERMINANTES[peor].nota + ".";
+				}
+			}
+			for (const c of casillas) c.addEventListener("change", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

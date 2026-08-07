@@ -1,0 +1,304 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 421.56 213.768" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 213.768 
+L 421.56 213.768 
+L 421.56 0 
+L 0 0 
+L 0 213.768 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 49.483125 105.916415 
+L 49.483125 153.328075 
+L 157.014375 153.328075 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 49.483125 105.916415 
+L 49.483125 105.916415 
+L 157.014375 105.916415 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 49.483125 105.916415 
+L 49.483125 58.504755 
+L 157.014375 58.504755 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 157.014375 105.916415 
+L 157.014375 128.170868 
+L 264.545625 128.170868 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 157.014375 105.916415 
+L 157.014375 83.661962 
+L 264.545625 83.661962 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 264.545625 83.661962 
+L 323.687813 83.661962 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 323.687813 106.884 
+L 323.687813 60.439925 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 323.687813 106.884 
+L 372.076875 106.884 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 323.687813 101.078491 
+L 372.076875 101.078491 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 323.687813 95.272981 
+L 372.076875 95.272981 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 323.687813 89.467472 
+L 372.076875 89.467472 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 323.687813 83.661962 
+L 372.076875 83.661962 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 323.687813 77.856453 
+L 372.076875 77.856453 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 323.687813 72.050943 
+L 372.076875 72.050943 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 323.687813 66.245434 
+L 372.076875 66.245434 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 323.687813 60.439925 
+L 372.076875 60.439925 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 33.353438 170.551087 
+L 388.206563 170.551087 
+" clip-path="url(#pe1a92467d9)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-muted); font: 700 8.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="49.483125" y="15.068479" transform="rotate(-0 49.483125 15.068479)">Aceleradoras</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 700 12px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="49.483125" y="27.562133" transform="rotate(-0 49.483125 27.562133)">24</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="49.483125" y="34.407487" transform="rotate(-0 49.483125 34.407487)">17 a 3 años</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ramp-1); font: 700 8.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="157.014375" y="15.068479" transform="rotate(-0 157.014375 15.068479)">Gestores</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 700 12px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="157.014375" y="27.562133" transform="rotate(-0 157.014375 27.562133)">69</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="157.014375" y="34.407487" transform="rotate(-0 157.014375 34.407487)">43 a 3 años</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(73.508406 180.958432)">2,88 gestores</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(68.932969 190.150988)">por aceleradora</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="103.24875" y="196.807015" transform="rotate(-0 103.24875 196.807015)">2,53 a 3 años</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ramp-2); font: 700 8.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="264.545625" y="15.068479" transform="rotate(-0 264.545625 15.068479)">Cohortes</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 700 12px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="264.545625" y="27.562133" transform="rotate(-0 264.545625 27.562133)">158</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="264.545625" y="34.407487" transform="rotate(-0 264.545625 34.407487)">89 a 3 años</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(181.039656 181.010682)">2,29 cohortes</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(187.902813 190.150988)">por gestor</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="210.78" y="196.807015" transform="rotate(-0 210.78 196.807015)">2,07 a 3 años</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-accent); font: 700 8.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="372.076875" y="15.068479" transform="rotate(-0 372.076875 15.068479)">Startups</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-ink); font: 700 12px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="372.076875" y="27.562133" transform="rotate(-0 372.076875 27.562133)">1 350</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="372.076875" y="34.407487" transform="rotate(-0 372.076875 34.407487)">515 a 3 años</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(288.570906 181.010682)">8,54 startups</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(293.146344 190.150988)">por cohorte</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="318.31125" y="196.807015" transform="rotate(-0 318.31125 196.807015)">5,79 a 3 años</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: var(--fig-warn); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="210.78" y="205.474793" transform="rotate(-0 210.78 205.474793)">Umbral de escasez de datos: cinco observaciones por celda (Stavropoulos et al., 2015)</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="210.78" y="46.493616" transform="rotate(-0 210.78 46.493616)">una rama por nivel, dibujada con la ramificación media</text>
+   </g>
+   <g id="line2d_17">
+    <defs>
+     <path id="maac0bc6c51" d="M 0 5 
+C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
+C 4.473168 2.597899 5 1.326016 5 0 
+C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
+C 2.597899 -4.473168 1.326016 -5 0 -5 
+C -1.326016 -5 -2.597899 -4.473168 -3.535534 -3.535534 
+C -4.473168 -2.597899 -5 -1.326016 -5 0 
+C -5 1.326016 -4.473168 2.597899 -3.535534 3.535534 
+C -2.597899 4.473168 -1.326016 5 0 5 
+z
+" style="stroke: var(--fig-muted)"/>
+    </defs>
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#maac0bc6c51" x="49.483125" y="105.916415" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+    </g>
+   </g>
+   <g id="line2d_18">
+    <defs>
+     <path id="mac2ab069b1" d="M 0 4 
+C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
+C 3.578535 2.078319 4 1.060812 4 0 
+C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
+C 2.078319 -3.578535 1.060812 -4 0 -4 
+C -1.060812 -4 -2.078319 -3.578535 -2.828427 -2.828427 
+C -3.578535 -2.078319 -4 -1.060812 -4 0 
+C -4 1.060812 -3.578535 2.078319 -2.828427 2.828427 
+C -2.078319 3.578535 -1.060812 4 0 4 
+z
+" style="stroke: var(--fig-ramp-1)"/>
+    </defs>
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#mac2ab069b1" x="157.014375" y="153.328075" style="fill: var(--fig-ramp-1); stroke: var(--fig-ramp-1)"/>
+    </g>
+   </g>
+   <g id="line2d_19">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#mac2ab069b1" x="157.014375" y="105.916415" style="fill: var(--fig-ramp-1); stroke: var(--fig-ramp-1)"/>
+    </g>
+   </g>
+   <g id="line2d_20">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#mac2ab069b1" x="157.014375" y="58.504755" style="fill: var(--fig-ramp-1); stroke: var(--fig-ramp-1)"/>
+    </g>
+   </g>
+   <g id="line2d_21">
+    <defs>
+     <path id="mdc224893f1" d="M 0 3.75 
+C 0.994512 3.75 1.948425 3.354876 2.65165 2.65165 
+C 3.354876 1.948425 3.75 0.994512 3.75 0 
+C 3.75 -0.994512 3.354876 -1.948425 2.65165 -2.65165 
+C 1.948425 -3.354876 0.994512 -3.75 0 -3.75 
+C -0.994512 -3.75 -1.948425 -3.354876 -2.65165 -2.65165 
+C -3.354876 -1.948425 -3.75 -0.994512 -3.75 0 
+C -3.75 0.994512 -3.354876 1.948425 -2.65165 2.65165 
+C -1.948425 3.354876 -0.994512 3.75 0 3.75 
+z
+" style="stroke: var(--fig-ramp-2)"/>
+    </defs>
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#mdc224893f1" x="264.545625" y="128.170868" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2)"/>
+    </g>
+   </g>
+   <g id="line2d_22">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#mdc224893f1" x="264.545625" y="83.661962" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2)"/>
+    </g>
+   </g>
+   <g id="line2d_23">
+    <defs>
+     <path id="m20d39f94c1" d="M 0 2.4 
+C 0.636487 2.4 1.246992 2.147121 1.697056 1.697056 
+C 2.147121 1.246992 2.4 0.636487 2.4 0 
+C 2.4 -0.636487 2.147121 -1.246992 1.697056 -1.697056 
+C 1.246992 -2.147121 0.636487 -2.4 0 -2.4 
+C -0.636487 -2.4 -1.246992 -2.147121 -1.697056 -1.697056 
+C -2.147121 -1.246992 -2.4 -0.636487 -2.4 0 
+C -2.4 0.636487 -2.147121 1.246992 -1.697056 1.697056 
+C -1.246992 2.147121 -0.636487 2.4 0 2.4 
+z
+" style="stroke: var(--fig-accent)"/>
+    </defs>
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="106.884" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_24">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="101.078491" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_25">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="95.272981" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_26">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="89.467472" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_27">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="83.661962" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_28">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="77.856453" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_29">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="72.050943" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_30">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="66.245434" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_31">
+    <g clip-path="url(#pe1a92467d9)">
+     <use xlink:href="#m20d39f94c1" x="372.076875" y="60.439925" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe1a92467d9">
+   <rect x="4.32" y="4.32" width="412.92" height="205.128"/>
+  </clipPath>
+ </defs>
+</svg>

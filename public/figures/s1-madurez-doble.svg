@@ -1,0 +1,105 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 390.982738 141.696" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 141.696 
+L 390.982738 141.696 
+L 390.982738 0 
+L 0 0 
+L 0 141.696 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 13.060276 38.22194 
+L 71.435661 38.22194 
+L 71.435661 25.827682 
+L 13.060276 25.827682 
+z
+" clip-path="url(#pc52701e0cd)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 86.029507 52.074345 
+L 144.404892 52.074345 
+L 144.404892 39.680088 
+L 86.029507 39.680088 
+z
+" clip-path="url(#pc52701e0cd)" style="fill: var(--fig-ok)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 13.060276 74.675638 
+L 71.435661 74.675638 
+L 71.435661 62.281381 
+L 13.060276 62.281381 
+z
+" clip-path="url(#pc52701e0cd)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 86.029507 88.528044 
+L 144.404892 88.528044 
+L 144.404892 76.133786 
+L 86.029507 76.133786 
+z
+" clip-path="url(#pc52701e0cd)" style="fill: var(--fig-ok)"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 13.060276 111.129337 
+L 71.435661 111.129337 
+L 71.435661 98.735079 
+L 13.060276 98.735079 
+z
+" clip-path="url(#pc52701e0cd)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 86.029507 124.981742 
+L 144.404892 124.981742 
+L 144.404892 112.587485 
+L 86.029507 112.587485 
+z
+" clip-path="url(#pc52701e0cd)" style="fill: var(--fig-ok)"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-paper); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="42.247969" y="34.364998" transform="rotate(-0 42.247969 34.364998)">TRL 1-3</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-paper); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="115.2172" y="48.217404" transform="rotate(-0 115.2172 48.217404)">CRL 1-3</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="154.328707" y="41.377701" transform="rotate(-0 154.328707 41.377701)">Hipótesis de mercado sin contrastar</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-paper); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="42.247969" y="70.818697" transform="rotate(-0 42.247969 70.818697)">TRL 4-6</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-paper); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="115.2172" y="84.671103" transform="rotate(-0 115.2172 84.671103)">CRL 4-6</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="154.328707" y="77.689181" transform="rotate(-0 154.328707 77.689181)">Propuesta de valor validada con usuarios</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-paper); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="42.247969" y="107.272396" transform="rotate(-0 42.247969 107.272396)">TRL 7-9</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-paper); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="115.2172" y="121.124801" transform="rotate(-0 115.2172 121.124801)">CRL 7-9</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="154.328707" y="114.114692" transform="rotate(-0 154.328707 114.114692)">Ventas repetidas y modelo de negocio probado</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-navy); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="42.247969" y="16.060931" transform="rotate(-0 42.247969 16.060931)">Madurez técnica</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ok); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="115.2172" y="16.060931" transform="rotate(-0 115.2172 16.060931)">Madurez comercial</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc52701e0cd">
+   <rect x="7.222738" y="4.32" width="379.44" height="133.056"/>
+  </clipPath>
+ </defs>
+</svg>

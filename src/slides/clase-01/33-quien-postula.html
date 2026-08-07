@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 1 · Fundamentos y ecosistema I+D+i+e · Tipos de entidad postulante y los instrumentos que admite cada uno</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="49">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-users" /></svg>
+					02 · Quién decide
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Tipos de entidad postulante y los instrumentos que admite cada uno</h1>
+				<div class="sim sim--stack" data-sim="quien" data-animate="fade-up">
+					<div class="picker">
+						<button class="picker__btn is-on" type="button" data-figura="universidad">Universidad</button>
+						<button class="picker__btn" type="button" data-figura="empresa">Empresa formal</button>
+						<button class="picker__btn" type="button" data-figura="emprendedor">Persona o equipo</button>
+						<button class="picker__btn" type="button" data-figura="asociacion">Asociación o cooperativa</button>
+						<button class="picker__btn" type="button" data-figura="instituto">Instituto público</button>
+					</div>
+					<p class="sim__what" id="q-que"></p>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Puede postular a</h3>
+							<ul id="q-puede"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Queda fuera de</h3>
+							<ul id="q-no"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="conclusion" data-animate="fade-up">
+					<p><span class="conclusion__label">Detalle que decide la postulación:</span>
+					<span id="q-nota"></span></p>
+				</div>
+				<div class="example" data-animate="fade-up">
+					<div class="example__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-target" /></svg>En la práctica</div>
+					<p>Detrás de cada tipo de postulante hay una población acotada: 94 universidades licenciadas por la SUNEDU, y solo 47 con doctorado reconocido en marzo de 2020. Cifras del diagnóstico de la Política Nacional de CTI, 2024.</p>
+				</div>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>DS 093-2025-PCM, <i>El Peruano</i>, 15 de julio de 2025 · norma de dominio público</li>
+						<li>CONCYTEC (2024), <i>Política Nacional de CTI al 2030</i>, diagnóstico · documento público</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="32-instrumentos-sector.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-building" /></svg>
+					<span>Por sector</span>
+				</a>
+				<a class="slide-nav__link" href="34-alianza-del-pacifico.html">
+					<span>Alianza</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-chart" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// El tipo de entidad que postula decide a qué instrumentos puede acceder.
+			// Es la segunda decisión encadenada, después del TRL, y la que más
+			// veces se descubre tarde: se elige el fondo y luego se ve que la
+			// entidad no califica. Al recorrer las cinco figuras, el conjunto
+			// admisible cambia en las cinco (METODOLOGIA.md §3.3).
+			const FIGURAS = {
+				universidad: {
+					que: "Universidad pública o privada licenciada, con su vicerrectorado de investigación",
+					puede: ["Investigación básica y aplicada", "Proyectos con empresa asociada", "Equipamiento científico"],
+					no: ["Capital semilla para emprendimiento", "Validación y escalamiento comercial"],
+					nota: "Postula la institución, no el docente: el titular del proyecto es la universidad." },
+				empresa: {
+					que: "Empresa formal con ventas declaradas y RUC activo",
+					puede: ["Desarrollo tecnológico", "Validación y escalamiento", "Proyectos de I+D con universidad"],
+					no: ["Investigación básica"],
+					nota: "Casi siempre exige contrapartida en efectivo, no solo valorizada." },
+				emprendedor: {
+					que: "Persona natural o equipo sin empresa constituida todavía",
+					puede: ["Capital semilla para emprendimiento innovador"],
+					no: ["Investigación básica", "Desarrollo tecnológico empresarial", "Equipamiento científico"],
+					nota: "La constitución de la empresa suele ser condición para el desembolso, no para postular." },
+				asociacion: {
+					que: "Asociación, cooperativa o comunidad productiva",
+					puede: ["Extensionismo tecnológico y servicios CITE", "Proyectos asociativos con universidad"],
+					no: ["Capital semilla", "Investigación básica"],
+					nota: "Necesita casi siempre una entidad de investigación como asociada." },
+				instituto: {
+					que: "Instituto público de investigación adscrito a un ministerio, con la I+D en su ley de creación",
+					puede: ["Investigación aplicada de su sector", "Proyectos en consorcio con universidad o empresa", "Equipamiento científico"],
+					no: ["Capital semilla para emprendimiento"],
+					nota: "El régimen público fija su límite: el equipo se arma con el personal que ya tiene contratado." },
+			};
+
+			const botones = document.querySelectorAll("[data-figura]");
+			const que = document.getElementById("q-que");
+			const puede = document.getElementById("q-puede");
+			const no = document.getElementById("q-no");
+			const nota = document.getElementById("q-nota");
+
+			function pintar(clave) {
+				const f = FIGURAS[clave];
+				que.textContent = f.que;
+				puede.innerHTML = f.puede.map((x) => "<li>" + x + "</li>").join("");
+				no.innerHTML = f.no.map((x) => "<li>" + x + "</li>").join("");
+				nota.textContent = f.nota;
+				for (const b of botones) b.classList.toggle("is-on", b.dataset.figura === clave);
+			}
+			for (const b of botones) b.addEventListener("click", () => pintar(b.dataset.figura));
+			pintar("universidad");
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

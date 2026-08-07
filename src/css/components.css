@@ -1,0 +1,4517 @@
+/* Reusable slide components: cards, badges, buttons. */
+
+.card {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	padding: var(--space-md);
+	box-shadow: var(--shadow-sm);
+}
+
+.card--elevated {
+	box-shadow: var(--shadow-md);
+}
+
+.badge {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-eyebrow);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: var(--space-3xs) var(--space-xs);
+	border-radius: var(--radius-full);
+	color: var(--color-accent);
+	background: var(--color-accent-soft);
+}
+
+.badge .icon {
+	width: 1.15rem;
+	height: 1.15rem;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-sans);
+	font-weight: 500;
+	font-size: 0.9375rem;
+	line-height: 1;
+	padding: var(--space-xs) var(--space-md);
+	border-radius: var(--radius-md);
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease,
+		background-color 0.15s ease;
+}
+
+.btn:active {
+	transform: translateY(1px);
+}
+
+.btn--primary {
+	background: var(--color-accent);
+	color: var(--color-accent-contrast);
+}
+
+.btn--primary:hover {
+	box-shadow: var(--shadow-md);
+}
+
+.btn--secondary {
+	background: transparent;
+	border-color: var(--color-border);
+	color: var(--color-text);
+}
+
+.btn--secondary:hover {
+	border-color: var(--color-accent);
+	color: var(--color-accent);
+}
+
+.btn:disabled {
+	opacity: 0.45;
+	cursor: not-allowed;
+}
+
+/* ============================================================
+   Bloques de contenido — METODOLOGIA.md §4
+   ============================================================ */
+
+/* TRATAMIENTO DE LOS BLOQUES — marcas de medición, no filo lateral.
+   El filo de color a la izquierda es el recurso por defecto de cualquier
+   plantilla y no dice nada del contenido. Aquí cada bloque se enmarca con
+   dos escuadras en las esquinas opuestas, como los cursores de medida de un
+   osciloscopio: acota una región de interés sobre la retícula del fondo.
+   Es coherente con la materia del curso (señales, temporización, medida) y
+   deja el bloque visualmente abierto, sin encajonarlo como una tarjeta.
+   El color de las escuadras y de la etiqueta mono es lo que distingue el
+   tipo de bloque. */
+
+.def,
+.example,
+.practice,
+.warn-box,
+.conclusion {
+	position: relative;
+	padding: var(--space-2xs) var(--space-md);
+	/* la escuadra vive en este color; cada bloque lo redefine */
+	--mark: var(--color-navy);
+}
+
+/* escuadra superior izquierda */
+.def::before,
+.example::before,
+.practice::before,
+.warn-box::before,
+.conclusion::before,
+/* escuadra inferior derecha */
+.def::after,
+.example::after,
+.practice::after,
+.warn-box::after,
+.conclusion::after {
+	content: "";
+	position: absolute;
+	width: 0.7rem;
+	height: 0.7rem;
+	border: 2px solid var(--mark);
+	pointer-events: none;
+}
+
+.def::before,
+.example::before,
+.practice::before,
+.warn-box::before,
+.conclusion::before {
+	top: 0;
+	left: 0;
+	border-right: none;
+	border-bottom: none;
+}
+
+.def::after,
+.example::after,
+.practice::after,
+.warn-box::after,
+.conclusion::after {
+	right: 0;
+	bottom: 0;
+	border-left: none;
+	border-top: none;
+}
+
+.example {
+	--mark: var(--color-ok);
+}
+
+.practice {
+	--mark: var(--color-accent);
+}
+
+.warn-box {
+	--mark: var(--color-warn);
+	display: flex;
+	gap: var(--space-2xs);
+}
+
+/* Etiqueta común de los bloques: mono, versalitas, en el color del bloque.
+   Sube de 0.7rem a --fs-micro y separa el icono del texto: a 0.7rem la
+   etiqueta y el cuerpo del bloque se leían como un mismo párrafo gris. */
+.def__label,
+.example__label,
+.practice__label,
+.warn-box__label,
+.conclusion__label,
+.srcnote__label,
+.wk__out__label {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--mark);
+	margin-bottom: var(--space-3xs);
+}
+
+/* El icono de la etiqueta se dimensiona contra el cuerpo del bloque, no
+   contra la etiqueta en versalitas: si heredara el em del rótulo quedaría
+   diminuto justo donde tiene que identificar el tipo de bloque de un vistazo. */
+.def__label .icon,
+.example__label .icon,
+.practice__label .icon,
+.warn-box__label .icon,
+.conclusion__label .icon,
+.srcnote__label .icon,
+.wk__out__label .icon {
+	width: 1.15rem;
+	height: 1.15rem;
+}
+
+.practice code {
+	background: var(--color-surface-2);
+	border-radius: var(--radius-sm);
+	padding: 0.1em 0.4em;
+	font-family: var(--font-mono);
+	font-size: 0.88em;
+}
+
+/* 4.4 Comparación: dos alternativas enfrentadas + conclusión explícita (usar con .conclusion). */
+.compare {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-sm);
+}
+
+@media (max-width: 48rem) {
+	.compare {
+		grid-template-columns: 1fr;
+	}
+}
+
+.compare__panel {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	padding: var(--space-md);
+	box-shadow: var(--shadow-sm);
+}
+
+.conclusion__label {
+	font-weight: 600;
+	color: var(--color-navy);
+}
+
+/* Tablas: usadas en comparaciones y catálogos de referencia (pines, familia, etapas). */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: var(--fs-small);
+}
+
+th,
+td {
+	text-align: left;
+	padding: var(--space-xs) var(--space-sm);
+	border-bottom: 1px solid var(--color-border);
+	vertical-align: top;
+}
+
+th {
+	background: var(--color-navy);
+	color: var(--color-navy-contrast);
+	font-weight: 600;
+	font-size: var(--fs-micro);
+}
+
+tbody tr:nth-child(even) {
+	background: var(--color-surface-2);
+}
+
+.table-scroll {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Estados de fila/tarjeta ante un filtro interactivo (comparador de familia,
+   selector de requisitos...). Aplicar con JS via classList, nunca style=. */
+.is-dimmed {
+	opacity: 0.35;
+	filter: grayscale(1);
+}
+
+.is-hit td:first-child {
+	box-shadow: inset 4px 0 0 var(--color-ok);
+}
+
+/* 4.5 Bloque de código explicativo: se muestra para explicar, no para transcribir. */
+.codepanel {
+	background: var(--color-code-bg);
+	border: 1px solid var(--color-code-border);
+	border-radius: var(--radius-md);
+	overflow: hidden;
+}
+
+.codepanel__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-2xs);
+	flex-wrap: wrap;
+	background: var(--color-code-header);
+	border-bottom: 1px solid var(--color-code-border);
+	padding: var(--space-2xs) var(--space-sm);
+	font-family: var(--font-mono);
+	font-size: 0.79rem;
+	color: var(--color-code-fg);
+}
+
+.codepanel__tag {
+	font-family: var(--font-sans);
+	font-size: 0.66rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 0.2em 0.55em;
+	border-radius: var(--radius-sm);
+	background: var(--color-code-border);
+	color: var(--color-code-dim);
+}
+
+.codepanel__tag--no {
+	background: color-mix(
+		in oklab,
+		var(--color-danger) 25%,
+		var(--color-code-bg)
+	);
+	color: #ff9daa;
+}
+
+.codepanel__tag--si {
+	background: color-mix(in oklab, var(--color-ok) 25%, var(--color-code-bg));
+	color: #7fd6a4;
+}
+
+.codepanel pre {
+	margin: 0;
+	padding: var(--space-sm);
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	/* 1.55 y no 1.65: el monoespaciado ya separa visualmente las líneas y el
+	   interlineado holgado hacía que dos paneles enfrentados no cupieran en
+	   la lámina. Sigue por encima del mínimo cómodo para leer código. */
+	line-height: 1.55;
+	color: var(--color-code-fg);
+	overflow-x: auto;
+}
+
+.codepanel__footer {
+	background: var(--color-code-header);
+	border-top: 1px solid var(--color-code-border);
+	padding: var(--space-2xs) var(--space-sm);
+	font-size: 0.8rem;
+	color: var(--color-code-dim);
+	line-height: 1.45;
+}
+
+.codepanel__footer b {
+	color: var(--color-code-fg);
+}
+
+/* Fila de insumos del taller (plantillas, bases, formatos). Los elementos
+   traen su tamaño natural en píxeles, que a la escala de una diapositiva
+   proyectada queda diminuto: este contenedor los amplía de forma uniforme
+   sin tocar su SVG interno. --hw-scale ajusta el factor por diapositiva. */
+/* Los elementos de la fila se dibujan a su tamaño real de
+   catálogo, que en una diapositiva proyectada es diminuto. Hay que
+   agrandarlos.
+
+   Se usa `zoom` y NO `transform: scale()`. transform no cambia la caja de
+   maquetación: el elemento se ve grande pero sigue ocupando su tamaño
+   original en el flujo, así que hay que compensar con un margen calculado a
+   mano. Ese margen era una constante (3.2rem) ajustada para un LED, y un
+   potenciómetro —bastante más alto— se salía de su hueco y se montaba
+   encima del rótulo siguiente. `zoom` sí reserva el espacio escalado, de
+   modo que cualquier componente, alto o bajo, encaja solo. */
+.hw-set {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	gap: var(--space-md);
+	/* 1.35 y no 1.6: con `zoom` el aumento sí reserva su espacio, así que lo
+	   que antes era gratis ahora cuesta alto de lámina. A 1.35 el componente
+	   se sigue reconociendo de un vistazo y la columna cabe. */
+	zoom: var(--hw-scale, 1.35);
+}
+
+.hw-set__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.15rem;
+}
+
+.hw-set__item small {
+	font-family: var(--font-mono);
+	font-size: 0.42rem;
+	letter-spacing: 0.04em;
+	color: var(--color-text-muted);
+	white-space: nowrap;
+}
+
+/* Ruta del archivo en la cabecera del panel: el estudiante debe saber
+   siempre EN QUÉ ARCHIVO va lo que está viendo. */
+.codepanel__path {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	color: var(--color-code-fg);
+}
+
+.codepanel__path .icon {
+	color: var(--color-code-dim);
+}
+
+/* Anotaciones de sintaxis: lista bajo el código que explica, línea por
+   línea, qué hace cada parte y para qué sirve. Cada entrada referencia su
+   línea con el mismo color que la resalta en el código. */
+.syntax-notes {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	margin: 0;
+	padding: var(--space-xs) var(--space-sm);
+	background: var(--color-code-header);
+	border-top: 1px solid var(--color-code-border);
+	list-style: none;
+	font-size: 0.8rem;
+	line-height: 1.5;
+	color: var(--color-code-dim);
+}
+
+.syntax-notes li {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: var(--space-2xs);
+	align-items: baseline;
+}
+
+/* marcador de la línea a la que se refiere la nota */
+.syntax-notes__ref {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	font-weight: 700;
+	color: var(--color-code-bg);
+	background: var(--color-code-dim);
+	border-radius: var(--radius-sm);
+	padding: 0.1em 0.45em;
+	white-space: nowrap;
+}
+
+.syntax-notes__ref--add {
+	background: #7fd6a4;
+}
+
+.syntax-notes__ref--hit {
+	background: #ff9daa;
+}
+
+.syntax-notes code {
+	font-family: var(--font-mono);
+	color: var(--color-code-fg);
+}
+
+.syntax-notes b {
+	color: var(--color-code-fg);
+	font-weight: 600;
+}
+
+/* resaltado de línea dentro de un codepanel */
+.hl {
+	display: block;
+	padding: 0 var(--space-3xs);
+	border-radius: 3px;
+}
+
+.hl--hit {
+	background: color-mix(in oklab, var(--color-danger) 18%, transparent);
+	box-shadow: inset 3px 0 0 var(--color-danger);
+}
+
+.hl--add {
+	background: color-mix(in oklab, var(--color-ok) 16%, transparent);
+	box-shadow: inset 3px 0 0 var(--color-ok);
+}
+
+/* Salida de terminal / monitor serie, dentro o fuera de un codepanel. */
+.term {
+	background: var(--color-code-bg);
+	border: 1px solid var(--color-code-border);
+	border-radius: var(--radius-sm);
+	padding: var(--space-xs) var(--space-sm);
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	line-height: 1.7;
+	color: var(--color-code-fg);
+	overflow-x: auto;
+	white-space: pre;
+}
+
+/* 4.6 La hora del código: especificación + conexionado + salida esperada. Nunca contiene código para copiar. */
+.code-hour {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid var(--color-accent);
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	background: var(--color-surface);
+	/* Este bloque es la lámina de su diapositiva (.slide__content--flush), así
+	   que asume el mismo relieve: filo de luz arriba, sombra de contacto y
+	   proyección. Ver la nota de .slide__content en slides.css. */
+	box-shadow:
+		inset 0 1px 0 var(--stage-hi),
+		0 2px 4px -1px hsl(var(--shadow-color) / 0.12),
+		0 18px 40px -20px hsl(var(--shadow-color) / 0.3);
+}
+
+.code-hour__header {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	flex-wrap: wrap;
+	background: var(--color-accent);
+	color: var(--color-accent-contrast);
+	padding: var(--space-xs) var(--space-md);
+}
+
+.code-hour__label {
+	font-size: var(--fs-micro);
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.code-hour__header .icon {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.code-hour__ref {
+	margin-left: auto;
+	font-family: var(--font-mono);
+	font-size: 0.82rem;
+	font-weight: 600;
+	background: color-mix(
+		in oklab,
+		var(--color-accent-contrast) 22%,
+		transparent
+	);
+	padding: 0.2em 0.6em;
+	border-radius: var(--radius-sm);
+}
+
+.code-hour__title {
+	padding: var(--space-2xs) var(--space-md) 0;
+	font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+	font-weight: 700;
+	line-height: 1.2;
+	color: var(--color-heading);
+}
+
+/* Cuerpo en tres columnas: qué se pide (especificación + conexionado) |
+   cómo se le pide al asistente (el prompt) | qué debe salir. El estudiante
+   lee de izquierda a derecha el mismo orden en que va a trabajar. */
+.code-hour__body {
+	padding: var(--space-2xs) var(--space-md) var(--space-xs);
+	display: grid;
+	gap: var(--space-md);
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	/* absorbe el alto sobrante: las franjas fijas (cabecera, título,
+	   entregables, cierre) quedan ancladas y el hueco muerto lo ocupa el
+	   cuerpo, que es donde está el contenido que se lee */
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+.code-hour__body--three {
+	grid-template-columns: 0.95fr 1.15fr 1fr;
+}
+
+/* Reparto por defecto del ejercicio: a la izquierda QUÉ hay que construir
+   (especificación, montaje, salida esperada) y a la derecha CÓMO se le pide
+   al asistente. La columna del prompt pesa más porque el prompt es ahora el
+   contenido que el estudiante realmente copia y adapta. */
+.code-hour__body--pair {
+	grid-template-columns: 1fr 1.2fr;
+	gap: var(--space-lg);
+}
+
+@media (max-width: 62rem) {
+	.code-hour__body--three {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 46rem) {
+	.code-hour__body,
+	.code-hour__body--three,
+	.code-hour__body--pair {
+		grid-template-columns: 1fr;
+	}
+}
+
+.code-hour__section--full {
+	grid-column: 1 / -1;
+}
+
+/* Columna que apila varias secciones con un ritmo propio, más apretado que
+   el hueco entre columnas. */
+.code-hour__stack {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-sm);
+	min-width: 0;
+}
+
+/* ENTREGABLES — los tres artefactos que el estudiante termina teniendo.
+   Van juntos y a todo el ancho, antes del prompt, porque son el contrato
+   del ejercicio: el prompt de al lado es solo la forma de pedirlos. */
+.deliverables {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--space-2xs);
+	padding: 0 var(--space-md) var(--space-3xs);
+}
+
+@media (max-width: 52rem) {
+	.deliverables {
+		grid-template-columns: 1fr;
+	}
+}
+
+.deliverable {
+	display: flex;
+	gap: var(--space-2xs);
+	align-items: flex-start;
+	background: var(--color-bg-subtle);
+	border: 1px solid var(--color-border);
+	border-left: 3px solid var(--del-mark, var(--color-navy));
+	border-radius: var(--radius-sm);
+	padding: var(--space-2xs) var(--space-xs);
+}
+
+.deliverable--sim {
+	--del-mark: var(--color-ok);
+}
+
+.deliverable--diagram {
+	--del-mark: var(--color-warn);
+}
+
+.deliverable .icon {
+	color: var(--del-mark, var(--color-navy));
+	width: 1.35rem;
+	height: 1.35rem;
+	margin-top: 0.1rem;
+}
+
+.deliverable__name {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--del-mark, var(--color-navy));
+}
+
+.deliverable__what {
+	display: block;
+	font-size: var(--fs-small);
+	line-height: 1.4;
+	color: var(--color-text);
+}
+
+.deliverable__file {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	color: var(--color-text-muted);
+	margin-top: 0.15rem;
+	overflow-wrap: anywhere;
+}
+
+/* Prompt para el asistente de código: se presenta como lo que es, un texto
+   que el estudiante copia. Tratamiento de bloque citable, no de párrafo. */
+.prompt-box {
+	position: relative;
+	background: var(--color-surface-2);
+	border: 1px dashed var(--color-accent);
+	border-radius: var(--radius-md);
+	padding: var(--space-xs) var(--space-sm);
+	/* sitio reservado para el botón de copiar, que se superpone arriba a la
+	   derecha: sin esta reserva la primera línea le pasa por debajo */
+	padding-right: 5.5rem;
+	font-family: var(--font-mono);
+	font-size: var(--fs-small);
+	/* 1.48 y no 1.55: da el margen que evita que una diferencia de métricas
+	   tipográficas saque el prompt de la lámina. Sigue siendo holgado para
+	   un texto monoespaciado que se lee proyectado. */
+	line-height: 1.48;
+	color: var(--color-text);
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}
+
+/* El prompt existe para ser pegado en el asistente: copiarlo a mano desde
+   una proyección es exactamente el paso donde se pierden comillas y
+   acentos. El botón lo inserta deck.js en cualquier .prompt-box. */
+.prompt-box__copy {
+	position: absolute;
+	top: var(--space-2xs);
+	right: var(--space-2xs);
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	padding: 0.25em 0.6em;
+	border-radius: var(--radius-full);
+	border: 1px solid var(--color-border);
+	background: var(--color-surface);
+	color: var(--color-text-muted);
+	cursor: pointer;
+	transition:
+		color 0.12s ease,
+		border-color 0.12s ease;
+}
+
+.prompt-box__copy:hover {
+	color: var(--color-accent);
+	border-color: var(--color-accent);
+}
+
+.prompt-box__copy.is-done {
+	color: var(--color-ok);
+	border-color: var(--color-ok);
+}
+
+/* Rótulo de cada parte del encargo dentro del prompt. Va en el mismo texto
+   copiable —forma parte de lo que se le pide al asistente— y solo se
+   resalta para que el estudiante vea de un golpe que son tres encargos y
+   no un párrafo indistinto. */
+.prompt-box b {
+	color: var(--color-accent);
+	font-weight: 700;
+}
+
+/* Aclaración de por qué el prompt pide justamente esas cosas: es la parte
+   que enseña a especificar, no solo a copiar. */
+.prompt-note {
+	margin-top: var(--space-2xs);
+	font-size: 0.83rem;
+	line-height: 1.5;
+	color: var(--color-text-muted);
+}
+
+.prompt-note b {
+	color: var(--color-text);
+}
+
+.code-hour__section h4 {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+	margin: 0 0 var(--space-2xs);
+}
+
+.code-hour__section h4 .icon {
+	width: 1.15rem;
+	height: 1.15rem;
+	color: var(--color-accent);
+}
+
+.code-hour__section p,
+.code-hour__section ul {
+	margin: 0;
+	font-size: var(--fs-small);
+	line-height: 1.5;
+}
+
+.code-hour__section ul {
+	padding-left: 1.1em;
+}
+
+.def p + p {
+	margin-top: 0.5em;
+}
+
+.code-hour__why {
+	display: flex;
+	gap: var(--space-2xs);
+	background: var(--color-accent-soft);
+	border-top: 1px solid var(--color-border);
+	padding: var(--space-xs) var(--space-md);
+	font-size: 0.94rem;
+}
+
+/* Glosario: término, equivalente en inglés y definición breve. */
+.glossary-item {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	overflow: hidden;
+}
+
+.glossary-item summary {
+	padding: var(--space-2xs) var(--space-sm);
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 0.95rem;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	gap: var(--space-xs);
+	align-items: center;
+}
+
+.glossary-item summary::-webkit-details-marker {
+	display: none;
+}
+
+.glossary-item summary::after {
+	content: "+";
+	color: var(--color-accent);
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.glossary-item[open] summary::after {
+	content: "\2212";
+}
+
+.glossary-item__en {
+	font-weight: 400;
+	font-size: 0.81rem;
+	color: var(--color-text-muted);
+	font-family: var(--font-mono);
+}
+
+.glossary-item__body {
+	padding: 0 var(--space-sm) var(--space-sm);
+	font-size: 0.93rem;
+	color: var(--color-text-muted);
+}
+
+/* Tarjeta de problema frecuente: síntoma / causa / comprobación. */
+.problem-card {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	box-shadow: var(--shadow-sm);
+}
+
+.problem-card__head {
+	display: flex;
+	gap: var(--space-2xs);
+	align-items: flex-start;
+	background: var(--color-danger-soft);
+	border-bottom: 1px solid var(--color-border);
+	padding: var(--space-2xs) var(--space-sm);
+	font-weight: 700;
+	font-size: 0.85rem;
+	line-height: 1.3;
+	color: var(--color-danger);
+}
+
+.problem-card__head .icon {
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-top: 0.05rem;
+}
+
+/* Ocho tarjetas de diagnóstico conviven en una sola diapositiva, así que
+   este bloque es la excepción declarada a la escala general: baja un paso
+   respecto de --fs-small. La jerarquía la sostienen aquí el color del
+   encabezado (rojo) y el de los rótulos (azul), no el tamaño. */
+.problem-card__body {
+	padding: var(--space-2xs) var(--space-sm);
+	font-size: 0.8rem;
+	line-height: 1.35;
+}
+
+.problem-card__body p {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.problem-card__body b {
+	display: block;
+	margin-top: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: 0.66rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+}
+
+.problem-card__body b:first-child {
+	margin-top: 0;
+}
+
+/* Árbol de archivos vertical (GUIA §6): monoespaciado, con anotaciones a la
+   derecha y cada nombre seleccionable para mostrar su detalle en .detail-panel. */
+.file-tree {
+	font-family: var(--font-mono);
+	font-size: 0.86rem;
+	line-height: 2.1;
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	padding: var(--space-xs) var(--space-sm);
+	overflow-x: auto;
+}
+
+.file-tree__row {
+	display: flex;
+	align-items: baseline;
+	white-space: pre;
+	gap: 0;
+}
+
+.file-tree__name {
+	cursor: pointer;
+	padding: 0.05em 0.4em;
+	border-radius: var(--radius-sm);
+	transition: background-color 0.12s ease;
+}
+
+.file-tree__name:hover {
+	background: var(--color-surface-2);
+}
+
+.file-tree__name.is-selected {
+	background: var(--color-accent);
+	color: var(--color-accent-contrast);
+}
+
+.file-tree__annotation {
+	color: var(--color-text-muted);
+	font-size: 0.79rem;
+	font-family: var(--font-sans);
+	margin-left: var(--space-2xs);
+}
+
+.file-tree__annotation b {
+	color: var(--color-navy);
+	font-weight: 600;
+}
+
+/* ============================================================
+   PORTADA DE SESIÓN
+   ============================================================
+   Reparto en dos columnas: a la izquierda lo que se lee (título, los dos
+   temas, la pregunta de apertura y los cuatro logros); a la derecha el mapa
+   del ecosistema. El mapa va a la derecha y no arriba porque es cuadrado:
+   como banda superior robaría el alto, que es el recurso escaso de la hoja
+   (METODOLOGIA.md §7.2). */
+
+.cover {
+	display: grid;
+	grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
+	align-items: center;
+	gap: var(--space-lg);
+	/* Reclama el alto libre de la hoja. La portada vive en una lámina
+	   .slide--start, que ancla su contenido arriba —lo correcto para una
+	   lámina de concepto, que crece hacia abajo—, pero deja la portada
+	   flotando en el tercio superior con media hoja muerta debajo. Al
+	   estirarse, el `align-items: center` de esta rejilla centra de verdad
+	   las dos columnas contra el marco. */
+	flex: 1 1 auto;
+}
+
+.cover__main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-sm);
+	min-width: 0;
+}
+
+/* Los dos temas de la sesión. Van en los dos colores de marca y en ese
+   orden fijo —acento el primero, azul el segundo— en todas las sesiones: es
+   lo que permite reconocer de qué tema es una lámina sin leer el rótulo
+   (METODOLOGIA.md §1.2). */
+.cover__topics {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-2xs) var(--space-sm);
+}
+
+.topic {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-display);
+	font-size: var(--fs-small);
+	font-weight: 600;
+	color: var(--color-accent);
+}
+
+.topic--b {
+	color: var(--color-navy);
+}
+
+.topic__n {
+	font-size: var(--fs-micro);
+	letter-spacing: 0.1em;
+	padding: 0.15em 0.5em;
+	border-radius: var(--radius-full);
+	background: var(--color-accent-soft);
+}
+
+.topic--b .topic__n {
+	background: var(--color-navy-soft);
+}
+
+/* Crédito de autoría y licencia. Solo vive en la portada y en el cierre de
+   la sesión (METODOLOGIA.md §7): una firma legal, no un adorno que compita
+   por espacio en cada lámina de contenido. */
+.colofon {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	letter-spacing: 0.04em;
+	color: var(--color-text-muted);
+}
+
+.colofon a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: var(--color-border);
+	text-underline-offset: 0.15em;
+}
+
+/* Variante del cierre: la lámina de referencias ya tiene su tabla al límite
+   de alto, así que este pie no puede sumar una línea al flujo. Se ancla
+   fuera de él, en la esquina que la tira de navegación deja vacía en la
+   última lámina de la sesión (no hay «siguiente»). */
+.colofon-flotante {
+	position: absolute;
+	right: var(--space-md);
+	bottom: var(--space-sm);
+	z-index: 15;
+	margin: 0;
+}
+
+/* La pregunta de apertura. Es la única interrogación admitida en todo el
+   mazo: los títulos interrogativos están prohibidos (METODOLOGIA.md §6), pero
+   la apertura plantea un problema y por eso pregunta. */
+.cover__question {
+	font-size: var(--fs-lede);
+	line-height: 1.45;
+	color: var(--color-text);
+	border-left: 3px solid var(--color-navy);
+	padding-left: var(--space-sm);
+}
+
+.goals {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--space-2xs) var(--space-sm);
+}
+
+.goal {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--space-2xs);
+	font-size: var(--fs-small);
+	line-height: 1.4;
+	color: var(--color-text-muted);
+}
+
+.goal .icon {
+	color: var(--color-accent);
+	margin-top: 0.1em;
+}
+
+/* Bajo 62rem el mapa deja de caber al lado del texto y pasa debajo, donde
+   sigue leyéndose: apilarlo cuesta alto, pero comprimirlo lo vuelve ilegible
+   a distancia de proyector. */
+@media (max-width: 62rem) {
+	.cover {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.goals {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+/* ============================================================
+   EL MAPA DEL ECOSISTEMA, EN LA PORTADA DE CADA SESIÓN
+   ============================================================
+   El objeto central del curso (METODOLOGIA §1.1) es el mapa del ecosistema
+   I+D+i+e: cinco actores institucionales alrededor del proyecto. Aparece
+   igual en las seis portadas, y cada sesión ilumina los nodos y las aristas
+   que le tocan. Eso es lo que convierte seis sesiones sueltas en un
+   recorrido: el estudiante ve en qué parte del mapa está.
+
+   Se dibuja en SVG y no con cajas HTML porque la disposición es radial: los
+   cinco actores están sobre una circunferencia y las aristas son diagonales,
+   geometría que el flujo de bloques no puede expresar sin posicionamiento
+   absoluto. El texto sigue siendo <text> de SVG —seleccionable, traducible—
+   y todas las tintas son variables CSS, así que el mismo dibujo vale para
+   tema claro y oscuro.
+
+   El estado se controla desde el marcado con dos atributos:
+     data-activo="academia empresa"   nodos iluminados
+     data-arista="academia-empresa"   aristas iluminadas
+   Sin ellos el mapa sale entero en tono apagado, que es como debe verse
+   cuando la lámina no habla de un tramo concreto. */
+
+.hero-map {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-xs);
+	min-width: 0;
+}
+
+.hero-map__svg {
+	width: 100%;
+	max-width: var(--map-size, 27rem);
+	height: auto;
+	overflow: visible;
+	filter: drop-shadow(0 12px 22px hsl(var(--shadow-color) / 0.22));
+}
+
+/* Aristas. El grosor base es fino a propósito: la arista iluminada tiene que
+   ganarle a distancia de proyector, y solo se distingue si la de reposo casi
+   desaparece. */
+.hero-map__edge {
+	fill: none;
+	stroke: var(--color-border);
+	stroke-width: 1.4;
+	stroke-linecap: round;
+}
+
+.hero-map__edge--on {
+	stroke: var(--color-accent);
+	stroke-width: 3.4;
+}
+
+.hero-map__node circle {
+	fill: var(--color-surface);
+	stroke: var(--color-border);
+	stroke-width: 1.6;
+}
+
+.hero-map__node text {
+	font-family: var(--font-display);
+	font-size: 8.5px;
+	letter-spacing: 0.06em;
+	fill: var(--color-text-muted);
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+
+/* Nodo iluminado: relleno suave + borde y texto en acento. Los tres cambian
+   a la vez porque el color solo no basta proyectado sobre pared clara. */
+.hero-map__node--on circle {
+	fill: var(--color-accent-soft);
+	stroke: var(--color-accent);
+	stroke-width: 2.4;
+}
+
+.hero-map__node--on text {
+	fill: var(--color-accent);
+}
+
+/* El proyecto, en el centro. Va en azul institucional y no en rojo: el rojo
+   marca lo que la sesión activa, y el centro está siempre activo. Si
+   compartieran color, la iluminación dejaría de leerse. */
+.hero-map__core circle {
+	fill: var(--color-navy-soft);
+	stroke: var(--color-navy);
+	stroke-width: 2.4;
+}
+
+.hero-map__core text {
+	font-family: var(--font-display);
+	font-size: 9px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	fill: var(--color-navy);
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+
+.hero-map__caption {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+	text-align: center;
+}
+
+.hero-map__caption b {
+	display: block;
+	font-size: var(--fs-small);
+	letter-spacing: 0.02em;
+	text-transform: none;
+	color: var(--color-heading);
+}
+
+/* En pantallas estrechas el mapa deja de caber junto al texto; se reduce
+   antes que empujar el contenido fuera de la lámina. */
+@media (max-width: 62rem) {
+	.hero-map__svg {
+		--map-size: 17rem;
+	}
+}
+
+/* ============================================================
+   LÁMINA DE ARTÍCULO — qué dice la literatura sobre lo que acabamos de ver
+   ============================================================
+   Una lámina de paper no es una cita al pie: es una lámina completa que se
+   comenta en voz alta. Por eso tiene cabecera propia con la referencia
+   bibliográfica visible (el estudiante debe poder anotarla), un resultado
+   cuantitativo como protagonista, y una lectura explícita de qué implica
+   para el curso. Nunca resume el artículo entero: extrae el hallazgo que
+   toca el tema de la lámina anterior. */
+
+.paper {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var(--color-navy);
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	background: var(--color-surface);
+	box-shadow:
+		inset 0 1px 0 var(--stage-hi),
+		0 2px 4px -1px hsl(var(--shadow-color) / 0.12),
+		0 18px 40px -20px hsl(var(--shadow-color) / 0.3);
+}
+
+/* Azul institucional, no rojo: distingue de un vistazo «esto viene de la
+   literatura» frente a «esto lo construyes tú» (La hora del código). */
+.paper__header {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	flex-wrap: wrap;
+	background: var(--color-navy);
+	color: var(--color-navy-contrast);
+	padding: var(--space-2xs) var(--space-md);
+}
+
+.paper__header .icon {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.paper__label {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+/* Licencia y acceso: se muestran porque forman parte de lo que se enseña.
+   Un estudiante debe saber que puede descargar ese PDF sin pagar. */
+.paper__license {
+	margin-left: auto;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 600;
+	background: color-mix(in oklab, var(--color-navy-contrast) 22%, transparent);
+	padding: 0.2em 0.6em;
+	border-radius: var(--radius-sm);
+}
+
+.paper__cite {
+	padding: var(--space-3xs) var(--space-md) 0;
+	font-size: var(--fs-small);
+	line-height: 1.35;
+	color: var(--color-text-muted);
+}
+
+.paper__cite b {
+	color: var(--color-heading);
+	font-weight: 600;
+}
+
+.paper__cite code {
+	font-family: var(--font-mono);
+	font-size: 0.92em;
+	color: var(--color-navy);
+}
+
+.paper__title {
+	padding: var(--space-3xs) var(--space-md) 0;
+	font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+	font-weight: 700;
+	line-height: 1.2;
+	color: var(--color-heading);
+}
+
+.paper__body {
+	padding: var(--space-2xs) var(--space-md) var(--space-xs);
+	display: grid;
+	gap: var(--space-md);
+	grid-template-columns: 1.35fr 1fr;
+	align-items: start;
+	/* La fila se centra en el alto sobrante. Sin esto el cuerpo quedaba
+	   pegado arriba y la lámina mostraba un vacío enorme entre la figura y
+	   la franja de cierre, que es exactamente el desaprovechamiento de
+	   espacio que se quiso corregir en todo el mazo. */
+	align-content: center;
+	/* `1 0 auto`, no `1 1 auto`: el cuerpo crece hasta llenar la lámina pero
+	   nunca se encoge por debajo de su contenido. Con shrink activo perdía
+	   unos píxeles y la franja de cierre tapaba la última línea sin que
+	   ningún contenedor acusara desbordamiento. */
+	flex: 1 0 auto;
+}
+
+.paper__body--wide {
+	grid-template-columns: 1fr;
+}
+
+@media (max-width: 62rem) {
+	.paper__body {
+		grid-template-columns: 1fr;
+	}
+}
+
+.paper__notes {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xs);
+	min-width: 0;
+}
+
+/* APARTADOS DEL ARTÍCULO. Una lámina de artículo se expone siguiendo el
+   mismo recorrido con el que se lee uno: qué se propuso determinar, cómo se
+   midió, qué se obtuvo y qué concluyeron los autores. Rotularlos de forma
+   explícita evita que la lámina degenere en una lista de datos sueltos y
+   permite al estudiante situar cada cifra en su lugar. */
+.paper__section {
+	min-width: 0;
+}
+
+.paper__section-label {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+	margin-bottom: var(--space-3xs);
+}
+
+.paper__section-label .icon {
+	width: 1.1rem;
+	height: 1.1rem;
+}
+
+.paper__section p {
+	font-size: var(--fs-small);
+	line-height: 1.38;
+	color: var(--color-text);
+}
+
+.paper__section p + p {
+	margin-top: var(--space-3xs);
+}
+
+.paper__section b {
+	color: var(--color-heading);
+	font-weight: 600;
+}
+
+/* Resultados numéricos, en fila. La magnitud va arriba y sola porque es lo
+   que el estudiante debe poder anotar y volver a citar; el enunciado que la
+   acompaña la interpreta, no la repite. */
+.findings {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	gap: var(--space-2xs);
+	width: 100%;
+}
+
+/* La franja de resultados es hija directa de .paper, así que asume el mismo
+   margen lateral que el cuerpo para alinearse con la cita y el título. */
+.paper > .findings {
+	padding: 0 var(--space-md) var(--space-xs);
+}
+
+.finding {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
+	background: var(--color-bg-subtle);
+	border: 1px solid var(--color-border);
+	border-top: 3px solid var(--find-mark, var(--color-navy));
+	border-radius: var(--radius-sm);
+	padding: var(--space-2xs) var(--space-xs);
+	min-width: 0;
+}
+
+.finding--warn {
+	--find-mark: var(--color-warn);
+}
+
+.finding--bad {
+	--find-mark: var(--color-accent);
+}
+
+.finding--ok {
+	--find-mark: var(--color-ok);
+}
+
+.finding__value {
+	font-family: var(--font-mono);
+	font-size: clamp(1.1rem, 1.4vw, 1.35rem);
+	font-weight: 700;
+	line-height: 1.1;
+	color: var(--find-mark, var(--color-navy));
+}
+
+.finding__what {
+	font-size: var(--fs-small);
+	line-height: 1.4;
+	color: var(--color-text);
+}
+
+.finding__what b {
+	color: var(--color-heading);
+	font-weight: 600;
+}
+
+/* Cierre obligatorio: por qué se expone este artículo en esta sesión. Sin
+   este apartado la lámina se limita a invocar una autoridad externa. */
+.paper__relevance {
+	display: flex;
+	gap: var(--space-2xs);
+	background: var(--color-navy-soft);
+	border-top: 1px solid var(--color-border);
+	padding: var(--space-2xs) var(--space-md);
+	font-size: var(--fs-small);
+	line-height: 1.4;
+}
+
+.paper__relevance .icon {
+	color: var(--color-navy);
+	flex: 0 0 auto;
+}
+
+.paper__relevance b {
+	color: var(--color-heading);
+}
+
+/* Rótulo del apartado de cierre, en línea con el texto que introduce. */
+.paper__relevance-label {
+	font-family: var(--font-mono);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	font-size: var(--fs-micro);
+	color: var(--color-navy);
+	white-space: nowrap;
+}
+
+/* ============================================================
+   REFERENCIAS — la lámina de cierre bibliográfico
+   ============================================================ */
+
+.refs {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	width: 100%;
+	counter-reset: ref;
+}
+
+.ref {
+	display: grid;
+	grid-template-columns: 2rem 1fr;
+	gap: var(--space-2xs);
+	align-items: baseline;
+	padding: var(--space-2xs) 0;
+	border-bottom: 1px solid var(--color-border);
+	font-size: var(--fs-small);
+	line-height: 1.45;
+}
+
+.ref:last-child {
+	border-bottom: none;
+}
+
+.ref::before {
+	counter-increment: ref;
+	content: "[" counter(ref) "]";
+	font-family: var(--font-mono);
+	font-weight: 700;
+	color: var(--color-accent);
+}
+
+.ref__body {
+	min-width: 0;
+}
+
+.ref__title {
+	display: block;
+	color: var(--color-heading);
+	font-weight: 600;
+}
+
+.ref__meta {
+	display: block;
+	color: var(--color-text-muted);
+}
+
+.ref__doi {
+	font-family: var(--font-mono);
+	font-size: 0.92em;
+	color: var(--color-navy);
+	overflow-wrap: anywhere;
+}
+
+/* Dónde se usa cada referencia dentro de la sesión: convierte la lista en
+   algo consultable en vez de un trámite al final. */
+.ref__where {
+	display: inline-block;
+	margin-top: 0.15rem;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	color: var(--color-text-muted);
+	background: var(--color-surface-2);
+	border-radius: var(--radius-sm);
+	padding: 0.1em 0.5em;
+}
+
+/* Marca discreta para citar una fuente dentro de cualquier lámina, sin
+   romper la lectura: «... requiere calibración [1].» */
+.cite {
+	font-family: var(--font-mono);
+	font-size: 0.82em;
+	font-weight: 700;
+	color: var(--color-accent);
+	vertical-align: 0.15em;
+	white-space: nowrap;
+}
+
+/* ============================================================
+   DÓNDE SE USA — el concepto aterrizado en aplicaciones concretas
+   ============================================================
+   Una definición correcta pero abstracta no se retiene. Este bloque obliga
+   a nombrar usos reales y verificables: no «control de motores» sino «un
+   ventilador de 12 V que baja de vueltas al llegar a 40 °C». Va después de
+   la definición, nunca en su lugar. */
+
+.usecases {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+	gap: var(--space-2xs);
+	width: 100%;
+}
+
+.usecase {
+	display: flex;
+	gap: var(--space-2xs);
+	align-items: flex-start;
+	background: var(--color-bg-subtle);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	padding: var(--space-2xs) var(--space-xs);
+	min-width: 0;
+}
+
+.usecase .icon {
+	color: var(--color-navy);
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-top: 0.1rem;
+}
+
+.usecase__name {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+}
+
+.usecase__what {
+	display: block;
+	font-size: var(--fs-small);
+	line-height: 1.35;
+	color: var(--color-text);
+}
+
+/* Rótulo de la franja, en el mismo registro que las etiquetas de bloque. */
+.usecases-label {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+	margin-bottom: var(--space-3xs);
+}
+
+.usecases-label .icon {
+	width: 1.15rem;
+	height: 1.15rem;
+}
+
+/* ============================================================
+   FIGURAS GENERADAS (tools/figures/render.py)
+   ============================================================
+   Las figuras cuantitativas del curso —curva de transferencia del ADC,
+   forma de onda del PWM, mapa de memoria, tamaño de artefacto por etapa—
+   se dibujan con matplotlib a partir de los MISMOS números que aparecen en
+   el texto de la diapositiva, no a mano. Así la figura no puede contradecir
+   al texto: si cambia un dato, se regenera y las dos cosas cambian juntas.
+
+   El SVG NO se carga con <img>: deck.js lo inserta en línea, porque solo
+   así el dibujo hereda las variables de color de la página y se redibuja
+   correcto en tema claro y en tema oscuro con un único archivo. */
+
+.figure {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	min-width: 0;
+}
+
+.figure__frame {
+	background: var(--color-bg);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	padding: var(--space-2xs);
+	overflow: hidden;
+}
+
+.figure__frame svg {
+	/* El ancho manda y la proporción de la figura decide el alto. Se probó a
+	   acotar el alto con `max-height`, sobre el SVG y sobre el marco: en el
+	   primero no llega a aplicarse porque el ancho se fija antes, y en el
+	   segundo recorta el dibujo. La restricción real vive en la proporción
+	   con que se genera cada figura (tools/figures/render.py). */
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Para la lámina que es casi solo figura. */
+.figure--alta svg {
+}
+
+/* Mientras el SVG viaja, el marco reserva su sitio: sin esto la diapositiva
+   salta de alto al llegar la figura y la animación de entrada se ve rota. */
+.figure__frame:empty {
+	min-height: 9rem;
+}
+
+.figure__frame--error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--font-mono);
+	font-size: var(--fs-small);
+	color: var(--color-danger);
+	border-style: dashed;
+}
+
+.figure__caption {
+	/* Bloque, no flex: el pie lleva número, nombre y hallazgo, y en flex los
+	   tres se repartían en columnas. El número y el nombre van en la misma
+	   línea; el hallazgo, debajo. */
+	display: block;
+	font-size: var(--fs-small);
+	line-height: 1.45;
+	color: var(--color-text-muted);
+}
+
+.figure__caption b {
+	color: var(--color-text);
+	font-weight: 600;
+}
+
+.figure__caption .icon {
+	color: var(--color-accent);
+	width: 1.1rem;
+	height: 1.1rem;
+}
+
+/* Una figura a todo el ancho de una lámina panorámica se vuelve gigantesca:
+   el SVG escala con su contenedor y, sobre una lámina de 84rem, se come el
+   alto entero. Se le pone techo y se centra; el texto de la figura sigue
+   siendo legible a distancia de proyector porque el SVG lleva su tipografía
+   dimensionada en puntos, no en píxeles del contenedor.
+   Va aquí, después de .figure__frame, y no junto a .paper__body--wide: al
+   ser más específico, declararlo antes lo dejaba en orden descendente. */
+.paper__body--wide .figure__frame,
+.paper__body--wide .figure__caption {
+	max-width: 44rem;
+	margin-inline: auto;
+	width: 100%;
+}
+
+/* ============================================================
+   DIAGRAMA DE BLOQUES EN HTML — cuando la explicación ES la topología
+   ============================================================
+   Un diagrama de cajas y flechas se escribe como marcado, no como imagen,
+   cuando el estudiante tiene que poder leer cada caja: el texto queda
+   seleccionable, se traduce, escala con el zoom y hereda el tema. Se
+   reserva matplotlib para lo que tiene ejes y números. */
+
+.blockdiagram {
+	display: flex;
+	align-items: stretch;
+	gap: var(--space-2xs);
+	width: 100%;
+	min-width: 0;
+	flex-wrap: wrap;
+}
+
+.blockdiagram--stack {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.bd-node {
+	flex: 1 1 0;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-top: 3px solid var(--node-mark, var(--color-navy));
+	border-radius: var(--radius-md);
+	padding: var(--space-2xs) var(--space-xs);
+	box-shadow:
+		inset 0 1px 0 var(--stage-hi),
+		0 1px 2px hsl(var(--shadow-color) / 0.1);
+}
+
+.bd-node--accent {
+	--node-mark: var(--color-accent);
+}
+
+.bd-node--ok {
+	--node-mark: var(--color-ok);
+}
+
+.bd-node--warn {
+	--node-mark: var(--color-warn);
+}
+
+.bd-node--ghost {
+	background: transparent;
+	border-style: dashed;
+	box-shadow: none;
+}
+
+.bd-node__title {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--node-mark, var(--color-navy));
+}
+
+.bd-node__title .icon {
+	width: 1.05rem;
+	height: 1.05rem;
+}
+
+.bd-node__body {
+	font-size: var(--fs-small);
+	line-height: 1.4;
+	color: var(--color-text);
+}
+
+.bd-node__meta {
+	margin-top: auto;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	color: var(--color-text-muted);
+}
+
+/* Conector entre cajas. Es un glifo tipográfico y no un SVG suelto: no
+   aporta información propia, solo dirección de lectura. */
+.bd-arrow {
+	flex: 0 0 auto;
+	align-self: center;
+	font-family: var(--font-mono);
+	font-size: 1.1rem;
+	line-height: 1;
+	color: var(--color-text-muted);
+	user-select: none;
+}
+
+.blockdiagram--stack .bd-arrow {
+	transform: rotate(90deg);
+	margin-block: var(--space-3xs);
+}
+
+/* Carril rotulado: agrupa varias cajas bajo una etiqueta de capa (quién
+   ejecuta esta parte: el editor, el host, el chip). */
+.bd-lane {
+	display: grid;
+	grid-template-columns: minmax(5.5rem, auto) 1fr;
+	gap: var(--space-2xs);
+	align-items: center;
+	width: 100%;
+	min-width: 0;
+}
+
+.bd-lane__label {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+	border-right: 2px solid var(--color-border);
+	padding-right: var(--space-2xs);
+	height: 100%;
+	align-content: center;
+}
+
+.bd-lane__label .icon {
+	width: 1.05rem;
+	height: 1.05rem;
+}
+
+/* ============================================================
+   Simulación interactiva — METODOLOGIA.md §4.3
+   ============================================================ */
+
+.sim-caption {
+	display: flex;
+	gap: var(--space-2xs);
+	align-items: flex-start;
+	background: var(--color-surface-2);
+	border-radius: var(--radius-md);
+	padding: var(--space-xs) var(--space-sm);
+	font-size: 0.93rem;
+}
+
+.controls {
+	display: flex;
+	gap: var(--space-sm);
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.readout {
+	font-family: var(--font-mono);
+	font-size: 1.01rem;
+	font-weight: 700;
+	color: var(--color-accent);
+}
+
+.metric {
+	display: flex;
+	gap: var(--space-xs);
+	flex-wrap: wrap;
+}
+
+.metric__item {
+	flex: 1 1 8.5rem;
+	background: var(--color-surface-2);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	padding: var(--space-2xs) var(--space-xs);
+}
+
+.metric__item .readout {
+	display: block;
+	font-size: 1.15rem;
+}
+
+.metric__item--ok {
+	border-color: var(--color-ok);
+	background: var(--color-ok-soft);
+}
+
+.metric__item--ok .readout {
+	color: var(--color-ok);
+}
+
+.metric__item--warn {
+	border-color: var(--color-warn);
+	background: var(--color-warn-soft);
+}
+
+.metric__item--warn .readout {
+	color: var(--color-warn);
+}
+
+.metric__item--bad {
+	border-color: var(--color-danger);
+	background: var(--color-danger-soft);
+}
+
+.metric__item--bad .readout {
+	color: var(--color-danger);
+}
+
+input[type="range"] {
+	accent-color: var(--color-accent);
+	width: 12rem;
+}
+
+input[type="checkbox"] {
+	accent-color: var(--color-accent);
+}
+
+/* Selector genérico: grilla de elementos que revelan detalle al elegirse
+   (pines, capas, variantes de familia, bloques de un diagrama...). */
+.picker {
+	display: grid;
+	/* auto-FIT y no auto-fill: con auto-fill el navegador crea todas las
+	   columnas que caben y deja vacías las sobrantes, así que seis opciones
+	   en un contenedor ancho quedaban apretadas a la izquierda con medio
+	   renglón desierto a la derecha. auto-fit colapsa las columnas vacías y
+	   reparte el ancho real entre las opciones que existen. */
+	grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+	gap: var(--space-2xs);
+}
+
+.picker__item {
+	border: 1.5px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	padding: var(--space-2xs) var(--space-3xs);
+	text-align: center;
+	cursor: pointer;
+	font-size: var(--fs-small);
+	font-weight: 600;
+	background: var(--color-surface);
+	color: var(--color-text);
+	transition: transform 0.1s ease;
+}
+
+.picker__item:hover {
+	transform: translateY(-2px);
+}
+
+.picker__item.is-selected {
+	outline: 3px solid var(--color-navy);
+	outline-offset: 1px;
+}
+
+.picker__item small {
+	display: block;
+	font-weight: 400;
+	font-size: 0.68rem;
+	opacity: 0.75;
+}
+
+.picker__item--ok {
+	border-color: var(--color-ok);
+	background: var(--color-ok-soft);
+}
+
+.picker__item--warn {
+	border-color: var(--color-warn);
+	background: var(--color-warn-soft);
+}
+
+.picker__item--bad {
+	border-color: var(--color-danger);
+	background: var(--color-danger-soft);
+}
+
+.detail-panel {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-left: 4px solid var(--color-navy);
+	border-radius: 0 var(--radius-md) var(--radius-md) 0;
+	padding: var(--space-xs) var(--space-sm);
+	min-height: 3rem;
+	font-size: 0.94rem;
+}
+
+/* Selector vertical: mismas tarjetas que .picker__item, apiladas de mayor a
+   menor jerarquía (pila de software, niveles de memoria...) en lugar de la
+   grilla horizontal de .picker. */
+.layer-picker {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+}
+
+.layer-picker .picker__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-sm);
+	text-align: left;
+	padding: var(--space-2xs) var(--space-md);
+}
+
+/* Barra de progreso: el ancho se fija con la custom property --w (numérica,
+   p. ej. element.style.setProperty('--w', '42%')), nunca con style="width:...".
+   Usada para tamaños de artefacto (cadena de construcción) u otras métricas
+   proporcionales. */
+.progress-track {
+	height: 0.5rem;
+	background: var(--color-surface-2);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-full);
+	overflow: hidden;
+}
+
+.progress-track__fill {
+	height: 100%;
+	width: var(--w, 0%);
+	background: var(--color-accent);
+	border-radius: var(--radius-full);
+	transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================================
+   BLOQUES PROPIOS DEL CURSO I+D+i+e  (METODOLOGIA.md)
+   ============================================================ */
+
+/* Pie de fuente. Obligatorio en toda lámina con cifras: una magnitud sin
+   atribución es una magnitud que el estudiante no puede volver a usar.
+   Va al pie y en cuerpo pequeño porque acompaña, no compite con el dato. */
+.srcnote {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--space-2xs);
+	/* Antes esto era `margin-top: auto`, que clavaba el pie al canto inferior
+	   del panel. El efecto era un agujero: el contenido quedaba arriba, el pie
+	   abajo y media hoja vacía en medio. Ahora el bloque entero —contenido más
+	   pie— se centra como una unidad, y el pie sigue leyéndose como nota
+	   porque lo separa el filo y el cuerpo pequeño, no su posición. */
+	margin-top: var(--space-xs);
+	padding-top: var(--space-2xs);
+	border-top: 1px solid var(--color-border);
+	font-size: var(--fs-micro);
+	line-height: 1.45;
+	color: var(--color-text-muted);
+}
+
+.srcnote .icon {
+	color: var(--color-navy);
+	margin-top: 0.15em;
+}
+
+.srcnote ul {
+	/* Las citas fluyen en línea, no una debajo de otra. Con cuatro fuentes la
+	   pila medía 118 px, que es un séptimo de la hoja gastado en algo que se
+	   consulta después de la clase y no durante. En línea ocupa 36 px y el
+	   filo de arriba sigue marcando dónde empieza la nota. */
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: var(--space-sm);
+	margin: 0;
+	padding-left: 1.1em;
+	list-style: none;
+}
+
+.srcnote li {
+	position: relative;
+}
+
+.srcnote li::before {
+	content: "";
+	position: absolute;
+	left: -0.9em;
+	top: 0.62em;
+	width: 0.4em;
+	height: 1px;
+	background: var(--color-border);
+}
+
+/* Cifra destacada. El valor va en la familia monoespaciada y a tamaño de
+   titular: es lo que el estudiante anota y vuelve a citar. */
+.bigfig {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
+	padding: var(--space-2xs) var(--space-sm);
+	border-left: 3px solid var(--color-accent);
+}
+
+.bigfig__value {
+	font-family: var(--font-display);
+	font-size: var(--fs-title-sm);
+	font-weight: 700;
+	line-height: 1;
+	color: var(--color-accent);
+}
+
+.bigfig__what {
+	font-size: var(--fs-small);
+	line-height: 1.4;
+	color: var(--color-text);
+}
+
+.bigfig--navy {
+	border-left-color: var(--color-navy);
+}
+
+.bigfig--navy .bigfig__value {
+	color: var(--color-navy);
+}
+
+/* Fila de cifras: hasta tres magnitudes comparables en una banda. */
+.bigfig-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+	gap: var(--space-sm);
+}
+
+/* Tabla con la primera columna destacada (guía de estilo del autor, §5):
+   jerarquiza la lectura y permite recorrerla por la izquierda. */
+.table--keyfirst td:first-child {
+	font-weight: 600;
+	color: var(--color-accent);
+}
+
+.table--keyfirst tbody tr:hover {
+	background: var(--color-accent-soft);
+}
+
+/* Portadilla de tema. */
+.sectioncard {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	padding: var(--space-lg);
+	border-left: 4px solid var(--color-navy);
+	background: var(--color-bg-subtle);
+	border-radius: var(--radius-md);
+}
+
+.sectioncard__n {
+	font-family: var(--font-display);
+	font-size: var(--fs-eyebrow);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	color: var(--color-navy);
+}
+
+.sectioncard__title {
+	font-size: var(--fs-title-sm);
+	line-height: 1.15;
+}
+
+.sectioncard__lede {
+	font-size: var(--fs-lede);
+	line-height: 1.45;
+	color: var(--color-text-muted);
+	max-width: 46ch;
+}
+
+
+
+/* ============================================================
+   SIMULACIÓN — hacer manipulable una DECISIÓN
+   ============================================================
+   En un curso de gestión la simulación no reproduce un fenómeno físico:
+   mueve un parámetro y enseña cómo cambia el veredicto. De ahí que el
+   readout muestre siempre el valor y el tramo, y que los dos paneles —lo
+   que admite y lo que excluye— estén a la vista a la vez: el contraste es
+   la enseñanza (METODOLOGIA.md §3.3). */
+
+.sim {
+	display: grid;
+	grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+	gap: var(--space-md);
+	align-items: start;
+}
+
+@media (max-width: 62rem) {
+	.sim {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.sim__controls {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	padding: var(--space-md);
+	background: var(--color-bg-subtle);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+}
+
+.sim__label {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+}
+
+.sim__range {
+	width: 100%;
+	accent-color: var(--color-accent);
+	cursor: pointer;
+}
+
+.sim__readout {
+	display: flex;
+	align-items: baseline;
+	gap: var(--space-sm);
+	flex-wrap: wrap;
+}
+
+.sim__value {
+	font-family: var(--font-display);
+	font-size: var(--fs-title-sm);
+	font-weight: 700;
+	line-height: 1;
+	color: var(--color-heading);
+}
+
+/* El estado se pinta desde el marcado con data-estado y no con un color
+   escrito a mano: los tres estados son semánticos —tramo temprano, medio y
+   avanzado— y deben seguir el tema oscuro como todo lo demás. */
+.sim__badge {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	padding: 0.2em 0.7em;
+	border-radius: var(--radius-full);
+}
+
+.sim__badge[data-estado="ok"] {
+	background: var(--color-ok-soft);
+	color: var(--color-ok);
+}
+
+.sim__badge[data-estado="warn"] {
+	background: var(--color-warn-soft);
+	color: var(--color-warn);
+}
+
+.sim__badge[data-estado="danger"] {
+	background: var(--color-accent-soft);
+	color: var(--color-accent);
+}
+
+.sim__what {
+	font-size: var(--fs-small);
+	line-height: 1.4;
+	color: var(--color-text-muted);
+}
+
+.sim__panels {
+	display: grid;
+	gap: var(--space-sm);
+}
+
+.sim__panel {
+	padding: var(--space-sm) var(--space-md);
+	border-radius: var(--radius-md);
+	border: 1px solid var(--color-border);
+}
+
+.sim__panel h3 {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-size: var(--fs-small);
+	margin-bottom: var(--space-3xs);
+}
+
+.sim__panel ul {
+	margin: 0;
+	padding-left: 1.2em;
+	font-size: var(--fs-small);
+	line-height: 1.55;
+}
+
+.sim__panel--ok {
+	background: var(--color-ok-soft);
+	border-color: color-mix(in oklab, var(--color-ok) 35%, transparent);
+}
+
+.sim__panel--ok h3 .icon {
+	color: var(--color-ok);
+}
+
+.sim__panel--no {
+	background: var(--color-accent-soft);
+	border-color: color-mix(in oklab, var(--color-accent) 35%, transparent);
+}
+
+.sim__panel--no h3 .icon {
+	color: var(--color-accent);
+}
+
+/* Rejillas de cierre. */
+.problem-grid {
+	display: grid;
+	gap: var(--space-sm);
+}
+
+.glossary {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: var(--space-xs) var(--space-md);
+}
+
+/* Variante apilada de la simulación, para cuando el mando es un selector y
+   no un deslizador: los cuatro botones necesitan el ancho completo. */
+.sim--stack {
+	grid-template-columns: minmax(0, 1fr);
+}
+
+.sim__panels--pair {
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.picker {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-2xs);
+}
+
+.picker__btn {
+	font-family: var(--font-mono);
+	font-size: var(--fs-small);
+	padding: var(--space-2xs) var(--space-sm);
+	border-radius: var(--radius-full);
+	border: 1px solid var(--color-border);
+	background: var(--color-surface);
+	color: var(--color-text);
+	cursor: pointer;
+	transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.picker__btn:hover {
+	border-color: var(--color-accent);
+}
+
+/* El estado activo se marca con relleno y borde, no solo con color de texto:
+   a distancia de proyector un cambio de color de texto no se distingue. */
+.picker__btn.is-on {
+	background: var(--color-accent);
+	border-color: var(--color-accent);
+	color: var(--color-accent-contrast);
+	font-weight: 600;
+}
+
+/* ============================================================
+   TALLER DE FORMULACIÓN — versión de este curso
+   ============================================================
+   El orden visual reproduce el orden de trabajo: primero los criterios
+   contra los que se juzga, luego el método, luego la comparación obligada,
+   y solo entonces el prompt. Poner el prompt arriba invitaría a saltar
+   directamente a pedirle algo al asistente, que es justo lo que este
+   bloque existe para impedir (METODOLOGIA.md §5). */
+
+.wk {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border: 1px solid var(--color-accent);
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	background: var(--color-surface);
+}
+
+.wk__head {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	flex-wrap: wrap;
+	padding: var(--space-2xs) var(--space-md);
+	background: var(--color-accent);
+	color: var(--color-accent-contrast);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.wk__label {
+	font-weight: 700;
+}
+
+/* La cadena dice de qué taller viene y a cuál alimenta: es lo que convierte
+   veinticuatro ejercicios en un solo recorrido (§5.3). */
+.wk__chain {
+	margin-left: var(--space-sm);
+	opacity: 0.85;
+	text-transform: none;
+	letter-spacing: 0.02em;
+}
+
+.wk__ref {
+	margin-left: auto;
+	padding: 0.15em 0.7em;
+	border-radius: var(--radius-full);
+	background: color-mix(in oklab, #000 22%, transparent);
+	font-weight: 700;
+}
+
+.wk__title {
+	padding: var(--space-xs) var(--space-md) 0;
+	font-size: var(--fs-h3);
+	line-height: 1.25;
+}
+
+.wk__field {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	padding: var(--space-3xs) var(--space-md) 0;
+	font-size: var(--fs-micro);
+	color: var(--color-text-muted);
+}
+
+.wk__field .icon {
+	color: var(--color-navy);
+}
+
+.wk__body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: var(--space-md);
+	padding: var(--space-xs) var(--space-md);
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+@media (max-width: 62rem) {
+	.wk__body {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.wk__col {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xs);
+	min-width: 0;
+}
+
+.wk__sec h3 {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+	margin-bottom: var(--space-3xs);
+}
+
+.wk__sec ol,
+.wk__sec ul {
+	margin: 0;
+	padding-left: 1.25em;
+	font-size: var(--fs-small);
+	line-height: 1.5;
+}
+
+.wk__sec p {
+	font-size: var(--fs-small);
+	line-height: 1.5;
+}
+
+.wk__sec--crit {
+	padding: var(--space-2xs) var(--space-sm);
+	border-left: 3px solid var(--color-navy);
+	background: var(--color-navy-soft);
+}
+
+.wk__sec--crit h3 {
+	color: var(--color-navy);
+}
+
+.wk__sec--comp {
+	padding: var(--space-2xs) var(--space-sm);
+	border-left: 3px solid var(--color-warn);
+	background: var(--color-warn-soft);
+}
+
+.wk__sec--comp h3 {
+	color: var(--color-warn);
+}
+
+.wk__sec--auto {
+	padding: var(--space-2xs) var(--space-sm);
+	border-left: 3px solid var(--color-ok);
+	background: var(--color-ok-soft);
+}
+
+.wk__sec--auto h3 {
+	color: var(--color-ok);
+}
+
+/* Cada paso del método lleva colgada la decisión que toma. Sin ella el
+   método se lee como una lista de tareas y el estudiante no sabe qué está
+   eligiendo en cada punto. */
+.pasos .paso__dec {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	color: var(--color-accent);
+	margin-top: 0.1em;
+}
+
+.wk__out {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--space-2xs);
+	padding: var(--space-2xs) var(--space-md);
+	background: var(--color-bg-subtle);
+	border-top: 1px solid var(--color-border);
+	font-size: var(--fs-small);
+	line-height: 1.45;
+}
+
+.wk__out .icon {
+	color: var(--color-ok);
+	margin-top: 0.15em;
+}
+
+/* Ajuste de densidad del taller. El bloque lleva criterios, método,
+   comparación, prompt de seis partes y autocrítica: es la lámina con más
+   texto del mazo y la única que puede rozar el borde. Se aprieta aquí, en
+   un solo sitio, en vez de recortar el contenido —que es lo que enseña—.
+   Los 137 px que desbordaban los talleres 03 y 04 salían de la suma de
+   interlineados, no de ningún bloque concreto. */
+.wk__body {
+	gap: var(--space-sm);
+	padding: var(--space-2xs) var(--space-md) var(--space-xs);
+}
+
+.wk__col {
+	gap: var(--space-2xs);
+}
+
+.wk__sec ol,
+.wk__sec ul,
+.wk__sec p {
+	font-size: var(--fs-micro);
+	line-height: 1.42;
+}
+
+.wk__sec--crit,
+.wk__sec--comp,
+.wk__sec--auto {
+	padding: var(--space-3xs) var(--space-2xs) var(--space-3xs) var(--space-xs);
+}
+
+.wk .prompt-box {
+	font-size: var(--fs-micro);
+	line-height: 1.42;
+	padding: var(--space-2xs) var(--space-sm);
+}
+
+.wk .prompt-note {
+	font-size: var(--fs-micro);
+	line-height: 1.4;
+}
+
+.wk__title {
+	padding-top: var(--space-2xs);
+}
+
+/* El botón de copiar flota sobre la esquina del recuadro y se comía la
+   primera línea del prompt. Se reserva su carril en vez de moverlo: la
+   esquina superior derecha es donde el usuario lo busca. */
+.wk .prompt-box {
+	padding-right: 5.5rem;
+}
+
+/* Clasificador de criterios: casillas que cambian un veredicto. Se usa
+   cuando lo que hay que enseñar es que la regla es conjuntiva —los cinco o
+   ninguno—, algo que una lista estática no puede demostrar. */
+.crit {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: var(--space-2xs) var(--space-md);
+}
+
+.crit__box {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--space-2xs);
+	padding: var(--space-2xs) var(--space-sm);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	cursor: pointer;
+	transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.crit__box:hover {
+	border-color: var(--color-accent);
+}
+
+.crit__box:has(input:checked) {
+	border-color: var(--color-ok);
+	background: var(--color-ok-soft);
+}
+
+.crit__box input {
+	margin-top: 0.25em;
+	accent-color: var(--color-ok);
+	width: 1.05em;
+	height: 1.05em;
+	flex: 0 0 auto;
+}
+
+.crit__box b {
+	font-size: var(--fs-small);
+}
+
+.crit__help {
+	display: block;
+	font-size: var(--fs-micro);
+	line-height: 1.35;
+	color: var(--color-text-muted);
+}
+
+/* Reparto en dos columnas para las figuras cuadradas. Un radar o una matriz
+   de cuadrantes no se estiran: puestos a lo ancho de la hoja dejan dos
+   franjas vacías a los lados. Con la lectura al costado, el ancho se usa y
+   la figura conserva su proporción. */
+.split {
+	display: grid;
+	grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+	gap: var(--space-lg);
+	align-items: center;
+}
+
+@media (max-width: 62rem) {
+	.split {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.split__text {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	min-width: 0;
+}
+
+.split__text p {
+	font-size: var(--fs-small);
+	line-height: 1.5;
+}
+
+.figure__frame--tall svg {
+}
+
+/* Portada minimalista. Al retirar la pregunta de apertura y los logros —que
+   ya viven en la agenda, la lámina siguiente— la columna de texto queda con
+   tres elementos y el mapa pasa a ser lo que sostiene la lámina. Por eso se
+   invierte el reparto: el objeto del curso manda y el texto lo acompaña. */
+.slide--start .cover {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+	gap: var(--space-2xl);
+}
+
+.slide--start .cover__main {
+	gap: var(--space-md);
+}
+
+.slide--start .cover .hero-map__svg {
+	--map-size: 34rem;
+}
+
+/* El titular de portada respira más que el de una lámina de contenido: es lo
+   único que se lee desde el fondo del aula mientras la gente se sienta. */
+.slide--start .slide__title {
+	font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+	line-height: 1.08;
+}
+
+@media (max-width: 62rem) {
+	.slide--start .cover {
+		grid-template-columns: minmax(0, 1fr);
+		gap: var(--space-lg);
+	}
+}
+
+/* La insignia es inline-flex, pero dentro de una columna flex el estirado por
+   omisión la llevaba a ocupar todo el ancho: en la portada se leía como una
+   banda rosa en vez de como una etiqueta. */
+.cover__main .badge {
+	align-self: flex-start;
+}
+
+/* En la portada los dos temas van uno bajo otro y con más aire: en línea se
+   partían a mitad de palabra. */
+.slide--start .cover__topics {
+	flex-direction: column;
+	gap: var(--space-2xs);
+}
+
+.slide--start .topic {
+	font-size: var(--fs-body);
+}
+
+/* ============================================================
+   COMPOSICIÓN EN DOS COLUMNAS CON ALTERNANCIA
+   ============================================================
+   A lo ancho de la hoja una figura se estira y pierde proporción, y una
+   tabla obliga a recorrer el ojo de un extremo a otro. En dos columnas la
+   figura conserva su forma y el texto queda a su lado.
+
+   El lado alterna: figura a la izquierda en una lámina, a la derecha en la
+   siguiente. Con la figura siempre del mismo lado el mazo se lee como una
+   plantilla y a los diez minutos el ojo deja de mirar la mitad que nunca
+   cambia (METODOLOGIA.md §7). */
+
+.duo {
+	display: grid;
+	/* 70 / 30, no 50 / 50. Con las columnas iguales la figura se quedaba en
+	   media hoja y la lectura, que son tres o cuatro líneas, dejaba el resto
+	   en blanco. La figura es lo que hay que ver desde el fondo del aula; el
+	   texto la acompaña. */
+	grid-template-columns: minmax(0, 2.35fr) minmax(0, 1fr);
+	gap: var(--space-md);
+	/* `stretch` y no `center`. La rejilla crece con `flex: 1 1 auto` hasta el
+	   alto libre de la hoja, pero sus dos columnas medían lo que medía su
+	   contenido y quedaban centradas dentro: en la lámina de la meta 2030 eso
+	   dejaba 108 px muertos arriba y otros tantos abajo, dentro de la propia
+	   rejilla. Estirándolas, la figura dispone del alto y lo usa. */
+	align-items: stretch;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+/* Estirar la columna no basta: el SVG se dibuja con `height: auto`, así que
+   el ancho le fijaba el alto y el marco crecía por debajo del dibujo. Con
+   alto declarado y `viewBox` —que matplotlib siempre escribe— el navegador
+   escala la figura al menor de los dos ejes y la centra, sin recortarla. */
+.duo__fig,
+.duo__fig > .figure {
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+}
+
+.duo__fig > .figure {
+	flex: 1 1 auto;
+}
+
+.duo__fig > .figure > .figure__frame {
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+.duo__fig > .figure > .figure__frame > svg {
+	height: 100%;
+	max-height: 100%;
+}
+
+/* El lado corto es siempre una o dos cajas con marco frente a una figura
+   alta. Alinearlas arriba deja el hueco al pie de la columna y centrarlas lo
+   deja arriba y abajo; se estiran hasta el alto de la figura y el texto se
+   centra dentro del marco. Las declaraciones están más abajo, después de la
+   segunda definición de `.duo__side`. */
+
+/* Cuando la lectura es corta la figura se lleva casi toda la hoja. */
+.duo--wide {
+	grid-template-columns: minmax(0, 3.4fr) minmax(0, 1fr);
+}
+
+/* Una tabla no se comprime como una figura: sus celdas son texto y al
+   estrecharla se parten en tres líneas. Reparto más suave. */
+.duo--table {
+	grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+}
+
+/* La variante invertida mueve la figura al otro lado sin tocar el orden del
+   marcado: el contenido se lee igual con lector de pantalla.
+
+   Con `order` el elemento cambia de sitio pero la rejilla NO: la primera
+   columna sigue siendo la primera, así que hay que invertir también el
+   reparto. Sin esto la figura caía en la columna estrecha y quedaba
+   diminuta, que es el fallo que se veía en la lámina de patentes. */
+.duo--flip > .duo__fig {
+	order: 2;
+}
+
+.duo--flip {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2.35fr);
+}
+
+.duo--flip.duo--wide {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 3.4fr);
+}
+
+.duo--flip.duo--table {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr);
+}
+
+.duo__fig,
+.duo__side {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
+	min-width: 0;
+	min-height: 0;
+}
+
+.duo__side > * {
+	margin: 0;
+}
+
+/* Estas dos reglas repiten selectores de más arriba a propósito: la
+   declaración de `.duo__side` que hay unas líneas antes reponía el `gap` y
+   volvía a dejar las cajas sin estirar. Aquí, después de ella, mandan. */
+.duo__side {
+	gap: var(--space-sm);
+}
+
+.duo__side > .conclusion,
+.duo__side > .keydata,
+.duo__side > .criterion,
+.duo__side > .avoid,
+.duo__side > .practice {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+@media (max-width: 62rem) {
+	.duo {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.duo--flip > .duo__fig {
+		order: 0;
+	}
+}
+
+/* En dos columnas la figura dispone de casi todo el ancho, así que puede
+   crecer también en alto sin deformarse. */
+.duo .figure__frame svg {
+}
+
+.duo--wide .figure__frame svg {
+}
+
+/* ============================================================
+   JERARQUÍA DE TAMAÑOS  (METODOLOGIA.md §7.1)
+   ============================================================ */
+
+/* El rótulo de bloque estaba en cuerpo micro y a distancia de proyector no
+   se leía. Sube un paso y su icono crece con él. */
+.badge {
+	font-size: var(--fs-small);
+	padding: var(--space-2xs) var(--space-sm);
+}
+
+.badge .icon {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+/* El título de lámina es el segundo nivel y tiene que separarse del rótulo
+   con claridad: antes iban a poco más de un paso de distancia. */
+.slide__title--sm {
+	font-size: clamp(1.85rem, 3.1vw, 2.5rem);
+	line-height: 1.15;
+}
+
+/* Los rótulos de recurso comparten tamaño y peso; lo que los distingue es el
+   color y el icono, no la escala. */
+.def__label,
+.example__label,
+.practice__label,
+.wk__sec h3,
+.sim__label {
+	font-size: var(--fs-small);
+}
+
+.def__label .icon,
+.example__label .icon,
+.practice__label .icon,
+.wk__sec h3 .icon,
+.conclusion .icon {
+	width: 1.35rem;
+	height: 1.35rem;
+}
+
+/* ============================================================
+   RECURSOS CON ICONO PROPIO  (METODOLOGIA.md §7.2)
+   ============================================================ */
+
+.keydata,
+.criterion,
+.avoid {
+	position: relative;
+	padding: var(--space-2xs) var(--space-md);
+	--mark: var(--color-navy);
+}
+
+.keydata::before,
+.criterion::before,
+.avoid::before,
+.keydata::after,
+.criterion::after,
+.avoid::after {
+	content: "";
+	position: absolute;
+	width: 0.7rem;
+	height: 0.7rem;
+	border: 2px solid var(--mark);
+	pointer-events: none;
+}
+
+.keydata::before,
+.criterion::before,
+.avoid::before {
+	top: 0;
+	left: 0;
+	border-right: none;
+	border-bottom: none;
+}
+
+.keydata::after,
+.criterion::after,
+.avoid::after {
+	right: 0;
+	bottom: 0;
+	border-left: none;
+	border-top: none;
+}
+
+.keydata {
+	--mark: var(--color-accent);
+}
+
+.criterion {
+	--mark: var(--color-navy);
+}
+
+.avoid {
+	--mark: var(--color-danger);
+}
+
+.keydata__label,
+.criterion__label,
+.avoid__label {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-small);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--mark);
+	margin-bottom: var(--space-3xs);
+}
+
+.keydata__label .icon,
+.criterion__label .icon,
+.avoid__label .icon {
+	width: 1.35rem;
+	height: 1.35rem;
+}
+
+/* ============================================================
+   LAS REFERENCIAS, EN EL PIE FIJO DE LA LÁMINA
+   ============================================================
+   La atribución no forma parte del cuerpo: se ancla al canto inferior del
+   panel, con su propio filo. Deja el cuerpo entero para el contenido y se
+   lee como lo que es, una nota editorial. */
+.slide__content > .srcnote:last-child {
+	/* Sin `margin-top: auto`. Clavarlo al canto inferior abría un agujero en
+	   medio de la lámina: la medición dio 265 px de hueco y un 51 % de
+	   aprovechamiento en láminas que a ojo parecían correctas. El pie se lee
+	   como nota por su filo y su cuerpo pequeño, no por estar al fondo. */
+	padding-top: var(--space-2xs);
+	opacity: 0.85;
+}
+
+/* El bloque entero —contenido más pie— se centra en la hoja y el aire sobrante
+   se reparte arriba y abajo por igual, que se lee como margen y no como
+   descuido. */
+.slide__content {
+	justify-content: safe center;
+}
+
+/* El caso encabeza el taller: es lo único que la lámina tiene que dejar
+   claro. Va con el color de acento porque es lo primero que hay que leer. */
+.wk__sec--caso {
+	padding: var(--space-2xs) var(--space-sm);
+	border-left: 3px solid var(--color-accent);
+	background: var(--color-accent-soft);
+}
+
+.wk__sec--caso h3 {
+	color: var(--color-accent);
+}
+
+.wk__sec--caso p {
+	font-size: var(--fs-small);
+}
+
+/* Tailwind retira los marcadores de lista en su reinicio. En el taller la
+   numeración importa: los criterios se recorren en orden y los pasos son
+   una secuencia. */
+.wk__sec ol {
+	list-style: none;
+	counter-reset: paso;
+	padding-left: 0;
+}
+
+.wk__sec ol li {
+	counter-increment: paso;
+	position: relative;
+	padding-left: 1.9em;
+	margin-bottom: 0.15em;
+}
+
+.wk__sec ol li::before {
+	content: counter(paso, decimal-leading-zero);
+	position: absolute;
+	left: 0;
+	top: 0.02em;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	color: var(--color-text-muted);
+}
+
+.wk__sec--crit ol li::before {
+	color: var(--color-navy);
+}
+
+/* Nombre y número del elemento visual. Norma editorial: toda figura y toda
+   tabla se numeran y se nombran para poder citarlas desde el texto sin
+   describirlas de nuevo (skill paper-visuals). El número y el nombre
+   identifican; el pie enuncia el hallazgo, y por eso van separados. */
+.figure__num {
+	display: inline-block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-accent);
+	margin-right: var(--space-2xs);
+}
+
+.figure__name {
+	font-weight: 600;
+	color: var(--color-heading);
+}
+
+.figure__say {
+	display: block;
+	margin-top: var(--space-3xs);
+	color: var(--color-text-muted);
+}
+
+.table__caption {
+	margin-bottom: var(--space-2xs);
+	font-size: var(--fs-small);
+	line-height: 1.4;
+}
+
+.table__caption .figure__num {
+	color: var(--color-navy);
+}
+
+/* El bloque de definición nombra el término. Antes el rótulo decía solo
+   «Definición · Frascati 2015» y había que leer el párrafo entero para saber
+   qué se estaba definiendo. */
+.def__term {
+	font-family: var(--font-display);
+	font-size: var(--fs-h3);
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: none;
+	color: var(--color-heading);
+	margin-left: var(--space-2xs);
+}
+
+.def__src {
+	font-size: var(--fs-micro);
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	text-transform: none;
+	color: var(--color-text-muted);
+	margin-left: var(--space-2xs);
+}
+
+.def__label {
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+/* Glosario: la rejilla automática dejaba términos partidos y filas de altura
+   dispar. Con columnas fijas y cada entrada como bloque cerrado, la lámina
+   se lee por columnas y no desborda. */
+.glossary {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--space-2xs) var(--space-lg);
+	align-content: start;
+}
+
+.glossary-item {
+	padding: var(--space-2xs) 0;
+	border-bottom: 1px solid var(--color-border);
+	min-width: 0;
+}
+
+.glossary-item h3 {
+	display: flex;
+	align-items: baseline;
+	gap: var(--space-2xs);
+	flex-wrap: wrap;
+	font-size: var(--fs-small);
+	color: var(--color-accent);
+}
+
+.glossary-item__en {
+	font-family: var(--font-sans);
+	font-size: var(--fs-micro);
+	font-weight: 400;
+	font-style: italic;
+	color: var(--color-text-muted);
+}
+
+.glossary-item__body {
+	font-size: var(--fs-micro);
+	line-height: 1.45;
+	color: var(--color-text);
+}
+
+/* El taller se pegaba al canto superior y dejaba el hueco abajo. Reparte su
+   alto: cabecera arriba, cuerpo creciendo, entrega abajo. */
+.slide__content--flush {
+	justify-content: stretch;
+}
+
+.wk__body {
+	align-content: start;
+}
+
+/* El caso pasa a banda completa bajo el título: es lo que hay que leer
+   primero y ocupaba una tercera parte de la columna izquierda, dejando la
+   derecha con solo el prompt y entre 170 y 250 px de hueco. */
+.wk__caso {
+	margin: var(--space-2xs) var(--space-md) 0;
+	padding: var(--space-2xs) var(--space-sm);
+	border-left: 3px solid var(--color-accent);
+	background: var(--color-accent-soft);
+}
+
+.wk__caso h3 {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-small);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-accent);
+	margin-bottom: var(--space-3xs);
+}
+
+.wk__caso p {
+	font-size: var(--fs-small);
+	line-height: 1.45;
+}
+
+/* Las dos columnas del taller nunca miden lo mismo —criterios y pasos frente
+   al prompt— y la más corta dejaba entre 170 y 270 px en blanco al pie. Se
+   reparte ese sobrante estirando el último bloque de cada columna, que en las
+   dos es una caja con marco: llenarla se lee como decisión, no como hueco.
+   Se probó `justify-content: space-between`, que abre el aire entre bloques
+   en lugar de dentro de uno, y el último bloque se salía de la columna. */
+.wk__col > .wk__sec:last-child {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+.wk__col > .wk__sec:last-child > .prompt-box,
+.wk__col > .wk__sec:last-child > ol,
+.wk__col > .wk__sec:last-child > ul {
+	flex: 1 1 auto;
+}
+/* Comparación del taller: pares contrastados sobre el mismo caso. Van uno
+   debajo de otro y no en dos columnas: a media hoja, dos columnas parten
+   cada frase en cuatro líneas y el contraste deja de leerse de un vistazo. */
+.wk__vs {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.wk__vs > li {
+	margin-bottom: 0.35em;
+}
+
+.wk__vs > li:last-child {
+	margin-bottom: 0;
+}
+
+.wk__vs__no,
+.wk__vs__si {
+	display: block;
+	position: relative;
+	padding-left: 2.1em;
+}
+
+.wk__vs__no::before,
+.wk__vs__si::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+}
+
+.wk__vs__no::before {
+	content: "NO";
+	color: var(--color-accent);
+}
+
+.wk__vs__si::before {
+	content: "SÍ";
+	color: var(--color-ok);
+}
+
+/* La pareja criterio + en la práctica no estaba contemplada en el lado corto,
+   y es la que llevan la lámina de madurez comercial y la de capacidad de
+   innovación. Sin estas dos reglas el bloque del caso ni estira hasta el alto
+   de la tabla ni fuerza el reparto suave de columnas: la tabla se comía el
+   ancho y el lado quedaba con dos cajas encogidas contra el canto superior.
+   Se declara junto a las dos parejas que ya existían, no en otro sitio, para
+   que las tres se lean como lo que son, la misma decisión de composición. */
+.duo:has(.duo__side > .criterion + .example) {
+	grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+}
+
+.duo--flip:has(.duo__side > .criterion + .example) {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr);
+}
+
+.duo__side > .example {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+/* Glosario de cierre, agrupado por los dos temas de la sesión.
+   Once entradas en rejilla automática se leían como una lista sin orden: el
+   término se buscaba a ojo y no quedaba rastro de en qué parte de las tres
+   horas se había oído. Agrupado, cada columna es el vocabulario de un tema y
+   se recorre en el mismo orden en que se explicó. El término pasa a mono y
+   versalitas porque es la marca que el mazo ya usa en todo rótulo de recurso:
+   con ella el glosario deja de parecer un anexo pegado al final. */
+.glossary--grouped {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--space-md) var(--space-lg);
+	align-content: start;
+}
+
+.gloss-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
+	min-width: 0;
+}
+
+/* El rótulo del grupo repite el color del tema, el mismo par que separa los
+   dos bloques de la agenda. Es lo que permite reconocer de un vistazo si un
+   término pertenece a las definiciones o a la institucionalidad. */
+.gloss-group__title {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-accent);
+	padding-bottom: var(--space-3xs);
+	margin-bottom: var(--space-3xs);
+	border-bottom: 2px solid var(--color-accent);
+}
+
+.gloss-group--b .gloss-group__title,
+.gloss-group--b .glossary-item h3 {
+	color: var(--color-navy);
+}
+
+.gloss-group--b .gloss-group__title {
+	border-bottom-color: var(--color-navy);
+}
+
+.glossary--grouped .glossary-item h3 {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+/* El equivalente en inglés vuelve a la palo seco y a la caja normal: es una
+   glosa, no un rótulo, y en versalitas competía con el propio término. */
+.glossary--grouped .glossary-item__en {
+	font-family: var(--font-sans);
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+/* La definición sube un paso de cuerpo. Ahora dice qué decide el término y no
+   qué significa la palabra, así que es contenido y no una nota al margen. */
+.glossary--grouped .glossary-item__body {
+	font-size: var(--fs-small);
+	line-height: 1.45;
+}
+
+/* Seis tarjetas apiladas piden 1 136 px y la zona útil de la lámina, quitadas
+   la cabecera y el pie de fuente, son 590: la rejilla se recortaba en 376 px.
+   En dos columnas cada tarjeta cae a 634 px de ancho, y ese ancho no le quita
+   nada: su cabeza sigue entrando en una línea y su cuerpo son tres campos
+   cortos con rótulo propio. Lo que no se hizo fue quitar dos problemas, que
+   era la otra salida: los dos que sobraban por frecuencia resultan ser los que
+   descartan una propuesta antes de que nadie lea la parte técnica. */
+.problem-grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--space-sm) var(--space-md);
+	align-content: start;
+}
+
+/* Por debajo del ancho de dos columnas la tarjeta vuelve a banda completa: a
+   la mitad de 634 px el rótulo de cabecera se rompe en tres líneas y la cabeza
+   acaba pesando más que el cuerpo. */
+@media (max-width: 62rem) {
+	.problem-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+/* Dos ajustes de holgura, medidos y no estimados. El glosario y la lámina de
+   problemas frecuentes son las dos únicas de la sesión que llenan la hoja de
+   arriba abajo, y en las dos el desbordamiento venía del aire entre entradas,
+   no del texto: cada término del glosario pedía 94 px para 26 de rótulo y 60
+   de definición, y cada tarjeta 168 px para cuatro líneas de cuerpo. */
+.glossary--grouped .glossary-item {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.glossary--grouped .glossary-item__body {
+	line-height: 1.34;
+}
+
+.glossary--grouped {
+	row-gap: var(--space-2xs);
+}
+
+.gloss-group {
+	gap: var(--space-2xs);
+}
+
+.problem-card__body {
+	line-height: 1.28;
+}
+
+.problem-grid {
+	row-gap: var(--space-2xs);
+}
+
+/* La columna derecha del taller lleva ahora prompt y comparación, y en los dos
+   talleres de prompt más largo pedía 631 px sobre los 569 de la caja. Se
+   recupera de donde sobra: la banda del caso respira más de lo que necesita a
+   ancho completo, y el prompt va en monoespaciada, que a igual interlínea se
+   ve más suelta que la palo seco. */
+.wk__caso {
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+.wk__caso p {
+	line-height: 1.38;
+}
+
+.wk__sec--prompt .prompt-box {
+	line-height: 1.42;
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+/* Los tres rótulos y los pares de la comparación son lo último que queda por
+   apretar en el taller de prompt más largo. Se toca el aire, no el cuerpo:
+   bajar el tamaño de letra de una lámina que se lee desde el fondo del aula
+   costaría más de lo que ahorra. */
+.wk__sec h3 {
+	margin-bottom: var(--space-3xs);
+}
+
+.wk__vs > li {
+	margin-bottom: 0.12em;
+}
+
+.wk__vs .wk__vs__no,
+.wk__vs .wk__vs__si {
+	line-height: 1.35;
+}
+
+/* Último ajuste del taller, con la medida delante: de los cuatro, solo el 03
+   se sale, y por 18 px. El bloque de comparación gastaba 60 de sus 203 px en
+   relleno propio, para cuatro líneas de texto. Ahí está el margen, no en el
+   contenido, que ya se recortó a una línea por entrada. */
+.wk__sec--comp {
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+.wk__col {
+	gap: var(--space-3xs);
+}
+
+/* El cromo de la tarjeta del taller —cabecera, título, banda del caso y banda
+   de entrega— gasta unos 190 px de los 782 de la hoja para cuatro líneas de
+   texto. Apretando su relleno vertical, sin tocar el horizontal ni el cuerpo
+   de letra, la caja de trabajo gana el alto que a tres de los cuatro talleres
+   les faltaba. Es preferible a seguir recortando contenido ya recortado. */
+.wk__head {
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+.wk__title {
+	padding-top: var(--space-3xs);
+}
+
+.wk__body {
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+.wk__out {
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+/* El prompt no crece con la escala del resto. Es un bloque que se copia y se
+   pega, no un texto que se lea desde el fondo del aula, y la convención
+   tipográfica de los bloques de código es ir por debajo del cuerpo corrido.
+   Mantenerlo en el tamaño anterior devuelve al taller el alto que la subida
+   del 6 % le quitaba, sin recortar ni un criterio ni un paso. */
+.prompt-box {
+	font-size: clamp(0.9rem, 1.06vw, 1.12rem);
+}
+
+/* `.slide__content li` fija el cuerpo de todo elemento de lista, y gana por
+   especificidad a `.srcnote`, que solo lo declaraba en el contenedor. El
+   resultado era un pie de fuente impreso al mismo tamaño que el texto de la
+   lámina: 27 px por cita, 117 px con cuatro fuentes. Se declara en el propio
+   `li`, que es donde la regla que estorba actúa. */
+.srcnote li {
+	font-size: var(--fs-micro);
+	line-height: 1.4;
+}
+
+/* Ocho píxeles en el taller de columna más larga. Salen del relleno propio de
+   los dos bloques enmarcados de la columna, que a cuerpo nuevo respiran más de
+   lo que necesitan, y no del contenido, que ya se recortó dos veces. */
+.wk__sec--crit,
+.wk__sec--comp {
+	padding-top: 0.05rem;
+	padding-bottom: 0.05rem;
+}
+
+/* Los últimos nueve píxeles del taller 03 están en su prompt, que es el más
+   largo de los cuatro con dieciocho líneas. A cuerpo monoespaciado y con los
+   apartados ya separados por líneas en blanco, la interlínea puede bajar sin
+   que el bloque se cierre. */
+.wk .prompt-box {
+	/* Con `.prompt-box` a secas no basta: `.wk .prompt-box`, declarada más
+	   arriba, gana por especificidad. */
+	line-height: 1.36;
+}
+
+/* Uniformidad de los bloques de recurso. Cuatro de ellos llevaban el icono o
+   el rótulo en la misma línea que el texto: la sangría del bloque desplazaba
+   el párrafo entero y la primera línea arrancaba donde acababa el rótulo, así
+   que cada línea perdía ancho y el bloque no se distinguía de un párrafo
+   suelto. Ahora los nueve —definición, en la práctica, dato importante,
+   criterio, evitar, atención, cierre, entrega y fuentes— comparten el mismo
+   patrón: rótulo con icono arriba, texto debajo, a todo el ancho. */
+.warn-box,
+.conclusion,
+.wk__out {
+	display: block;
+}
+
+/* El pie de fuente es la excepción, y por una razón de coste: es una nota de
+   una sola línea que aparece en cuarenta y una de las cuarenta y nueve
+   láminas, así que poner su rótulo encima costaría una línea en cada una para
+   separar algo que el filo superior ya separa. Se queda en la misma línea que
+   las citas, con el mismo rótulo en versalitas monoespaciadas que llevan los
+   demás bloques, que es lo que hace que se lean como un sistema. */
+.srcnote {
+	display: flex;
+	align-items: baseline;
+	gap: var(--space-2xs);
+}
+
+.srcnote__label {
+	flex: 0 0 auto;
+}
+
+.conclusion__label {
+	/* Este rótulo lo escribe el autor y a veces es una frase, no una palabra.
+	   Sin `normal` la versalita con espaciado ancho se parte a dos líneas. */
+	font-weight: 700;
+	letter-spacing: 0.06em;
+}
+
+.srcnote__label {
+	color: var(--color-navy);
+}
+
+.srcnote ul {
+	padding-left: 0;
+}
+
+.wk__out__label {
+	color: var(--color-ok);
+}
+
+/* Las listas del taller bajan un paso, al cuerpo de apoyo. No es el texto que
+   se lee desde el fondo del aula sino la pauta que se sigue en el puesto de
+   trabajo, junto al prompt, que ya va un paso por debajo por la misma razón.
+   A cuerpo corrido las cuatro láminas de taller obligaban a recortar
+   criterios y pasos para caber; a este cuerpo entran los cinco de cada uno.
+
+   El paso se estrecha otra vez cuando la columna acumula seis entradas o más,
+   que es cuando el propio volumen de la lista pide leerse como pauta y no
+   como párrafo. */
+.wk__sec ol li,
+.wk__vs .wk__vs__no,
+.wk__vs .wk__vs__si {
+	font-size: var(--fs-small);
+}
+
+.wk__sec ol:has(li:nth-child(6)) li {
+	font-size: var(--fs-micro);
+	line-height: 1.5;
+}
+
+/* Criterios y comparación viven dentro de una caja con relleno lateral, y los
+   pasos no. Con el mismo texto, la lista enmarcada se partía en dos líneas
+   donde la otra cabía en una: en el taller 03, cinco de las cinco entradas de
+   criterios se partían a 82 caracteres mientras un paso de 86 entraba entero.
+   Igualar el relleno lateral al de la columna devuelve unos 120 px y hace que
+   el límite de longitud sea el mismo para los tres bloques, que es lo que
+   permite escribirlos contra una sola medida. */
+.wk__sec--crit,
+.wk__sec--comp {
+	padding-left: var(--space-2xs);
+	padding-right: var(--space-2xs);
+}
+
+/* Últimos ajustes de holgura, con la medida delante. El pie de fuente separaba
+   con un hueco de párrafo algo que el filo superior ya separa, y en el glosario
+   las once definiciones respiraban dos píxeles más de lo necesario por fila. */
+.srcnote {
+	margin-top: var(--space-2xs);
+}
+
+.glossary--grouped .glossary-item__body {
+	line-height: 1.28;
+}
+
+/* El taller pasa a cuatro bloques: título, objetivo, caso y prompt. El caso
+   deja de ser una banda a todo el ancho y baja a la columna izquierda, debajo
+   del objetivo, porque el prompt se escribe sobre él y conviene leerlos
+   juntos. Los dos bloques de la izquierda se estiran para repartir el alto
+   con el prompt, que es el más largo. */
+.wk__sec--meta {
+	padding: var(--space-2xs);
+	border-left: 3px solid var(--color-navy);
+	background: var(--color-bg-subtle);
+}
+
+.wk__sec--meta h3 {
+	color: var(--color-navy);
+}
+
+.wk__body > .wk__col > .wk__caso {
+	margin: 0;
+	flex: 1 1 auto;
+}
+
+.wk__sec--meta p,
+.wk__body > .wk__col > .wk__caso p {
+	font-size: var(--fs-small);
+	line-height: 1.45;
+}
+
+/* Con el taller reducido a objetivo, caso y prompt, la tarjeta se estiraba
+   hasta el canto de la hoja y sus dos columnas se alineaban arriba: quedaban
+   unos 200 px de tarjeta vacía por debajo del contenido. Estirar las columnas
+   lo llenaría con una caja de tres líneas de texto y 700 px de alto, que es
+   peor. La tarjeta se ajusta a su contenido y se centra en la hoja. */
+.wk {
+	/* `height: 100%`, declarada arriba, es la que estiraba la tarjeta; sin
+	   anularla el `flex` no cambia nada. */
+	height: auto;
+	flex: 0 1 auto;
+}
+
+.slide__content--flush {
+	/* `stretch`, declarada más arriba para esta misma clase, gana si no se
+	   repone aquí. */
+	justify-content: center;
+}
+
+/* El caso ya no necesita estirarse dentro de su columna: la que manda es la
+   del prompt y el caso se lee pegado al objetivo, que es su sitio. */
+.wk__body > .wk__col > .wk__caso {
+	flex: 0 1 auto;
+}
+
+
+/* ======================================================================
+   PORTADA DEL CURSO · index.html
+
+   Es la única página del proyecto que no es una diapositiva, y por eso no
+   hereda `.slide`: aquí sí hay desplazamiento vertical y el ancho manda. El
+   objeto central sigue siendo el mismo que en las portadas de sesión, el mapa
+   del ecosistema, pero aquí se resuelve con la rejilla de seis tarjetas: cada
+   sesión es un nodo y el temario completo, el mapa.
+   ====================================================================== */
+
+.idx {
+	min-height: 100vh;
+	background: var(--color-bg);
+	color: var(--color-text);
+	padding: var(--space-2xl) var(--space-lg);
+}
+
+.idx__wrap {
+	max-width: 72rem;
+	margin: 0 auto;
+}
+
+.idx__head {
+	padding-bottom: var(--space-lg);
+	margin-bottom: var(--space-xl);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.idx__eyebrow {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--color-accent);
+	margin-bottom: var(--space-xs);
+}
+
+.idx__h1 {
+	font-family: var(--font-mono);
+	font-size: clamp(2rem, 4.2vw, 3.2rem);
+	font-weight: 700;
+	line-height: 1.05;
+	letter-spacing: -0.02em;
+	margin-bottom: var(--space-xs);
+}
+
+.idx__sub {
+	font-size: var(--fs-lede);
+	color: var(--color-text-muted);
+	max-width: 42rem;
+}
+
+.idx__present {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	margin-top: var(--space-md);
+	padding: var(--space-2xs) var(--space-md);
+	border: 1px solid var(--color-accent);
+	border-radius: 999px;
+	font-family: var(--font-mono);
+	font-size: var(--fs-small);
+	font-weight: 600;
+	color: var(--color-accent);
+	text-decoration: none;
+	transition: background 0.15s ease, color 0.15s ease;
+}
+
+.idx__present:hover,
+.idx__present:focus-visible {
+	background: var(--color-accent);
+	color: var(--color-bg);
+}
+
+.idx__present .icon {
+	width: 1.05rem;
+	height: 1.05rem;
+}
+
+.idx__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+	gap: var(--space-md);
+}
+
+/* La tarjeta es un enlace completo, no un título enlazado: el destino de una
+   sesión es uno solo y partir la zona pulsable en dos obliga a apuntar. */
+.idx__card {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
+	padding: var(--space-md);
+	border: 1px solid var(--color-border);
+	border-left: 3px solid var(--color-accent);
+	border-radius: var(--radius-md);
+	background: var(--color-surface);
+	color: inherit;
+	text-decoration: none;
+	transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.idx__card:hover,
+.idx__card:focus-visible {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
+	border-color: var(--color-accent);
+}
+
+/* La sesión sin construir se anuncia igual de grande. Ocultarla dejaría el
+   temario incompleto para quien abre el curso, que es justo lo contrario de lo
+   que un índice tiene que hacer. */
+.idx__card--pendiente {
+	border-left-color: var(--color-border);
+	background: transparent;
+	cursor: default;
+}
+
+.idx__card--pendiente .idx__n,
+.idx__card--pendiente .idx__title,
+.idx__card--pendiente .idx__lede {
+	color: var(--color-text-muted);
+}
+
+.idx__n {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	color: var(--color-accent);
+}
+
+.idx__title {
+	font-family: var(--font-mono);
+	font-size: var(--fs-h3);
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.idx__lede {
+	font-size: var(--fs-small);
+	line-height: 1.45;
+	color: var(--color-text-muted);
+	flex: 1 1 auto;
+}
+
+.idx__estado {
+	margin-top: var(--space-2xs);
+	padding-top: var(--space-2xs);
+	border-top: 1px solid var(--color-border);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	letter-spacing: 0.06em;
+	color: var(--color-text-muted);
+}
+
+.idx__estado--lista {
+	color: var(--color-navy);
+}
+
+@media (max-width: 40rem) {
+	.idx {
+		padding: var(--space-lg) var(--space-md);
+	}
+}
+
+/* Reparto suave cuando el lado lleva más de un bloque, sea cual sea la pareja.
+   Hasta aquí las reglas `:has()` enumeraban las combinaciones una por una, y
+   cada pareja nueva volvía a recortar: `keydata + conclusion` en la sesión 2
+   se quedaba con el 30 % de ancho y sus dos cajas se salían de la columna. La
+   condición real no es qué bloques son sino cuántos: dos bloques de texto
+   enmarcado necesitan más ancho que una lectura de tres líneas. */
+.duo:has(.duo__side > * + *) {
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+
+.duo--flip:has(.duo__side > * + *) {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+}
+
+/* La declaración de `--stage-hi` que venía aquí se retiró: la variable ya está
+   definida en slides.css:135, con su variante de tema oscuro, y lo que se
+   añadió eran tres declaraciones sueltas fuera de cualquier selector, que el
+   navegador descarta. El diagrama de bloques hereda el filo de allí. */
+
+/* Dos diagramas de bloques seguidos respiraban como si fueran secciones
+   distintas. Son las dos mitades del mismo recorrido, así que van juntos. */
+.slide__content > .blockdiagram + .blockdiagram {
+	/* Con el selector de hermanos a secas la regla no llegaba: los dos
+	   diagramas son hijos directos del contenido de la lámina y ahí competía
+	   con el margen que reparte el `stagger`. */
+	margin-top: var(--space-3xs);
+}
+
+/* Presupuesto de la hoja para el título descriptivo.
+
+   §6 se reescribió el 2026-07-30: el título describe objeto, alcance y
+   periodo, y eso lo alarga de las 45 letras que ocupaba una afirmación a las
+   60 u 80 que ocupa una descripción. A 40 px caben unas 50 por línea, así que
+   dos líneas pasan a ser lo normal y trece láminas desbordaron a la vez.
+
+   Se paga con el aire del propio título y con el de la insignia, que son
+   cromo, no contenido: el cuerpo del título baja un paso y su interlínea se
+   aprieta, con lo que dos líneas cuestan 74 px en vez de 92. */
+.slide__content > .slide__title {
+	font-size: clamp(1.7rem, 2.45vw, 2rem);
+	line-height: 1.03;
+	margin-bottom: var(--space-2xs);
+}
+
+.slide__content > .badge {
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+/* La tarjeta del índice pasó de <a> a <div> para poder llevar dentro el enlace
+   al PDF: un ancla dentro de otra no es HTML válido. El enlace principal sigue
+   cubriendo la tarjeta entera, con un seudoelemento estirado sobre ella. */
+.idx__card {
+	position: relative;
+}
+
+.idx__go {
+	color: inherit;
+	text-decoration: none;
+}
+
+.idx__go::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+}
+
+.idx__card:has(.idx__go:hover),
+.idx__card:has(.idx__go:focus-visible) {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
+	border-color: var(--color-accent);
+}
+
+/* El enlace al PDF se levanta por encima de esa capa para poder pulsarse. */
+.idx__pdf {
+	position: relative;
+	z-index: 1;
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	margin-top: var(--space-2xs);
+	padding: var(--space-3xs) var(--space-2xs);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	color: var(--color-navy);
+	text-decoration: none;
+}
+
+.idx__pdf:hover,
+.idx__pdf:focus-visible {
+	border-color: var(--color-navy);
+	background: var(--color-bg-subtle);
+}
+
+.idx__pdf .icon {
+	width: 0.95rem;
+	height: 0.95rem;
+}
+
+/* El simulador de ventanilla es el más rico del mazo: tres controles —un
+   deslizador, un selector de cinco entidades y una casilla— sobre dos paneles.
+   Sus seis piezas suman 210 px de contenido y 90 de aire, y con el pie y las
+   fuentes la hoja pide 38 px de más. El aire entre controles es lo que sobra:
+   son piezas de un mismo panel, no bloques independientes. */
+.sim__controls:has(.picker + .crit__box) {
+	gap: var(--space-3xs);
+}
+
+.sim__controls:has(.picker + .crit__box) .crit__box {
+	padding-top: var(--space-3xs);
+	padding-bottom: var(--space-3xs);
+}
+
+
+/* ============================================================
+   AGENDA · el recorrido de la sesión
+   ============================================================
+   La versión anterior eran dos tarjetas grises con filete de color a la
+   izquierda y, debajo, seis casillas más. Todo caja: el recurso más
+   repetido que hay, y encima gastaba el color institucional en un borde de
+   3 px mientras el temario y los talleres quedaban planos y del mismo peso.
+   Los talleres, que son lo único que el estudiante se lleva hecho, iban en
+   cuerpo micro bajo un filete, leídos como pie de página.
+
+   Aquí la agenda deja de ser un contenedor y pasa a ser un recorrido. Una
+   sola regla al margen de cada tema nace tenue junto a los cinco puntos del
+   temario y pasa a color pleno justo donde empiezan los talleres, con un
+   cuadrado macizo por taller. Es un único gesto y dice algo que el curso
+   sostiene en todas sus láminas: se avanza produciendo, no escuchando.
+
+   Ninguna superficie, ningún radio, ningún filete decorativo. Lo que
+   organiza la lámina es el blanco y esa regla. */
+.agenda {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--space-md) var(--space-lg);
+	/* Repartir el sobrante con `space-between` no lo resuelve: deja un hueco
+	   de 196 px en mitad de la hoja en vez de al pie. El alto que perdieron
+	   las tarjetas al quitarles el relleno se devuelve donde sirve, que es el
+	   ritmo entre puntos de un temario que se recorre desde el fondo. */
+	align-content: start;
+}
+
+/* Cada tema fija su tinta una sola vez y todo lo de dentro la hereda. Antes
+   había cinco reglas `.agenda__block--b …` repitiendo el azul. */
+.agenda__block {
+	--tema: var(--color-accent);
+	--canal: 2.6rem;
+	--rotulo: 6.15rem;
+}
+
+.agenda__block--b {
+	--tema: var(--color-navy);
+}
+
+.agenda__n {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--tema);
+}
+
+.agenda__block h3 {
+	font-size: var(--fs-h3);
+	line-height: 1.15;
+	margin: var(--space-3xs) 0 var(--space-xs);
+}
+
+/* La regla es una sola línea continua partida en dos tramos: el temario la
+   lleva en un cuarto de la tinta del tema y los talleres a tinta plena. Van
+   pegados —el segundo abre con `padding-top`, nunca con `margin-top`— para
+   que no aparezca un corte entre los dos bordes. */
+.agenda ol,
+.agenda__block .agenda__wk {
+	list-style: none;
+	margin: 0;
+	padding-left: var(--canal);
+	/* Mezclada con el gris de borde y no con `transparent` : sobre fondo
+	   oscuro una tinta al 34 % de opacidad se queda sin suelo y la regla del
+	   tema 02 desaparecía. Con el borde debajo hay contraste en los dos temas. */
+	border-left: 2px solid color-mix(in oklab, var(--tema) 45%, var(--color-border));
+}
+
+.agenda ol {
+	counter-reset: punto;
+	font-size: var(--fs-lede);
+}
+
+.agenda ol li {
+	counter-increment: punto;
+	position: relative;
+	padding-block: 0.42em;
+	line-height: 1.3;
+}
+
+/* El ordinal cuelga en el canal que abre la regla, no dentro del texto: la
+   columna de números queda alineada y la de enunciados también, que es lo
+   que permite recorrer los cinco puntos de un vistazo. */
+.agenda ol li::before {
+	content: counter(punto, decimal-leading-zero);
+	position: absolute;
+	left: calc(var(--canal) * -1);
+	width: calc(var(--canal) - 0.55rem);
+	padding-left: 0.6rem;
+	top: 0.28em;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	color: var(--tema);
+}
+
+/* Donde empieza lo que hay que producir, la regla pasa a tinta plena. El
+   taller sube de cuerpo micro a cuerpo de apoyo: es el resultado de las tres
+   horas y no una nota al pie del temario. */
+.agenda__block .agenda__wk {
+	border-left-color: var(--tema);
+	padding-top: 1.1rem;
+	display: grid;
+	gap: 0.75em;
+	font-size: var(--fs-body);
+}
+
+.agenda__wk li {
+	position: relative;
+	line-height: 1.28;
+	padding-left: var(--rotulo);
+	text-indent: calc(var(--rotulo) * -1);
+}
+
+/* El cuadrado se monta sobre la regla, a caballo de sus 2 px. Es la única
+   marca maciza de la lámina y por eso señala sin necesidad de más peso. */
+.agenda__wk li::before {
+	content: "";
+	position: absolute;
+	top: 0.42em;
+	left: calc(var(--canal) * -1 - 1px - 0.3rem);
+	width: 0.6rem;
+	height: 0.6rem;
+	background: var(--tema);
+}
+
+.agenda__wk b {
+	font-family: var(--font-mono);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--tema);
+	margin-right: 0.5em;
+}
+
+/* La banda de las seis sesiones (METODOLOGIA.md §4.1) era seis casillas con
+   fondo y radio. Son una secuencia y esta es la primera, así que se dibuja
+   como lo que es: una barra continua de seis tramos con uno encendido. Los
+   tramos se tocan —`gap: 0` y separación por relleno— para que la línea
+   superior se lea entera y no como seis trozos sueltos. */
+.agenda__map {
+	grid-column: 1 / -1;
+	margin-top: var(--space-xs);
+}
+
+.agenda__map-label {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+	margin-bottom: var(--space-2xs);
+}
+
+.agenda__steps {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	gap: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.agenda__steps li {
+	border-top: 3px solid var(--color-border);
+	padding: var(--space-sm) var(--space-sm) 0 0;
+	font-size: var(--fs-small);
+	line-height: 1.28;
+	color: var(--color-text-muted);
+}
+
+.agenda__steps li b {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	color: var(--color-text-muted);
+}
+
+/* La sesión en curso se marca por tinta y no por tamaño: a la distancia del
+   aula un paso de cuerpo no se distingue y un cambio de color sí. */
+.agenda__steps .is-on {
+	border-top-color: var(--color-accent);
+	color: var(--color-text);
+}
+
+.agenda__steps .is-on b {
+	color: var(--color-accent);
+}
+
+@media (max-width: 62rem) {
+	.agenda {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.agenda__steps {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+/* ============================================================
+   HERRAMIENTAS QUE DEBERÍAS CONOCER
+   ============================================================
+   La lámina que sustituye al taller en la sesión 1. No es un ejercicio: es
+   una recomendación. Por eso las tres herramientas van en fila y a la misma
+   altura —eso es lo que se compara— y no en una lista dentro de una columna,
+   que las jerarquiza sin querer y hace que la primera parezca la buena.
+
+   Reutiliza la cabecera y el título del taller porque ocupa su sitio en el
+   recorrido; cambia todo lo de dentro. */
+.wk--tools {
+	padding-bottom: var(--space-md);
+}
+
+.tools__lede {
+	padding: var(--space-2xs) var(--space-md) 0;
+	font-size: var(--fs-lede);
+	line-height: 1.35;
+	color: var(--color-text-muted);
+}
+
+.tools__grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--space-md);
+	padding: var(--space-sm) var(--space-md) 0;
+	flex: 1 1 auto;
+	min-height: 0;
+	align-items: start;
+}
+
+/* Cada herramienta cuelga de una regla en la tinta del tema, la misma marca
+   que la agenda usa para el recorrido. Sin caja: la fila de tres ya agrupa,
+   y tres cajas dentro de la caja del bloque son dos marcos de más. */
+.tools__card {
+	border-top: 3px solid var(--color-accent);
+	padding-top: var(--space-2xs);
+}
+
+.tools__card h3 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 0 0.5em;
+	margin-bottom: var(--space-2xs);
+	line-height: 1.15;
+}
+
+.tools__card h3 b {
+	font-family: var(--font-mono);
+	font-size: var(--fs-h3);
+	font-weight: 700;
+	color: var(--color-accent);
+}
+
+/* Quién la hace va en gris y pequeño: importa para saber de quién dependes,
+   no para elegir. */
+.tools__card h3 span {
+	font-size: var(--fs-micro);
+	color: var(--color-text-muted);
+}
+
+/* La competencia es una frase con verbo, no un adjetivo: «potente» no ayuda
+   a elegir y «lee archivos del propio Drive sin subirlos» sí. */
+.tools__card ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	display: grid;
+	gap: 0.55em;
+	font-size: var(--fs-body);
+	line-height: 1.34;
+}
+
+.tools__card li {
+	position: relative;
+	padding-left: 1.1em;
+}
+
+.tools__card li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.55em;
+	width: 0.42em;
+	height: 2px;
+	background: var(--color-accent);
+}
+
+/* El cierre es lo único que sobrevive a las tres herramientas nombradas, así
+   que va abajo y a todo el ancho, separado por una línea. */
+.tools__pick {
+	margin: var(--space-sm) var(--space-md) 0;
+	padding-top: var(--space-xs);
+	border-top: 1px solid var(--color-border);
+}
+
+.tools__pick h4 {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+	margin-bottom: var(--space-2xs);
+}
+
+.tools__pick ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--space-2xs) var(--space-md);
+	font-size: var(--fs-small);
+	line-height: 1.32;
+}
+
+.tools__pick b {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: 0.92em;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+}
+
+@media (max-width: 62rem) {
+	.tools__grid,
+	.tools__pick ul {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+/* Rejilla de fichas fuera del marco del taller: mismo lenguaje visual que las
+   candidatas de «Herramientas que deberías conocer», sin la caja alrededor.
+   Sirve para inventariar entidades sin gastar una de las seis tablas que la
+   sesión puede permitirse. */
+.tools__grid--suelta {
+	padding: 0;
+	gap: var(--space-sm) var(--space-md);
+	align-items: start;
+	/* Fuera del marco del taller la rejilla no debe encogerse: heredaba
+	   `flex: 1 1 auto` con `min-height: 0`, y con eso se contraía por debajo
+	   de su contenido y el bloque siguiente se le montaba encima. El
+	   comprobador de maqueta no lo ve porque son hermanos, no anidados. */
+	flex: 0 0 auto;
+	min-height: auto;
+}
+
+.tools__grid--suelta .tools__card {
+	border-top-color: var(--color-navy);
+}
+
+.tools__grid--suelta .tools__card h3 b {
+	font-size: var(--fs-body);
+	color: var(--color-navy);
+}
+
+.tools__grid--suelta .tools__card li::before {
+	background: var(--color-navy);
+}
+
+.tools__grid--suelta .tools__card ul {
+	font-size: var(--fs-small);
+	gap: 0.3em;
+}
+
+/* El sitio oficial de cada herramienta, al pie de su ficha. Va en mono y con
+   la dirección entera visible: en una lámina proyectada, y sobre todo en el
+   PDF impreso, un enlace cuyo texto es «gob.pe» no dice adónde ir. */
+.tools__sitio {
+	display: block;
+	margin-top: 0.55em;
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	color: var(--color-accent);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+	overflow-wrap: anywhere;
+}
+
+.tools__grid--suelta .tools__sitio {
+	color: var(--color-navy);
+	margin-top: 0.35em;
+}
+
+.tools__grid--suelta .tools__card ul {
+	gap: 0.24em;
+}
+
+/* Los enlaces de la tabla de referencias no se distinguían del texto: se leían
+   como una cita más y nadie sabía que se podía pulsar. */
+.slide table a,
+.srcnote a {
+	color: var(--color-accent);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+	overflow-wrap: anywhere;
+}
+
+/* ============================================================
+   FICHA DE FONDO · una lámina, un fondo
+   ============================================================
+   La unidad de la sesión 3. Las seis preguntas van siempre en el mismo sitio
+   de la lámina para que dos fondos se comparen de un vistazo sin releerlos:
+   a la izquierda qué financia y a quién admite, a la derecha el panel de
+   cifras, y al pie la dirección oficial. */
+.fondo {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	min-height: 0;
+	gap: var(--space-sm);
+}
+
+.fondo__operador {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+}
+
+.fondo__cuerpo {
+	display: grid;
+	grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+	gap: var(--space-lg);
+	flex: 1 1 auto;
+	/* Las dos columnas ocupan el alto y reparten su propio contenido. Con
+	   `align-content: space-evenly` la rejilla se centraba y dejaba unos
+	   110 px muertos arriba y abajo, que es hueco y no ritmo. */
+	align-items: stretch;
+}
+
+.fondo__col,
+.fondo__panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.fondo__col h3 {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-accent);
+	margin-bottom: var(--space-2xs);
+}
+
+.fondo__col .fondo__quien {
+	margin-top: var(--space-sm);
+	color: var(--color-navy);
+}
+
+.fondo__col ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	display: grid;
+	gap: 0.8em;
+}
+
+.fondo__col li {
+	position: relative;
+	padding-left: 1.15em;
+}
+
+.fondo__col li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.58em;
+	width: 0.45em;
+	height: 2px;
+	background: var(--color-accent);
+}
+
+.fondo__col li,
+.fondo__col p {
+	font-size: var(--fs-lede);
+	line-height: 1.4;
+}
+
+/* El panel es lo que se compara entre fondos, así que va tabulado y no en
+   prosa: rótulo en mono arriba y cifra debajo, sin caja alrededor. */
+.fondo__panel {
+	margin: 0;
+	display: grid;
+	gap: var(--space-2xs);
+	border-left: 2px solid var(--color-navy);
+	padding-left: var(--space-md);
+	gap: var(--space-sm);
+}
+
+.fondo__dato dt {
+	font-family: var(--font-mono);
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--color-navy);
+}
+
+.fondo__dato dd {
+	margin: 0.15em 0 0;
+	font-size: var(--fs-body);
+	line-height: 1.35;
+}
+
+.fondo__sitio {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3xs);
+	margin-top: auto;
+	padding-top: var(--space-2xs);
+	font-family: var(--font-mono);
+	font-size: var(--fs-small);
+	color: var(--color-accent);
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+	overflow-wrap: anywhere;
+}
+
+.fondo__nota {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--space-3xs);
+	font-size: var(--fs-micro);
+	line-height: 1.35;
+	color: var(--color-text-muted);
+}
+
+.fondo__nota .icon {
+	color: var(--color-warn);
+	flex: none;
+	margin-top: 0.15em;
+}
+
+@media (max-width: 62rem) {
+	.fondo__cuerpo {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.fondo__panel {
+		border-left: 0;
+		padding-left: 0;
+		border-top: 2px solid var(--color-navy);
+		padding-top: var(--space-2xs);
+	}
+}

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 2 · Startups, spin-offs y transferencia · Documentos de titularidad exigidos según las cuatro condiciones de origen del resultado</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="47">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					01 · Titular y explotador
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Documentos de titularidad exigidos según las cuatro condiciones de origen del resultado</h1>
+				<div class="sim sim--stack" data-sim="titularidad" data-animate="fade-up">
+					<div class="crit">
+						<label class="crit__box">
+							<input type="checkbox" data-origen="universidad" />
+							<span><b>Equipamiento o personal de la universidad</b><span class="crit__help">El trabajo se hizo con recursos de la institución</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-origen="fondo" />
+							<span><b>Fondo público adjudicado</b><span class="crit__help">PROCIENCIA, ProInnóvate u otro concurso del Estado</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-origen="empresa" />
+							<span><b>Empresa asociada en el proyecto</b><span class="crit__help">Aporta contrapartida, personal o instalaciones</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-origen="estudiante" />
+							<span><b>Autoría de un estudiante o tesista</b><span class="crit__help">El resultado nace de un trabajo conducente a grado</span></span>
+						</label>
+					</div>
+					<div class="sim__readout">
+						<span class="sim__badge" id="ti-veredicto" data-estado="ok">Un solo titular</span>
+						<span class="sim__what" id="ti-detalle"></span>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-file" /></svg>Documentos que hay que tener firmados</h3>
+							<ul id="ti-docs"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Lo que queda sin resolver</h3>
+							<ul id="ti-riesgo"></ul>
+						</div>
+					</div>
+				</div>
+				<p class="sim-caption" data-animate="fade-up">El veredicto cambia dos veces
+				al recorrer las cuatro casillas: con una condición la titularidad pasa a
+				estar compartida, y con tres o más el reparto exige concordar documentos
+				que se firmaron en momentos distintos.</p>
+						<div class="criterion">
+							<div class="criterion__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-rubric" /></svg>Criterio</div>
+							<p>Cada condición marcada añade un documento y un firmante. La cláusula de titularidad se negocia cuando el proyecto se formula, que es el momento en el que todas las partes todavía necesitan algo de las demás.</p>
+						</div>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>Ley 31250, <i>Ley del Sistema Nacional de Ciencia, Tecnología e Innovación</i>, 2021 · norma de dominio público</li>
+						<li>INDECOPI, <i>Anuario de Propiedad Intelectual</i> · documento público</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="10-donde-se-fija-la-titularidad.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-file" /></svg>
+					<span>Dónde se fija</span>
+				</a>
+				<a class="slide-nav__link" href="12-herramientas-01.html">
+					<span>Herramientas 01</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Cada condición de origen del resultado añade un documento y un
+			// firmante. El veredicto cambia dos veces al recorrer las cuatro
+			// casillas: con una condición la titularidad pasa a estar compartida y
+			// con tres o más hay que concordar documentos firmados en momentos
+			// distintos. Una simulación que no cambia de conclusión no demuestra
+			// nada (METODOLOGIA.md §3.3).
+			const ORIGENES = {
+				universidad: {
+					doc: "Reglamento de propiedad intelectual de la universidad",
+					riesgo: "Reparto de ingresos entre institución, grupo e inventores" },
+				fondo: {
+					doc: "Convenio de adjudicación, cláusula de propiedad intelectual",
+					riesgo: "Obligación de poner el resultado a disposición, y su plazo" },
+				empresa: {
+					doc: "Convenio de colaboración con la empresa asociada",
+					riesgo: "Quién puede licenciar sin permiso del cotitular" },
+				estudiante: {
+					doc: "Acuerdo de cesión o de cotitularidad con el autor",
+					riesgo: "Firma del autor obtenida antes de que el resultado existiera" },
+			};
+
+			const BASE_DOC = "Acuerdo entre los autores del resultado";
+
+			const casillas = [...document.querySelectorAll('.crit__box input')];
+			const veredicto = document.getElementById("ti-veredicto");
+			const detalle = document.getElementById("ti-detalle");
+			const docs = document.getElementById("ti-docs");
+			const riesgo = document.getElementById("ti-riesgo");
+
+			const lista = (nodo, xs) => {
+				nodo.innerHTML = xs.length
+					? xs.map((x) => "<li>" + x + "</li>").join("")
+					: "<li>Nada pendiente con esta combinación de origen.</li>";
+			};
+
+			function pintar() {
+				const activos = casillas
+					.filter((c) => c.checked)
+					.map((c) => c.dataset.origen);
+
+				lista(docs, [BASE_DOC].concat(activos.map((k) => ORIGENES[k].doc)));
+				lista(riesgo, activos.map((k) => ORIGENES[k].riesgo));
+
+				if (activos.length === 0) {
+					veredicto.textContent = "Un solo titular";
+					veredicto.dataset.estado = "ok";
+					detalle.textContent = "El resultado no toca recursos, fondos ni terceros: la titularidad se fija en el acuerdo entre sus autores y una sola firma la cierra.";
+				} else if (activos.length < 3) {
+					veredicto.textContent = "Titularidad compartida";
+					veredicto.dataset.estado = "warn";
+					detalle.textContent = "Con " + activos.length + (activos.length === 1 ? " condición" : " condiciones") + " de origen hay " + (activos.length + 1) + " documentos que tienen que decir lo mismo. Se leen antes de solicitar protección.";
+				} else {
+					veredicto.textContent = "Reparto por concordar";
+					veredicto.dataset.estado = "danger";
+					detalle.textContent = "Con " + activos.length + " condiciones de origen, los " + (activos.length + 1) + " documentos se firmaron en momentos distintos y pueden contradecirse. La contradicción aparece cuando el resultado empieza a valer algo.";
+				}
+			}
+			for (const c of casillas) c.addEventListener("change", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

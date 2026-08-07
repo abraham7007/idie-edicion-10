@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 1 · Fundamentos y ecosistema I+D+i+e · Efecto de cada criterio de Frascati en el veredicto de una actividad</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="49">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-rubric" /></svg>
+					01 · Qué cuenta como I+D
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Efecto de cada criterio de Frascati en el veredicto de una actividad</h1>
+				<div class="sim sim--stack" data-sim="frascati" data-animate="fade-up">
+					<div class="crit">
+						<label class="crit__box">
+							<input type="checkbox" data-criterio="novedad" checked />
+							<span><b>Novedosa</b><span class="crit__help">Busca conocimiento que no existe todavía</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-criterio="creatividad" checked />
+							<span><b>Creativa</b><span class="crit__help">Parte de una hipótesis propia, no de una tarea</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-criterio="incertidumbre" checked />
+							<span><b>Incierta</b><span class="crit__help">El resultado puede no obtenerse</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-criterio="sistematicidad" checked />
+							<span><b>Sistemática</b><span class="crit__help">Hay protocolo, cronograma y registro</span></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" data-criterio="transferibilidad" checked />
+							<span><b>Transferible</b><span class="crit__help">Otro equipo podría reproducirla</span></span>
+						</label>
+					</div>
+					<div class="sim__readout">
+						<span class="sim__badge" id="fr-veredicto" data-estado="ok">Es I+D</span>
+						<span class="sim__what" id="fr-detalle"></span>
+					</div>
+				</div>
+				<p class="sim-caption" data-animate="fade-up">Al desmarcar cualquiera de las
+				cinco casillas el veredicto cambia.</p>
+				<div class="compare" data-animate="fade-up">
+					<div class="compare__panel">
+						<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Rutina: queda fuera de la I+D</h3>
+						<ol>
+							<li>Autopsia para determinar la causa de una muerte.</li>
+							<li>Registro diario de temperatura y presión.</li>
+							<li>Prototipo de preproducción para certificar.</li>
+						</ol>
+					</div>
+					<div class="compare__panel">
+						<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>La misma materia, ya como I+D</h3>
+						<ol>
+							<li>Estudio de una mortalidad para hallar el efecto de un tratamiento.</li>
+							<li>Métodos nuevos de medir la temperatura y de predecir el tiempo.</li>
+							<li>Prototipo para probar un concepto con riesgo alto de fallo.</li>
+						</ol>
+					</div>
+				</div>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>OCDE (2015), <i>Frascati Manual 2015</i> · lectura abierta en oecd.org</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="06-criterios-de-id.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-search" /></svg>
+					<span>Criterios</span>
+				</a>
+				<a class="slide-nav__link" href="08-tipos-de-investigacion.html">
+					<span>Tipos</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-layers" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Los cinco criterios se marcan uno a uno y el veredicto cambia. Es la
+			// forma de enseñar que NO son una lista de deseos: basta que falte uno
+			// para que la actividad deje de contar como I+D, y ese es exactamente
+			// el filtro de admisibilidad que aplica el evaluador.
+			const casillas = [...document.querySelectorAll('.crit__box input')];
+			const veredicto = document.getElementById("fr-veredicto");
+			const detalle = document.getElementById("fr-detalle");
+
+			function pintar() {
+				const faltan = casillas.filter((c) => !c.checked)
+					.map((c) => c.dataset.criterio);
+				if (faltan.length === 0) {
+					veredicto.textContent = "Es I+D";
+					veredicto.dataset.estado = "ok";
+					detalle.textContent = "Los cinco criterios se cumplen. La actividad puede declararse como investigación y desarrollo ante cualquier fondo.";
+				} else {
+					veredicto.textContent = "No es I+D";
+					veredicto.dataset.estado = "danger";
+					detalle.textContent = "Falta " + (faltan.length === 1 ? "el criterio" : "los criterios") +
+						" de " + faltan.join(", ") + ". Declararla como I+D expone la propuesta a caer en admisibilidad.";
+				}
+			}
+			for (const c of casillas) c.addEventListener("change", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 540.975088 136.152" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 136.152 
+L 540.975088 136.152 
+L 540.975088 0 
+L 0 0 
+L 0 136.152 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 106.804776 59.976704 
+L 458.837129 59.976704 
+L 458.837129 31.733003 
+L 106.804776 31.733003 
+z
+" clip-path="url(#pf7e0780c55)" style="fill: var(--fig-accent); opacity: 0.1"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 106.804776 103.172951 
+L 458.837129 103.172951 
+L 458.837129 74.929251 
+L 106.804776 74.929251 
+z
+" clip-path="url(#pf7e0780c55)" style="fill: var(--fig-ok); opacity: 0.1"/>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 106.804776 109.818528 
+L 106.804776 25.087427 
+" clip-path="url(#pf7e0780c55)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 215.614776 109.818528 
+L 215.614776 25.087427 
+" clip-path="url(#pf7e0780c55)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+   </g>
+   <g id="LineCollection_3">
+    <path d="M 337.225952 109.818528 
+L 337.225952 25.087427 
+" clip-path="url(#pf7e0780c55)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+   </g>
+   <g id="LineCollection_4">
+    <path d="M 458.837129 109.818528 
+L 458.837129 25.087427 
+" clip-path="url(#pf7e0780c55)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="100.404188" y="47.951978" transform="rotate(-0 100.404188 47.951978)">barrera declarada</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ok); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="100.404188" y="91.148226" transform="rotate(-0 100.404188 91.148226)">facilitador declarado</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="161.209776" y="14.244415" transform="rotate(-0 161.209776 14.244415)">Fase 1 · embrionaria</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-muted); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="161.209776" y="21.928658" transform="rotate(-0 161.209776 21.928658)">antes del año 1</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="276.420364" y="14.244415" transform="rotate(-0 276.420364 14.244415)">Fase 2 · inicio</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="276.420364" y="21.928658" transform="rotate(-0 276.420364 21.928658)">años 1 a 3</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="398.03154" y="14.244415" transform="rotate(-0 398.03154 14.244415)">Fase 3 · compromiso</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-muted); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="398.03154" y="21.928658" transform="rotate(-0 398.03154 21.928658)">años 4 a 7</text>
+   </g>
+   <g id="line2d_1">
+    <path d="M 122.806246 45.854853 
+L 231.616246 45.854853 
+L 260.418893 89.051101 
+L 356.427717 89.051101 
+" clip-path="url(#pf7e0780c55)" style="fill: none; stroke: var(--fig-ink); stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="122.806246" y="35.551972" transform="rotate(-0 122.806246 35.551972)">confianza · fuerte</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="231.616246" y="35.551972" transform="rotate(-0 231.616246 35.551972)">moderada</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="260.418893" y="103.852233" transform="rotate(-0 260.418893 103.852233)">por reputación</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="356.427717" y="103.548233" transform="rotate(-0 356.427717 103.548233)">por integridad</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="106.804776" y="126.004831" transform="rotate(-0 106.804776 126.004831)">La confianza es el único elemento que la tabla declara primero como barrera y después como facilitador</text>
+   </g>
+   <g id="line2d_2">
+    <defs>
+     <path id="mdf21fc3132" d="M 0 4.25 
+C 1.127113 4.25 2.208214 3.802193 3.005204 3.005204 
+C 3.802193 2.208214 4.25 1.127113 4.25 0 
+C 4.25 -1.127113 3.802193 -2.208214 3.005204 -3.005204 
+C 2.208214 -3.802193 1.127113 -4.25 0 -4.25 
+C -1.127113 -4.25 -2.208214 -3.802193 -3.005204 -3.005204 
+C -3.802193 -2.208214 -4.25 -1.127113 -4.25 0 
+C -4.25 1.127113 -3.802193 2.208214 -3.005204 3.005204 
+C -2.208214 3.802193 -1.127113 4.25 0 4.25 
+z
+" style="stroke: var(--fig-accent)"/>
+    </defs>
+    <g clip-path="url(#pf7e0780c55)">
+     <use xlink:href="#mdf21fc3132" x="122.806246" y="45.854853" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <g clip-path="url(#pf7e0780c55)">
+     <use xlink:href="#mdf21fc3132" x="231.616246" y="45.854853" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <defs>
+     <path id="m2612f1d9b0" d="M 0 4.25 
+C 1.127113 4.25 2.208214 3.802193 3.005204 3.005204 
+C 3.802193 2.208214 4.25 1.127113 4.25 0 
+C 4.25 -1.127113 3.802193 -2.208214 3.005204 -3.005204 
+C 2.208214 -3.802193 1.127113 -4.25 0 -4.25 
+C -1.127113 -4.25 -2.208214 -3.802193 -3.005204 -3.005204 
+C -3.802193 -2.208214 -4.25 -1.127113 -4.25 0 
+C -4.25 1.127113 -3.802193 2.208214 -3.005204 3.005204 
+C -2.208214 3.802193 -1.127113 4.25 0 4.25 
+z
+" style="stroke: var(--fig-ok)"/>
+    </defs>
+    <g clip-path="url(#pf7e0780c55)">
+     <use xlink:href="#m2612f1d9b0" x="260.418893" y="89.051101" style="fill: var(--fig-ok); stroke: var(--fig-ok)"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <g clip-path="url(#pf7e0780c55)">
+     <use xlink:href="#m2612f1d9b0" x="356.427717" y="89.051101" style="fill: var(--fig-ok); stroke: var(--fig-ok)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf7e0780c55">
+   <rect x="29.997717" y="4.32" width="435.24" height="127.512"/>
+  </clipPath>
+ </defs>
+</svg>

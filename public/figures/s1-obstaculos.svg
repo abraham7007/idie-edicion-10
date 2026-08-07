@@ -1,0 +1,104 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 557.407031 163.872" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 163.872 
+L 557.407031 163.872 
+L 557.407031 0 
+L 0 0 
+L 0 163.872 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 184.807031 159.552 
+L 553.087031 159.552 
+L 553.087031 4.32 
+L 184.807031 4.32 
+L 184.807031 159.552 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 184.807031 152.496 
+L 413.56557 152.496 
+L 413.56557 119.929846 
+L 184.807031 119.929846 
+z
+" clip-path="url(#p31c9a2dbce)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 184.807031 98.219077 
+L 420.647877 98.219077 
+L 420.647877 65.652923 
+L 184.807031 65.652923 
+z
+" clip-path="url(#p31c9a2dbce)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 184.807031 43.942154 
+L 492.179185 43.942154 
+L 492.179185 11.376 
+L 184.807031 11.376 
+z
+" clip-path="url(#p31c9a2dbce)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m74090d35be" d="M 0 0 
+L -3 0 
+" style="stroke: var(--fig-ink); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m74090d35be" x="184.807031" y="136.212923" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: var(--fig-ink); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="178.307031" y="139.464837" transform="rotate(-0 178.307031 139.464837)">Falta de fondos en la empresa</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m74090d35be" x="184.807031" y="81.936" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: var(--fig-ink); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="178.307031" y="85.187914" transform="rotate(-0 178.307031 85.187914)">Escasez de personal calificado</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m74090d35be" x="184.807031" y="27.659077" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: var(--fig-ink); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="178.307031" y="30.910991" transform="rotate(-0 178.307031 30.910991)">Costo de innovar demasiado elevado</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="419.939647" y="138.720267" transform="rotate(-0 419.939647 138.720267)">32,3 %</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="427.021954" y="84.443344" transform="rotate(-0 427.021954 84.443344)">33,3 %</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="498.553262" y="30.166421" transform="rotate(-0 498.553262 30.166421)">43,4 %</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p31c9a2dbce">
+   <rect x="184.807031" y="4.32" width="368.28" height="155.232"/>
+  </clipPath>
+ </defs>
+</svg>

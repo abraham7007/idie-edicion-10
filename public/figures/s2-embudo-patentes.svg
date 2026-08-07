@@ -1,0 +1,128 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 546.291875 169.416" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 169.416 
+L 546.291875 169.416 
+L 546.291875 0 
+L 0 0 
+L 0 169.416 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 162.531875 165.096 
+L 541.971875 165.096 
+L 541.971875 4.32 
+L 162.531875 4.32 
+L 162.531875 165.096 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 172.261106 45.219158 
+L 415.491875 45.219158 
+L 415.491875 22.654105 
+L 172.261106 22.654105 
+z
+" clip-path="url(#p924b50dec6)" style="fill: var(--fig-ramp-1)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 235.116961 80.477053 
+L 352.636019 80.477053 
+L 352.636019 57.912 
+L 235.116961 57.912 
+z
+" clip-path="url(#p924b50dec6)" style="fill: var(--fig-ramp-2)"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 246.495646 115.734947 
+L 341.257334 115.734947 
+L 341.257334 93.169895 
+L 246.495646 93.169895 
+z
+" clip-path="url(#p924b50dec6)" style="fill: var(--fig-ramp-3)"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 268.52478 150.992842 
+L 319.2282 150.992842 
+L 319.2282 128.427789 
+L 268.52478 128.427789 
+z
+" clip-path="url(#p924b50dec6)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m05a691a127" d="M 0 0 
+L -3 0 
+" style="stroke: var(--fig-muted); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m05a691a127" x="162.531875" y="139.710316" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="156.031875" y="143.06966" transform="rotate(-0 156.031875 143.06966)">Spin-offs con participación</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m05a691a127" x="162.531875" y="104.452421" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="156.031875" y="107.666077" transform="rotate(-0 156.031875 107.666077)">Patentes concedidas en el año</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m05a691a127" x="162.531875" y="69.194526" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="156.031875" y="72.457401" transform="rotate(-0 156.031875 72.457401)">Solicitudes de patente del año</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m05a691a127" x="162.531875" y="33.936632" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="156.031875" y="37.295975" transform="rotate(-0 156.031875 37.295975)">Divulgaciones de invención</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="430.085721" y="36.276819" transform="rotate(-0 430.085721 36.276819)">26,72   ·   100 %</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="430.085721" y="71.534714" transform="rotate(-0 430.085721 71.534714)">12,91   ·   48 %</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="430.085721" y="106.792609" transform="rotate(-0 430.085721 106.792609)">10,41   ·   39 %</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="430.085721" y="142.050503" transform="rotate(-0 430.085721 142.050503)">5,57   ·   21 %</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="430.085721" y="19.018717" transform="rotate(-0 430.085721 19.018717)">media por universidad</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p924b50dec6">
+   <rect x="162.531875" y="4.32" width="379.44" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

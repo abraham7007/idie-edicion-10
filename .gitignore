@@ -1,0 +1,20 @@
+# El repositorio publica la presentación interactiva y nada más.
+
+# Los PDF exportados: pesan 9 MB y se regeneran con `npm run build`.
+src/pdf/
+
+# Las fuentes descargadas (155 MB de artículos y documentos de terceros).
+# No son redistribuibles y no hacen falta para ver el curso.
+src/paper/
+
+# Los bancos de preguntas de Moodle: material de evaluación del docente.
+src/evaluacion/
+
+# Dependencias y artefactos de construcción.
+node_modules/
+dist/
+.vite/
+
+# Sistema
+.DS_Store
+*.log

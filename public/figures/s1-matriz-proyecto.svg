@@ -1,0 +1,117 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 378.343672 176.438406" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 176.438406 
+L 378.343672 176.438406 
+L 378.343672 0 
+L 0 0 
+L 0 176.438406 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 16.903672 159.552 
+L 374.023672 159.552 
+L 374.023672 4.32 
+L 16.903672 4.32 
+L 16.903672 159.552 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 16.903672 81.936 
+L 195.463672 81.936 
+L 195.463672 4.32 
+L 16.903672 4.32 
+z
+" clip-path="url(#pc9b4fff31f)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 195.463672 81.936 
+L 374.023672 81.936 
+L 374.023672 4.32 
+L 195.463672 4.32 
+z
+" clip-path="url(#pc9b4fff31f)" style="fill: var(--fig-accent); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 16.903672 159.552 
+L 195.463672 159.552 
+L 195.463672 81.936 
+L 16.903672 81.936 
+z
+" clip-path="url(#pc9b4fff31f)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 195.463672 159.552 
+L 374.023672 159.552 
+L 374.023672 81.936 
+L 195.463672 81.936 
+z
+" clip-path="url(#pc9b4fff31f)" style="fill: var(--fig-warn); opacity: 0.13; stroke: var(--fig-paper); stroke-width: 3; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: var(--fig-ink); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="195.463672" y="170.350672" transform="rotate(-0 195.463672 170.350672)">¿Hay una aplicación prevista?  →</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_2">
+     <text style="fill: var(--fig-ink); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="11.118672" y="81.936" transform="rotate(-90 11.118672 81.936)">¿Cuánta incertidumbre queda?  →</text>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 16.903672 159.552 
+L 16.903672 4.32 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 16.903672 159.552 
+L 374.023672 159.552 
+" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-navy); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(69.008242 26.707456)">Investigación</text>
+    <text style="fill: var(--fig-navy); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(89.025781 37.345378)">básica</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(63.860875 56.392003)">Alta incertidumbre,</text>
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(54.950813 65.033584)">sin aplicación prevista</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-accent); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(247.568242 26.404643)">Investigación</text>
+    <text style="fill: var(--fig-accent); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(261.866484 37.64819)">aplicada</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(242.420875 56.392003)">Alta incertidumbre,</text>
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(237.965844 65.033584)">con objetivo práctico</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(80.446836 104.075565)">Actividad</text>
+    <text style="fill: var(--fig-muted); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(80.446836 114.713487)">rutinaria</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(63.860875 134.162016)">Baja incertidumbre,</text>
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(66.088391 142.495572)">sin objetivo nuevo</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-warn); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(256.147188 103.772753)">Desarrollo</text>
+    <text style="fill: var(--fig-warn); font: 700 9.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(250.427891 115.0163)">experimental</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(242.420875 134.162016)">Baja incertidumbre,</text>
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(246.875906 142.495572)">producto definido</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc9b4fff31f">
+   <rect x="16.903672" y="4.32" width="357.12" height="155.232"/>
+  </clipPath>
+ </defs>
+</svg>

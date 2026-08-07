@@ -1,0 +1,109 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 534.226687 181.21725" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 181.21725 
+L 534.226687 181.21725 
+L 534.226687 0 
+L 0 0 
+L 0 181.21725 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 161.626687 165.096 
+L 529.906687 165.096 
+L 529.906687 4.32 
+L 161.626687 4.32 
+L 161.626687 165.096 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: var(--fig-muted); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="345.766687" y="175.21725" transform="rotate(-0 345.766687 175.21725)">convocatorias que mencionan el tema</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 161.626687 16.973667 
+L 460.854187 16.973667 
+L 460.854187 33.349 
+L 161.626687 33.349 
+z
+" clip-path="url(#p8522e78a93)" style="fill: var(--fig-ramp-1); opacity: 0.9"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="27.445802" transform="rotate(-0 152.419687 27.445802)">Medio ambiente</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="468.745902" y="27.424021" transform="rotate(-0 468.745902 27.424021)">455</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 161.626687 46.747 
+L 383.909973 46.747 
+L 383.909973 63.122333 
+L 161.626687 63.122333 
+z
+" clip-path="url(#p8522e78a93)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="57.219135" transform="rotate(-0 152.419687 57.219135)">Diversidad e inclusión</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-muted); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="391.801687" y="57.197354" transform="rotate(-0 391.801687 57.197354)">338</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 161.626687 76.520333 
+L 323.40683 76.520333 
+L 323.40683 92.895667 
+L 161.626687 92.895667 
+z
+" clip-path="url(#p8522e78a93)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="87.1065" transform="rotate(-0 152.419687 87.1065)">Tecnología e innovación social</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="331.298545" y="86.970688" transform="rotate(-0 331.298545 86.970688)">246</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 161.626687 106.293667 
+L 286.57883 106.293667 
+L 286.57883 122.669 
+L 161.626687 122.669 
+z
+" clip-path="url(#p8522e78a93)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="116.879833" transform="rotate(-0 152.419687 116.879833)">Migración y movilidad</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="294.470545" y="116.744021" transform="rotate(-0 294.470545 116.744021)">190</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 161.626687 136.067 
+L 285.921187 136.067 
+L 285.921187 152.442333 
+L 161.626687 152.442333 
+z
+" clip-path="url(#p8522e78a93)" style="fill: var(--fig-ramp-3); opacity: 0.9"/>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="152.419687" y="146.539135" transform="rotate(-0 152.419687 146.539135)">Jóvenes</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-muted); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="293.812902" y="146.517354" transform="rotate(-0 293.812902 146.517354)">189</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8522e78a93">
+   <rect x="161.626687" y="4.32" width="368.28" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

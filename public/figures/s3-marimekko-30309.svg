@@ -1,0 +1,227 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 410.4 186.048" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 186.048 
+L 410.4 186.048 
+L 410.4 0 
+L 0 0 
+L 0 186.048 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.098042 147.756255 
+L 109.628012 147.756255 
+L 109.628012 21.934979 
+L 38.098042 21.934979 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 38.098042 147.756255 
+L 109.628012 147.756255 
+L 109.628012 133.776113 
+L 38.098042 133.776113 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 112.012344 147.756255 
+L 179.568427 147.756255 
+L 179.568427 21.934979 
+L 112.012344 21.934979 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 112.012344 147.756255 
+L 179.568427 147.756255 
+L 179.568427 107.049372 
+L 112.012344 107.049372 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 181.95276 147.756255 
+L 224.672047 147.756255 
+L 224.672047 21.934979 
+L 181.95276 21.934979 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 181.95276 147.756255 
+L 224.672047 147.756255 
+L 224.672047 92.160808 
+L 181.95276 92.160808 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 227.05638 147.756255 
+L 274.743027 147.756255 
+L 274.743027 21.934979 
+L 227.05638 21.934979 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 227.05638 147.756255 
+L 274.743027 147.756255 
+L 274.743027 79.603064 
+L 227.05638 79.603064 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 277.127359 147.756255 
+L 311.898872 147.756255 
+L 311.898872 21.934979 
+L 277.127359 21.934979 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 277.127359 147.756255 
+L 311.898872 147.756255 
+L 311.898872 90.237957 
+L 277.127359 90.237957 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 314.283205 147.756255 
+L 347.067774 147.756255 
+L 347.067774 21.934979 
+L 314.283205 21.934979 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 314.283205 147.756255 
+L 347.067774 147.756255 
+L 347.067774 82.939234 
+L 314.283205 82.939234 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 349.452107 147.756255 
+L 402.106113 147.756255 
+L 402.106113 21.934979 
+L 349.452107 21.934979 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 349.452107 147.756255 
+L 402.106113 147.756255 
+L 402.106113 81.284637 
+L 349.452107 81.284637 
+z
+" clip-path="url(#p2d5ddc94d4)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-linejoin: miter"/>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 38.098042 99.143489 
+L 402.106113 99.143489 
+" clip-path="url(#p2d5ddc94d4)" style="fill: none; stroke-dasharray: 4.4,3.3; stroke-dashoffset: 0; stroke: var(--fig-muted); stroke-width: 1.1"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 38.098042 14.385702 
+L 51.013175 14.385702 
+" clip-path="url(#p2d5ddc94d4)" style="fill: none; stroke-dasharray: 4.4,3.3; stroke-dashoffset: 0; stroke: var(--fig-muted); stroke-width: 1.1"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-accent); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="73.863027" y="128.296131" transform="rotate(-0 73.863027 128.296131)">11 %</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="73.863027" y="158.434281" transform="rotate(-0 73.863027 158.434281)">2016</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="73.863027" y="167.887858" transform="rotate(-0 73.863027 167.887858)">72</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-paper); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="145.790386" y="118.312942" transform="rotate(-0 145.790386 118.312942)">32 %</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="145.790386" y="158.434281" transform="rotate(-0 145.790386 158.434281)">2017</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="145.790386" y="167.887858" transform="rotate(-0 145.790386 167.887858)">68</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-paper); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="203.312404" y="111.036166" transform="rotate(-0 203.312404 111.036166)">44 %</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="203.312404" y="158.434281" transform="rotate(-0 203.312404 158.434281)">2018</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="203.312404" y="167.887858" transform="rotate(-0 203.312404 167.887858)">43</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-accent); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="250.899703" y="74.123082" transform="rotate(-0 250.899703 74.123082)">54 %</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="250.899703" y="158.434281" transform="rotate(-0 250.899703 158.434281)">2019</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="250.899703" y="167.887858" transform="rotate(-0 250.899703 167.887858)">48</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-paper); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="294.513116" y="111.036166" transform="rotate(-0 294.513116 111.036166)">46 %</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="294.513116" y="158.434281" transform="rotate(-0 294.513116 158.434281)">2020</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="294.513116" y="167.887858" transform="rotate(-0 294.513116 167.887858)">35</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-accent); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="330.67549" y="77.459252" transform="rotate(-0 330.67549 77.459252)">52 %</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="330.67549" y="158.434281" transform="rotate(-0 330.67549 158.434281)">2021</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="330.67549" y="167.887858" transform="rotate(-0 330.67549 167.887858)">33</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: var(--fig-accent); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="375.77911" y="75.804655" transform="rotate(-0 375.77911 75.804655)">53 %</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="375.77911" y="158.434281" transform="rotate(-0 375.77911 158.434281)">2022</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="375.77911" y="167.887858" transform="rotate(-0 375.77911 167.887858)">53</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="53.993591" y="16.447296" transform="rotate(-0 53.993591 16.447296)">acumulado del periodo · 39 % (136 de 352 proyectos)</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: var(--fig-muted); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="33.130682" y="149.76213" transform="rotate(-0 33.130682 149.76213)">0 %</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: var(--fig-muted); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="33.130682" y="86.851492" transform="rotate(-0 33.130682 86.851492)">50 %</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: var(--fig-muted); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="33.130682" y="23.940854" transform="rotate(-0 33.130682 23.940854)">100 %</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: var(--fig-muted); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(13.606818 136.680508) rotate(-90)">Proyectos del año (%)</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="38.098042" y="177.729529" transform="rotate(-0 38.098042 177.729529)">año  ·  proyectos presentados, que fijan el ancho de la columna</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2d5ddc94d4">
+   <rect x="4.32" y="4.32" width="401.76" height="177.408"/>
+  </clipPath>
+ </defs>
+</svg>

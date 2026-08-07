@@ -1,0 +1,100 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.776916 146.475789" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 146.475789 
+L 469.776916 146.475789 
+L 469.776916 0 
+L -0 0 
+L -0 146.475789 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 109.274098 129.687573 
+C 120.875183 122.528188 129.828554 111.774387 134.767233 99.068031 
+C 139.705909 86.361677 140.36508 72.384102 136.644091 59.269368 
+C 132.923103 46.154634 125.021493 34.605973 114.145648 26.386604 
+C 103.269804 18.167235 90.002911 13.717895 76.370524 13.717895 
+L 76.370525 35.019789 
+C 85.3679 35.019789 94.124049 37.956354 101.302107 43.381137 
+C 108.480164 48.805921 113.695227 56.428038 116.151079 65.083762 
+C 118.606932 73.739486 118.171879 82.964685 114.912353 91.350879 
+C 111.652824 99.737074 105.7436 106.834583 98.086884 111.559777 
+z
+" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 76.370527 13.717895 
+C 66.683258 13.717895 57.126709 15.964644 48.454222 20.281025 
+C 39.781734 24.597406 32.22734 30.866958 26.3866 38.595408 
+C 20.545861 46.323858 16.576378 55.302651 14.791068 64.823987 
+C 13.005754 74.345323 13.452805 84.152259 16.096961 93.471679 
+C 18.741121 102.7911 23.511036 111.371525 30.03069 118.53653 
+C 36.550345 125.701536 44.643787 131.257767 53.673008 134.767229 
+C 62.702232 138.276691 72.423571 139.644665 82.070665 138.763319 
+C 91.717759 137.88197 101.030284 134.775083 109.274098 129.687573 
+L 98.086884 111.559777 
+C 92.645966 114.917533 86.4997 116.968079 80.132618 117.54977 
+C 73.765536 118.131458 67.349452 117.228595 61.390165 114.91235 
+C 55.430878 112.596105 50.089207 108.928993 45.786235 104.200089 
+C 41.483262 99.471185 38.335119 93.808105 36.589973 87.657287 
+C 34.844831 81.50647 34.549777 75.033892 35.728084 68.74981 
+C 36.906389 62.465728 39.526247 56.539725 43.381135 51.438948 
+C 47.236023 46.338171 52.221923 42.200267 57.945765 39.351456 
+C 63.669607 36.502644 69.976929 35.019789 76.370527 35.019789 
+z
+" style="fill: var(--fig-surface); stroke: var(--fig-paper); stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 157.818947 53.502316 
+L 164.710737 53.502316 
+L 164.710737 46.610526 
+L 157.818947 46.610526 
+z
+" clip-path="url(#p5b038d5a53)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 157.818947 92.346947 
+L 164.710737 92.346947 
+L 164.710737 85.455158 
+L 157.818947 85.455158 
+z
+" clip-path="url(#p5b038d5a53)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="fill: var(--fig-accent); font: 700 16px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="76.370526" y="74.520263" transform="rotate(-0 76.370526 74.520263)">41,2 %</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-muted); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(58.068776 83.942107)">varianza</text>
+    <text style="fill: var(--fig-muted); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(55.781058 93.082413)">explicada</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="171.602526" y="46.392658" transform="rotate(-0 171.602526 46.392658)">41,2 % explicado</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="171.602526" y="59.009804" transform="rotate(-0 171.602526 59.009804)">apoyo de la universidad, del Estado y de la empresa</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="171.602526" y="85.237289" transform="rotate(-0 171.602526 85.237289)">58,8 % sin explicar</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="171.602526" y="97.975264" transform="rotate(-0 171.602526 97.975264)">variables que el estudio no incluyó</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="157.818947" y="133.552342" transform="rotate(-0 157.818947 133.552342)">modelo de ecuaciones estructurales sobre 310 investigadores jóvenes, 2019</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5b038d5a53">
+   <rect x="4.32" y="4.32" width="357.12" height="137.835789"/>
+  </clipPath>
+ </defs>
+</svg>

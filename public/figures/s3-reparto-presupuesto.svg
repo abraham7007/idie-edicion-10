@@ -1,0 +1,126 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 449.338687 197.136" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 197.136 
+L 449.338687 197.136 
+L 449.338687 0 
+L 0 0 
+L 0 197.136 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 114.977129 24.356976 
+C 186.640931 24.356976 186.640931 8.772661 258.304733 8.772661 
+L 258.304733 72.594142 
+C 186.640931 72.594142 186.640931 88.178457 114.977129 88.178457 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-accent); opacity: 0.42"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 114.977129 88.178457 
+C 186.640931 88.178457 186.640931 82.983685 258.304733 82.983685 
+L 258.304733 130.47874 
+C 186.640931 130.47874 186.640931 135.673512 114.977129 135.673512 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-3); opacity: 0.42"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 114.977129 135.673512 
+C 186.640931 135.673512 186.640931 140.868283 258.304733 140.868283 
+L 258.304733 163.131591 
+C 186.640931 163.131591 186.640931 157.936819 114.977129 157.936819 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-2); opacity: 0.42"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 114.977129 157.936819 
+C 186.640931 157.936819 186.640931 173.521134 258.304733 173.521134 
+L 258.304733 188.363339 
+C 186.640931 188.363339 186.640931 172.779024 114.977129 172.779024 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-1); opacity: 0.42"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 106.104468 172.779024 
+L 114.977129 172.779024 
+L 114.977129 24.356976 
+L 106.104468 24.356976 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ink)"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(4.32 95.864341)">Presupuesto público</text>
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(30.207344 106.474659)">de CTI · 100 %</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 258.304733 72.594142 
+L 267.177394 72.594142 
+L 267.177394 8.772661 
+L 258.304733 8.772661 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(271.272468 28.007478)">Programa Nacional de Becas</text>
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(271.272468 37.683853)">del Ministerio de Educación</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-accent); font: 700 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="48.480435" transform="rotate(-0 271.272468 48.480435)">43 % del presupuesto · 1 instrumento</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 258.304733 130.47874 
+L 267.177394 130.47874 
+L 267.177394 82.983685 
+L 258.304733 82.983685 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-3)"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(271.272468 94.055289)">Los doce siguientes</text>
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(271.272468 103.731664)">mayores instrumentos</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ramp-3); font: 700 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="114.528246" transform="rotate(-0 271.272468 114.528246)">32 % del presupuesto · 12 instrumentos</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 258.304733 163.131591 
+L 267.177394 163.131591 
+L 267.177394 140.868283 
+L 258.304733 140.868283 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-2)"/>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="148.945389" transform="rotate(-0 271.272468 148.945389)">Los treinta y dos siguientes</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ramp-2); font: 700 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="159.79697" transform="rotate(-0 271.272468 159.79697)">15 % del presupuesto · 32 instrumentos</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 258.304733 188.363339 
+L 267.177394 188.363339 
+L 267.177394 173.521134 
+L 258.304733 173.521134 
+z
+" clip-path="url(#pa3bc94347c)" style="fill: var(--fig-ramp-1)"/>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="177.942688" transform="rotate(-0 271.272468 177.942688)">Los ciento diecinueve restantes</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ramp-1); font: 700 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="271.272468" y="188.73927" transform="rotate(-0 271.272468 188.73927)">10 % del presupuesto · 119 instrumentos</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa3bc94347c">
+   <rect x="29.66308" y="4.32" width="412.92" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>

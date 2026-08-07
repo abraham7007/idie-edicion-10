@@ -1,0 +1,147 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 422.062607 141.696" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 141.696 
+L 422.062607 141.696 
+L 422.062607 0 
+L 0 0 
+L 0 141.696 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 8.744143 73.076211 
+L 78.055714 73.076211 
+L 78.055714 56.523789 
+L 8.744143 56.523789 
+z
+" clip-path="url(#p32cade4499)" style="fill: var(--fig-accent); opacity: 0.14"/>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 78.055714 64.8 
+L 299.262857 64.8 
+" clip-path="url(#p32cade4499)" style="fill: none; stroke: var(--fig-grid); stroke-width: 1.6"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 78.055714 64.8 
+L 78.055714 39.334737 
+" clip-path="url(#p32cade4499)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.3"/>
+   </g>
+   <g id="LineCollection_3">
+    <path d="M 166.538571 64.8 
+L 166.538571 90.265263 
+" clip-path="url(#p32cade4499)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.3"/>
+   </g>
+   <g id="LineCollection_4">
+    <path d="M 210.78 64.8 
+L 210.78 39.334737 
+" clip-path="url(#p32cade4499)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+   </g>
+   <g id="LineCollection_5">
+    <path d="M 299.262857 64.8 
+L 299.262857 90.265263 
+" clip-path="url(#p32cade4499)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.3"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-accent); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(26.543054 58.416328)">divulgar</text>
+    <text style="fill: var(--fig-accent); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(16.007507 66.918867)">aquí destruye</text>
+    <text style="fill: var(--fig-accent); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(22.328835 75.083984)">la novedad</text>
+   </g>
+   <g id="line2d_1">
+    <defs>
+     <path id="mee5824eb19" d="M 0 3.25 
+C 0.86191 3.25 1.688635 2.907559 2.298097 2.298097 
+C 2.907559 1.688635 3.25 0.86191 3.25 0 
+C 3.25 -0.86191 2.907559 -1.688635 2.298097 -2.298097 
+C 1.688635 -2.907559 0.86191 -3.25 0 -3.25 
+C -0.86191 -3.25 -1.688635 -2.907559 -2.298097 -2.298097 
+C -2.907559 -1.688635 -3.25 -0.86191 -3.25 0 
+C -3.25 0.86191 -2.907559 1.688635 -2.298097 2.298097 
+C -1.688635 2.907559 -0.86191 3.25 0 3.25 
+z
+" style="stroke: var(--fig-navy)"/>
+    </defs>
+    <g clip-path="url(#p32cade4499)">
+     <use xlink:href="#mee5824eb19" x="78.055714" y="64.8" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    </g>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="78.055714" y="31.263077" transform="rotate(-0 78.055714 31.263077)">Solicitud presentada</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="78.055714" y="18.780008" transform="rotate(-0 78.055714 18.780008)">fecha de prioridad fijada</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="81.7425" y="73.339252" transform="rotate(-0 81.7425 73.339252)">mes 0</text>
+   </g>
+   <g id="line2d_2">
+    <g clip-path="url(#p32cade4499)">
+     <use xlink:href="#mee5824eb19" x="166.538571" y="64.8" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="166.538571" y="103.290235" transform="rotate(-0 166.538571 103.290235)">Extender al extranjero</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="166.538571" y="114.720304" transform="rotate(-0 166.538571 114.720304)">solicitud internacional PCT</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="170.225357" y="60.161061" transform="rotate(-0 170.225357 60.161061)">mes 12</text>
+   </g>
+   <g id="line2d_3">
+    <defs>
+     <path id="ma061fcdbb4" d="M 0 3.25 
+C 0.86191 3.25 1.688635 2.907559 2.298097 2.298097 
+C 2.907559 1.688635 3.25 0.86191 3.25 0 
+C 3.25 -0.86191 2.907559 -1.688635 2.298097 -2.298097 
+C 1.688635 -2.907559 0.86191 -3.25 0 -3.25 
+C -0.86191 -3.25 -1.688635 -2.907559 -2.298097 -2.298097 
+C -2.907559 -1.688635 -3.25 -0.86191 -3.25 0 
+C -3.25 0.86191 -2.907559 1.688635 -2.298097 2.298097 
+C -1.688635 2.907559 -0.86191 3.25 0 3.25 
+z
+" style="stroke: var(--fig-accent)"/>
+    </defs>
+    <g clip-path="url(#p32cade4499)">
+     <use xlink:href="#ma061fcdbb4" x="210.78" y="64.8" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    </g>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="210.78" y="31.263077" transform="rotate(-0 210.78 31.263077)">Publicación internacional</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="210.78" y="18.780008" transform="rotate(-0 210.78 18.780008)">el contenido se hace público</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="214.466786" y="73.339252" transform="rotate(-0 214.466786 73.339252)">mes 18</text>
+   </g>
+   <g id="line2d_4">
+    <g clip-path="url(#p32cade4499)">
+     <use xlink:href="#mee5824eb19" x="299.262857" y="64.8" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    </g>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="299.262857" y="102.862298" transform="rotate(-0 299.262857 102.862298)">Entrada en fase nacional</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="299.262857" y="114.963117" transform="rotate(-0 299.262857 114.963117)">en cada país elegido</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="302.949643" y="60.161061" transform="rotate(-0 302.949643 60.161061)">mes 30</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="78.055714" y="130.524752" transform="rotate(-0 78.055714 130.524752)">meses contados desde la fecha de prioridad  →</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p32cade4499">
+   <rect x="4.32" y="4.32" width="412.92" height="133.056"/>
+  </clipPath>
+ </defs>
+</svg>

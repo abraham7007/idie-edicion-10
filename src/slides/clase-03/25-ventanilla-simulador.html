@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 3 · Mapa de financiamiento e inversión · Ventanillas admisibles según madurez, entidad y contrapartida</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="52">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					01 · Tramo de madurez y ventanilla
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Ventanillas admisibles según madurez, entidad y contrapartida</h1>
+				<div class="sim sim--stack" data-sim="ventanilla" data-animate="fade-up">
+					<div class="sim__controls">
+						<label class="sim__label" for="v-trl">Tramo de madurez del componente</label>
+						<input class="sim__range" id="v-trl" type="range" min="1" max="9" step="1" value="2" />
+						<div class="sim__readout">
+							<span class="sim__value" id="v-nivel">TRL 2</span>
+							<span class="sim__badge" id="v-veredicto" data-estado="warn">Una ventanilla admisible</span>
+						</div>
+						<div class="picker">
+							<button class="picker__btn is-on" type="button" data-figura="universidad">Universidad</button>
+							<button class="picker__btn" type="button" data-figura="empresa">Empresa</button>
+							<button class="picker__btn" type="button" data-figura="emprendedor">Persona</button>
+							<button class="picker__btn" type="button" data-figura="asociacion">Asociación</button>
+							<button class="picker__btn" type="button" data-figura="instituto">Instituto</button>
+						</div>
+						<label class="crit__box">
+							<input type="checkbox" id="v-efectivo" />
+							<span><b>Contrapartida en efectivo disponible</b><span class="crit__help">Dinero propio con cuenta y monto</span></span>
+						</label>
+						<p class="sim__what" id="v-detalle"></p>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Ventanillas que admiten</h3>
+							<ul id="v-admite"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Por qué queda fuera</h3>
+							<ul id="v-fuera"></ul>
+						</div>
+					</div>
+				</div>
+				<p class="sim-caption" data-animate="fade-up">Con empresa en TRL 5, marcar la
+				contrapartida en efectivo pasa de ninguna ventanilla a cuatro.</p>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>PROCIENCIA · convocatorias en prociencia.gob.pe, agosto de 2026</li>
+						<li>ProInnóvate · convocatorias en proinnovate.gob.pe, agosto de 2026</li>
+						<li>CONCYTEC (2024), <i>Política Nacional de CTI al 2030</i>, diagnóstico · documento público</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="24-admisibilidad.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-rubric" /></svg>
+					<span>Admisibilidad</span>
+				</a>
+				<a class="slide-nav__link" href="26-tema-02.html">
+					<span>Tema 02</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-rocket" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Tres condiciones encadenadas deciden la ventanilla: el tramo de
+			// madurez, la figura del postulante y la contrapartida en efectivo
+			// disponible. Al recorrer cada control de extremo a extremo el veredicto
+			// cambia, que es lo que una simulación tiene que demostrar
+			// (METODOLOGIA.md §3.3):
+			//   TRL 1 a 9 con universidad y sin efectivo: de una ventanilla a ninguna.
+			//   Figura, en TRL 2 sin efectivo: universidad e instituto tienen una,
+			//   las otras tres no tienen ninguna.
+			//   Efectivo, en TRL 5 con empresa: de ninguna ventanilla a cuatro.
+			const VENTANILLAS = [
+				{ nombre: "PROCIENCIA · investigación básica y aplicada",
+				  trl: [1, 3], efectivo: false,
+				  entidades: ["universidad", "instituto"],
+				  nota: "La contrapartida se cubre con horas de investigador y uso de laboratorio valorizados." },
+				{ nombre: "PROCIENCIA · proyecto asociativo con empresa",
+				  trl: [3, 6], efectivo: true,
+				  entidades: ["universidad", "instituto", "empresa", "asociacion"],
+				  nota: "La parte en efectivo la aporta la empresa asociada, con convenio firmado antes del cierre." },
+				{ nombre: "ProInnóvate · desarrollo tecnológico",
+				  trl: [4, 6], efectivo: true, entidades: ["empresa"],
+				  nota: "El desembolso llega por tramos, contra hito verificado: la empresa financia cada tramo antes de cobrarlo." },
+				{ nombre: "ProInnóvate · validación y escalamiento",
+				  trl: [7, 9], efectivo: true, entidades: ["empresa"],
+				  nota: "Exige un usuario que ya opere el sistema y un acta que lo acredite." },
+				{ nombre: "ProInnóvate · capital semilla para emprendimiento",
+				  trl: [6, 9], efectivo: true, entidades: ["emprendedor", "empresa"],
+				  nota: "La constitución de la empresa suele ser condición para el desembolso, no para postular." },
+				{ nombre: "ITP · Red CITE · servicio tecnológico de ensayo",
+				  trl: [4, 9], efectivo: true,
+				  entidades: ["universidad", "instituto", "empresa", "emprendedor", "asociacion"],
+				  nota: "El servicio se paga y no se subvenciona: el desembolso sale de la caja del proyecto." },
+				{ nombre: "CONCYTEC · Ley 30309 · beneficio tributario",
+				  trl: [1, 9], efectivo: true, entidades: ["empresa"],
+				  nota: "El gasto se ejecuta primero y se recupera con la declaración anual del impuesto." },
+			];
+
+			const FIGURAS = {
+				universidad: "una universidad licenciada",
+				empresa: "una empresa formal",
+				emprendedor: "una persona o un equipo sin empresa constituida",
+				asociacion: "una asociación o cooperativa",
+				instituto: "un instituto público de investigación",
+			};
+
+			const mando = document.getElementById("v-trl");
+			const nivel = document.getElementById("v-nivel");
+			const veredicto = document.getElementById("v-veredicto");
+			const detalle = document.getElementById("v-detalle");
+			const admite = document.getElementById("v-admite");
+			const fuera = document.getElementById("v-fuera");
+			const efectivo = document.getElementById("v-efectivo");
+			const botones = document.querySelectorAll("[data-figura]");
+			let figura = "universidad";
+
+			function razon(v, trl, fig, hay) {
+				if (trl < v.trl[0] || trl > v.trl[1]) {
+					return "admite TRL " + v.trl[0] + "-" + v.trl[1];
+				}
+				if (!v.entidades.includes(fig)) return "no admite esa figura";
+				if (v.efectivo && !hay) return "exige contrapartida en efectivo";
+				return "";
+			}
+
+			function pintar() {
+				const trl = Number(mando.value);
+				const hay = efectivo.checked;
+				nivel.textContent = "TRL " + trl;
+
+				const ok = [];
+				const no = [];
+				for (const v of VENTANILLAS) {
+					const r = razon(v, trl, figura, hay);
+					if (r) no.push({ v, r });
+					else ok.push(v);
+				}
+
+				// La lista de descartes se ordena por cercanía: primero la que solo
+				// falla por la contrapartida, después por la figura y al final por el
+				// tramo. Con siete descartes y orden de declaración, el panel mostraba
+				// las tres que nunca van a servir y escondía la que está a una firma.
+				const peso = { "exige contrapartida en efectivo": 0, "no admite esa figura": 1 };
+				no.sort((a, b) => (peso[a.r] ?? 2) - (peso[b.r] ?? 2));
+
+				admite.innerHTML = ok.length
+					? ok.map((v) => "<li>" + v.nombre + "</li>").join("")
+					: "<li>Ninguna de las siete ventanillas públicas con esta combinación.</li>";
+				fuera.innerHTML = no.slice(0, 4)
+					.map((x) => "<li>" + x.v.nombre + " · " + x.r + "</li>").join("");
+
+				if (ok.length === 0) {
+					veredicto.textContent = "Sin ventanilla admisible";
+					veredicto.dataset.estado = "danger";
+					detalle.textContent = "Con " + FIGURAS[figura] + " en TRL " + trl
+						+ (hay ? " y contrapartida en efectivo disponible" : " y sin contrapartida en efectivo")
+						+ ", ninguna ventanilla pública admite el proyecto. La salida es cambiar de figura con una entidad asociada, o financiar antes el tramo que falta.";
+				} else if (ok.length === 1) {
+					veredicto.textContent = "Una ventanilla admisible";
+					veredicto.dataset.estado = "warn";
+					detalle.textContent = ok[0].nota;
+				} else {
+					veredicto.textContent = ok.length + " ventanillas admisibles";
+					veredicto.dataset.estado = "ok";
+					detalle.textContent = ok[0].nota;
+				}
+			}
+
+			for (const b of botones) {
+				b.addEventListener("click", () => {
+					figura = b.dataset.figura;
+					for (const o of botones) o.classList.toggle("is-on", o === b);
+					pintar();
+				});
+			}
+			mando.addEventListener("input", pintar);
+			efectivo.addEventListener("change", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

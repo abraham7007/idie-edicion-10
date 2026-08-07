@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 1 · Fundamentos y ecosistema I+D+i+e · Instrumentos que admiten y que excluyen cada nivel de la escala TRL</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="49">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					01 · Medir la madurez
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Instrumentos que admiten y que excluyen cada nivel de la escala TRL</h1>
+				<div class="sim" data-sim="trl" data-animate="fade-up">
+					<div class="sim__controls">
+						<label class="sim__label" for="trl">Nivel de madurez del proyecto</label>
+						<input class="sim__range" id="trl" type="range" min="1" max="9" step="1" value="2" />
+						<div class="sim__readout">
+							<span class="sim__value" id="trl-nivel">TRL 2</span>
+							<span class="sim__badge" id="trl-tramo" data-estado="ok">TRL 1-3</span>
+						</div>
+						<p class="sim__what" id="trl-que">Principio verificado, concepto formulado</p>
+					</div>
+					<div class="sim__panels">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Instrumentos que lo admiten</h3>
+							<ul id="trl-admite"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Instrumentos que lo declararían inadmisible</h3>
+							<ul id="trl-excluye"></ul>
+						</div>
+					</div>
+				</div>
+				<p class="sim-caption" data-animate="fade-up">El conjunto admisible cambia en
+				dos puntos: entre TRL 3 y 4, y entre TRL 6 y 7. Ahí cambia la ventanilla.</p>
+						<div class="criterion">
+							<div class="criterion__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-rubric" /></svg>Criterio</div>
+							<p>Casi ningún proyecto está entero en un tramo. Se declara el del componente que se va a ejecutar con el dinero solicitado, y lo ya alcanzado entra como antecedente, con el documento que lo acredita.</p>
+						</div>
+						<div class="avoid">
+							<div class="avoid__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Evitar</div>
+							<p>Declarar el tramo por el equipamiento: un banco de ensayo recién comprado no sube ningún nivel mientras no exista un ensayo documentado.</p>
+						</div>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>Salvador-Carulla et al. (2024), <i>Heliyon</i> 10:e29930 · CC BY-NC 4.0</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="14-trl-figura.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-ladder" /></svg>
+					<span>Los dos cortes</span>
+				</a>
+				<a class="slide-nav__link" href="16-trl-comercial.html">
+					<span>Madurez comercial</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-scale" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Simulación: el nivel TRL gobierna qué instrumentos admiten el proyecto.
+			// Al recorrer el deslizador de extremo a extremo el veredicto cambia en
+			// los dos cortes reales de la escala (3-4 y 6-7). Una simulación que no
+			// cambia de conclusión no demuestra nada (METODOLOGIA.md §7.1).
+			const TRAMOS = [
+				{ max: 3, tramo: "TRL 1-3", que: "Principio verificado, concepto formulado",
+				  admite: ["PROCIENCIA · investigación básica", "PROCIENCIA · investigación aplicada"],
+				  excluye: ["ProInnóvate · validación y escalamiento", "Capital semilla y de riesgo"],
+				  estado: "ok" },
+				{ max: 6, tramo: "TRL 4-6", que: "Prototipo validado en entorno relevante",
+				  admite: ["ProInnóvate · desarrollo tecnológico", "Proyectos de I+D con empresa asociada", "Red CITE · servicios de ensayo"],
+				  excluye: ["PROCIENCIA · investigación básica", "Capital semilla y de riesgo"],
+				  estado: "warn" },
+				{ max: 9, tramo: "TRL 7-9", que: "Sistema probado y operando en entorno real",
+				  admite: ["ProInnóvate · validación y escalamiento", "Capital semilla y de riesgo", "Red CITE · asistencia técnica"],
+				  excluye: ["PROCIENCIA · investigación básica", "PROCIENCIA · investigación aplicada"],
+				  estado: "danger" },
+			];
+
+			const mando = document.getElementById("trl");
+			const nivel = document.getElementById("trl-nivel");
+			const tramo = document.getElementById("trl-tramo");
+			const que = document.getElementById("trl-que");
+			const admite = document.getElementById("trl-admite");
+			const excluye = document.getElementById("trl-excluye");
+
+			function pintar() {
+				const n = Number(mando.value);
+				const t = TRAMOS.find((x) => n <= x.max);
+				nivel.textContent = "TRL " + n;
+				tramo.textContent = t.tramo;
+				tramo.dataset.estado = t.estado;
+				que.textContent = t.que;
+				admite.innerHTML = t.admite.map((x) => "<li>" + x + "</li>").join("");
+				excluye.innerHTML = t.excluye.map((x) => "<li>" + x + "</li>").join("");
+			}
+			mando.addEventListener("input", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

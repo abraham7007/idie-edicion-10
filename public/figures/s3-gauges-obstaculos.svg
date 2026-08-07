@@ -1,0 +1,150 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 413.875048 137.838462" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 137.838462 
+L 413.875048 137.838462 
+L 413.875048 0 
+L 0 0 
+L 0 137.838462 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 136.635817 78.433846 
+C 136.635817 65.157714 131.356269 52.411757 121.968626 43.024114 
+C 112.580983 33.636471 99.835026 28.356923 86.558894 28.356923 
+C 73.282762 28.356923 60.536805 33.636471 51.149162 43.024114 
+C 41.761519 52.411757 36.481971 65.157714 36.481971 78.433846 
+L 51.505048 78.433846 
+C 51.505048 69.140554 55.200732 60.218384 61.772082 53.647034 
+C 68.343432 47.075684 77.265602 43.38 86.558894 43.38 
+C 95.852187 43.38 104.774356 47.075684 111.345707 53.647034 
+C 117.917057 60.218384 121.61274 69.140554 121.61274 78.433846 
+z
+" clip-path="url(#p4105e4f17e)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 132.391356 58.257532 
+C 127.762539 47.742722 119.653355 39.134456 109.433403 33.886623 
+C 99.213452 28.63879 87.49242 27.064459 76.249928 29.429525 
+C 65.007436 31.794592 54.914174 37.957964 47.674839 46.878681 
+C 40.435504 55.799398 36.481971 66.945279 36.481971 78.433846 
+L 51.505048 78.433846 
+C 51.505048 70.391849 54.272521 62.589732 59.340055 56.34523 
+C 64.40759 50.100728 71.472874 45.786368 79.342618 44.130822 
+C 87.212362 42.475275 95.417084 43.577307 102.571051 47.25079 
+C 109.725017 50.924273 115.401445 56.950059 118.641617 64.310426 
+z
+" clip-path="url(#p4105e4f17e)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 264.331971 78.433846 
+C 264.331971 65.157714 259.052423 52.411757 249.66478 43.024114 
+C 240.277137 33.636471 227.53118 28.356923 214.255048 28.356923 
+C 200.978916 28.356923 188.232959 33.636471 178.845316 43.024114 
+C 169.457673 52.411757 164.178125 65.157714 164.178125 78.433846 
+L 179.201202 78.433846 
+C 179.201202 69.140554 182.896886 60.218384 189.468236 53.647034 
+C 196.039586 47.075684 204.961756 43.38 214.255048 43.38 
+C 223.548341 43.38 232.47051 47.075684 239.04186 53.647034 
+C 245.613211 60.218384 249.308894 69.140554 249.308894 78.433846 
+z
+" clip-path="url(#p4105e4f17e)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 239.202625 35.013613 
+C 231.589057 30.639153 222.95717 28.343192 214.176387 28.356985 
+C 205.395605 28.370778 196.770974 30.693845 189.171186 35.092203 
+C 181.571397 39.49056 175.260471 45.811407 170.874056 53.418095 
+C 166.487642 61.024783 164.178125 69.653053 164.178125 78.433846 
+L 179.201202 78.433846 
+C 179.201202 72.287291 180.817864 66.247502 183.888354 60.922821 
+C 186.958844 55.598139 191.376492 51.173546 196.696344 48.094696 
+C 202.016196 45.015845 208.053438 43.389698 214.199986 43.380043 
+C 220.346533 43.370388 226.388854 44.977561 231.718352 48.039683 
+z
+" clip-path="url(#p4105e4f17e)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 392.028125 78.433846 
+C 392.028125 65.157714 386.748577 52.411757 377.360934 43.024114 
+C 367.973291 33.636471 355.227334 28.356923 341.951202 28.356923 
+C 328.67507 28.356923 315.929113 33.636471 306.54147 43.024114 
+C 297.153827 52.411757 291.874279 65.157714 291.874279 78.433846 
+L 306.897356 78.433846 
+C 306.897356 69.140554 310.593039 60.218384 317.16439 53.647034 
+C 323.73574 47.075684 332.657909 43.38 341.951202 43.38 
+C 351.244494 43.38 360.166664 47.075684 366.738014 53.647034 
+C 373.309364 60.218384 377.005048 69.140554 377.005048 78.433846 
+z
+" clip-path="url(#p4105e4f17e)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 364.123172 33.532822 
+C 356.488915 29.763052 348.017878 28.001845 339.513685 28.416282 
+C 331.009493 28.830718 322.749849 31.407265 315.518323 35.901492 
+C 308.286797 40.395719 302.319534 46.660868 298.182632 54.102581 
+C 294.04573 61.544293 291.874279 69.919561 291.874279 78.433846 
+L 306.897356 78.433846 
+C 306.897356 72.473847 308.417371 66.611159 311.313203 61.40196 
+C 314.209034 56.192761 318.386118 51.807157 323.448187 48.661198 
+C 328.510255 45.515239 334.292006 43.711657 340.24494 43.421551 
+C 346.197875 43.131446 352.127601 44.36429 357.471581 47.003129 
+z
+" clip-path="url(#p4105e4f17e)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-navy); font: 700 13px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="86.558894" y="67.717945" transform="rotate(-0 86.558894 67.717945)">43,4 %</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-muted); font: 6.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="36.481971" y="85.987724" transform="rotate(-0 36.481971 85.987724)">0</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 6.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="136.635817" y="85.987724" transform="rotate(-0 136.635817 85.987724)">50</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(48.028894 97.575096)">Costo de innovar</text>
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(45.620769 107.196471)">demasiado elevado</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-navy); font: 700 13px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="214.255048" y="67.717945" transform="rotate(-0 214.255048 67.717945)">33,3 %</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 6.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="164.178125" y="85.987724" transform="rotate(-0 164.178125 85.987724)">0</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 6.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="264.331971" y="85.987724" transform="rotate(-0 264.331971 85.987724)">50</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(168.500673 97.575096)">Escasez de personal</text>
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(190.173798 107.196471)">calificado</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-accent); font: 700 13px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="341.951202" y="67.717945" transform="rotate(-0 341.951202 67.717945)">32,3 %</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-muted); font: 6.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="291.874279" y="85.987724" transform="rotate(-0 291.874279 85.987724)">0</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-muted); font: 6.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="392.028125" y="85.987724" transform="rotate(-0 392.028125 85.987724)">50</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(305.829327 97.575096)">Falta de fondos</text>
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(310.645577 107.196471)">en la empresa</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="392.028125" y="19.876154" transform="rotate(-0 392.028125 19.876154)">porcentaje de empresas manufactureras que declara el obstáculo, sobre una escala de 0 a 50 %</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4105e4f17e">
+   <rect x="18.955048" y="4.32" width="390.6" height="129.198462"/>
+  </clipPath>
+ </defs>
+</svg>

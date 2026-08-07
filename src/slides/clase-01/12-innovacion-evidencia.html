@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 1 · Fundamentos y ecosistema I+D+i+e · Cuatro tipos de innovación con su evidencia y su fondo aplicable</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="49">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					01 · Qué cuenta como I+D
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Cuatro tipos de innovación con su evidencia y su fondo aplicable</h1>
+				<div class="sim sim--stack" data-sim="innovacion" data-animate="fade-up">
+					<div class="picker">
+						<button class="picker__btn is-on" type="button" data-tipo="incremental">Incremental</button>
+						<button class="picker__btn" type="button" data-tipo="arquitectural">Arquitectural</button>
+						<button class="picker__btn" type="button" data-tipo="radical">Radical</button>
+						<button class="picker__btn" type="button" data-tipo="proceso">De proceso</button>
+					</div>
+					<div class="sim__readout">
+						<span class="sim__badge" id="in-riesgo" data-estado="ok">Riesgo bajo</span>
+						<span class="sim__what" id="in-que"></span>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-rubric" /></svg>Evidencia que pedirá el evaluador</h3>
+							<ul id="in-evidencia"></ul>
+						</div>
+						<div class="sim__panel">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-fund" /></svg>Dónde encaja</h3>
+							<p id="in-fondo"></p>
+						</div>
+					</div>
+				</div>
+				<div class="duo duo--flip" data-animate="fade-up">
+					<div class="duo__fig">
+				<figure class="figure" data-animate="fade-up">
+					<div class="figure__frame" data-figure="s1-evidencia-por-tipo"></div>
+					<figcaption class="figure__caption">
+						<span class="figure__num">Figura 6</span>
+						<span class="figure__name">Evidencia que acredita cada tipo de innovación ante un evaluador</span>
+						<span class="figure__say"><b>La evidencia migra al subir el riesgo: de medir lo que ya ocurre a demostrar el principio nuevo y prever su fallo.</b></span>
+					</figcaption>
+				</figure>
+					</div>
+					<div class="duo__side">
+						<div class="criterion">
+							<div class="criterion__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-rubric" /></svg>Criterio</div>
+							<p>El riesgo que se declara fija la evidencia que se pide. Declarar una innovación radical sin la prueba de concepto del principio nuevo es la forma más rápida de perder el punto de mérito innovador.</p>
+						</div>
+					</div>
+				</div>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>OCDE y Eurostat (2018), <i>Oslo Manual 2018</i>, 4.ª ed. · lectura abierta en oecd.org</li>
+						<li>Elaboración propia · correspondencia entre tipo declarado y evidencia exigida</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="11-tipos-de-innovacion.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-bulb" /></svg>
+					<span>Tipos de innovación</span>
+				</a>
+				<a class="slide-nav__link" href="13-trl-escala.html">
+					<span>Qué acredita el tramo</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-ladder" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// El tipo de innovación decide qué evidencia pide el evaluador. Es la
+			// tercera decisión encadenada de la sesión, después del TRL y de la
+			// figura del postulante, y la que más se declara por optimismo.
+			const TIPOS = {
+				incremental: { riesgo: "Bajo", estado: "ok",
+					que: "Mejora medible sobre algo que ya funciona",
+					evidencia: ["Línea base del proceso actual, medida", "Magnitud de la mejora esperada, con su método de medición"],
+					fondo: "Instrumentos de mejora productiva y extensionismo" },
+				arquitectural: { riesgo: "Medio", estado: "warn",
+					que: "Recombinación de piezas conocidas en un orden nuevo",
+					evidencia: ["Prueba de que la combinación no está publicada", "Ensayo de integración de al menos dos componentes"],
+					fondo: "Desarrollo tecnológico y proyectos con empresa" },
+				radical: { riesgo: "Alto", estado: "danger",
+					que: "Sustitución del principio técnico de base",
+					evidencia: ["Prueba de concepto del principio nuevo", "Plan explícito de qué se hace si el principio no funciona"],
+					fondo: "Investigación aplicada y fondos de alto riesgo" },
+				proceso: { riesgo: "Bajo", estado: "ok",
+					que: "Cambio en cómo se produce, no en qué se produce",
+					evidencia: ["Tiempos o costos del proceso actual", "Compromiso de la unidad que adoptará el cambio"],
+					fondo: "Mejora de productividad y transferencia" },
+			};
+			const botones = document.querySelectorAll("[data-tipo]");
+			const riesgo = document.getElementById("in-riesgo");
+			const que = document.getElementById("in-que");
+			const ev = document.getElementById("in-evidencia");
+			const fondo = document.getElementById("in-fondo");
+
+			function pintar(k) {
+				const t = TIPOS[k];
+				riesgo.textContent = "Riesgo " + t.riesgo.toLowerCase();
+				riesgo.dataset.estado = t.estado;
+				que.textContent = t.que;
+				ev.innerHTML = t.evidencia.map((x) => "<li>" + x + "</li>").join("");
+				fondo.textContent = t.fondo;
+				for (const b of botones) b.classList.toggle("is-on", b.dataset.tipo === k);
+			}
+			for (const b of botones) b.addEventListener("click", () => pintar(b.dataset.tipo));
+			pintar("incremental");
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

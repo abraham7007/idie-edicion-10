@@ -1,0 +1,111 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 410.4 180.504" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 180.504 
+L 410.4 180.504 
+L 410.4 -0 
+L 0 -0 
+L 0 180.504 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 8.183077 172.878923 
+L 139.527692 172.878923 
+L 139.527692 7.625077 
+L 8.183077 7.625077 
+z
+" clip-path="url(#p61d753d577)" style="fill: var(--fig-accent); stroke: var(--fig-paper); stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 151.116923 68.262549 
+L 193.610769 68.262549 
+L 193.610769 9.608123 
+L 151.116923 9.608123 
+z
+" clip-path="url(#p61d753d577)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 151.116923 102.599783 
+L 193.610769 102.599783 
+L 193.610769 72.228642 
+L 151.116923 72.228642 
+z
+" clip-path="url(#p61d753d577)" style="fill: var(--fig-muted)"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 151.116923 131.450626 
+L 193.610769 131.450626 
+L 193.610769 106.565875 
+L 151.116923 106.565875 
+z
+" clip-path="url(#p61d753d577)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 151.116923 156.423159 
+L 193.610769 156.423159 
+L 193.610769 135.416718 
+L 151.116923 135.416718 
+z
+" clip-path="url(#p61d753d577)" style="fill: var(--fig-muted)"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 151.116923 170.895877 
+L 193.610769 170.895877 
+L 193.610769 160.389251 
+L 151.116923 160.389251 
+z
+" clip-path="url(#p61d753d577)" style="fill: var(--fig-navy)"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-paper); font: 700 10.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="73.855385" y="84.886651" transform="rotate(-0 73.855385 84.886651)">Medicina</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-paper); font: 700 13px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="73.855385" y="107.059495" transform="rotate(-0 73.855385 107.059495)">1 312</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-paper); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="73.855385" y="122.226442" transform="rotate(-0 73.855385 122.226442)">43 % del total</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="212.926154" y="41.333836" transform="rotate(-0 212.926154 41.333836)">Ciencias agrícolas y biológicas</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="384.253615" y="41.198024" transform="rotate(-0 384.253615 41.198024)">662</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="212.926154" y="89.698681" transform="rotate(-0 212.926154 89.698681)">Ciencia medioambiental</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="337.317231" y="89.6769" transform="rotate(-0 337.317231 89.6769)">363</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="212.926154" y="121.40675" transform="rotate(-0 212.926154 121.40675)">Bioquímica y biología molecular</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="384.253615" y="121.270938" transform="rotate(-0 384.253615 121.270938)">305</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="212.926154" y="148.346626" transform="rotate(-0 212.926154 148.346626)">Física y astronomía</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="321.671769" y="148.182626" transform="rotate(-0 321.671769 148.182626)">264</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="212.926154" y="168.041064" transform="rotate(-0 212.926154 168.041064)">Inmunología y microbiología</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-ink); font: 700 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="363.393" y="167.905252" transform="rotate(-0 363.393 167.905252)">153</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p61d753d577">
+   <rect x="4.32" y="4.32" width="401.76" height="171.864"/>
+  </clipPath>
+ </defs>
+</svg>

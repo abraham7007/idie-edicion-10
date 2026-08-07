@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 3 · Mapa de financiamiento e inversión · Qué familias del catálogo admiten el proyecto según etapa y figura</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="52">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					02 · Dónde más hay dinero
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Qué familias del catálogo admiten el proyecto según etapa y figura</h1>
+				<div class="sim sim--stack" data-sim="catalogo" data-animate="fade-up">
+					<div class="sim__controls">
+						<label class="sim__label" for="c-etapa">Etapa del proyecto</label>
+						<input class="sim__range" id="c-etapa" type="range" min="1" max="5" step="1" value="3" />
+						<div class="sim__readout">
+							<span class="sim__value" id="c-nivel">Etapa 3</span>
+							<span class="sim__badge" id="c-veredicto" data-estado="ok">Familias admisibles</span>
+						</div>
+						<div class="picker">
+							<button class="picker__btn is-on" type="button" data-figura="empresa">Empresa</button>
+							<button class="picker__btn" type="button" data-figura="persona">Persona</button>
+							<button class="picker__btn" type="button" data-figura="asociacion">Asociación</button>
+							<button class="picker__btn" type="button" data-figura="universidad">Universidad</button>
+						</div>
+						<label class="crit__box">
+							<input type="checkbox" id="c-ceder" />
+							<span><b>El equipo puede ceder participación</b><span class="crit__help">Parte de la empresa a cambio del capital</span></span>
+						</label>
+						<p class="sim__what" id="c-detalle"></p>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Familias que admiten</h3>
+							<ul id="c-admite"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Por qué quedan fuera</h3>
+							<ul id="c-fuera"></ul>
+						</div>
+					</div>
+				</div>
+				<p class="sim-caption" data-animate="fade-up">Con empresa en etapa de
+				ventas, marcar que se puede ceder participación pasa de cuatro familias a siete.</p>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>Informe de mapeo sobre fondos concursables, programa Ágora Perú (FOAL, 2024) · documento público</li>
+						<li>APCI (2021), <i>Situación y Tendencias de la Cooperación Técnica Internacional en el Perú</i> · documento público</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="46-tipo-especie.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-fund" /></svg>
+					<span>En especie</span>
+				</a>
+				<a class="slide-nav__link" href="48-calendario-convocatorias.html">
+					<span>Calendario</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-calendar" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Tres condiciones deciden qué familias admiten el proyecto: la etapa,
+			// la figura con la que se postula y si el equipo puede ceder
+			// participación. Cada control cambia el veredicto de extremo a extremo
+			// (METODOLOGIA.md §3.3):
+			//   Etapa 1 a 5 con empresa y cediendo: de tres familias a cinco.
+			//   Figura, en etapa 3 cediendo: la empresa tiene seis y la persona dos.
+			//   Ceder participación, con empresa en etapa 4: de cuatro a siete.
+			const FAMILIAS = [
+				{ n: "Premios y concursos", e: [1, 3], part: false,
+				  f: ["empresa", "persona", "asociacion"],
+				  nota: "El premio no pide participación ni contrapartida: es la puerta más accesible y la que menos se usa." },
+				{ n: "Preincubación e incubación", e: [1, 3], part: false,
+				  f: ["empresa", "persona", "asociacion"],
+				  nota: "No da capital: deja el proyecto en condiciones de postular a lo que sí lo da." },
+				{ n: "Fondos públicos sectoriales", e: [2, 4], part: false,
+				  f: ["empresa", "asociacion"],
+				  nota: "Agro, pesca, empleo, turismo y cultura tienen ventanilla propia, y casi nadie las mira." },
+				{ n: "StartUp Perú y ProInnóvate", e: [2, 4], part: false,
+				  f: ["empresa"],
+				  nota: "Exige empresa formal: sin RUC no hay postulación en esta vía." },
+				{ n: "Aceleradoras", e: [3, 4], part: true,
+				  f: ["empresa"],
+				  nota: "Cohorte cerrada y participación accionaria a cambio del capital de entrada." },
+				{ n: "Inversores ángeles", e: [3, 5], part: true,
+				  f: ["empresa"],
+				  nota: "Decide sobre el emprendedor antes que sobre el producto, y exige aporte propio." },
+				{ n: "Capital de riesgo", e: [4, 5], part: true,
+				  f: ["empresa"],
+				  nota: "Pide participación, puesto en el consejo y una salida con fecha." },
+				{ n: "Cooperación y filantropía", e: [2, 5], part: false,
+				  f: ["asociacion", "universidad"],
+				  nota: "Embajadas, fundaciones y organismos: piden reporte, no participación." },
+				{ n: "Fondos climáticos y multilaterales", e: [4, 5], part: false,
+				  f: ["asociacion", "universidad"],
+				  nota: "Se entra por una entidad acreditada y con horizonte plurianual." },
+			];
+			const NOMBRES = { empresa: "una empresa formal", persona: "una persona sin empresa",
+				asociacion: "una asociación", universidad: "una universidad" };
+			const ETAPAS = ["", "idea", "prototipo", "producto con usuario", "ventas", "escala"];
+
+			const raiz = document.querySelector('[data-sim="catalogo"]');
+			const mando = raiz.querySelector("#c-etapa");
+			const nivel = raiz.querySelector("#c-nivel");
+			const veredicto = raiz.querySelector("#c-veredicto");
+			const detalle = raiz.querySelector("#c-detalle");
+			const admite = raiz.querySelector("#c-admite");
+			const fuera = raiz.querySelector("#c-fuera");
+			const ceder = raiz.querySelector("#c-ceder");
+			const botones = [...raiz.querySelectorAll(".picker__btn")];
+			let figura = "empresa";
+
+			function pintar() {
+				const e = Number(mando.value);
+				const cede = ceder.checked;
+				nivel.textContent = "Etapa " + e + " · " + ETAPAS[e];
+				const ok = [], no = [];
+				for (const F of FAMILIAS) {
+					if (e < F.e[0] || e > F.e[1]) { no.push({ F, r: "fuera de etapa" }); continue; }
+					if (!F.f.includes(figura)) { no.push({ F, r: "no admite esa figura" }); continue; }
+					if (F.part && !cede) { no.push({ F, r: "exige ceder participación" }); continue; }
+					ok.push(F);
+				}
+				const peso = { "exige ceder participación": 0, "no admite esa figura": 1 };
+				no.sort((a, b) => (peso[a.r] ?? 2) - (peso[b.r] ?? 2));
+				admite.innerHTML = ok.length
+					? ok.map((F) => "<li>" + F.n + "</li>").join("")
+					: "<li>Ninguna de las nueve familias con esta combinación.</li>";
+				fuera.innerHTML = no.slice(0, 4)
+					.map((x) => "<li>" + x.F.n + " · " + x.r + "</li>").join("");
+				if (ok.length === 0) {
+					veredicto.textContent = "Ninguna familia admite";
+					veredicto.dataset.estado = "danger";
+					detalle.textContent = "Con " + NOMBRES[figura] + " en etapa de " + ETAPAS[e]
+						+ ", ninguna familia del catálogo encaja. La salida es cambiar de figura o buscar la etapa anterior.";
+				} else {
+					veredicto.textContent = ok.length === 1
+						? "Una familia admite" : ok.length + " familias admiten";
+					veredicto.dataset.estado = ok.length === 1 ? "warn" : "ok";
+					detalle.textContent = ok[0].nota;
+				}
+			}
+			for (const b of botones) {
+				b.addEventListener("click", () => {
+					figura = b.dataset.figura;
+					for (const o of botones) o.classList.toggle("is-on", o === b);
+					pintar();
+				});
+			}
+			mando.addEventListener("input", pintar);
+			ceder.addEventListener("change", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

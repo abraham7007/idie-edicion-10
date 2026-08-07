@@ -1,0 +1,212 @@
+/* Design tokens. Declared inside @theme so Tailwind generates matching
+   utilities (bg-accent, text-heading, font-display, ...) while every value
+   also stays available as a plain CSS custom property (var(--color-accent)).
+   Paleta institucional PIT 2026 / OTI-UNI: rojo #C8102E y azul #1F3864
+   (METODOLOGIA.md §16). */
+@theme {
+	/* IBM Plex: familia diseñada para documentación técnica de ingeniería —
+	   el monoespaciado como voz principal está justificado por el contenido
+	   real (registros, direcciones hex, salida de terminal), no es un
+	   accesorio "de programador" añadido por estética. */
+	--font-sans: "IBM Plex Sans", system-ui, "Segoe UI", sans-serif;
+	--font-display: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+	--font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+
+	--color-bg: #ffffff;
+	--color-bg-subtle: #f6f7f9;
+	--color-surface: #ffffff;
+	--color-surface-2: #f0f2f5;
+	--color-text: #16181d;
+	--color-text-muted: #5b6270;
+	--color-heading: #0d0b12;
+	--color-border: #dcdfe6;
+
+	/* rojo institucional: énfasis primario, Tema A, La hora del código */
+	--color-accent: #c8102e;
+	--color-accent-soft: #fdeaec;
+	--color-accent-contrast: #ffffff;
+
+	/* azul institucional: énfasis secundario, definiciones, Tema B */
+	--color-navy: #1f3864;
+	--color-navy-soft: #eaeff8;
+	--color-navy-contrast: #ffffff;
+
+	--color-ok: #1a7f4b;
+	--color-ok-soft: #e6f4ec;
+	--color-warn: #a86a00;
+	--color-warn-soft: #fdf3e0;
+	--color-danger: #b3261e;
+	--color-danger-soft: #fbeae9;
+
+	/* paneles de código: oscuros en ambos temas, como una terminal */
+	--color-code-bg: #12151c;
+	--color-code-header: #1c212b;
+	--color-code-border: #2c313c;
+	--color-code-fg: #dfe3ec;
+	--color-code-dim: #7d8598;
+
+	--shadow-color: 220 30% 8%;
+	--shadow-sm: 0 1px 3px hsl(var(--shadow-color) / 0.07);
+	--shadow-md: 0 8px 24px hsl(var(--shadow-color) / 0.08);
+	--shadow-lg: 0 24px 48px -16px hsl(var(--shadow-color) / 0.24);
+
+	--radius-sm: 0.375rem;
+	--radius-md: 0.75rem;
+	--radius-lg: 1.25rem;
+	--radius-full: 999px;
+
+	--space-3xs: 0.25rem;
+	--space-2xs: 0.5rem;
+	--space-xs: 0.75rem;
+	--space-sm: 1rem;
+	--space-md: 1.5rem;
+	--space-lg: 2.5rem;
+	--space-xl: 4rem;
+	--space-2xl: 6rem;
+
+	/* ESCALA TIPOGRÁFICA — un solo lugar donde vive el tamaño de cada rol.
+	   Antes cada diapositiva improvisaba su tamaño con utilidades sueltas
+	   (text-sm, text-[clamp(...)]) y el resultado era que un título de
+	   sección y un párrafo de apoyo terminaban midiendo casi lo mismo: la
+	   jerarquía se leía plana. Cada paso de esta escala salta lo suficiente
+	   como para distinguirse a distancia de proyector.
+
+	   El rol NO se distingue solo por tamaño: cada uno tiene además su
+	   color y su familia asignados (ver .slide__eyebrow / .slide__title /
+	   .slide__lede / h3 en slides.css). Tamaño + color + familia juntos. */
+	/* El término del medio del `clamp` es el que manda a 1 440 px, que es la
+	   medida con la que se proyecta. Se subió un 8 % sobre la escala original
+	   —cuerpo de 17,6 a 19,0 px, apoyo de 15,3 a 16,5, micro de 13,0 a 14,1—
+	   después de comprobar que las láminas ya no desbordaban con el contenido
+	   nuevo. El tope en rem no se tocó: ya estaba por encima y solo entra en
+	   pantallas más anchas que la de proyección. */
+	--fs-eyebrow: clamp(0.78rem, 0.901vw, 0.975rem);
+	--fs-title: clamp(2.0rem, 3.92vw, 3.18rem);
+	--fs-title-sm: clamp(1.6rem, 2.86vw, 2.33rem);
+	--fs-lede: clamp(1.15rem, 1.59vw, 1.53rem);
+	--fs-h3: clamp(1.15rem, 1.48vw, 1.51rem);
+	--fs-body: clamp(1.05rem, 1.29vw, 1.36rem);
+	--fs-small: clamp(0.95rem, 1.12vw, 1.19rem);
+	--fs-micro: clamp(0.8rem, 0.954vw, 0.996rem);
+
+	/* Tinta de las figuras generadas con Python (tools/figures/render.py).
+	   El SVG sale con estos nombres de variable en vez de colores fijos, así
+	   que la misma figura se redibuja correcta en tema claro y oscuro sin
+	   generar dos archivos. */
+	--fig-ink: #16181d;
+	/* Los pasos de figura NO son los de marca. El azul institucional
+	   (#1f3864) falla la validación como marca de datos: cae fuera de la
+	   banda de luminosidad (L 0,345 frente al mínimo de 0,43) y su croma
+	   0,083 lo hace leerse gris. Sirve para texto y superficies, no para
+	   barras. Aquí va un paso del mismo tono ya validado.
+	   Comprobado con scripts/validate_palette.js de la skill dataviz:
+	   el par #c8102e ↔ #2f6fba da ΔE 22,5 en protanopía y 30,9 en visión
+	   normal, y pasa las cinco comprobaciones. */
+	--fig-muted: #7a8291;
+	--fig-grid: #dcdfe6;
+	--fig-surface: #f6f7f9;
+	--fig-paper: #ffffff;
+	--fig-ramp-1: #7ba4d6;
+	--fig-ramp-2: #3a72b8;
+	--fig-ramp-3: #14396c;
+	--fig-accent: #c8102e;
+	--fig-navy: #2f6fba;
+	--fig-ok: #1a7f4b;
+	--fig-warn: #a86a00;
+}
+
+/* Modo oscuro: automático por preferencia del sistema, ANULABLE por el
+   conmutador visible (deck.js pone data-theme="dark"/"light" en <html> y lo
+   persiste). :root[data-theme] siempre gana sobre la media query. */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		--color-bg: #0f1116;
+		--color-bg-subtle: #14161c;
+		--color-surface: #171a21;
+		--color-surface-2: #1f232c;
+		--color-text: #e8eaf0;
+		--color-text-muted: #a0a7b6;
+		--color-heading: #f4f2f7;
+		--color-border: #2c313c;
+
+		--color-accent: #ff5f6e;
+		--color-accent-soft: #3a1a20;
+		--color-accent-contrast: #1c0a0c;
+
+		--color-navy: #9db6e6;
+		--color-navy-soft: #1b2436;
+		--color-navy-contrast: #0d1626;
+
+		--color-ok: #59d391;
+		--color-ok-soft: #12291e;
+		--color-warn: #f0b95c;
+		--color-warn-soft: #2c2415;
+		--color-danger: #ff7b72;
+		--color-danger-soft: #301a19;
+
+		--shadow-color: 220 60% 2%;
+		--shadow-sm: 0 1px 3px hsl(var(--shadow-color) / 0.4);
+		--shadow-md: 0 8px 24px hsl(var(--shadow-color) / 0.45);
+		--shadow-lg: 0 24px 48px -16px hsl(var(--shadow-color) / 0.65);
+
+		--fig-ink: #e8eaf0;
+		--fig-grid: #2c313c;
+		--fig-surface: #1f232c;
+		--fig-paper: #171a21;
+		--fig-muted: #9aa3b2;
+		--fig-ramp-1: #6f97c8;
+		--fig-ramp-2: #4e93d9;
+		--fig-ramp-3: #a8c8ef;
+		--fig-ramp-1: #6f97c8;
+	--fig-ramp-2: #4e93d9;
+	--fig-ramp-3: #a8c8ef;
+	--fig-accent: #e8556b;
+		--fig-navy: #4e93d9;
+		--fig-ok: #59d391;
+		--fig-warn: #f0b95c;
+	}
+}
+
+:root[data-theme="dark"] {
+	--color-bg: #0f1116;
+	--color-bg-subtle: #14161c;
+	--color-surface: #171a21;
+	--color-surface-2: #1f232c;
+	--color-text: #e8eaf0;
+	--color-text-muted: #a0a7b6;
+	--color-heading: #f4f2f7;
+	--color-border: #2c313c;
+
+	--color-accent: #ff5f6e;
+	--color-accent-soft: #3a1a20;
+	--color-accent-contrast: #1c0a0c;
+
+	--color-navy: #9db6e6;
+	--color-navy-soft: #1b2436;
+	--color-navy-contrast: #0d1626;
+
+	--color-ok: #59d391;
+	--color-ok-soft: #12291e;
+	--color-warn: #f0b95c;
+	--color-warn-soft: #2c2415;
+	--color-danger: #ff7b72;
+	--color-danger-soft: #301a19;
+
+	--shadow-color: 220 60% 2%;
+	--shadow-sm: 0 1px 3px hsl(var(--shadow-color) / 0.4);
+	--shadow-md: 0 8px 24px hsl(var(--shadow-color) / 0.45);
+	--shadow-lg: 0 24px 48px -16px hsl(var(--shadow-color) / 0.65);
+
+	--fig-ink: #e8eaf0;
+	--fig-grid: #2c313c;
+	--fig-surface: #1f232c;
+	--fig-paper: #171a21;
+	--fig-muted: #9aa3b2;
+	--fig-ramp-1: #6f97c8;
+	--fig-ramp-2: #4e93d9;
+	--fig-ramp-3: #a8c8ef;
+	--fig-accent: #e8556b;
+	--fig-navy: #4e93d9;
+	--fig-ok: #59d391;
+	--fig-warn: #f0b95c;
+}

@@ -1,0 +1,360 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.541356 186.048" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 186.048 
+L 460.541356 186.048 
+L 460.541356 0 
+L 0 0 
+L 0 186.048 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 192.013664 42.181463 
+L 235.678767 42.181463 
+L 235.678767 19.464585 
+L 192.013664 19.464585 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-accent); opacity: 0.581285"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 192.013664 42.181463 
+L 235.678767 42.181463 
+L 235.678767 19.464585 
+L 192.013664 19.464585 
+L 192.013664 42.181463 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-accent); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 239.475733 42.181463 
+L 283.140836 42.181463 
+L 283.140836 19.464585 
+L 239.475733 19.464585 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.122"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 239.475733 42.181463 
+L 283.140836 42.181463 
+L 283.140836 19.464585 
+L 239.475733 19.464585 
+L 239.475733 42.181463 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 286.937802 42.181463 
+L 330.602905 42.181463 
+L 330.602905 19.464585 
+L 286.937802 19.464585 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.2984"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 286.937802 42.181463 
+L 330.602905 42.181463 
+L 330.602905 19.464585 
+L 286.937802 19.464585 
+L 286.937802 42.181463 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-navy); stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 334.399871 42.181463 
+L 378.064974 42.181463 
+L 378.064974 19.464585 
+L 334.399871 19.464585 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.206"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 334.399871 42.181463 
+L 378.064974 42.181463 
+L 378.064974 19.464585 
+L 334.399871 19.464585 
+L 334.399871 42.181463 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 381.86194 42.181463 
+L 425.527043 42.181463 
+L 425.527043 19.464585 
+L 381.86194 19.464585 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.332"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 381.86194 42.181463 
+L 425.527043 42.181463 
+L 425.527043 19.464585 
+L 381.86194 19.464585 
+L 381.86194 42.181463 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-navy); stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 239.475733 69.225366 
+L 283.140836 69.225366 
+L 283.140836 46.508488 
+L 239.475733 46.508488 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-accent); opacity: 0.403855"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 239.475733 69.225366 
+L 283.140836 69.225366 
+L 283.140836 46.508488 
+L 239.475733 46.508488 
+L 239.475733 69.225366 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-accent); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 286.937802 69.225366 
+L 330.602905 69.225366 
+L 330.602905 46.508488 
+L 286.937802 46.508488 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.1178"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 286.937802 69.225366 
+L 330.602905 69.225366 
+L 330.602905 46.508488 
+L 286.937802 46.508488 
+L 286.937802 69.225366 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 334.399871 69.225366 
+L 378.064974 69.225366 
+L 378.064974 46.508488 
+L 334.399871 46.508488 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.0884"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 334.399871 69.225366 
+L 378.064974 69.225366 
+L 378.064974 46.508488 
+L 334.399871 46.508488 
+L 334.399871 69.225366 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 381.86194 69.225366 
+L 425.527043 69.225366 
+L 425.527043 46.508488 
+L 381.86194 46.508488 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.1682"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 381.86194 69.225366 
+L 425.527043 69.225366 
+L 425.527043 46.508488 
+L 381.86194 46.508488 
+L 381.86194 69.225366 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 286.937802 96.269268 
+L 330.602905 96.269268 
+L 330.602905 73.55239 
+L 286.937802 73.55239 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-accent); opacity: 0.43933"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 286.937802 96.269268 
+L 330.602905 96.269268 
+L 330.602905 73.55239 
+L 286.937802 73.55239 
+L 286.937802 96.269268 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-accent); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 334.399871 96.269268 
+L 378.064974 96.269268 
+L 378.064974 73.55239 
+L 334.399871 73.55239 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.1514"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 334.399871 96.269268 
+L 378.064974 96.269268 
+L 378.064974 73.55239 
+L 334.399871 73.55239 
+L 334.399871 96.269268 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 381.86194 96.269268 
+L 425.527043 96.269268 
+L 425.527043 73.55239 
+L 381.86194 73.55239 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.2144"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 381.86194 96.269268 
+L 425.527043 96.269268 
+L 425.527043 73.55239 
+L 381.86194 73.55239 
+L 381.86194 96.269268 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 334.399871 123.313171 
+L 378.064974 123.313171 
+L 378.064974 100.596293 
+L 334.399871 100.596293 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-accent); opacity: 0.29743"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 334.399871 123.313171 
+L 378.064974 123.313171 
+L 378.064974 100.596293 
+L 334.399871 100.596293 
+L 334.399871 123.313171 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-accent); stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 381.86194 123.313171 
+L 425.527043 123.313171 
+L 425.527043 100.596293 
+L 381.86194 100.596293 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-navy); opacity: 0.2354"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 381.86194 123.313171 
+L 425.527043 123.313171 
+L 425.527043 100.596293 
+L 381.86194 100.596293 
+L 381.86194 123.313171 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-navy); stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 381.86194 150.357073 
+L 425.527043 150.357073 
+L 425.527043 127.640195 
+L 381.86194 127.640195 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: var(--fig-accent); opacity: 0.54581"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 381.86194 150.357073 
+L 425.527043 150.357073 
+L 425.527043 127.640195 
+L 381.86194 127.640195 
+L 381.86194 150.357073 
+z
+" clip-path="url(#p0713f0c8b1)" style="fill: none; stroke: var(--fig-accent); stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="213.846216" y="33.196087" transform="rotate(-0 213.846216 33.196087)">83,9 %</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="261.308284" y="33.163212" transform="rotate(-0 261.308284 33.163212)">0,10</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="308.770353" y="33.140899" transform="rotate(-0 308.770353 33.140899)">0,52</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="356.232422" y="33.163212" transform="rotate(-0 356.232422 33.163212)">0,30</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="403.694491" y="33.140899" transform="rotate(-0 403.694491 33.140899)">0,60</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="261.308284" y="60.239989" transform="rotate(-0 261.308284 60.239989)">51,6 %</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="308.770353" y="60.207114" transform="rotate(-0 308.770353 60.207114)">0,09</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="356.232422" y="60.207114" transform="rotate(-0 356.232422 60.207114)">−0,02</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="403.694491" y="60.207114" transform="rotate(-0 403.694491 60.207114)">−0,21</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="308.770353" y="87.283892" transform="rotate(-0 308.770353 87.283892)">58,1 %</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="356.232422" y="87.251017" transform="rotate(-0 356.232422 87.251017)">0,17</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ink); font: 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="403.694491" y="87.251017" transform="rotate(-0 403.694491 87.251017)">0,32</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="356.232422" y="114.327794" transform="rotate(-0 356.232422 114.327794)">32,3 %</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-ink); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="403.694491" y="114.272607" transform="rotate(-0 403.694491 114.272607)">0,37</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="403.694491" y="141.371697" transform="rotate(-0 403.694491 141.371697)">77,4 %</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="182.52125" y="33.051774" transform="rotate(-0 182.52125 33.051774)">A · Desconfianza en el emprendedor</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: var(--fig-muted); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="213.846216" y="13.889908" transform="rotate(-0 213.846216 13.889908)">A</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="182.52125" y="60.079427" transform="rotate(-0 182.52125 60.079427)">B · Sector o proyecto que no entiende</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: var(--fig-muted); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="261.308284" y="13.889908" transform="rotate(-0 261.308284 13.889908)">B</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="182.52125" y="87.139579" transform="rotate(-0 182.52125 87.139579)">C · Proyecto mal concebido</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: var(--fig-muted); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="308.770353" y="13.889908" transform="rotate(-0 308.770353 13.889908)">C</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="182.52125" y="114.183482" transform="rotate(-0 182.52125 114.183482)">D · Proyecto en crisis existencial</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: var(--fig-muted); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="356.232422" y="13.889908" transform="rotate(-0 356.232422 13.889908)">D</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="182.52125" y="141.227384" transform="rotate(-0 182.52125 141.227384)">E · Aporte propio insuficiente</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: var(--fig-muted); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="403.694491" y="13.889908" transform="rotate(-0 403.694491 13.889908)">E</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="26.371043" y="164.723362" transform="rotate(-0 26.371043 164.723362)">Diagonal en rojo: de los 31 inversores, los que declaran el motivo.</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="26.371043" y="173.498817" transform="rotate(-0 26.371043 173.498817)">Celdas en azul: correlación entre motivos; con borde marcado, significativa al 5 % por encima de 0,36.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0713f0c8b1">
+   <rect x="21.624836" y="4.32" width="412.92" height="177.408"/>
+  </clipPath>
+ </defs>
+</svg>

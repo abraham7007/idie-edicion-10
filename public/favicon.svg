@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<title>I+D+i+e · OTI-UNI</title>
+	<!-- El mapa del ecosistema en miniatura: el mismo objeto que abre las seis
+	     portadas. Los colores van fijos y no por variable CSS porque el
+	     favicon lo dibuja el navegador fuera del documento, donde ninguna
+	     hoja de estilo llega. -->
+	<g fill="none" stroke="#c8102e" stroke-width="1.6" stroke-linejoin="round">
+		<path d="M16 6 25.5 12.9 21.9 24.1H10.1L6.5 12.9Z" opacity=".45" />
+	</g>
+	<g fill="#c8102e">
+		<circle cx="16" cy="6" r="3.4" />
+		<circle cx="25.5" cy="12.9" r="3.4" />
+		<circle cx="21.9" cy="24.1" r="3.4" />
+		<circle cx="10.1" cy="24.1" r="3.4" />
+		<circle cx="6.5" cy="12.9" r="3.4" />
+	</g>
+	<circle cx="16" cy="16" r="5" fill="#1f3864" />
+</svg>

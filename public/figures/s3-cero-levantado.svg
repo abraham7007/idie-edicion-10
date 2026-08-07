@@ -1,0 +1,117 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 374.52 147.24" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 147.24 
+L 374.52 147.24 
+L 374.52 0 
+L 0 0 
+L 0 147.24 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 152.82 80.22 
+C 152.82 62.722425 145.861702 45.923606 133.489048 33.550952 
+C 121.116394 21.178298 104.317575 14.22 86.82 14.22 
+C 69.322425 14.22 52.523606 21.178298 40.150952 33.550952 
+C 27.778298 45.923606 20.82 62.722425 20.82 80.22 
+L 43.26 80.22 
+C 43.26 68.6716 47.852477 57.58438 56.018429 49.418429 
+C 64.18438 41.252477 75.2716 36.66 86.82 36.66 
+C 98.3684 36.66 109.45562 41.252477 117.621571 49.418429 
+C 125.787523 57.58438 130.38 68.6716 130.38 80.22 
+z
+" clip-path="url(#p6d507d5413)" style="fill: var(--fig-surface)"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 130.466583 30.712669 
+C 120.940751 22.314519 109.190476 16.841516 96.632381 14.953491 
+C 84.074285 13.065466 71.234171 14.841469 59.660052 20.067384 
+C 48.085934 25.293299 38.262414 33.750319 31.373825 44.418859 
+C 24.485236 55.087399 20.82 67.520772 20.82 80.22 
+L 43.26 80.22 
+C 43.26 71.838509 45.679056 63.632483 50.225525 56.591247 
+C 54.771994 49.55001 61.255516 43.968377 68.894435 40.519273 
+C 76.533353 37.070169 85.007828 35.898007 93.296171 37.144104 
+C 101.584514 38.390201 109.339696 42.002383 115.626745 47.545162 
+z
+" clip-path="url(#p6d507d5413)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-accent); font: 700 20px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="86.82" y="69.460625" transform="rotate(-0 86.82 69.460625)">73 %</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="86.82" y="81.814656" transform="rotate(-0 86.82 81.814656)">levantó cero</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="86.82" y="109.194656" transform="rotate(-0 86.82 109.194656)">A los 12 meses</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="86.82" y="122.802844" transform="rotate(-0 86.82 122.802844)">1 350 graduadas</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="20.82" y="89.536094" transform="rotate(-0 20.82 89.536094)">0 %</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="152.82" y="89.536094" transform="rotate(-0 152.82 89.536094)">100 %</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 353.7 80.22 
+C 353.7 62.722425 346.741702 45.923606 334.369048 33.550952 
+C 321.996394 21.178298 305.197575 14.22 287.7 14.22 
+C 270.202425 14.22 253.403606 21.178298 241.030952 33.550952 
+C 228.658298 45.923606 221.7 62.722425 221.7 80.22 
+L 244.14 80.22 
+C 244.14 68.6716 248.732477 57.58438 256.898429 49.418429 
+C 265.06438 41.252477 276.1516 36.66 287.7 36.66 
+C 299.2484 36.66 310.33562 41.252477 318.501571 49.418429 
+C 326.667523 57.58438 331.26 68.6716 331.26 80.22 
+z
+" clip-path="url(#p0e190c0f9b)" style="fill: var(--fig-surface)"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 265.343297 18.121869 
+C 252.564349 22.722574 241.511783 31.157626 233.702119 42.269653 
+C 225.892455 53.381681 221.7 66.6381 221.7 80.22 
+L 244.14 80.22 
+C 244.14 71.255946 246.90702 62.50671 252.061398 55.172771 
+C 257.215776 47.838833 264.51047 42.271699 272.944576 39.235234 
+z
+" clip-path="url(#p0e190c0f9b)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-accent); font: 700 20px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="287.7" y="69.460625" transform="rotate(-0 287.7 69.460625)">39 %</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="287.7" y="81.814656" transform="rotate(-0 287.7 81.814656)">levantó cero</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ink); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="287.7" y="109.194656" transform="rotate(-0 287.7 109.194656)">A los 3 años</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="287.7" y="122.802844" transform="rotate(-0 287.7 122.802844)">515 graduadas</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="221.7" y="89.536094" transform="rotate(-0 221.7 89.536094)">0 %</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="353.7" y="89.536094" transform="rotate(-0 353.7 89.536094)">100 %</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6d507d5413">
+   <rect x="4.32" y="4.32" width="165" height="138.6"/>
+  </clipPath>
+  <clipPath id="p0e190c0f9b">
+   <rect x="205.2" y="4.32" width="165" height="138.6"/>
+  </clipPath>
+ </defs>
+</svg>

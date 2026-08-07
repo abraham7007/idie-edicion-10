@@ -1,0 +1,29 @@
+{
+  "name": "idie-edicion-10",
+  "private": true,
+  "version": "10.0.0",
+  "type": "module",
+  "description": "Diseño y Gestión de Proyectos I+D+i+e · PIT · OTI-UNI · 10ma edición",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node tools/check-slides.mjs",
+    "check:fullscreen": "node tools/check-fullscreen.mjs",
+    "figuras": "python3 tools/figures/render.py",
+    "audit:lexico": "cd src/slides && python3 ../../tools/audit-lexico.py",
+    "audit:editorial": "cd src/slides && python3 ../../tools/audit-editorial.py",
+    "audit:cifras": "cd src/slides && python3 ../../tools/audit-cifras.py",
+    "clase": "node tools/construir.mjs",
+    "audit:registro": "cd src/slides && python3 ../../tools/audit-registro.py",
+    "audit:mazo": "cd src/slides && python3 ../../tools/audit-mazo.py",
+    "espacio": "node tools/check-espacio.mjs",
+    "pdf": "node tools/check-espacio.mjs --pdf"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "playwright": "^1.54.1",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.5"
+  }
+}

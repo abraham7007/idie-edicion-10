@@ -1,0 +1,177 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 459.938108 209.969278" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 209.969278 
+L 459.938108 209.969278 
+L 459.938108 0 
+L 0 0 
+L 0 209.969278 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 42.698108 205.649278 
+L 455.618108 205.649278 
+L 455.618108 6.065278 
+L 42.698108 6.065278 
+L 42.698108 205.649278 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 150.692569 30.389578 
+L 182.455646 30.389578 
+L 182.455646 21.241978 
+L 150.692569 21.241978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.75"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="27.980278" transform="rotate(-0 146.881 27.980278)">Publicación y congreso</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="187.537738" y="27.828153" transform="rotate(-0 187.537738 27.828153)">Sin contraprestación</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 150.692569 51.179578 
+L 214.218723 51.179578 
+L 214.218723 42.031978 
+L 150.692569 42.031978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.75"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="48.795716" transform="rotate(-0 146.881 48.795716)">Consultoría y asistencia técnica</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="219.300815" y="48.500216" transform="rotate(-0 219.300815 48.500216)">Se cobra el tiempo</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 150.692569 71.969578 
+L 214.218723 71.969578 
+L 214.218723 62.821978 
+L 150.692569 62.821978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.75"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="69.449856" transform="rotate(-0 146.881 69.449856)">Uso de equipos y laboratorio</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="219.300815" y="69.290216" transform="rotate(-0 219.300815 69.290216)">Se cobra el servicio</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 150.692569 92.759578 
+L 245.9818 92.759578 
+L 245.9818 83.611978 
+L 150.692569 83.611978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="90.350278" transform="rotate(-0 146.881 90.350278)">Investigación por encargo</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="251.063892" y="90.056841" transform="rotate(-0 251.063892 90.056841)">El que paga fija el objetivo</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 150.692569 113.549578 
+L 245.9818 113.549578 
+L 245.9818 104.401978 
+L 150.692569 104.401978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.75"/>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="111.037372" transform="rotate(-0 146.881 111.037372)">Desarrollo conjunto</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="251.063892" y="110.870216" transform="rotate(-0 251.063892 110.870216)">Titularidad compartida, pactada antes</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 150.692569 134.339578 
+L 277.744877 134.339578 
+L 277.744877 125.191978 
+L 150.692569 125.191978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.75"/>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="131.827372" transform="rotate(-0 146.881 131.827372)">Licencia no exclusiva</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="282.826969" y="131.660216" transform="rotate(-0 282.826969 131.660216)">Se cobra por uso, sin ceder</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 150.692569 155.129578 
+L 277.744877 155.129578 
+L 277.744877 145.981978 
+L 150.692569 145.981978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.75"/>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="152.617372" transform="rotate(-0 146.881 152.617372)">Licencia exclusiva</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="282.826969" y="152.450216" transform="rotate(-0 282.826969 152.450216)">Un solo explotador, por plazo y territorio</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 150.692569 175.919578 
+L 309.507954 175.919578 
+L 309.507954 166.771978 
+L 150.692569 166.771978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.75"/>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="173.407372" transform="rotate(-0 146.881 173.407372)">Cesión de la titularidad</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="314.590046" y="173.240216" transform="rotate(-0 314.590046 173.240216)">Se vende y se pierde el control</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 150.692569 196.709578 
+L 309.507954 196.709578 
+L 309.507954 187.561978 
+L 150.692569 187.561978 
+z
+" clip-path="url(#s5-abanico-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.75"/>
+   </g>
+   <g id="text_17">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="146.881" y="194.325716" transform="rotate(-0 146.881 194.325716)">Spin-off con participación</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: var(--fig-muted); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="314.590046" y="194.030216" transform="rotate(-0 314.590046 194.030216)">Se cambia titularidad por acciones</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 159.04734 12.925978 
+Q 299.981711 12.925978 439.798047 12.925978 
+" style="fill: none; stroke: var(--fig-muted); stroke-linecap: round"/>
+    <path d="M 436.198047 11.125978 
+L 439.798047 12.925978 
+L 436.198047 14.725978 
+z
+" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-linecap: round"/>
+   </g>
+   <g id="text_19">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="157.045185" y="9.599578" transform="rotate(-0 157.045185 9.599578)">Menos control cedido</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="442.912877" y="9.599578" transform="rotate(-0 442.912877 9.599578)">Más control cedido</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-abanico-transferencia-clip-0">
+   <rect x="42.698108" y="6.065278" width="412.92" height="199.584"/>
+  </clipPath>
+ </defs>
+</svg>

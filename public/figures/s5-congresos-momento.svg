@@ -1,0 +1,161 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 420.935547 163.095875" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 163.095875 
+L 420.935547 163.095875 
+L 420.935547 0 
+L 0 0 
+L 0 163.095875 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 14.855547 148.464 
+L 416.615547 148.464 
+L 416.615547 4.32 
+L 14.855547 4.32 
+L 14.855547 148.464 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 14.855547 148.464 
+L 85.75437 148.464 
+L 85.75437 4.32 
+L 14.855547 4.32 
+z
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: var(--fig-accent); opacity: 0.07; stroke: var(--fig-accent); stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="14.855547" y="157.320094" transform="rotate(-0 14.855547 157.320094)">mes 0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="85.75437" y="157.320094" transform="rotate(-0 85.75437 157.320094)">6</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="156.653194" y="157.320094" transform="rotate(-0 156.653194 157.320094)">12</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="227.552017" y="157.320094" transform="rotate(-0 227.552017 157.320094)">18</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="line2d_5">
+    <path d="M 85.75437 35.655652 
+L 109.387312 35.655652 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 85.75437 66.991304 
+L 144.836723 66.991304 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 85.75437 98.326957 
+L 168.469665 98.326957 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 85.75437 129.662609 
+L 192.102606 129.662609 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-accent); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="18.400488" y="20.347137" transform="rotate(-0 18.400488 20.347137)">Antes de solicitar: nada se divulga</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="115.295547" y="32.864948" transform="rotate(-0 115.295547 32.864948)">Póster en congreso</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 6.7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="115.295547" y="43.476004" transform="rotate(-0 115.295547 43.476004)">Resultado parcial, sin detalle habilitante</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="150.744959" y="64.0486" transform="rotate(-0 150.744959 64.0486)">Ponencia en congreso</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 6.7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="150.744959" y="74.92786" transform="rotate(-0 150.744959 74.92786)">Método y resultado, ya solicitada la patente</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="174.3779" y="95.430565" transform="rotate(-0 174.3779 95.430565)">Demostración en feria</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-muted); font: 6.7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="174.3779" y="106.24048" transform="rotate(-0 174.3779 106.24048)">Solo si el registro ya está presentado</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="198.010841" y="126.766217" transform="rotate(-0 198.010841 126.766217)">Artículo en revista</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-muted); font: 6.7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="198.010841" y="137.482961" transform="rotate(-0 198.010841 137.482961)">Resultado cerrado y revisado por pares</text>
+   </g>
+   <g id="line2d_9">
+    <path d="M 85.75437 148.464 
+L 85.75437 30.955304 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke-dasharray: 4,3; stroke-dashoffset: 0; stroke: var(--fig-accent)"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 109.387312 35.655652 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="mdbfd9e0569" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: var(--fig-ramp-2)"/>
+    </defs>
+    <g clip-path="url(#s5-congresos-momento-clip-0)">
+     <use xlink:href="#mdbfd9e0569" x="109.387312" y="35.655652" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2)"/>
+    </g>
+   </g>
+   <g id="line2d_11">
+    <path d="M 144.836723 66.991304 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-congresos-momento-clip-0)">
+     <use xlink:href="#mdbfd9e0569" x="144.836723" y="66.991304" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2)"/>
+    </g>
+   </g>
+   <g id="line2d_12">
+    <path d="M 168.469665 98.326957 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-congresos-momento-clip-0)">
+     <use xlink:href="#mdbfd9e0569" x="168.469665" y="98.326957" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2)"/>
+    </g>
+   </g>
+   <g id="line2d_13">
+    <path d="M 192.102606 129.662609 
+" clip-path="url(#s5-congresos-momento-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-congresos-momento-clip-0)">
+     <use xlink:href="#mdbfd9e0569" x="192.102606" y="129.662609" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-congresos-momento-clip-0">
+   <rect x="14.855547" y="4.32" width="401.76" height="144.144"/>
+  </clipPath>
+ </defs>
+</svg>

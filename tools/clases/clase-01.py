@@ -133,7 +133,7 @@ AGENDA = envolver(
 \t\t\t\t\t\t\t<li><b>02</b><i>Startups</i>, <i>spin-offs</i> y transferencia</li>
 \t\t\t\t\t\t\t<li><b>03</b>Mapa de financiamiento e inversión</li>
 \t\t\t\t\t\t\t<li><b>04</b>Formulación de proyectos</li>
-\t\t\t\t\t\t\t<li><b>05</b>Presupuesto, ejecución y propiedad intelectual</li>
+\t\t\t\t\t\t\t<li><b>05</b>Del proyecto ganado al resultado transferido</li>
 \t\t\t\t\t\t\t<li><b>06</b><i>Pitch Elevator</i> y tendencias mundiales en I+D+i+e</li>
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t</div>

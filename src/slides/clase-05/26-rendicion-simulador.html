@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 5 · Del proyecto ganado al resultado transferido · Simulación: admisión de un gasto en la rendición</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="63">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					02 · Simulación
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Simulación: admisión de un gasto en la rendición</h1>
+				<div class="sim sim--stack" data-sim="rendicion" data-animate="fade-up">
+					<div class="sim__controls">
+						<span class="sim__label">Un gasto de S/ 6 200 por un ensayo de calibración</span>
+						<div class="sim__readout">
+							<span class="sim__value" id="r-estado">Se observa</span>
+							<span class="sim__badge" id="r-badge" data-estado="warn">3 de 4 condiciones</span>
+						</div>
+						<label class="crit__box">
+							<input type="checkbox" id="r-nombre" checked />
+							<span><b>Comprobante a nombre de la entidad ejecutora</b></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" id="r-fecha" checked />
+							<span><b>Fecha posterior al acta de inicio</b></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" id="r-partida" checked />
+							<span><b>Concepto reconocible en una partida del presupuesto</b></span>
+						</label>
+						<label class="crit__box">
+							<input type="checkbox" id="r-entregable" />
+							<span><b>Informe de ensayo adjunto</b><span class="crit__help">Prueba que el servicio se prestó, no solo que se pagó</span></span>
+						</label>
+						<p class="sim__what" id="r-nota"></p>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Lo que el expediente acredita</h3>
+							<ul id="r-ok"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Lo que se va a observar</h3>
+							<ul id="r-no"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>ProInnóvate · bases del concurso <i>Emprendimientos Innovadores 12G</i> de StartUp Perú, 2025 · <a href="https://startup.proinnovate.gob.pe">startup.proinnovate.gob.pe</a> · consultado el 9 de agosto de 2026</li>
+						<li>Caso de clase · magnitudes didácticas del prototipo de monitoreo de colmenas, no medidas en campo</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="25-cierre-doble.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-milestone" /></svg>
+					<span>Los dos cierres</span>
+				</a>
+				<a class="slide-nav__link" href="27-tema-03.html">
+					<span>Tema 03</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// Las cuatro condiciones son acumulativas: basta que falle una para que
+			// el gasto se observe. La cuarta —el entregable— es la que más se olvida
+			// y por eso arranca desmarcada.
+			const raiz = document.querySelector('[data-sim="rendicion"]');
+			const CONDICIONES = [
+				["r-nombre",
+					"El comprobante es de la entidad ejecutora",
+					"A nombre de una persona: el gasto no es del proyecto"],
+				["r-fecha",
+					"El gasto cae dentro del plazo de ejecución",
+					"Anterior al acta de inicio: no es elegible"],
+				["r-partida",
+					"El concepto entra en servicios tecnológicos",
+					"Sin concepto clasificable no hay contraste con el presupuesto"],
+				["r-entregable",
+					"El informe de ensayo prueba que el servicio se prestó",
+					"Servicio pagado sin producto: acredita el pago, no la ejecución"],
+			];
+			const estado = raiz.querySelector("#r-estado");
+			const badge = raiz.querySelector("#r-badge");
+			const ok = raiz.querySelector("#r-ok");
+			const no = raiz.querySelector("#r-no");
+			const nota = raiz.querySelector("#r-nota");
+
+			function pintar() {
+				const cumplidas = [], fallidas = [];
+				CONDICIONES.forEach(([id, si, error]) => {
+					(raiz.querySelector("#" + id).checked ? cumplidas : fallidas)
+						.push(raiz.querySelector("#" + id).checked ? si : error);
+				});
+				ok.innerHTML = cumplidas.map((x) => "<li>" + x + "</li>").join("")
+					|| "<li>Nada: el comprobante no acredita ninguna condición.</li>";
+				no.innerHTML = fallidas.map((x) => "<li>" + x + "</li>").join("")
+					|| "<li>Nada: las cuatro condiciones se cumplen.</li>";
+
+				const admitido = fallidas.length === 0;
+				estado.textContent = admitido ? "Se admite" : "Se observa";
+				badge.textContent = cumplidas.length + " de " + CONDICIONES.length + " condiciones";
+				badge.dataset.estado = admitido ? "ok" : "warn";
+				nota.textContent = admitido
+					? "El gasto entra en la rendición del tramo."
+					: "Un gasto observado se subsana, pero suspende el tramo entero "
+						+ "mientras tanto, y con él el desembolso siguiente.";
+			}
+
+			CONDICIONES.forEach(([id]) =>
+				raiz.querySelector("#" + id).addEventListener("change", pintar));
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

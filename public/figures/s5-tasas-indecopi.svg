@@ -1,0 +1,112 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 406.15595 147.24" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 147.24 
+L 406.15595 147.24 
+L 406.15595 0 
+L 0 0 
+L 0 147.24 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 100.51595 134.838367 
+L 105.20315 134.838367 
+L 105.20315 130.797551 
+L 100.51595 130.797551 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-ramp-2)"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 164.12795 134.838367 
+L 168.81515 134.838367 
+L 168.81515 130.797551 
+L 164.12795 130.797551 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 100.51595 33.817959 
+L 233.09675 33.817959 
+L 233.09675 19.27102 
+L 100.51595 19.27102 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 233.09675 33.817959 
+L 341.57195 33.817959 
+L 341.57195 19.27102 
+L 233.09675 19.27102 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.82875" y="28.661802" transform="rotate(-0 95.82875 28.661802)">Patente de invención</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="346.25915" y="28.75199" transform="rotate(-0 346.25915 28.75199)">S/ 720</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 100.51595 74.226122 
+L 189.84059 74.226122 
+L 189.84059 59.679184 
+L 100.51595 59.679184 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 189.84059 74.226122 
+L 222.38315 74.226122 
+L 222.38315 59.679184 
+L 189.84059 59.679184 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.82875" y="69.069966" transform="rotate(-0 95.82875 69.069966)">Modelo de utilidad</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="227.07035" y="69.160153" transform="rotate(-0 227.07035 69.160153)">S/ 364</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 100.51595 114.634286 
+L 172.83275 114.634286 
+L 172.83275 100.087347 
+L 100.51595 100.087347 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 172.83275 114.634286 
+L 221.04395 114.634286 
+L 221.04395 100.087347 
+L 172.83275 100.087347 
+z
+" clip-path="url(#s5-tasas-indecopi-clip-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="95.82875" y="109.478129" transform="rotate(-0 95.82875 109.478129)">Diseño industrial</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="225.73115" y="109.568316" transform="rotate(-0 225.73115 109.568316)">S/ 360</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="107.88155" y="134.768115" transform="rotate(-0 107.88155 134.768115)">Solicitud</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="171.49355" y="134.768115" transform="rotate(-0 171.49355 134.768115)">Examen de fondo</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-tasas-indecopi-clip-0">
+   <rect x="16.81595" y="4.32" width="385.02" height="138.6"/>
+  </clipPath>
+ </defs>
+</svg>

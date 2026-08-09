@@ -1,0 +1,192 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 421.56 197.136" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 197.136 
+L 421.56 197.136 
+L 421.56 0 
+L 0 0 
+L 0 197.136 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 42.910654 35.4368 
+L 409.521869 35.4368 
+L 409.521869 15.0912 
+L 42.910654 15.0912 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.16"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 42.910654 35.4368 
+L 46.76972 35.4368 
+L 46.76972 15.0912 
+L 42.910654 15.0912 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 42.910654 65.3568 
+L 409.521869 65.3568 
+L 409.521869 45.0112 
+L 42.910654 45.0112 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.16"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 42.910654 65.3568 
+L 46.76972 65.3568 
+L 46.76972 45.0112 
+L 42.910654 45.0112 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1)"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 42.910654 95.2768 
+L 409.521869 95.2768 
+L 409.521869 74.9312 
+L 42.910654 74.9312 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 42.910654 95.2768 
+L 46.76972 95.2768 
+L 46.76972 74.9312 
+L 42.910654 74.9312 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2)"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 42.910654 125.1968 
+L 409.521869 125.1968 
+L 409.521869 104.8512 
+L 42.910654 104.8512 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 42.910654 125.1968 
+L 46.76972 125.1968 
+L 46.76972 104.8512 
+L 42.910654 104.8512 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2)"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 42.910654 155.1168 
+L 409.521869 155.1168 
+L 409.521869 134.7712 
+L 42.910654 134.7712 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.16"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 42.910654 155.1168 
+L 46.76972 155.1168 
+L 46.76972 134.7712 
+L 42.910654 134.7712 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3)"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 42.910654 185.0368 
+L 409.521869 185.0368 
+L 409.521869 164.6912 
+L 42.910654 164.6912 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.16"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 42.910654 185.0368 
+L 46.76972 185.0368 
+L 46.76972 164.6912 
+L 42.910654 164.6912 
+z
+" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3)"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ramp-1); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="23.615327" y="27.581875" transform="rotate(-0 23.615327 27.581875)">1</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="24.7787" transform="rotate(-0 58.346916 24.7787)">Bitácora</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="32.392369" transform="rotate(-0 58.346916 32.392369)">Qué se hizo y cuándo</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ramp-1); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="397.944673" y="27.269875" transform="rotate(-0 397.944673 27.269875)">Diaria, fechada y firmada</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ramp-1); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="23.615327" y="57.501875" transform="rotate(-0 23.615327 57.501875)">2</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="54.6987" transform="rotate(-0 58.346916 54.6987)">Control de versiones</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="62.305361" transform="rotate(-0 58.346916 62.305361)">Qué cambió y por qué</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ramp-1); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="397.944673" y="57.189875" transform="rotate(-0 397.944673 57.189875)">Cada cambio, con su motivo</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ramp-2); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="23.615327" y="87.421875" transform="rotate(-0 23.615327 87.421875)">3</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="84.6187" transform="rotate(-0 58.346916 84.6187)">Documentación técnica</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="92.232369" transform="rotate(-0 58.346916 92.232369)">Cómo se reproduce</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ramp-2); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="397.944673" y="87.23475" transform="rotate(-0 397.944673 87.23475)">Por versión del prototipo</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-ramp-2); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="23.615327" y="117.341875" transform="rotate(-0 23.615327 117.341875)">4</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="114.5387" transform="rotate(-0 58.346916 114.5387)">Datos y metadatos</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="122.145361" transform="rotate(-0 58.346916 122.145361)">Con qué se probó</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-ramp-2); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="397.944673" y="117.029875" transform="rotate(-0 397.944673 117.029875)">Al cerrar cada ensayo</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: var(--fig-ramp-3); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="23.615327" y="147.261875" transform="rotate(-0 23.615327 147.261875)">5</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="144.4587" transform="rotate(-0 58.346916 144.4587)">Publicación</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="152.072369" transform="rotate(-0 58.346916 152.072369)">Qué se aprendió</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: var(--fig-ramp-3); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="397.944673" y="147.05" transform="rotate(-0 397.944673 147.05)">Después de proteger</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: var(--fig-ramp-3); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="23.615327" y="177.181875" transform="rotate(-0 23.615327 177.181875)">6</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="174.58745" transform="rotate(-0 58.346916 174.58745)">Registro</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="58.346916" y="181.985361" transform="rotate(-0 58.346916 181.985361)">De quién es</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: var(--fig-ramp-3); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="397.944673" y="176.845125" transform="rotate(-0 397.944673 176.845125)">Antes de divulgar</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-capas-documentacion-clip-0">
+   <rect x="4.32" y="4.32" width="412.92" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>

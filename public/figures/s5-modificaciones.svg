@@ -1,0 +1,99 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 399.24 169.416" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 169.416 
+L 399.24 169.416 
+L 399.24 0 
+L 0 0 
+L 0 169.416 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 247.961584 30.711532 
+L 387.185347 30.711532 
+L 387.185347 17.364091 
+L 247.961584 17.364091 
+z
+" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-ok); opacity: 0.16"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 247.961584 61.046626 
+L 387.185347 61.046626 
+L 387.185347 47.699185 
+L 247.961584 47.699185 
+z
+" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-ok); opacity: 0.16"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 247.961584 91.381721 
+L 387.185347 91.381721 
+L 387.185347 78.034279 
+L 247.961584 78.034279 
+z
+" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-warn); opacity: 0.16"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 247.961584 121.716815 
+L 387.185347 121.716815 
+L 387.185347 108.369374 
+L 247.961584 108.369374 
+z
+" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-accent); opacity: 0.16"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 247.961584 152.051909 
+L 387.185347 152.051909 
+L 387.185347 138.704468 
+L 247.961584 138.704468 
+z
+" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-accent); opacity: 0.16"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 21.439591)">Mover monto dentro de</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 30.870657)">la misma partida</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ok); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="317.573465" y="26.134936" transform="rotate(-0 317.573465 26.134936)">Se comunica</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 51.774685)">Mover monto entre partidas,</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 61.205751)">bajo el 5 % del total</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ok); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="317.573465" y="56.470031" transform="rotate(-0 317.573465 56.470031)">Se comunica</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 82.10978)">Variación sobre el 5 %</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 91.540845)">del financiamiento</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-warn); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="317.573465" y="87.007" transform="rotate(-0 317.573465 87.007)">Autorización previa</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 112.418749)">Cambiar el objetivo general</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 121.902065)">o un hito comprometido</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="317.573465" y="117.140219" transform="rotate(-0 317.573465 117.140219)">Vuelve a evaluación</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 142.779968)">Cambiar de responsable</text>
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 152.211034)">técnico o de entidad</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="317.573465" y="147.475314" transform="rotate(-0 317.573465 147.475314)">Adenda al convenio</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-modificaciones-clip-0">
+   <rect x="4.32" y="4.32" width="390.6" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

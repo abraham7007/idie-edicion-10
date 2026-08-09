@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sesión 5 · Del proyecto ganado al resultado transferido · Simulación: efecto de un cambio de actividad en el presupuesto</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../../css/base.css" />
+	</head>
+	<body data-deck-total="63">
+		<main class="slide">
+			<div class="slide__content stagger">
+				<span class="badge" data-animate="fade-up">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-sliders" /></svg>
+					01 · Simulación
+				</span>
+
+				<h1 class="slide__title slide__title--sm" data-animate="fade-up">Simulación: efecto de un cambio de actividad en el presupuesto</h1>
+				<div class="sim sim--stack" data-sim="presupuesto" data-animate="fade-up">
+					<div class="sim__controls">
+						<label class="sim__label" for="p-meses">Meses de dedicación del equipo emprendedor</label>
+						<input class="sim__range" id="p-meses" type="range" min="3" max="18" step="1" value="9" />
+						<div class="sim__readout">
+							<span class="sim__value" id="p-honorarios">S/ 0</span>
+							<span class="sim__badge" id="p-veredicto" data-estado="ok">Dentro del tope</span>
+						</div>
+						<label class="crit__box">
+							<input type="checkbox" id="p-ensayo" checked />
+							<span><b>Se contrata el ensayo de calibración</b><span class="crit__help">Laboratorio acreditado · S/ 6 200 en servicios tecnológicos</span></span>
+						</label>
+						<p class="sim__what" id="p-nota"></p>
+					</div>
+					<div class="sim__panels sim__panels--pair">
+						<div class="sim__panel sim__panel--ok">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-check" /></svg>Lo que cubre el capital semilla</h3>
+							<ul id="p-ok"></ul>
+						</div>
+						<div class="sim__panel sim__panel--no">
+							<h3><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-alert" /></svg>Lo que sale de la contrapartida</h3>
+							<ul id="p-no"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="srcnote">
+					<div class="srcnote__label"><svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-book" /></svg>Fuentes</div>
+					<ul>
+						<li>ProInnóvate · bases del concurso <i>Emprendimientos Innovadores 12G</i> de StartUp Perú, 2025 · <a href="https://startup.proinnovate.gob.pe">startup.proinnovate.gob.pe</a> · consultado el 9 de agosto de 2026</li>
+						<li>Caso de clase · magnitudes didácticas del prototipo de monitoreo de colmenas, no medidas en campo</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="slide-nav" aria-label="Navegación de la diapositiva">
+				<a class="slide-nav__link" href="15-flujo-caja.html">
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-chart" /></svg>
+					<span>Flujo de caja</span>
+				</a>
+				<a class="slide-nav__link" href="17-tema-02.html">
+					<span>Tema 02</span>
+					<svg class="icon" aria-hidden="true"><use href="/course-icons.svg#i-file" /></svg>
+				</a>
+			</nav>
+		</main>
+		<script type="module">
+			// El tope del 40 % sobre el capital semilla es el de las bases de
+			// StartUp Perú 12G. Al pasarlo, el exceso no desaparece: cambia de
+			// bolsillo y pasa a la contrapartida del equipo.
+			const raiz = document.querySelector('[data-sim="presupuesto"]');
+			const meses = raiz.querySelector("#p-meses");
+			const ensayo = raiz.querySelector("#p-ensayo");
+			const salida = raiz.querySelector("#p-honorarios");
+			const veredicto = raiz.querySelector("#p-veredicto");
+			const nota = raiz.querySelector("#p-nota");
+			const ok = raiz.querySelector("#p-ok");
+			const no = raiz.querySelector("#p-no");
+
+			const SEMILLA = 60000;
+			const TOPE = 0.4 * SEMILLA;
+			const POR_MES = 3200;
+			const ENSAYO = 6200;
+			const DIFUSION = 3000;
+
+			// Separador de millares con espacio fino y coma decimal, como el resto
+			// del mazo: «51,200» se lee 51,2 en español.
+			const soles = (n) =>
+				"S/ " + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u2009");
+
+			function pintar() {
+				const m = Number(meses.value);
+				const honorarios = m * POR_MES;
+				const servicios = ensayo.checked ? ENSAYO : 0;
+				const cubierto = Math.min(honorarios, TOPE);
+				const exceso = Math.max(honorarios - TOPE, 0);
+				const resto = SEMILLA - cubierto - servicios - DIFUSION;
+
+				salida.textContent = soles(honorarios) + " en honorarios · " + m + " meses";
+				veredicto.textContent = exceso
+					? "Sobre el tope del 40 %"
+					: "Dentro del tope del 40 %";
+				veredicto.dataset.estado = exceso ? "warn" : "ok";
+
+				ok.innerHTML = [
+					"Honorarios hasta el tope: " + soles(cubierto),
+					"Servicios tecnológicos: " + soles(servicios),
+					"Difusión y transferencia: " + soles(DIFUSION),
+					"Queda para materiales y consultoría: " + soles(Math.max(resto, 0)),
+				].map((x) => "<li>" + x + "</li>").join("");
+
+				no.innerHTML = exceso
+					? "<li>Honorarios sobre el tope: " + soles(exceso) + "</li>"
+						+ "<li>Va como aporte del equipo, con su compromiso por escrito</li>"
+					: "<li>Nada: el reparto cabe entero en el capital semilla</li>";
+
+				if (exceso) {
+					nota.textContent = "El exceso no se pierde ni lo cubre el fondo: pasa a "
+						+ "la contrapartida, y esa parte se compromete por escrito antes del "
+						+ "cierre de la convocatoria.";
+				} else if (resto < 4000) {
+					nota.textContent = "Quedan menos de S/ 4\u2009000 para materiales y "
+						+ "consultoría. El presupuesto cuadra en la hoja y no en la ejecución.";
+				} else {
+					nota.textContent = "El reparto cabe. Cada monto debe poder seguirse "
+						+ "hasta una actividad de la matriz.";
+				}
+			}
+
+			meses.addEventListener("input", pintar);
+			ensayo.addEventListener("change", pintar);
+			pintar();
+		</script>
+		<script type="module" src="../../js/deck.js"></script>
+	</body>
+</html>

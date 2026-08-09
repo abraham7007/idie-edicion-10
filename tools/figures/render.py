@@ -127,6 +127,12 @@ def escribir(fig, nombre: str) -> None:
     # regeneración produjera un archivo distinto aunque la figura no cambie.
     svg = re.sub(r"<metadata>.*?</metadata>", "", svg, flags=re.S)
     svg = re.sub(r"<!-- Created with matplotlib.*?-->", "", svg, flags=re.S)
+    # matplotlib nombra cada clip-path con un identificador aleatorio, así que
+    # regenerar una figura idéntica producía un archivo distinto y el control
+    # de versiones marcaba las ciento cuarenta como modificadas en cada pasada.
+    # Se sustituyen por un identificador derivado del nombre y del orden.
+    for i, viejo_id in enumerate(dict.fromkeys(re.findall(r'clipPath id="([^"]+)"', svg))):
+        svg = svg.replace(viejo_id, f"{nombre}-clip-{i}")
 
     destino.write_text(svg.strip(), encoding="utf-8")
     print(f"  {destino.relative_to(RAIZ)}")
@@ -5164,6 +5170,1167 @@ FIGURAS += [fig_problema_vs, fig_arbol_problemas, fig_arbol_objetivos,
             fig_mapeo, fig_cadena_resultados, fig_teoria_cambio, fig_limite_ml,
             fig_toc_tramite]
 
+
+# ==========================================================================
+# SESIÓN 5 · del proyecto ganado al resultado transferido
+# ==========================================================================
+# El eje de la sesión no es un caso sino el instrumento que financió el
+# proyecto: lo que se presupuesta, se firma, se rinde y se protege cambia
+# según la forma del instrumento. Las cinco primeras figuras son las que
+# ordenan la sesión entera y se vuelven a mostrar al entrar en cada tema.
+
+# --------------------------------------------------------------------------
+# La matriz maestra. Elaboración propia sobre las bases de StartUp Perú 12G y
+# de PROCIENCIA E072-2024-01-BM, la Ley 30309 y el catálogo de la sesión 3.
+# Cada celda dice si esa forma de instrumento impone esa obligación.
+# --------------------------------------------------------------------------
+INSTRUMENTOS = ["Subvención", "Beca", "Premio", "Beneficio\ntributario",
+                "Servicio\ntecnológico", "Capital con\nparticipación"]
+OBLIGACIONES = ["Presupuesto\npor partidas", "Convenio\nfirmado", "Informe\ntécnico",
+                "Informe\nfinanciero", "PI de los\nresultados", "Cierre y\nliquidación"]
+# 2 = obligación plena · 1 = versión reducida o distinta · 0 = no aplica
+MATRIZ_OBLIGACION = [
+    [2, 2, 2, 2, 2, 2],   # subvención: la única que exige las seis
+    [1, 2, 1, 1, 0, 1],   # beca: rinde estudios, no proyecto
+    [0, 0, 0, 0, 0, 0],   # premio: se gana y se cobra
+    [1, 0, 1, 0, 1, 0],   # beneficio tributario: califica y deduce
+    [0, 1, 0, 0, 1, 0],   # servicio tecnológico: se contrata y se paga
+    [1, 2, 0, 1, 2, 0],   # capital con participación: reporta al inversor
+]
+
+
+def _matriz_obligacion(nombre, resaltar=None):
+    """Dibuja la matriz maestra, opcionalmente con una columna destacada."""
+    fig, ax = plt.subplots(figsize=(7.4, 3.5))
+    tinta = {2: ACCENT, 1: RAMPA[0], 0: None}
+    for f, fila in enumerate(MATRIZ_OBLIGACION):
+        for c, v in enumerate(fila):
+            apagado = resaltar is not None and c != resaltar
+            if v == 0:
+                ax.text(c, f, "—", ha="center", va="center", fontsize=9,
+                        color=GRID if apagado else MUTED)
+                continue
+            color = tinta[v]
+            ax.add_patch(Rectangle((c - 0.42, f - 0.36), 0.84, 0.72,
+                                   facecolor=color, edgecolor="none",
+                                   alpha=0.12 if apagado else (0.85 if v == 2 else 0.4)))
+            ax.text(c, f, "sí" if v == 2 else "parcial", ha="center", va="center",
+                    fontsize=7.2 if v == 1 else 8.0,
+                    fontweight="bold" if v == 2 else "normal",
+                    color=(GRID if apagado else ("#ffffff" if v == 2 else INK)))
+    ax.set_xticks(range(len(OBLIGACIONES)))
+    ax.set_xticklabels(OBLIGACIONES, fontsize=7.4, color=INK)
+    ax.set_yticks(range(len(INSTRUMENTOS)))
+    ax.set_yticklabels(INSTRUMENTOS, fontsize=7.4, color=INK)
+    ax.xaxis.set_ticks_position("top")
+    ax.set_xlim(-0.6, len(OBLIGACIONES) - 0.4)
+    ax.set_ylim(len(INSTRUMENTOS) - 0.45, -0.55)
+    ax.tick_params(length=0)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, nombre)
+
+
+def fig_instrumento_obligacion():
+    """Seis formas de instrumento y las seis obligaciones que impone cada una."""
+    _matriz_obligacion("s5-instrumento-obligacion")
+
+
+def fig_instrumento_pi():
+    """La columna de la propiedad intelectual, que casi ninguna forma perdona."""
+    _matriz_obligacion("s5-instrumento-pi", resaltar=4)
+
+
+# --------------------------------------------------------------------------
+# Del medio de verificación al monto. La sesión 4 cerró con la matriz de
+# marco lógico y sin costear sus medios; esta figura resuelve esa limitación.
+# Magnitudes del caso de clase, no medidas en campo.
+# --------------------------------------------------------------------------
+COSTO_MEDIOS = [
+    ("Registro de sensores\ndel prototipo", "Servidor y almacenamiento", 4_800),
+    ("Acta de la asociación\nde apicultores", "Taller y movilidad", 2_400),
+    ("Informe de laboratorio\nde calibración", "Servicio de terceros", 6_200),
+    ("Encuesta a los\napicultores usuarios", "Encuestador y análisis", 3_500),
+]
+
+
+def fig_costo_medios():
+    """Cada medio de verificación de la matriz cuesta dinero y sale de una partida."""
+    fig, ax = plt.subplots(figsize=(7.0, 3.0))
+    total = sum(c for _, _, c in COSTO_MEDIOS)
+    for i, (medio, partida, costo) in enumerate(COSTO_MEDIOS):
+        ax.barh(i, costo, height=0.34, color=RAMPA[1], alpha=0.85, zorder=3)
+        ax.text(-250, i, medio, ha="right", va="center", fontsize=7.4, color=INK)
+        ax.text(costo + 220, i, f"S/ {num(costo, 0)}", ha="left", va="center",
+                fontsize=8.0, color=RAMPA[2], fontweight="bold")
+        # La partida va sobre la barra, con holgura suficiente para no tocarla.
+        ax.text(120, i - 0.34, partida, ha="left", va="bottom", fontsize=6.8, color=MUTED)
+    ax.set_xlim(0, max(c for _, _, c in COSTO_MEDIOS) * 1.32)
+    ax.set_ylim(len(COSTO_MEDIOS) - 0.25, -0.62)
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.text(0, len(COSTO_MEDIOS) - 0.42,
+            f"Total de la columna de medios: S/ {num(total, 0)}",
+            fontsize=8.2, color=ACCENT, fontweight="bold", va="top")
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-costo-medios")
+
+
+# --------------------------------------------------------------------------
+# El presupuesto se construye de la actividad hacia abajo, no al revés.
+# --------------------------------------------------------------------------
+def fig_actividad_partida():
+    """De la actividad al monto: cuatro pasos, y ninguno se puede saltar."""
+    fig, ax = plt.subplots(figsize=(7.4, 1.9))
+    # Cada cuerpo va partido a mano en líneas cortas: la caja tiene ancho fijo
+    # y una línea larga se sale por los dos lados sin que nada lo impida.
+    pasos = [("Actividad", "Calibrar el\nsensor de peso"),
+             ("Recurso", "Servicio de\nlaboratorio\nacreditado"),
+             ("Partida", "Servicios de\nterceros"),
+             ("Monto", "S/ 6 200")]
+    ancho, hueco = 1.62, 0.34
+    for i, (rotulo, cuerpo) in enumerate(pasos):
+        x = i * (ancho + hueco)
+        color = ACCENT if i == 3 else RAMPA[min(i, 2)]
+        ax.add_patch(Rectangle((x, 0), ancho, 1.0, facecolor=color, alpha=0.14,
+                               edgecolor=color, linewidth=1.2))
+        ax.text(x + ancho / 2, 0.80, rotulo, ha="center", va="center",
+                fontsize=7.0, color=color, fontweight="bold")
+        ax.text(x + ancho / 2, 0.38, cuerpo, ha="center", va="center",
+                fontsize=7.2, color=INK, linespacing=1.35)
+        if i < 3:
+            ax.annotate("", xy=(x + ancho + hueco - 0.06, 0.5), xytext=(x + ancho + 0.06, 0.5),
+                        arrowprops=dict(arrowstyle="-|>", color=MUTED, lw=1.1))
+    ax.set_xlim(-0.15, 4 * ancho + 3 * hueco + 0.15)
+    ax.set_ylim(-0.12, 1.12)
+    ax.axis("off")
+    escribir(fig, "s5-actividad-partida")
+
+
+# --------------------------------------------------------------------------
+# Las mismas seis preguntas a dos instrumentos distintos. Bases de StartUp
+# Perú 12G (ProInnóvate, 2025) y E072-2024-01-BM (PROCIENCIA, bases
+# integradas y modificadas, 2024). Consultadas el 9 de agosto de 2026.
+# --------------------------------------------------------------------------
+# Las celdas largas van partidas en dos líneas a mano: con una sola línea las
+# dos columnas de valor se solapan, que es el defecto que arrastró la sesión 4.
+DOS_INSTRUMENTOS = [
+    ("Monto máximo", "S/ 67 000", "S/ 3 000 000"),
+    ("Plazo", "Por hitos\nnegociados", "Hasta 36 meses"),
+    ("Cofinanciamiento", "70 %", "80 % pública\n60 % privada"),
+    ("Contrapartida\nmonetaria", "10 % mínimo", "0 % pública\n30 % privada"),
+    ("Tope de personal", "40 % del\ncapital semilla", "20 % del monto\nfinanciado"),
+    ("Primer desembolso", "Contra hito, tras\nreunión previa", "20 % referencial"),
+]
+
+COL_A, COL_B = 0.40, 0.72
+
+
+def fig_dos_instrumentos():
+    """Dos subvenciones del Estado y las seis cifras en que no se parecen."""
+    fig, ax = plt.subplots(figsize=(7.6, 3.8))
+    for i, (pregunta, a, b) in enumerate(DOS_INSTRUMENTOS):
+        y = len(DOS_INSTRUMENTOS) - i
+        if i % 2 == 0:
+            ax.add_patch(Rectangle((-0.02, y - 0.46), 1.06, 0.92,
+                                   facecolor=SURFACE, edgecolor="none", zorder=0))
+        ax.text(0.0, y, pregunta, ha="left", va="center", fontsize=7.4, color=MUTED)
+        ax.text(COL_A, y, a, ha="left", va="center", fontsize=7.8, color=INK)
+        ax.text(COL_B, y, b, ha="left", va="center", fontsize=7.8, color=INK)
+    ax.text(COL_A, len(DOS_INSTRUMENTOS) + 0.85, "StartUp Perú 12G", ha="left",
+            fontsize=8.2, color=ACCENT, fontweight="bold")
+    ax.text(COL_B, len(DOS_INSTRUMENTOS) + 0.85, "PROCIENCIA E072", ha="left",
+            fontsize=8.2, color=RAMPA[2], fontweight="bold")
+    ax.plot([0, 1.04], [len(DOS_INSTRUMENTOS) + 0.60] * 2, color=GRID, lw=0.9)
+    ax.set_xlim(-0.02, 1.06)
+    ax.set_ylim(0.25, len(DOS_INSTRUMENTOS) + 1.30)
+    ax.axis("off")
+    escribir(fig, "s5-dos-instrumentos")
+
+
+# --------------------------------------------------------------------------
+# Topes por rubro. Los de PROCIENCIA son los de las bases integradas: el
+# rubro de recursos humanos subió del 15 % al 20 % y viáticos del 5 % al 8 %
+# respecto de las bases iniciales, que es el motivo de leer la versión
+# integrada y no la primera que se publica.
+# --------------------------------------------------------------------------
+TOPES_RUBRO = [
+    ("Honorarios del equipo", 40, "StartUp Perú · sobre el capital semilla"),
+    ("Recursos humanos", 20, "PROCIENCIA · sobre el monto financiado"),
+    ("Pasajes y viáticos", 8, "PROCIENCIA · sobre el monto financiado"),
+    ("Difusión y transferencia", 5, "StartUp Perú · sobre el capital semilla"),
+]
+
+
+def fig_topes_rubro():
+    """Cuatro rubros con tope declarado, y el resto sin restricción de monto."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.6))
+    for i, (rubro, tope, fuente) in enumerate(TOPES_RUBRO):
+        y = len(TOPES_RUBRO) - i
+        ax.barh(y, 100, height=0.30, color=GRID, alpha=0.30, zorder=2)
+        ax.barh(y, tope, height=0.30, color=ACCENT if tope >= 20 else RAMPA[1],
+                alpha=0.9, zorder=3)
+        # Nombre a la izquierda y procedencia a la derecha, en la MISMA línea:
+        # puesta debajo de la barra, la procedencia pisa el rótulo siguiente.
+        ax.text(0, y + 0.30, rubro, ha="left", va="bottom", fontsize=8.0, color=INK)
+        ax.text(100, y + 0.32, fuente, ha="right", va="bottom", fontsize=6.6, color=MUTED)
+        ax.text(101.5, y, f"{tope} %", ha="left", va="center", fontsize=8.2,
+                color=ACCENT if tope >= 20 else RAMPA[2], fontweight="bold")
+    ax.set_xlim(0, 116)
+    ax.set_ylim(0.45, len(TOPES_RUBRO) + 0.85)
+    ax.axis("off")
+    escribir(fig, "s5-topes-rubro")
+
+
+# --------------------------------------------------------------------------
+# Contrapartida por figura del postulante. La misma propuesta pide aportes
+# muy distintos según quién la firme.
+# --------------------------------------------------------------------------
+CONTRAPARTIDA_FIGURA = [
+    ("Entidad pública o\nuniversidad asociativa", 80, 0, 20),
+    ("Universidad privada\nsocietaria", 60, 30, 10),
+    ("Equipo emprendedor\n(StartUp Perú)", 70, 10, 20),
+]
+
+
+def fig_contrapartida_figura():
+    """Quién firma decide cuánto pone y en qué forma lo pone."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.6))
+    for i, (quien, fondo, efectivo, especie) in enumerate(CONTRAPARTIDA_FIGURA):
+        y = len(CONTRAPARTIDA_FIGURA) - i
+        tramos = [(fondo, RAMPA[2], "fondo"), (efectivo, ACCENT, "efectivo"),
+                  (especie, RAMPA[0], "especie")]
+        izq = 0
+        for parte, color, _ in tramos:
+            if parte == 0:
+                continue
+            # El filete blanco separa dos rellenos contiguos (skill dataviz).
+            ax.barh(y, parte, left=izq, height=0.42, color=color, alpha=0.9,
+                    edgecolor=PAPER, linewidth=1.2, zorder=3)
+            ax.text(izq + parte / 2, y, f"{parte}", ha="center", va="center",
+                    fontsize=7.6, color="#ffffff", fontweight="bold")
+            izq += parte
+        ax.text(-1.5, y, quien, ha="right", va="center", fontsize=7.4, color=INK)
+    # Leyenda en una fila bajo las barras: puesta arriba, los tres rótulos se
+    # pisan entre sí porque los tramos que nombran son muy desiguales.
+    for i, (rot, color) in enumerate((("Lo que pone el fondo", RAMPA[2]),
+                                      ("Contrapartida en efectivo", ACCENT),
+                                      ("Contrapartida en especie", RAMPA[0]))):
+        x = i * 34
+        ax.add_patch(Rectangle((x, 0.30), 3.0, 0.16, facecolor=color, edgecolor="none"))
+        ax.text(x + 4.6, 0.38, rot, fontsize=7.0, color=MUTED, va="center")
+    ax.set_xlim(-34, 102)
+    ax.set_ylim(0.10, len(CONTRAPARTIDA_FIGURA) + 0.62)
+    ax.axis("off")
+    escribir(fig, "s5-contrapartida-figura")
+
+
+# --------------------------------------------------------------------------
+# El desembolso no sigue al cronograma de actividades: va detrás del hito.
+# Magnitudes del caso de clase sobre un proyecto de dieciocho meses.
+# --------------------------------------------------------------------------
+def fig_flujo_caja():
+    """El gasto va delante del ingreso, y el hueco lo financia alguien."""
+    meses = np.arange(0, 19)
+    gasto = np.array([0, 18, 42, 66, 88, 112, 140, 168, 196, 220,
+                      248, 274, 300, 322, 344, 362, 378, 392, 400], dtype=float)
+    ingreso = np.zeros_like(gasto)
+    ingreso[2:] = 140.0          # primer desembolso, 35 % contra reunión previa
+    ingreso[9:] = 280.0          # segundo tramo, contra hito verificado
+    ingreso[15:] = 400.0         # saldo, contra informe final aprobado
+
+    fig, ax = plt.subplots(figsize=(7.0, 3.0))
+    ax.fill_between(meses, ingreso, gasto, where=gasto > ingreso,
+                    color=ACCENT, alpha=0.14, zorder=2, label="Hueco a financiar")
+    ax.plot(meses, gasto, color=ACCENT, lw=2.0, zorder=4, label="Gasto acumulado")
+    ax.step(meses, ingreso, where="post", color=RAMPA[2], lw=2.0, zorder=3,
+            label="Desembolso acumulado")
+
+    # El rótulo va bajo el propio hueco, en zona vacía: una línea guía desde
+    # arriba tendría que cruzar la curva de gasto para llegar hasta él.
+    peor = int(np.argmax(gasto - ingreso))
+    ax.text(peor - 1.6, 168,
+            f"Hueco máximo en el mes {peor}:\nS/ {num(gasto[peor] - ingreso[peor], 0)} mil "
+            "gastados y aún\nno desembolsados",
+            fontsize=7.6, color=ACCENT, va="top")
+    ax.set_xlabel("Mes de ejecución", fontsize=7.6)
+    ax.set_ylabel("Miles de soles", fontsize=7.6)
+    ax.set_xticks(range(0, 19, 3))
+    ax.grid(axis="y", color=GRID, lw=0.6, alpha=0.5)
+    ax.set_axisbelow(True)
+    limpiar_ejes(ax)
+    ax.legend(loc="upper left", fontsize=7.0, frameon=False)
+    escribir(fig, "s5-flujo-caja")
+
+
+FIGURAS += [fig_instrumento_obligacion, fig_instrumento_pi, fig_costo_medios, fig_actividad_partida,
+            fig_dos_instrumentos, fig_topes_rubro, fig_contrapartida_figura,
+            fig_flujo_caja]
+
+
+# --------------------------------------------------------------------------
+# TEMA 02 · del convenio al cierre
+# --------------------------------------------------------------------------
+# El diagrama maestro del ciclo de vida. Su valor no es la línea de tiempo
+# sino lo que cuelga de ella: en qué etapa hay que hacer cada cosa. Casi todo
+# lo que se hace tarde en un proyecto se hace tarde por no tener esto delante.
+ETAPAS_CICLO = [
+    ("Adjudicación", 0, 2.6),
+    ("Arranque", 2.6, 4.6),
+    ("Ejecución", 4.6, 15),
+    ("Cierre", 15, 18),
+]
+# (mes, qué toca, arriba o abajo, nivel). El nivel escalona los rótulos: con
+# uno solo, los cinco primeros hitos caen sobre el mismo palmo de eje y se
+# pisan entre sí.
+HITOS_CICLO = [
+    (0.5, "Resultado del\nconcurso", 1, 0),
+    (2.4, "Convenio\nfirmado", -1, 0),
+    (3.4, "Acta de inicio y\nprimer desembolso", 1, 1),
+    (4.4, "Bitácora y control\nde versiones", -1, 1),
+    (6.0, "Solicitud de\npatente", 1, 0),
+    (8.0, "Primer informe\ntécnico", -1, 0),
+    (10.0, "Artículo y\ncongreso", 1, 1),
+    (12.5, "Informe\nfinanciero", -1, 0),
+    (15.8, "Informe final\ny video", 1, 0),
+    (17.6, "Liquidación", -1, 1),
+]
+
+
+def fig_ciclo_de_vida():
+    """Cada obligación tiene su mes, y la propiedad intelectual va antes de publicar."""
+    fig, ax = plt.subplots(figsize=(7.6, 3.7))
+    for i, (nombre, ini, fin) in enumerate(ETAPAS_CICLO):
+        color = RAMPA[min(i, 2)] if i < 3 else ACCENT
+        ax.add_patch(Rectangle((ini, -0.14), fin - ini, 0.28, facecolor=color,
+                               alpha=0.85, edgecolor=PAPER, linewidth=1.4, zorder=3))
+        ax.text((ini + fin) / 2, 0, nombre, ha="center", va="center", fontsize=6.6,
+                color="#ffffff", fontweight="bold", zorder=4)
+    for mes, texto, lado, nivel in HITOS_CICLO:
+        y = (0.42 + nivel * 0.52) * lado
+        ax.plot([mes, mes], [0.15 * lado, y - 0.04 * lado], color=MUTED, lw=0.8, zorder=2)
+        ax.plot([mes], [0.15 * lado], marker="o", ms=3.2, color=MUTED, zorder=4)
+        ax.text(mes, y, texto, ha="center", va="bottom" if lado > 0 else "top",
+                fontsize=6.6, color=INK, linespacing=1.3)
+    ax.set_xlim(-1.2, 19.4)
+    ax.set_ylim(-1.75, 1.75)
+    ax.set_xticks([0, 3, 6, 9, 12, 15, 18])
+    ax.set_xticklabels(["mes 0", "3", "6", "9", "12", "15", "18"], fontsize=7.0)
+    ax.set_yticks([])
+    ax.tick_params(length=0)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-ciclo-de-vida")
+
+
+# Lo que hay entre ganar el concurso y cobrar el primer sol. Bases de StartUp
+# Perú 12G, que exige reunión previa, y prácticas comunes de las demás.
+ANTES_DEL_DESEMBOLSO = [
+    ("Constitución o vigencia de poderes", "Registro público"),
+    ("Cuenta bancaria exclusiva del proyecto", "Banco"),
+    ("Convenios con las entidades asociadas", "Firma de ambas partes"),
+    ("Garantía o carta fianza, si la piden", "Entidad financiera"),
+    ("Reunión previa y plan de trabajo con hitos", "Ejecutivo del fondo"),
+]
+
+
+def fig_antes_del_desembolso():
+    """Cinco requisitos separan el resultado publicado del primer desembolso."""
+    fig, ax = plt.subplots(figsize=(6.9, 2.7))
+    for i, (paso, quien) in enumerate(ANTES_DEL_DESEMBOLSO):
+        y = len(ANTES_DEL_DESEMBOLSO) - i
+        ax.add_patch(Rectangle((0, y - 0.32), 0.30, 0.64, facecolor=RAMPA[1],
+                               alpha=0.16, edgecolor="none"))
+        ax.text(0.15, y, f"{i + 1}", ha="center", va="center", fontsize=9.0,
+                color=RAMPA[2], fontweight="bold")
+        ax.text(0.40, y + 0.10, paso, ha="left", va="center", fontsize=8.0, color=INK)
+        ax.text(0.40, y - 0.20, quien, ha="left", va="center", fontsize=6.9, color=MUTED)
+    ax.set_xlim(0, 4.4)
+    ax.set_ylim(0.45, len(ANTES_DEL_DESEMBOLSO) + 0.6)
+    ax.axis("off")
+    escribir(fig, "s5-antes-del-desembolso")
+
+
+# Los dos informes no comparten ni una sola pieza, y se entregan juntos.
+CONTENIDO_INFORMES = [
+    ("Informe técnico", ACCENT, ["Hito alcanzado y evidencia",
+                                 "Indicador medido, con su medio",
+                                 "Desviación respecto del plan",
+                                 "Producto entregable adjunto"]),
+    ("Informe financiero", RAMPA[2], ["Gasto por partida y por hito",
+                                      "Comprobante de cada gasto",
+                                      "Contrapartida efectivamente aportada",
+                                      "Saldo y proyección del tramo"]),
+]
+
+
+def fig_informes():
+    """El informe técnico prueba el resultado; el financiero, que el gasto existió."""
+    fig, ax = plt.subplots(figsize=(7.2, 2.6))
+    for c, (titulo, color, filas) in enumerate(CONTENIDO_INFORMES):
+        x = c * 0.52
+        ax.add_patch(Rectangle((x, 0), 0.46, 1.0, facecolor=color, alpha=0.08,
+                               edgecolor=color, linewidth=1.1))
+        ax.text(x + 0.03, 0.88, titulo, fontsize=8.4, color=color, fontweight="bold")
+        for f, fila in enumerate(filas):
+            ax.text(x + 0.03, 0.68 - f * 0.16, f"· {fila}", fontsize=7.2, color=INK)
+    ax.set_xlim(-0.01, 0.99)
+    ax.set_ylim(-0.04, 1.04)
+    ax.axis("off")
+    escribir(fig, "s5-informes")
+
+
+# Qué se puede mover y qué no. El umbral del 5 % es el de StartUp Perú 12G:
+# por encima, la variación va a la Unidad de Evaluación.
+MODIFICACIONES = [
+    ("Mover monto dentro de\nla misma partida", "Se comunica", OK),
+    ("Mover monto entre partidas,\nbajo el 5 % del total", "Se comunica", OK),
+    ("Variación sobre el 5 %\ndel financiamiento", "Autorización previa", WARN),
+    ("Cambiar el objetivo general\no un hito comprometido", "Vuelve a evaluación", ACCENT),
+    ("Cambiar de responsable\ntécnico o de entidad", "Adenda al convenio", ACCENT),
+]
+
+
+def fig_modificaciones():
+    """Cuatro de cada cinco cambios no se comunican: se autorizan antes de gastar."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.9))
+    for i, (cambio, tramite, color) in enumerate(MODIFICACIONES):
+        y = len(MODIFICACIONES) - i
+        ax.text(0, y, cambio, ha="left", va="center", fontsize=7.6, color=INK,
+                linespacing=1.35)
+        ax.add_patch(Rectangle((0.62, y - 0.22), 0.36, 0.44, facecolor=color,
+                               alpha=0.16, edgecolor="none"))
+        ax.text(0.80, y, tramite, ha="center", va="center", fontsize=7.6,
+                color=color, fontweight="bold")
+    ax.set_xlim(-0.01, 1.0)
+    ax.set_ylim(0.35, len(MODIFICACIONES) + 0.65)
+    ax.axis("off")
+    escribir(fig, "s5-modificaciones")
+
+
+# El cierre son dos, y el segundo dura más que el primero.
+def fig_cierre_doble():
+    """El proyecto termina técnicamente mucho antes de terminar administrativamente."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.4))
+    barras = [("Cierre técnico", 0, 3, RAMPA[1],
+               ["Último hito verificado", "Informe final aprobado", "Producto entregado"]),
+              ("Cierre administrativo", 0, 9, ACCENT,
+               ["Rendición del último tramo", "Devolución de saldos",
+                "Destino de los bienes", "Liquidación y carta de cierre"])]
+    for i, (nombre, ini, fin, color, hitos) in enumerate(barras):
+        y = 1 - i
+        ax.barh(y, fin - ini, left=ini, height=0.30, color=color, alpha=0.85, zorder=3)
+        ax.text(ini, y + 0.26, nombre, fontsize=8.2, color=color, fontweight="bold",
+                va="bottom")
+        ax.text(fin + 0.25, y, f"{fin} meses desde el último hito", va="center",
+                fontsize=7.2, color=MUTED)
+        ax.text(ini + 0.1, y - 0.26, " · ".join(hitos), fontsize=6.8, color=INK, va="top")
+    ax.set_xlim(-0.2, 15.5)
+    ax.set_ylim(-0.75, 1.62)
+    ax.axis("off")
+    escribir(fig, "s5-cierre-doble")
+
+
+# --------------------------------------------------------------------------
+# TEMA 03 · documentación como metodología
+# --------------------------------------------------------------------------
+# Diagrama maestro 3. El repositorio es una capa, y no la primera.
+CAPAS_DOC = [
+    ("Bitácora", "Qué se hizo y cuándo", "Diaria, fechada y firmada"),
+    ("Control de versiones", "Qué cambió y por qué", "Cada cambio, con su motivo"),
+    ("Documentación técnica", "Cómo se reproduce", "Por versión del prototipo"),
+    ("Datos y metadatos", "Con qué se probó", "Al cerrar cada ensayo"),
+    ("Publicación", "Qué se aprendió", "Después de proteger"),
+    ("Registro", "De quién es", "Antes de divulgar"),
+]
+
+
+def fig_capas_documentacion():
+    """Seis capas de documentación, y el repositorio público es solo la quinta."""
+    fig, ax = plt.subplots(figsize=(7.4, 3.4))
+    # Todas las bandas del mismo ancho: una anchura creciente diría que la
+    # capa de abajo es «más grande» que la de arriba, y son capas, no cantidades.
+    for i, (capa, pregunta, cuando) in enumerate(CAPAS_DOC):
+        y = len(CAPAS_DOC) - i
+        color = RAMPA[min(i // 2, 2)]
+        ax.add_patch(Rectangle((0.05, y - 0.34), 0.95, 0.68, facecolor=color,
+                               alpha=0.16, edgecolor="none"))
+        ax.add_patch(Rectangle((0.05, y - 0.34), 0.010, 0.68, facecolor=color,
+                               edgecolor="none"))
+        ax.text(0.0, y, f"{i + 1}", fontsize=8.4, color=color, fontweight="bold",
+                va="center", ha="center")
+        ax.text(0.09, y + 0.09, capa, fontsize=8.0, color=INK, fontweight="bold",
+                va="center")
+        ax.text(0.09, y - 0.17, pregunta, fontsize=6.9, color=MUTED, va="center")
+        ax.text(0.97, y, cuando, fontsize=7.2, color=color, va="center", ha="right")
+    ax.set_xlim(-0.05, 1.02)
+    ax.set_ylim(0.4, len(CAPAS_DOC) + 0.7)
+    ax.axis("off")
+    escribir(fig, "s5-capas-documentacion")
+
+
+# El valor probatorio: qué prueba cada registro y ante quién.
+PRUEBA_DOC = [
+    ("Cuaderno con hojas\nnumeradas y firmado", 3, "Prueba interna de autoría"),
+    ("Bitácora digital con\nsello de tiempo", 4, "Fecha cierta oponible"),
+    ("Depósito con identificador\npersistente", 4, "Fecha y contenido verificables"),
+    ("Solicitud de patente\npresentada", 5, "Fecha de prioridad"),
+]
+
+
+def fig_bitacora_prueba():
+    """No todo registro prueba lo mismo: solo la solicitud fija fecha de prioridad."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.7))
+    for i, (que, fuerza, prueba) in enumerate(PRUEBA_DOC):
+        y = len(PRUEBA_DOC) - i
+        ax.text(0, y, que, fontsize=7.4, color=INK, va="center", linespacing=1.3)
+        for p in range(5):
+            color = ACCENT if p < fuerza else GRID
+            ax.add_patch(Rectangle((0.42 + p * 0.037, y - 0.10), 0.026, 0.20,
+                                   facecolor=color, alpha=0.9 if p < fuerza else 0.45,
+                                   edgecolor="none"))
+        ax.text(0.64, y, prueba, fontsize=7.4, color=MUTED, va="center")
+    ax.set_xlim(-0.01, 1.02)
+    ax.set_ylim(0.4, len(PRUEBA_DOC) + 0.6)
+    ax.axis("off")
+    escribir(fig, "s5-bitacora-prueba")
+
+
+# Control de versiones para un prototipo electrónico: el código es una parte.
+ARTEFACTOS_VERSION = [
+    ("Firmware", "Repositorio con etiquetas de versión"),
+    ("Esquemático y placa", "Archivo fuente y revisión numerada"),
+    ("Lista de materiales", "Hoja versionada, con proveedor y parte"),
+    ("Ensayo y calibración", "Informe fechado por versión de prototipo"),
+    ("Documento de diseño", "Una versión por hito, no una por día"),
+]
+
+
+def fig_versiones_artefacto():
+    """Un prototipo tiene cinco artefactos que versionar, y solo uno es código."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.7))
+    for i, (artefacto, como) in enumerate(ARTEFACTOS_VERSION):
+        y = len(ARTEFACTOS_VERSION) - i
+        color = ACCENT if i == 0 else RAMPA[1]
+        ax.plot([0.015], [y], marker="s", ms=6, color=color)
+        ax.text(0.05, y, artefacto, fontsize=8.0, color=INK, va="center")
+        ax.text(0.40, y, como, fontsize=7.2, color=MUTED, va="center")
+    ax.set_xlim(0, 1.02)
+    ax.set_ylim(0.45, len(ARTEFACTOS_VERSION) + 0.55)
+    ax.axis("off")
+    escribir(fig, "s5-versiones-artefacto")
+
+
+# Prevalencia real de datos y código compartidos. Revisión sistemática con
+# metanálisis de 105 estudios sobre 2 121 580 artículos, 2016-2021.
+DATOS_COMPARTIDOS = [
+    ("Declaran que los datos\nestán disponibles", 8.0, RAMPA[1]),
+    ("Los datos están\nrealmente disponibles", 2.0, ACCENT),
+    ("El código está\nrealmente disponible", 0.5, ACCENT),
+]
+
+
+def fig_datos_compartidos():
+    """Ocho de cada cien lo declaran, dos lo cumplen y el código casi nunca."""
+    fig, ax = plt.subplots(figsize=(6.8, 2.4))
+    for i, (que, valor, color) in enumerate(DATOS_COMPARTIDOS):
+        y = len(DATOS_COMPARTIDOS) - i
+        ax.barh(y, 100, height=0.34, color=GRID, alpha=0.28, zorder=2)
+        ax.barh(y, max(valor, 0.6), height=0.34, color=color, alpha=0.9, zorder=3)
+        ax.text(-1.5, y, que, ha="right", va="center", fontsize=7.4, color=INK,
+                linespacing=1.3)
+        etiqueta = "menos del 0,5 %" if valor < 1 else f"{num(valor, 0)} %"
+        ax.text(max(valor, 0.6) + 1.6, y, etiqueta, ha="left", va="center",
+                fontsize=8.0, color=color, fontweight="bold")
+    ax.set_xlim(-46, 104)
+    ax.set_ylim(0.45, len(DATOS_COMPARTIDOS) + 0.55)
+    ax.axis("off")
+    escribir(fig, "s5-datos-compartidos")
+
+
+FIGURAS += [fig_ciclo_de_vida, fig_antes_del_desembolso, fig_informes,
+            fig_modificaciones, fig_cierre_doble, fig_capas_documentacion,
+            fig_bitacora_prueba, fig_versiones_artefacto, fig_datos_compartidos]
+
+
+# --------------------------------------------------------------------------
+# TEMA 04 · resultados: registro, publicación y difusión
+# --------------------------------------------------------------------------
+# Mapa de registros. Qué protege cada figura, ante quién y por cuánto tiempo.
+# Decisión 486 de la Comunidad Andina y Decreto Legislativo 822.
+REGISTROS = [
+    ("Patente de invención", "Producto o procedimiento nuevo", "INDECOPI", 20),
+    ("Modelo de utilidad", "Mejora funcional de una forma", "INDECOPI", 10),
+    ("Diseño industrial", "Apariencia, no función", "INDECOPI", 10),
+    ("Derecho de autor\nsobre software", "Código, no la idea", "INDECOPI", 70),
+    ("Marca", "Signo que distingue en el mercado", "INDECOPI", 10),
+    ("Secreto empresarial", "Lo que no se divulga", "Nadie", 0),
+]
+
+
+def fig_mapa_registros():
+    """Seis figuras de protección, y la vigencia va de diez años a indefinida."""
+    fig, ax = plt.subplots(figsize=(7.6, 3.2))
+    for i, (figura_pi, protege, ante, anios) in enumerate(REGISTROS):
+        y = len(REGISTROS) - i
+        if i % 2 == 0:
+            ax.add_patch(Rectangle((-0.02, y - 0.46), 1.06, 0.92, facecolor=SURFACE,
+                                   edgecolor="none", zorder=0))
+        color = ACCENT if i == 0 else (WARN if anios == 0 else RAMPA[1])
+        ax.text(0.0, y, figura_pi, fontsize=7.6, color=INK, va="center", linespacing=1.25)
+        ax.text(0.30, y, protege, fontsize=7.0, color=MUTED, va="center")
+        ax.text(0.78, y, ante, fontsize=7.0, color=MUTED, va="center")
+        vigencia = "Indefinida" if anios == 0 else f"{anios} años"
+        ax.text(1.04, y, vigencia, fontsize=7.4, color=color, va="center",
+                ha="right", fontweight="bold")
+    for x, rot in ((0.0, "Figura"), (0.30, "Qué protege"), (0.78, "Ante quién")):
+        ax.text(x, len(REGISTROS) + 0.78, rot, fontsize=7.0, color=MUTED)
+    ax.text(1.04, len(REGISTROS) + 0.78, "Vigencia", fontsize=7.0, color=MUTED, ha="right")
+    ax.plot([-0.02, 1.04], [len(REGISTROS) + 0.56] * 2, color=GRID, lw=0.9)
+    ax.set_xlim(-0.02, 1.06)
+    ax.set_ylim(0.3, len(REGISTROS) + 1.15)
+    ax.axis("off")
+    escribir(fig, "s5-mapa-registros")
+
+
+# Tasas del TUPA del INDECOPI aprobado por Decreto Supremo 088-2025-PCM,
+# vigentes desde el 1 de julio de 2025. Consultadas el 9 de agosto de 2026.
+TASAS_INDECOPI = [
+    ("Patente de invención", 396.00, 324.00),
+    ("Modelo de utilidad", 266.80, 97.20),
+    ("Diseño industrial", 216.00, 144.00),
+]
+
+
+def fig_tasas_indecopi():
+    """Solicitud más examen: el modelo de utilidad cuesta la mitad que la patente."""
+    fig, ax = plt.subplots(figsize=(6.9, 2.5))
+    for i, (nombre, solicitud, examen) in enumerate(TASAS_INDECOPI):
+        y = len(TASAS_INDECOPI) - i
+        ax.barh(y, solicitud, height=0.36, color=RAMPA[1], alpha=0.9,
+                edgecolor=PAPER, linewidth=1.2, zorder=3)
+        ax.barh(y, examen, left=solicitud, height=0.36, color=ACCENT, alpha=0.9,
+                edgecolor=PAPER, linewidth=1.2, zorder=3)
+        ax.text(-14, y, nombre, ha="right", va="center", fontsize=7.6, color=INK)
+        ax.text(solicitud + examen + 14, y, f"S/ {num(solicitud + examen, 2)}",
+                ha="left", va="center", fontsize=8.0, color=INK, fontweight="bold")
+    for i, (rot, color) in enumerate((("Solicitud", RAMPA[1]), ("Examen de fondo", ACCENT))):
+        x = i * 190
+        ax.add_patch(Rectangle((x, 0.32), 14, 0.10, facecolor=color, edgecolor="none"))
+        ax.text(x + 22, 0.37, rot, fontsize=7.0, color=MUTED, va="center")
+    ax.set_xlim(-250, 900)
+    ax.set_ylim(0.12, len(TASAS_INDECOPI) + 0.55)
+    ax.axis("off")
+    escribir(fig, "s5-tasas-indecopi")
+
+
+# Plazos del procedimiento. Decisión 486, artículos 40, 42, 44 y 50.
+PLAZOS_PATENTE = [
+    ("Presentación y examen de forma", 0, 2, "Fecha de prioridad"),
+    ("Confidencialidad hasta la publicación", 2, 18, "Artículo 40"),
+    ("Plazo para oponerse", 18, 21, "Artículo 42 · 60 días, prorrogables"),
+    ("Plazo para pedir el examen de fondo", 18, 24, "Artículo 44 · 6 meses"),
+    ("Examen de fondo y resolución", 24, 42, "Depende de la carga y de las observaciones"),
+]
+
+
+def fig_plazos_patente():
+    """Del depósito a la resolución pasan años, y dieciocho meses son de espera."""
+    fig, ax = plt.subplots(figsize=(7.4, 2.8))
+    for i, (etapa, ini, fin, nota) in enumerate(PLAZOS_PATENTE):
+        y = len(PLAZOS_PATENTE) - i
+        color = ACCENT if i in (2, 4) else RAMPA[1]
+        ax.barh(y, fin - ini, left=ini, height=0.30, color=color, alpha=0.85, zorder=3)
+        ax.text(-1.2, y, etapa, ha="right", va="center", fontsize=7.2, color=INK)
+        ax.text(fin + 0.8, y, nota, ha="left", va="center", fontsize=6.7, color=MUTED)
+    ax.set_xlim(-24, 62)
+    ax.set_ylim(0.35, len(PLAZOS_PATENTE) + 0.75)
+    ax.set_yticks([])
+    ax.set_xticks([0, 12, 24, 36])
+    ax.set_xticklabels(["mes 0", "12", "24", "36"], fontsize=7.0)
+    ax.tick_params(length=0)
+    ax.grid(axis="x", color=GRID, lw=0.6, alpha=0.45)
+    ax.set_axisbelow(True)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-plazos-patente")
+
+
+def fig_tramite_vs_proyecto():
+    """El proyecto cierra su expediente mucho antes de que la patente se conceda."""
+    fig, ax = plt.subplots(figsize=(7.2, 2.2))
+    ax.barh(1, 18, height=0.34, color=RAMPA[1], alpha=0.85, zorder=3)
+    ax.text(-1.2, 1, "Proyecto financiado", ha="right", va="center", fontsize=7.8, color=INK)
+    # El rótulo va sobre la barra: a su derecha cae justo sobre la línea de corte.
+    ax.text(17.4, 1.28, "18 meses", ha="right", va="bottom", fontsize=7.6, color=RAMPA[2])
+    ax.barh(0, 42, left=6, height=0.34, color=ACCENT, alpha=0.85, zorder=3)
+    ax.text(-1.2, 0, "Trámite de patente", ha="right", va="center", fontsize=7.8, color=INK)
+    ax.text(48.6, 0, "hasta 42 meses desde la solicitud", ha="left", va="center",
+            fontsize=7.6, color=ACCENT)
+    ax.plot([18, 18], [-0.45, 1.45], color=INK, lw=1.0, ls=(0, (4, 3)), zorder=5)
+    ax.text(19.0, -0.72, "Aquí el proyecto ya no tiene presupuesto, y al trámite le\n"
+                         "quedan treinta meses. Hay que decir quién los paga.",
+            fontsize=7.2, color=INK, va="top")
+    ax.set_xlim(-22, 84)
+    ax.set_ylim(-1.55, 1.75)
+    ax.axis("off")
+    escribir(fig, "s5-tramite-vs-proyecto")
+
+
+# Títulos de propiedad industrial otorgados por INDECOPI. El récord de 2025 y
+# la concentración por sector, según la nota del Día del Inventor Peruano.
+SECTORES_TITULOS = ["Biotecnología", "Tecnología médica", "Productos farmacéuticos",
+                    "Ingeniería civil"]
+
+
+def fig_titulos_indecopi():
+    """Mil cuarenta y siete títulos en 2025, y cuatro sectores concentran el grueso."""
+    fig, ax = plt.subplots(figsize=(6.8, 2.5))
+    ax.text(0.0, 0.86, "1 047", fontsize=30, color=ACCENT, fontweight="bold", va="center")
+    ax.text(0.0, 0.52, "títulos otorgados en 2025, máximo histórico\n"
+                       "del sistema peruano de patentes", fontsize=7.8, color=INK, va="top")
+    ax.text(0.0, 0.20, "Cerca de 500 en el primer semestre de 2026",
+            fontsize=7.4, color=MUTED, va="top")
+    for i, sector in enumerate(SECTORES_TITULOS):
+        ax.add_patch(Rectangle((0.56, 0.88 - i * 0.20), 0.42, 0.15,
+                               facecolor=RAMPA[1], alpha=0.16, edgecolor="none"))
+        ax.text(0.58, 0.955 - i * 0.20, sector, fontsize=7.6, color=INK, va="center")
+    ax.text(0.56, 0.13, "Sectores donde se concentran", fontsize=7.0, color=MUTED, va="top")
+    ax.set_xlim(-0.01, 1.0)
+    ax.set_ylim(0.0, 1.12)
+    ax.axis("off")
+    escribir(fig, "s5-titulos-indecopi")
+
+
+# Qué foro admite qué resultado, y en qué mes del proyecto cae cada uno.
+FOROS = [
+    ("Póster en congreso", 8, "Resultado parcial, sin detalle habilitante"),
+    ("Ponencia en congreso", 11, "Método y resultado, ya solicitada la patente"),
+    ("Demostración en feria", 13, "Solo si el registro ya está presentado"),
+    ("Artículo en revista", 15, "Resultado cerrado y revisado por pares"),
+]
+
+
+def fig_congresos_momento():
+    """Cada foro pide una madurez distinta, y ninguno va antes de la solicitud."""
+    fig, ax = plt.subplots(figsize=(7.2, 2.6))
+    ax.axvspan(0, 6, color=ACCENT, alpha=0.07, zorder=1)
+    ax.text(0.3, len(FOROS) + 0.55, "Antes de solicitar: nada se divulga", fontsize=7.0,
+            color=ACCENT, ha="left", va="center")
+    ax.plot([6, 6], [0.4, len(FOROS) + 0.15], color=ACCENT, lw=1.0, ls=(0, (4, 3)), zorder=4)
+    for i, (foro, mes, criterio_txt) in enumerate(FOROS):
+        y = len(FOROS) - i
+        ax.plot([6, mes], [y, y], color=GRID, lw=0.8, zorder=2)
+        ax.plot([mes], [y], marker="o", ms=6, color=RAMPA[1], zorder=4)
+        ax.text(mes + 0.5, y + 0.16, foro, fontsize=7.6, color=INK, va="center")
+        ax.text(mes + 0.5, y - 0.19, criterio_txt, fontsize=6.7, color=MUTED, va="center")
+    ax.set_xlim(0, 34)
+    ax.set_ylim(0.4, len(FOROS) + 1.0)
+    ax.set_yticks([])
+    ax.set_xticks([0, 6, 12, 18])
+    ax.set_xticklabels(["mes 0", "6", "12", "18"], fontsize=7.0)
+    ax.tick_params(length=0)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-congresos-momento")
+
+
+# --------------------------------------------------------------------------
+# TEMA 05 · transferencia y valorización
+# --------------------------------------------------------------------------
+# El abanico. Espectro de formas de transferencia y de intercambio de
+# conocimiento, según Aridi y Cowey (2018), Banco Mundial. Las tres vías que
+# enseña la sesión 2 están dentro, en su lugar del espectro.
+ABANICO = [
+    ("Publicación y congreso", 1, "Sin contraprestación"),
+    ("Consultoría y asistencia técnica", 2, "Se cobra el tiempo"),
+    ("Uso de equipos y laboratorio", 2, "Se cobra el servicio"),
+    ("Investigación por encargo", 3, "El que paga fija el objetivo"),
+    ("Desarrollo conjunto", 3, "Titularidad compartida, pactada antes"),
+    ("Licencia no exclusiva", 4, "Se cobra por uso, sin ceder"),
+    ("Licencia exclusiva", 4, "Un solo explotador, por plazo y territorio"),
+    ("Cesión de la titularidad", 5, "Se vende y se pierde el control"),
+    ("Spin-off con participación", 5, "Se cambia titularidad por acciones"),
+]
+
+
+def fig_abanico_transferencia():
+    """Nueve formas de transferir, de la publicación abierta a la cesión total."""
+    fig, ax = plt.subplots(figsize=(7.4, 3.6))
+    for i, (forma, grado, nota) in enumerate(ABANICO):
+        y = len(ABANICO) - i
+        color = RAMPA[0] if grado <= 2 else (RAMPA[1] if grado <= 3 else ACCENT)
+        ax.barh(y, grado, height=0.44, color=color, alpha=0.75, zorder=3)
+        ax.text(-0.12, y, forma, ha="right", va="center", fontsize=7.4, color=INK)
+        ax.text(grado + 0.16, y, nota, ha="left", va="center", fontsize=6.8, color=MUTED)
+    ax.set_xlim(-3.4, 9.6)
+    ax.set_ylim(0.35, len(ABANICO) + 0.95)
+    ax.set_yticks([])
+    ax.set_xticks([])
+    # La flecha ocupa todo el ancho útil para que los dos extremos del eje
+    # queden separados: pegados, los dos rótulos se leen como una sola frase.
+    ax.annotate("", xy=(9.2, len(ABANICO) + 0.62), xytext=(0.2, len(ABANICO) + 0.62),
+                arrowprops=dict(arrowstyle="-|>", color=MUTED, lw=1.0))
+    ax.text(0.2, len(ABANICO) + 0.78, "Menos control cedido", fontsize=6.9, color=MUTED)
+    ax.text(9.2, len(ABANICO) + 0.78, "Más control cedido", fontsize=6.9,
+            color=MUTED, ha="right")
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-abanico-transferencia")
+
+
+# A qué madurez se puede transferir por cada vía. Escala de la sesión 1.
+MADUREZ_VIA = [
+    ("Publicación y congreso", 1, 9),
+    ("Investigación por encargo", 2, 5),
+    ("Licencia no exclusiva", 4, 9),
+    ("Licencia exclusiva", 5, 9),
+    ("Cesión", 6, 9),
+    ("Spin-off", 6, 9),
+]
+
+
+def fig_madurez_via():
+    """Sin madurez no hay licencia: por debajo del nivel cuatro casi nadie compra."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.7))
+    for i, (via, ini, fin) in enumerate(MADUREZ_VIA):
+        y = len(MADUREZ_VIA) - i
+        ax.barh(y, fin - ini + 1, left=ini - 0.5, height=0.42,
+                color=ACCENT if ini >= 5 else RAMPA[1], alpha=0.8, zorder=3)
+        ax.text(0.3, y, via, ha="right", va="center", fontsize=7.4, color=INK)
+        ax.text(fin + 0.72, y, f"desde TRL {ini}", ha="left", va="center",
+                fontsize=6.9, color=MUTED)
+    ax.set_xlim(-7.0, 13.4)
+    ax.set_ylim(0.35, len(MADUREZ_VIA) + 0.85)
+    ax.set_yticks([])
+    ax.set_xticks(range(1, 10))
+    ax.set_xticklabels([f"TRL {n}" if n in (1, 5, 9) else str(n) for n in range(1, 10)],
+                       fontsize=6.8)
+    ax.tick_params(length=0)
+    ax.grid(axis="x", color=GRID, lw=0.6, alpha=0.4)
+    ax.set_axisbelow(True)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-madurez-via")
+
+
+# Los tres métodos. OMPI, Intellectual Property Valuation Basics for
+# Technology Transfer Professionals, capítulos 4, 5 y 6.
+METODOS_VALOR = [
+    ("Costo", "Lo que costó crearlo o\nlo que costaría rehacerlo",
+     "Gasto de I+D, personal,\nmateriales y tasas",
+     "Ignora el valor futuro"),
+    ("Mercado", "Lo que se pagó por\nalgo comparable",
+     "Operaciones comparables:\npago inicial, hitos, regalía",
+     "Casi nunca hay comparable"),
+    ("Ingresos", "El flujo futuro que\ngenera, traído a hoy",
+     "Ventas previstas, costos,\ntasa de descuento y riesgo",
+     "Cadena larga de supuestos"),
+]
+
+
+def fig_metodos_valorizacion():
+    """Tres métodos de valorización, y cada uno sirve en un momento distinto."""
+    fig, ax = plt.subplots(figsize=(7.6, 2.9))
+    for c, (metodo, mide, datos, limite) in enumerate(METODOS_VALOR):
+        x = c * 0.345
+        color = [RAMPA[0], RAMPA[1], ACCENT][c]
+        # El relleno usa el tono claro de la rampa; el texto, el oscuro: sobre
+        # un relleno al 10 % el tono claro no llega al contraste mínimo.
+        tinta_texto = [RAMPA[2], RAMPA[2], ACCENT][c]
+        ax.add_patch(Rectangle((x, 0), 0.31, 1.0, facecolor=color, alpha=0.10,
+                               edgecolor=color, linewidth=1.1))
+        ax.text(x + 0.015, 0.90, metodo, fontsize=8.6, color=tinta_texto,
+                fontweight="bold")
+        ax.text(x + 0.015, 0.74, mide, fontsize=7.0, color=INK, va="top", linespacing=1.35)
+        ax.text(x + 0.015, 0.47, "Qué datos pide", fontsize=6.5, color=MUTED)
+        ax.text(x + 0.015, 0.41, datos, fontsize=6.8, color=INK, va="top", linespacing=1.35)
+        ax.text(x + 0.015, 0.16, "Dónde falla", fontsize=6.5, color=MUTED)
+        ax.text(x + 0.015, 0.10, limite, fontsize=6.8, color=tinta_texto, va="top")
+    ax.set_xlim(-0.01, 1.0)
+    ax.set_ylim(-0.03, 1.03)
+    ax.axis("off")
+    escribir(fig, "s5-metodos-valorizacion")
+
+
+# Qué método admite cada activo. 2 = método principal · 1 = admisible · 0 = no.
+ACTIVOS_VALOR = ["Patente concedida", "Solicitud en trámite", "Software",
+                 "Secreto empresarial", "Base de datos"]
+METODO_POR_ACTIVO = [
+    [1, 2, 2],   # patente concedida
+    [2, 1, 1],   # solicitud en trámite
+    [2, 1, 2],   # software
+    [2, 0, 1],   # secreto
+    [2, 0, 1],   # base de datos
+]
+
+
+def fig_valorizacion_por_activo():
+    """No todo activo admite los tres métodos: el secreto no tiene comparables."""
+    fig, ax = plt.subplots(figsize=(6.6, 2.7))
+    etiquetas = {2: "principal", 1: "admisible", 0: "no aplica"}
+    tinta = {2: ACCENT, 1: RAMPA[0], 0: None}
+    for f, fila in enumerate(METODO_POR_ACTIVO):
+        for c, v in enumerate(fila):
+            if v == 0:
+                ax.text(c, f, "—", ha="center", va="center", fontsize=9, color=MUTED)
+                continue
+            ax.add_patch(Rectangle((c - 0.44, f - 0.32), 0.88, 0.64,
+                                   facecolor=tinta[v], alpha=0.85 if v == 2 else 0.28,
+                                   edgecolor="none"))
+            ax.text(c, f, etiquetas[v], ha="center", va="center", fontsize=6.8,
+                    color="#ffffff" if v == 2 else INK,
+                    fontweight="bold" if v == 2 else "normal")
+    ax.set_xticks(range(3))
+    ax.set_xticklabels(["Costo", "Mercado", "Ingresos"], fontsize=7.6, color=INK)
+    ax.set_yticks(range(len(ACTIVOS_VALOR)))
+    ax.set_yticklabels(ACTIVOS_VALOR, fontsize=7.4, color=INK)
+    ax.xaxis.set_ticks_position("top")
+    ax.set_xlim(-0.6, 2.6)
+    ax.set_ylim(len(ACTIVOS_VALOR) - 0.4, -0.5)
+    ax.tick_params(length=0)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-valorizacion-por-activo")
+
+
+# El embudo peruano. CONCYTEC (2016), Programa Especial de Transferencia y
+# Extensión Tecnológica. Es la línea de base y nadie la ha vuelto a medir.
+EMBUDO_PERU = [
+    ("Universidades en el país", 142),
+    ("Con política de propiedad intelectual", 10),
+    ("Con procedimiento para transferir", 4),
+    ("Con una patente llegada a licencia", 0),
+]
+
+
+def fig_brecha_peruana():
+    """De ciento cuarenta y dos universidades, ninguna había licenciado una patente."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.7))
+    tope = EMBUDO_PERU[0][1]
+    for i, (etapa, valor) in enumerate(EMBUDO_PERU):
+        y = len(EMBUDO_PERU) - i
+        color = ACCENT if valor == 0 else RAMPA[min(i, 2)]
+        # El cero no se dibuja como barra invisible: se marca, porque el cero
+        # ES el hallazgo de esta figura.
+        ancho = max(valor, 0)
+        if ancho:
+            ax.barh(y, ancho, height=0.40, color=color, alpha=0.85, zorder=3)
+        else:
+            ax.plot([0, 2.5], [y, y], color=ACCENT, lw=1.6, ls=(0, (3, 2)), zorder=3)
+        ax.text(-3, y, etapa, ha="right", va="center", fontsize=7.6, color=INK)
+        ax.text(max(ancho, 2.5) + 3, y, "ninguna" if valor == 0 else f"{valor}",
+                ha="left", va="center", fontsize=8.4,
+                color=color, fontweight="bold")
+    ax.set_xlim(-72, 168)
+    ax.set_ylim(0.35, len(EMBUDO_PERU) + 0.6)
+    ax.axis("off")
+    escribir(fig, "s5-brecha-peruana")
+
+
+FIGURAS += [fig_mapa_registros, fig_tasas_indecopi, fig_plazos_patente,
+            fig_tramite_vs_proyecto, fig_titulos_indecopi, fig_congresos_momento,
+            fig_abanico_transferencia, fig_madurez_via, fig_metodos_valorizacion,
+            fig_valorizacion_por_activo, fig_brecha_peruana]
+
+
+# --------------------------------------------------------------------------
+# Dónde va cada cosa. El repositorio de código no sirve para todo, y el
+# depósito con identificador persistente es lo que hace citable un dato.
+# ALICIA es el repositorio nacional de acceso libre.
+# --------------------------------------------------------------------------
+DESTINOS_DOC = [
+    ("Código y firmware", "Repositorio con control de versiones", "Etiqueta de versión"),
+    ("Datos de ensayo", "Repositorio de datos con identificador", "DOI del conjunto"),
+    ("Documento técnico", "Repositorio institucional", "Enlace permanente"),
+    ("Tesis y artículo", "ALICIA y el repositorio de la universidad", "Acceso libre"),
+    ("Video y fotografía", "Almacenamiento del proyecto, con respaldo", "Nombre y fecha"),
+    ("Expediente del fondo", "Archivo de la entidad ejecutora", "Copia física y digital"),
+]
+
+
+def fig_donde_va_cada_cosa():
+    """Seis clases de material y seis destinos: el repositorio de código es uno."""
+    fig, ax = plt.subplots(figsize=(7.6, 2.7))
+    for i, (que, donde, senal) in enumerate(DESTINOS_DOC):
+        y = len(DESTINOS_DOC) - i
+        if i % 2 == 0:
+            ax.add_patch(Rectangle((-0.02, y - 0.44), 1.08, 0.88, facecolor=SURFACE,
+                                   edgecolor="none", zorder=0))
+        ax.text(0.0, y, que, fontsize=7.6, color=INK, va="center")
+        ax.text(0.34, y, donde, fontsize=7.4, color=RAMPA[2], va="center")
+        ax.text(1.05, y, senal, fontsize=6.9, color=MUTED, va="center", ha="right")
+    for x, rot, ali in ((0.0, "Qué se produce", "left"), (0.34, "Dónde se deposita", "left"),
+                        (1.05, "Con qué se cita", "right")):
+        ax.text(x, len(DESTINOS_DOC) + 0.72, rot, fontsize=7.0, color=MUTED, ha=ali)
+    ax.plot([-0.02, 1.06], [len(DESTINOS_DOC) + 0.54] * 2, color=GRID, lw=0.9)
+    ax.set_xlim(-0.02, 1.08)
+    ax.set_ylim(0.3, len(DESTINOS_DOC) + 1.1)
+    ax.axis("off")
+    escribir(fig, "s5-donde-va-cada-cosa")
+
+
+# --------------------------------------------------------------------------
+# El orden entre proteger y publicar, dentro del calendario del proyecto.
+# La sesión 2 explica por qué la divulgación destruye la novedad; aquí la
+# pregunta es cuándo, y la respuesta es una sola fecha.
+# --------------------------------------------------------------------------
+def fig_proteger_antes_publicar():
+    """La fecha de solicitud parte el proyecto en dos: antes se calla, después se cuenta."""
+    fig, ax = plt.subplots(figsize=(7.4, 2.6))
+    # El corte va en el mes 7 y no en el 6: con la columna izquierda más
+    # estrecha, sus renglones cruzan la línea y se pisan con los de la derecha.
+    corte = 7.0
+    ax.axvspan(0, corte, color=WARN, alpha=0.10)
+    ax.axvspan(corte, 18, color=OK, alpha=0.08)
+    ax.plot([corte, corte], [-1.0, 1.25], color=ACCENT, lw=1.6, zorder=5)
+    ax.text(corte, 1.35, "Solicitud presentada", ha="center", fontsize=8.0,
+            color=ACCENT, fontweight="bold")
+
+    izquierda = ["Bitácora y versiones", "Confidencialidad firmada",
+                 "Búsqueda de antecedentes", "Nada sale del equipo"]
+    derecha = ["Artículo y tesis", "Póster y ponencia", "Demostración pública",
+               "Video y nota de prensa"]
+    for i, t in enumerate(izquierda):
+        ax.text(0.4, 0.75 - i * 0.42, f"· {t}", fontsize=7.2, color=INK, va="center")
+    for i, t in enumerate(derecha):
+        ax.text(corte + 0.5, 0.75 - i * 0.42, f"· {t}", fontsize=7.2, color=INK,
+                va="center")
+    ax.text(0.4, -1.02, "Antes: no se divulga", fontsize=7.4,
+            color=WARN, fontweight="bold")
+    ax.text(corte + 0.5, -1.02, "Después: ya no se pierde nada", fontsize=7.4,
+            color=OK, fontweight="bold")
+    ax.set_xlim(0, 18)
+    ax.set_ylim(-1.35, 1.65)
+    ax.set_yticks([])
+    ax.set_xticks([0, 7, 12, 18])
+    ax.set_xticklabels(["mes 0", "7", "12", "18"], fontsize=7.0)
+    ax.tick_params(length=0)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-proteger-antes-publicar")
+
+
+# --------------------------------------------------------------------------
+# Un proyecto produce más de un resultado, y cada uno se acredita distinto.
+# --------------------------------------------------------------------------
+RESULTADOS = [
+    ("Prototipo funcional", "Informe de ensayo y video de funcionamiento"),
+    ("Solicitud de registro", "Constancia de presentación ante INDECOPI"),
+    ("Artículo revisado por pares", "DOI y depósito en acceso libre"),
+    ("Tesis derivada", "Sustentación y depósito en ALICIA"),
+    ("Base de datos", "Identificador persistente y licencia de uso"),
+    ("Norma o especificación técnica", "Documento aprobado por la entidad"),
+    ("Personal formado", "Certificado y horas acreditadas"),
+    ("Alianza formalizada", "Convenio firmado con objeto y plazo"),
+]
+
+
+def fig_resultados_tipos():
+    """Ocho resultados posibles, y cada uno se acredita con un documento distinto."""
+    fig, ax = plt.subplots(figsize=(7.4, 3.2))
+    for i, (resultado, prueba) in enumerate(RESULTADOS):
+        y = len(RESULTADOS) - i
+        color = ACCENT if i < 2 else RAMPA[1]
+        ax.plot([0.012], [y], marker="o", ms=5, color=color, zorder=3)
+        ax.text(0.045, y, resultado, fontsize=7.6, color=INK, va="center")
+        ax.text(0.44, y, prueba, fontsize=7.0, color=MUTED, va="center")
+    ax.plot([0.012, 0.012], [1, len(RESULTADOS)], color=GRID, lw=0.9, zorder=2)
+    ax.set_xlim(0, 1.02)
+    ax.set_ylim(0.45, len(RESULTADOS) + 0.55)
+    ax.axis("off")
+    escribir(fig, "s5-resultados-tipos")
+
+
+# --------------------------------------------------------------------------
+# Lo que queda armado al cerrar. El dossier es la materia prima del pitch de
+# la sesión 6: no se construye al final, se recoge durante.
+# --------------------------------------------------------------------------
+DOSSIER = [
+    ("Expediente", "Convenio, informes y liquidación", 2),
+    ("Documentación", "Bitácora, versiones y documento técnico", 4),
+    ("Registros", "Solicitudes presentadas y concedidas", 6),
+    ("Publicaciones", "Artículo, tesis y ponencias", 9),
+    ("Historia", "Cómo evolucionó, mes a mes", 12),
+    ("Video", "Resumen de tres minutos", 16),
+]
+
+
+def fig_dossier():
+    """Seis piezas del dossier final, y ninguna se puede fabricar el último mes."""
+    fig, ax = plt.subplots(figsize=(7.4, 2.9))
+    for i, (pieza, contenido, desde) in enumerate(DOSSIER):
+        y = len(DOSSIER) - i
+        color = RAMPA[min(i // 2, 2)]
+        ax.barh(y, 18 - desde, left=desde, height=0.36, color=color, alpha=0.65, zorder=3)
+        ax.text(-0.6, y, pieza, ha="right", va="center", fontsize=7.8, color=INK,
+                fontweight="bold")
+        # El contenido va tras el final de la barra, no encima: dentro se sale
+        # por la derecha y choca con lo que venga después. El mes de inicio ya
+        # lo dice el arranque de la barra sobre el eje.
+        ax.text(18.7, y, contenido, fontsize=6.9, color=MUTED, va="center")
+    ax.set_xlim(-7.5, 46)
+    ax.set_ylim(0.4, len(DOSSIER) + 0.7)
+    ax.set_yticks([])
+    ax.set_xticks([0, 6, 12, 18])
+    ax.set_xticklabels(["mes 0", "6", "12", "18"], fontsize=7.0)
+    ax.tick_params(length=0)
+    ax.grid(axis="x", color=GRID, lw=0.6, alpha=0.4)
+    ax.set_axisbelow(True)
+    for lado in ax.spines.values():
+        lado.set_visible(False)
+    escribir(fig, "s5-dossier")
+
+
+FIGURAS += [fig_donde_va_cada_cosa, fig_proteger_antes_publicar,
+            fig_resultados_tipos, fig_dossier]
+
+
+# --------------------------------------------------------------------------
+# Qué cabe en la partida de propiedad intelectual y difusión. El tope del 5 %
+# del capital semilla son S/ 3 000 en StartUp Perú 12G; las tasas son las del
+# TUPA vigente. El resto es lo que queda para el evento público de cierre,
+# que la misma convocatoria declara obligatorio.
+# --------------------------------------------------------------------------
+CABE_PARTIDA = [
+    ("Solicitud de patente", 396.0, ACCENT),
+    ("Examen de fondo", 324.0, ACCENT),
+    ("Búsqueda de antecedentes", 450.0, RAMPA[1]),
+    ("Evento público de cierre", 1_830.0, RAMPA[0]),
+]
+
+
+def fig_cabe_en_la_partida():
+    """El tope del 5 % da para un registro y el evento de cierre, y nada más."""
+    fig, ax = plt.subplots(figsize=(7.0, 2.3))
+    tope = 3_000.0
+    izq = 0.0
+    for nombre, monto, color in CABE_PARTIDA:
+        ax.barh(0, monto, left=izq, height=0.42, color=color, alpha=0.9,
+                edgecolor=PAPER, linewidth=1.4, zorder=3)
+        ax.text(izq + monto / 2, 0, f"S/ {num(monto, 0)}", ha="center", va="center",
+                fontsize=7.4, color="#ffffff", fontweight="bold", zorder=4)
+        izq += monto
+    # Un rótulo por renglón, alineado al inicio de su tramo. Con dos niveles
+    # alternos, los dos tramos estrechos de la izquierda se pisan entre sí, y
+    # centrar el primero lo saca del eje por la izquierda.
+    izq = 0.0
+    for i, (nombre, monto, _) in enumerate(CABE_PARTIDA):
+        y = -0.36 - i * 0.24
+        ax.plot([izq + monto / 2, izq + monto / 2], [-0.23, y + 0.04],
+                color=GRID, lw=0.8)
+        ax.text(izq, y, nombre, ha="left", va="top", fontsize=7.0, color=INK)
+        izq += monto
+    ax.text(0, 0.42, f"Tope de la partida: S/ {num(tope, 0)} · 5 % del capital semilla",
+            fontsize=7.6, color=ACCENT, fontweight="bold", va="bottom")
+    ax.set_xlim(-30, tope * 1.04)
+    ax.set_ylim(-1.45, 0.85)
+    ax.axis("off")
+    escribir(fig, "s5-cabe-en-la-partida")
+
+
+FIGURAS += [fig_cabe_en_la_partida]
 
 def main() -> None:
     print(f"Generando {len(FIGURAS)} figuras en {SALIDA.relative_to(RAIZ)}/")

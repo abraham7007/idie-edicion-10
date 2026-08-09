@@ -38,10 +38,10 @@ SESIONES = [
     ("04", "Formulación de proyectos",
      "Del problema al marco lógico: objetivos, indicadores, supuestos y la "
      "evidencia que sostiene cada uno."),
-    ("05", "Presupuesto, ejecución y propiedad intelectual",
-     "Partidas admisibles, cronograma de desembolsos, las obligaciones que "
-     "empiezan cuando el proyecto se gana, y la propiedad intelectual de la "
-     "ejecución: patentes, licencias comerciales y parques tecnológicos."),
+    ("05", "Del proyecto ganado al resultado transferido",
+     "Presupuesto por partidas, convenio y rendición, documentación del "
+     "desarrollo, registro y difusión de los resultados, y las alternativas "
+     "de transferencia con su valorización."),
     ("06", "<i>Pitch Elevator</i> y tendencias mundiales en I+D+i+e",
      "Defensa ante un comité y hacia dónde va el ecosistema global, con cuánta "
      "de la cooperación internacional acaba llegando al Perú y por qué vía."),

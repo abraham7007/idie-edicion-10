@@ -1,0 +1,212 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 399.24 158.328" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 158.328 
+L 399.24 158.328 
+L 399.24 0 
+L 0 0 
+L 0 158.328 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 167.386019 29.268 
+L 177.245825 29.268 
+L 177.245825 22.14 
+L 167.386019 22.14 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 181.417282 29.268 
+L 191.277087 29.268 
+L 191.277087 22.14 
+L 181.417282 22.14 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 195.448544 29.268 
+L 205.30835 29.268 
+L 205.30835 22.14 
+L 195.448544 22.14 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 209.479806 29.268 
+L 219.339612 29.268 
+L 219.339612 22.14 
+L 209.479806 22.14 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-grid); opacity: 0.45"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 223.511068 29.268 
+L 233.370874 29.268 
+L 233.370874 22.14 
+L 223.511068 22.14 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-grid); opacity: 0.45"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 167.386019 64.908 
+L 177.245825 64.908 
+L 177.245825 57.78 
+L 167.386019 57.78 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 181.417282 64.908 
+L 191.277087 64.908 
+L 191.277087 57.78 
+L 181.417282 57.78 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 195.448544 64.908 
+L 205.30835 64.908 
+L 205.30835 57.78 
+L 195.448544 57.78 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 209.479806 64.908 
+L 219.339612 64.908 
+L 219.339612 57.78 
+L 209.479806 57.78 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 223.511068 64.908 
+L 233.370874 64.908 
+L 233.370874 57.78 
+L 223.511068 57.78 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-grid); opacity: 0.45"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 167.386019 100.548 
+L 177.245825 100.548 
+L 177.245825 93.42 
+L 167.386019 93.42 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 181.417282 100.548 
+L 191.277087 100.548 
+L 191.277087 93.42 
+L 181.417282 93.42 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 195.448544 100.548 
+L 205.30835 100.548 
+L 205.30835 93.42 
+L 195.448544 93.42 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 209.479806 100.548 
+L 219.339612 100.548 
+L 219.339612 93.42 
+L 209.479806 93.42 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 223.511068 100.548 
+L 233.370874 100.548 
+L 233.370874 93.42 
+L 223.511068 93.42 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-grid); opacity: 0.45"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 167.386019 136.188 
+L 177.245825 136.188 
+L 177.245825 129.06 
+L 167.386019 129.06 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 181.417282 136.188 
+L 191.277087 136.188 
+L 191.277087 129.06 
+L 181.417282 129.06 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 195.448544 136.188 
+L 205.30835 136.188 
+L 205.30835 129.06 
+L 195.448544 129.06 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 209.479806 136.188 
+L 219.339612 136.188 
+L 219.339612 129.06 
+L 209.479806 129.06 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 223.511068 136.188 
+L 233.370874 136.188 
+L 233.370874 129.06 
+L 223.511068 129.06 
+z
+" clip-path="url(#s5-bitacora-prueba-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 23.315708)">Cuaderno con hojas</text>
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 32.21548)">numeradas y firmado</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="250.815146" y="27.765594" transform="rotate(-0 250.815146 27.765594)">Prueba interna de autoría</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 59.058614)">Bitácora digital con</text>
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 68.009261)">sello de tiempo</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="250.815146" y="63.405594" transform="rotate(-0 250.815146 63.405594)">Fecha cierta oponible</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 94.724052)">Depósito con identificador</text>
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 103.623823)">persistente</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="250.815146" y="99.045594" transform="rotate(-0 250.815146 99.045594)">Fecha y contenido verificables</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 130.235708)">Solicitud de patente</text>
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.112233 139.13548)">presentada</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="250.815146" y="134.685594" transform="rotate(-0 250.815146 134.685594)">Fecha de prioridad</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-bitacora-prueba-clip-0">
+   <rect x="4.32" y="4.32" width="390.6" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

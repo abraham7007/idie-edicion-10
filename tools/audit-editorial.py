@@ -105,6 +105,11 @@ sospechosos = {a: v for a, v in ACR.items()
                    # instrumentos y notación de gestión ya nombrados en texto
                    "DS", "PCM", "MOU", "LOI", "NDA", "OKR", "IP", "PI", "TIC", "TT",
                    "ONG", "SAC", "SAFE", "KISS", "RBF",
+
+                   # Rótulos del mapa del ecosistema de la portada. Van en
+                   # versal por diseño de la figura, no porque sean siglas:
+                   # definir «ESTADO» en el glosario no le diría nada a nadie.
+                   "ESTADO", "FONDOS", "ACADEMIA", "EMPRESA",
                }}
 print(f"\n### 4 · acrónimos en 4+ láminas sin entrada en el glosario ({len(sospechosos)})")
 for a, v in sorted(sospechosos.items(), key=lambda x: -len(x[1]))[:12]:

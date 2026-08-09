@@ -174,7 +174,10 @@ for (const s of sesiones) {
 			// expone: no consume los tres minutos y medio que consume una lámina
 			// de contenido. Por eso admite más láminas que las demás, y por eso
 			// la excepción va por sesión y no para todo el mazo (§4.6).
-			["láminas", html.length, 40, ["03"].includes(s) ? 62 : 50],
+			// La sesión 5 recorre cinco bloques —presupuesto, ejecución,
+			// documentación, resultados y transferencia— que no se pueden
+			// repartir entre dos sesiones sin romper la secuencia del proyecto.
+			["láminas", html.length, 40, { "03": 62, "05": 64 }[s] ?? 50],
 			// Sin techo de figuras: lo tuvo y marcaba fuera de norma a la
 			// sesión 1 con 31, que es justo la densidad que se pedía (§4.4).
 			// La sesión 3 inventaría fondos con una ficha por lámina, y una
@@ -186,8 +189,11 @@ for (const s of sesiones) {
 				s === "03" ? 0.15 : 0.5, 9],
 			["tablas de contenido", tablas, 0, 6],
 			["secciones interactivas", cuenta(/data-sim/), 2, 99],
+			// Cuatro paradas en toda sesión, salvo la 5: son cinco bloques de
+			// contenido y dejar uno sin su parada de herramientas rompería la
+			// regla de que cada parada cuelga del tema que la justifica (§5.6).
 			["bloques de práctica", html.filter((f) => /(taller|herramientas)-\d/.test(f)).length,
-				4, 4],
+				s === "05" ? 5 : 4, s === "05" ? 5 : 4],
 		];
 		return filas
 			.map(([q, v, min, max]) => {

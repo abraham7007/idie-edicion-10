@@ -20,7 +20,7 @@ L 9.771724 39.0456
 L 9.771724 15.4584 
 L 5.773793 15.4584 
 z
-" clip-path="url(#pe784ea51fa)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s1-limites-ia-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_3">
     <path d="M 5.773793 71.8056 
@@ -28,7 +28,7 @@ L 9.771724 71.8056
 L 9.771724 48.2184 
 L 5.773793 48.2184 
 z
-" clip-path="url(#pe784ea51fa)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s1-limites-ia-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_4">
     <path d="M 5.773793 104.5656 
@@ -36,7 +36,7 @@ L 9.771724 104.5656
 L 9.771724 80.9784 
 L 5.773793 80.9784 
 z
-" clip-path="url(#pe784ea51fa)" style="fill: var(--fig-warn)"/>
+" clip-path="url(#s1-limites-ia-clip-0)" style="fill: var(--fig-warn)"/>
    </g>
    <g id="patch_5">
     <path d="M 5.773793 137.3256 
@@ -44,7 +44,7 @@ L 9.771724 137.3256
 L 9.771724 113.7384 
 L 5.773793 113.7384 
 z
-" clip-path="url(#pe784ea51fa)" style="fill: var(--fig-warn)"/>
+" clip-path="url(#s1-limites-ia-clip-0)" style="fill: var(--fig-warn)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-accent); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="15.950345" y="26.459437" transform="rotate(-0 15.950345 26.459437)">Inventa referencias</text>
@@ -73,7 +73,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pe784ea51fa">
+  <clipPath id="s1-limites-ia-clip-0">
    <rect x="4.32" y="4.32" width="379.44" height="144.144"/>
   </clipPath>
  </defs>

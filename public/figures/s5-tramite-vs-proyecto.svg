@@ -1,0 +1,61 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 437.601865 130.608" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 130.608 
+L 437.601865 130.608 
+L 437.601865 0 
+L 0 0 
+L 0 130.608 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 98.089258 38.3232 
+L 166.312654 38.3232 
+L 166.312654 25.7568 
+L 98.089258 25.7568 
+z
+" clip-path="url(#s5-tramite-vs-proyecto-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="93.541031" y="34.213031" transform="rotate(-0 93.541031 34.213031)">Proyecto financiado</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ramp-3); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="164.038541" y="20.110638" transform="rotate(-0 164.038541 20.110638)">18 meses</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 120.83039 75.2832 
+L 280.018314 75.2832 
+L 280.018314 62.7168 
+L 120.83039 62.7168 
+z
+" clip-path="url(#s5-tramite-vs-proyecto-clip-0)" style="fill: var(--fig-accent); opacity: 0.85"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="93.541031" y="71.308313" transform="rotate(-0 93.541031 71.308313)">Trámite de patente</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-accent); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="282.292427" y="71.117313" transform="rotate(-0 282.292427 71.117313)">hasta 42 meses desde la solicitud</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(170.102843 101.370075)">Aquí el proyecto ya no tiene presupuesto, y al trámite le</text>
+    <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(170.102843 109.792725)">quedan treinta meses. Hay que decir quién los paga.</text>
+   </g>
+   <g id="line2d_1">
+    <path d="M 166.312654 85.632 
+L 166.312654 15.408 
+" clip-path="url(#s5-tramite-vs-proyecto-clip-0)" style="fill: none; stroke-dasharray: 4,3; stroke-dashoffset: 0; stroke: var(--fig-ink)"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-tramite-vs-proyecto-clip-0">
+   <rect x="14.705107" y="4.32" width="401.76" height="121.968"/>
+  </clipPath>
+ </defs>
+</svg>

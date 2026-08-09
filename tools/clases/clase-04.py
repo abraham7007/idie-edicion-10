@@ -122,7 +122,7 @@ AGENDA = envolver(
 \t\t\t\t\t\t\t<li><b>02</b><i>Startups</i>, <i>spin-offs</i> y transferencia</li>
 \t\t\t\t\t\t\t<li><b>03</b>Mapa de financiamiento e inversión</li>
 \t\t\t\t\t\t\t<li class="is-on"><b>04</b>Formulación de proyectos</li>
-\t\t\t\t\t\t\t<li><b>05</b>Presupuesto, ejecución y propiedad intelectual</li>
+\t\t\t\t\t\t\t<li><b>05</b>Del proyecto ganado al resultado transferido</li>
 \t\t\t\t\t\t\t<li><b>06</b><i>Pitch Elevator</i> y tendencias mundiales en I+D+i+e</li>
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t</div>
@@ -194,7 +194,7 @@ DATOS_GENERALES = envolver(
     + tabla(
         ["Campo", "Qué se declara", "Qué lo invalida"],
         [["Figura del postulante", "Quién firma: universidad, empresa, asociación o persona",
-          "Una figura que la convocatoria no admite en esa línea"],
+          "Una figura que la convocatoria no admite para ese concurso"],
          ["Equipo", "Responsable técnico y dedicación de cada integrante",
           "Dedicación sin horas o un responsable sin credencial"],
          ["Duración", "Meses de ejecución, dentro del máximo de las bases",

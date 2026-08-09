@@ -3988,6 +3988,41 @@ input[type="checkbox"] {
 	--tema: var(--color-navy);
 }
 
+/* La sesión 5 tiene cinco temas y no dos. Con la rejilla de dos columnas la
+   última fila quedaría con un hueco; con tres columnas caben los cinco más un
+   sexto bloque que lista las paradas de herramientas, y la retícula cierra. */
+.agenda--cinco {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* El quinto tema ocupa las dos celdas que sobran de la segunda fila: con una
+   sola, la retícula queda con un hueco a la derecha y el bloque más alto de
+   la fila decide el alto de toda la lámina. */
+.agenda--cinco .agenda__block--ancho {
+	grid-column: span 2;
+}
+
+/* El bloque ancho reparte su interior en dos: el temario a la izquierda y las
+   paradas de herramientas a la derecha. Con `columns: 2` sobre la lista, el
+   último punto saltaba de columna y quedaba suelto, sin su filete. */
+.agenda--cinco .agenda__block--ancho {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	column-gap: var(--space-lg);
+	align-content: start;
+}
+
+.agenda--cinco .agenda__block--ancho > .agenda__n,
+.agenda--cinco .agenda__block--ancho > h3 {
+	grid-column: 1 / -1;
+}
+
+@media (max-width: 62rem) {
+	.agenda--cinco {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
 .agenda__n {
 	display: block;
 	font-family: var(--font-mono);

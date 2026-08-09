@@ -26,22 +26,22 @@ z
    <g id="line2d_1">
     <path d="M 336.522988 31.248 
 L 483.34558 31.248 
-" clip-path="url(#p76db1c3fb8)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
+" clip-path="url(#s1-brecha-chile-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
    </g>
    <g id="line2d_2">
     <path d="M 290.263302 72.675692 
 L 483.34558 72.675692 
-" clip-path="url(#p76db1c3fb8)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
+" clip-path="url(#s1-brecha-chile-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
    </g>
    <g id="line2d_3">
     <path d="M 273.692034 114.103385 
 L 483.34558 114.103385 
-" clip-path="url(#p76db1c3fb8)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
+" clip-path="url(#s1-brecha-chile-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
    </g>
    <g id="line2d_4">
     <path d="M 308.159533 155.531077 
 L 392.832789 155.531077 
-" clip-path="url(#p76db1c3fb8)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
+" clip-path="url(#s1-brecha-chile-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 2.6; stroke-linecap: round"/>
    </g>
    <g id="PathCollection_1"/>
    <g id="PathCollection_2"/>
@@ -50,12 +50,12 @@ L 392.832789 155.531077
     <g id="ytick_1">
      <g id="line2d_5">
       <defs>
-       <path id="mc04494b09a" d="M 0 0 
+       <path id="m0fee5fd96b" d="M 0 0 
 L -3 0 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mc04494b09a" x="179.689766" y="31.248" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#m0fee5fd96b" x="179.689766" y="31.248" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -65,7 +65,7 @@ L -3 0
     <g id="ytick_2">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#mc04494b09a" x="179.689766" y="72.675692" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#m0fee5fd96b" x="179.689766" y="72.675692" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -75,7 +75,7 @@ L -3 0
     <g id="ytick_3">
      <g id="line2d_7">
       <g>
-       <use xlink:href="#mc04494b09a" x="179.689766" y="114.103385" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#m0fee5fd96b" x="179.689766" y="114.103385" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -85,7 +85,7 @@ L -3 0
     <g id="ytick_4">
      <g id="line2d_8">
       <g>
-       <use xlink:href="#mc04494b09a" x="179.689766" y="155.531077" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#m0fee5fd96b" x="179.689766" y="155.531077" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -95,7 +95,7 @@ L -3 0
    </g>
    <g id="PathCollection_3">
     <defs>
-     <path id="m335dc25cac" d="M 0 5.244044 
+     <path id="md2d828818e" d="M 0 5.244044 
 C 1.390737 5.244044 2.7247 4.691499 3.708099 3.708099 
 C 4.691499 2.7247 5.244044 1.390737 5.244044 0 
 C 5.244044 -1.390737 4.691499 -2.7247 3.708099 -3.708099 
@@ -107,13 +107,13 @@ C -2.7247 4.691499 -1.390737 5.244044 0 5.244044
 z
 " style="stroke: var(--fig-navy)"/>
     </defs>
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#m335dc25cac" x="483.34558" y="31.248" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#md2d828818e" x="483.34558" y="31.248" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="PathCollection_4">
     <defs>
-     <path id="macc1bb64fc" d="M 0 5.244044 
+     <path id="me37d2550a5" d="M 0 5.244044 
 C 1.390737 5.244044 2.7247 4.691499 3.708099 3.708099 
 C 4.691499 2.7247 5.244044 1.390737 5.244044 0 
 C 5.244044 -1.390737 4.691499 -2.7247 3.708099 -3.708099 
@@ -125,8 +125,8 @@ C -2.7247 4.691499 -1.390737 5.244044 0 5.244044
 z
 " style="stroke: var(--fig-accent)"/>
     </defs>
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#macc1bb64fc" x="336.522988" y="31.248" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#me37d2550a5" x="336.522988" y="31.248" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="text_5">
@@ -136,13 +136,13 @@ z
     <text style="fill: var(--fig-navy); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="490.353021" y="33.616047" transform="rotate(-0 490.353021 33.616047)">0,35</text>
    </g>
    <g id="PathCollection_5">
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#m335dc25cac" x="483.34558" y="72.675692" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#md2d828818e" x="483.34558" y="72.675692" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="PathCollection_6">
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#macc1bb64fc" x="290.263302" y="72.675692" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#me37d2550a5" x="290.263302" y="72.675692" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="text_7">
@@ -152,13 +152,13 @@ z
     <text style="fill: var(--fig-navy); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="490.353021" y="75.043739" transform="rotate(-0 490.353021 75.043739)">106,7</text>
    </g>
    <g id="PathCollection_7">
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#m335dc25cac" x="483.34558" y="114.103385" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#md2d828818e" x="483.34558" y="114.103385" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="PathCollection_8">
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#macc1bb64fc" x="273.692034" y="114.103385" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#me37d2550a5" x="273.692034" y="114.103385" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="text_9">
@@ -168,13 +168,13 @@ z
     <text style="fill: var(--fig-navy); font: 8.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="490.353021" y="116.471431" transform="rotate(-0 490.353021 116.471431)">20,5</text>
    </g>
    <g id="PathCollection_9">
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#m335dc25cac" x="392.832789" y="155.531077" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#md2d828818e" x="392.832789" y="155.531077" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="PathCollection_10">
-    <g clip-path="url(#p76db1c3fb8)">
-     <use xlink:href="#macc1bb64fc" x="308.159533" y="155.531077" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s1-brecha-chile-clip-0)">
+     <use xlink:href="#me37d2550a5" x="308.159533" y="155.531077" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="text_11">
@@ -189,7 +189,7 @@ z
    <g id="legend_1">
     <g id="PathCollection_11">
      <defs>
-      <path id="mfb5b078c55" d="M 0 4.743416 
+      <path id="m8e253419b6" d="M 0 4.743416 
 C 1.257969 4.743416 2.464584 4.24362 3.354102 3.354102 
 C 4.24362 2.464584 4.743416 1.257969 4.743416 0 
 C 4.743416 -1.257969 4.24362 -2.464584 3.354102 -3.354102 
@@ -202,7 +202,7 @@ z
 " style="stroke: var(--fig-accent)"/>
      </defs>
      <g>
-      <use xlink:href="#mfb5b078c55" x="339.69207" y="208.508498" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+      <use xlink:href="#m8e253419b6" x="339.69207" y="208.508498" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
      </g>
     </g>
     <g id="text_14">
@@ -210,7 +210,7 @@ z
     </g>
     <g id="PathCollection_12">
      <defs>
-      <path id="m0457dfca65" d="M 0 4.743416 
+      <path id="m56fd802723" d="M 0 4.743416 
 C 1.257969 4.743416 2.464584 4.24362 3.354102 3.354102 
 C 4.24362 2.464584 4.743416 1.257969 4.743416 0 
 C 4.743416 -1.257969 4.24362 -2.464584 3.354102 -3.354102 
@@ -223,7 +223,7 @@ z
 " style="stroke: var(--fig-navy)"/>
      </defs>
      <g>
-      <use xlink:href="#m0457dfca65" x="393.311133" y="208.508498" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+      <use xlink:href="#m56fd802723" x="393.311133" y="208.508498" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
      </g>
     </g>
     <g id="text_15">
@@ -233,7 +233,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p76db1c3fb8">
+  <clipPath id="s1-brecha-chile-clip-0">
    <rect x="179.689766" y="4.32" width="401.76" height="188.496"/>
   </clipPath>
  </defs>

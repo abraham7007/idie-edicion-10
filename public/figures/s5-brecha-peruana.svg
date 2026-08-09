@@ -1,0 +1,77 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 456.233687 158.328" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 158.328 
+L 456.233687 158.328 
+L 456.233687 0 
+L 0 0 
+L 0 158.328 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 178.493687 32.496565 
+L 409.598687 32.496565 
+L 409.598687 18.408282 
+L 178.493687 18.408282 
+z
+" clip-path="url(#s5-brecha-peruana-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.85"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="173.611187" y="27.701549" transform="rotate(-0 173.611187 27.701549)">Universidades en el país</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ramp-1); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="414.481188" y="27.770299" transform="rotate(-0 414.481188 27.770299)">142</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 178.493687 67.717271 
+L 194.768687 67.717271 
+L 194.768687 53.628988 
+L 178.493687 53.628988 
+z
+" clip-path="url(#s5-brecha-peruana-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="173.611187" y="62.922254" transform="rotate(-0 173.611187 62.922254)">Con política de propiedad intelectual</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ramp-2); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="199.651187" y="62.991004" transform="rotate(-0 199.651187 62.991004)">10</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 178.493687 102.937976 
+L 185.003687 102.937976 
+L 185.003687 88.849694 
+L 178.493687 88.849694 
+z
+" clip-path="url(#s5-brecha-peruana-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.85"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="173.611187" y="98.011148" transform="rotate(-0 173.611187 98.011148)">Con procedimiento para transferir</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ramp-3); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="189.886188" y="98.21171" transform="rotate(-0 189.886188 98.21171)">4</text>
+   </g>
+   <g id="line2d_1">
+    <path d="M 178.493687 131.114541 
+L 182.562437 131.114541 
+" clip-path="url(#s5-brecha-peruana-clip-0)" style="fill: none; stroke-dasharray: 4.8,3.2; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 1.6"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="173.611187" y="133.205729" transform="rotate(-0 173.611187 133.205729)">Con una patente llegada a licencia</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-accent); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="187.444937" y="133.651604" transform="rotate(-0 187.444937 133.651604)">ninguna</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-brecha-peruana-clip-0">
+   <rect x="61.313687" y="4.32" width="390.6" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

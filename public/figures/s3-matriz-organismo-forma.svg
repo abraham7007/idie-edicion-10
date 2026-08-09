@@ -20,7 +20,7 @@ L 243.576 58.584
 L 243.576 44.304 
 L 198.936 44.304 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 272.808 58.584 
@@ -28,7 +28,7 @@ L 317.448 58.584
 L 317.448 44.304 
 L 272.808 44.304 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 346.68 58.584 
@@ -36,7 +36,7 @@ L 391.32 58.584
 L 391.32 44.304 
 L 346.68 44.304 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 420.552 58.584 
@@ -44,7 +44,7 @@ L 465.192 58.584
 L 465.192 44.304 
 L 420.552 44.304 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 494.424 58.584 
@@ -52,7 +52,7 @@ L 539.064 58.584
 L 539.064 44.304 
 L 494.424 44.304 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_7">
     <path d="M 198.936 91.428 
@@ -60,7 +60,7 @@ L 243.576 91.428
 L 243.576 77.148 
 L 198.936 77.148 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_8">
     <path d="M 272.808 91.428 
@@ -68,7 +68,7 @@ L 317.448 91.428
 L 317.448 77.148 
 L 272.808 77.148 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_9">
     <path d="M 346.68 91.428 
@@ -76,7 +76,7 @@ L 391.32 91.428
 L 391.32 77.148 
 L 346.68 77.148 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
     <path d="M 420.552 91.428 
@@ -84,7 +84,7 @@ L 465.192 91.428
 L 465.192 77.148 
 L 420.552 77.148 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
     <path d="M 494.424 91.428 
@@ -92,7 +92,7 @@ L 539.064 91.428
 L 539.064 77.148 
 L 494.424 77.148 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_12">
     <path d="M 198.936 124.272 
@@ -100,7 +100,7 @@ L 243.576 124.272
 L 243.576 109.992 
 L 198.936 109.992 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_13">
     <path d="M 272.808 124.272 
@@ -108,7 +108,7 @@ L 317.448 124.272
 L 317.448 109.992 
 L 272.808 109.992 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_14">
     <path d="M 346.68 124.272 
@@ -116,7 +116,7 @@ L 391.32 124.272
 L 391.32 109.992 
 L 346.68 109.992 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_15">
     <path d="M 420.552 124.272 
@@ -124,7 +124,7 @@ L 465.192 124.272
 L 465.192 109.992 
 L 420.552 109.992 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_16">
     <path d="M 494.424 124.272 
@@ -132,7 +132,7 @@ L 539.064 124.272
 L 539.064 109.992 
 L 494.424 109.992 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_17">
     <path d="M 198.936 157.116 
@@ -140,7 +140,7 @@ L 243.576 157.116
 L 243.576 142.836 
 L 198.936 142.836 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_18">
     <path d="M 272.808 157.116 
@@ -148,7 +148,7 @@ L 317.448 157.116
 L 317.448 142.836 
 L 272.808 142.836 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_19">
     <path d="M 346.68 157.116 
@@ -156,7 +156,7 @@ L 391.32 157.116
 L 391.32 142.836 
 L 346.68 142.836 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_20">
     <path d="M 420.552 157.116 
@@ -164,7 +164,7 @@ L 465.192 157.116
 L 465.192 142.836 
 L 420.552 142.836 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_21">
     <path d="M 494.424 157.116 
@@ -172,7 +172,7 @@ L 539.064 157.116
 L 539.064 142.836 
 L 494.424 142.836 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_22">
     <path d="M 198.936 189.96 
@@ -180,7 +180,7 @@ L 243.576 189.96
 L 243.576 175.68 
 L 198.936 175.68 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_23">
     <path d="M 272.808 189.96 
@@ -188,7 +188,7 @@ L 317.448 189.96
 L 317.448 175.68 
 L 272.808 175.68 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_24">
     <path d="M 346.68 189.96 
@@ -196,7 +196,7 @@ L 391.32 189.96
 L 391.32 175.68 
 L 346.68 175.68 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_25">
     <path d="M 420.552 189.96 
@@ -204,7 +204,7 @@ L 465.192 189.96
 L 465.192 175.68 
 L 420.552 175.68 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_26">
     <path d="M 494.424 189.96 
@@ -212,7 +212,7 @@ L 539.064 189.96
 L 539.064 175.68 
 L 494.424 175.68 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_27">
     <path d="M 198.936 222.804 
@@ -220,7 +220,7 @@ L 243.576 222.804
 L 243.576 208.524 
 L 198.936 208.524 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_28">
     <path d="M 272.808 222.804 
@@ -228,7 +228,7 @@ L 317.448 222.804
 L 317.448 208.524 
 L 272.808 208.524 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_29">
     <path d="M 346.68 222.804 
@@ -236,7 +236,7 @@ L 391.32 222.804
 L 391.32 208.524 
 L 346.68 208.524 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_30">
     <path d="M 420.552 222.804 
@@ -244,7 +244,7 @@ L 465.192 222.804
 L 465.192 208.524 
 L 420.552 208.524 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="patch_31">
     <path d="M 494.424 222.804 
@@ -252,42 +252,42 @@ L 539.064 222.804
 L 539.064 208.524 
 L 494.424 208.524 
 z
-" clip-path="url(#ped0ed028ae)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.7; stroke-linejoin: miter"/>
    </g>
    <g id="LineCollection_1">
     <path d="M 180 67.866 
 L 553.68 67.866 
-" clip-path="url(#ped0ed028ae)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 180 100.71 
 L 553.68 100.71 
-" clip-path="url(#ped0ed028ae)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
    </g>
    <g id="LineCollection_3">
     <path d="M 180 133.554 
 L 553.68 133.554 
-" clip-path="url(#ped0ed028ae)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
    </g>
    <g id="LineCollection_4">
     <path d="M 180 166.398 
 L 553.68 166.398 
-" clip-path="url(#ped0ed028ae)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
    </g>
    <g id="LineCollection_5">
     <path d="M 180 199.242 
 L 553.68 199.242 
-" clip-path="url(#ped0ed028ae)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
    </g>
    <g id="LineCollection_6">
     <path d="M 180 232.086 
 L 553.68 232.086 
-" clip-path="url(#ped0ed028ae)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
    </g>
    <g id="LineCollection_7">
     <path d="M 180 35.022 
 L 553.68 35.022 
-" clip-path="url(#ped0ed028ae)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
+" clip-path="url(#s3-matriz-organismo-forma-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.6"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="221.256" y="35.625031" transform="rotate(-0 221.256 35.625031)">Beca</text>
@@ -354,7 +354,7 @@ L 553.68 35.022
   </g>
  </g>
  <defs>
-  <clipPath id="ped0ed028ae">
+  <clipPath id="s3-matriz-organismo-forma-clip-0">
    <rect x="4.32" y="4.32" width="617.76" height="235.62"/>
   </clipPath>
  </defs>

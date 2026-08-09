@@ -1,0 +1,116 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432.72 158.328" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 158.328 
+L 432.72 158.328 
+L 432.72 0 
+L 0 0 
+L 0 158.328 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 4.32 38.219929 
+L 420.689455 38.219929 
+L 420.689455 18.848541 
+L 4.32 18.848541 
+z
+" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: var(--fig-surface)"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 4.32 82.245812 
+L 420.689455 82.245812 
+L 420.689455 62.874424 
+L 4.32 62.874424 
+z
+" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: var(--fig-surface)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 4.32 126.271694 
+L 420.689455 126.271694 
+L 420.689455 106.900306 
+L 4.32 106.900306 
+z
+" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: var(--fig-surface)"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 4.32 16.647247 
+L 420.689455 16.647247 
+" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="30.757235" transform="rotate(-0 12.030545 30.757235)">Código y firmware</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ramp-3); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="143.109818" y="30.595829" transform="rotate(-0 143.109818 30.595829)">Repositorio con control de versiones</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="416.834182" y="30.569196" transform="rotate(-0 416.834182 30.569196)">Etiqueta de versión</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="52.664489" transform="rotate(-0 12.030545 52.664489)">Datos de ensayo</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ramp-3); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="143.109818" y="52.60877" transform="rotate(-0 143.109818 52.60877)">Repositorio de datos con identificador</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="416.834182" y="52.469473" transform="rotate(-0 416.834182 52.469473)">DOI del conjunto</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="74.67743" transform="rotate(-0 12.030545 74.67743)">Documento técnico</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ramp-3); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="143.109818" y="74.621711" transform="rotate(-0 143.109818 74.621711)">Repositorio institucional</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="416.834182" y="74.482415" transform="rotate(-0 416.834182 74.482415)">Enlace permanente</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="96.822184" transform="rotate(-0 12.030545 96.822184)">Tesis y artículo</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-ramp-3); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="143.109818" y="96.634653" transform="rotate(-0 143.109818 96.634653)">ALICIA y el repositorio de la universidad</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="416.834182" y="96.495356" transform="rotate(-0 416.834182 96.495356)">Acceso libre</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="118.809" transform="rotate(-0 12.030545 118.809)">Video y fotografía</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-ramp-3); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="143.109818" y="118.647594" transform="rotate(-0 143.109818 118.647594)">Almacenamiento del proyecto, con respaldo</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="416.834182" y="118.508297" transform="rotate(-0 416.834182 118.508297)">Nombre y fecha</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="140.716254" transform="rotate(-0 12.030545 140.716254)">Expediente del fondo</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: var(--fig-ramp-3); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="143.109818" y="140.660535" transform="rotate(-0 143.109818 140.660535)">Archivo de la entidad ejecutora</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: var(--fig-muted); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="416.834182" y="140.617191" transform="rotate(-0 416.834182 140.617191)">Copia física y digital</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="12.684918" transform="rotate(-0 12.030545 12.684918)">Qué se produce</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="143.109818" y="12.684918" transform="rotate(-0 143.109818 12.684918)">Dónde se deposita</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="416.834182" y="12.684918" transform="rotate(-0 416.834182 12.684918)">Con qué se cita</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-donde-va-cada-cosa-clip-0">
+   <rect x="4.32" y="4.32" width="424.08" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

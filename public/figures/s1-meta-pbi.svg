@@ -29,7 +29,7 @@ L 333.141429 52.22016
 L 333.141429 31.26384 
 L 4.32 31.26384 
 z
-" clip-path="url(#p5fca5ddb3a)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#s1-meta-pbi-clip-0)" style="fill: var(--fig-surface); stroke: var(--fig-grid); stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 4.32 52.22016 
@@ -37,14 +37,14 @@ L 47.066786 52.22016
 L 47.066786 31.26384 
 L 4.32 31.26384 
 z
-" clip-path="url(#p5fca5ddb3a)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s1-meta-pbi-clip-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
    <g id="LineCollection_1">
     <path d="M 237.783214 58.70664 
 L 237.783214 24.77736 
-" clip-path="url(#p5fca5ddb3a)" style="fill: none; stroke: var(--fig-navy); stroke-width: 2.2"/>
+" clip-path="url(#s1-meta-pbi-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 2.2"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-accent); font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="53.643214" y="44.225437" transform="rotate(-0 53.643214 44.225437)">0,13 % hoy</text>
@@ -58,7 +58,7 @@ L 237.783214 24.77736
   </g>
  </g>
  <defs>
-  <clipPath id="p5fca5ddb3a">
+  <clipPath id="s1-meta-pbi-clip-0">
    <rect x="4.32" y="4.32" width="368.28" height="74.844"/>
   </clipPath>
  </defs>

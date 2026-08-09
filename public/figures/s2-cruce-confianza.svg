@@ -20,7 +20,7 @@ L 458.837129 59.976704
 L 458.837129 31.733003 
 L 106.804776 31.733003 
 z
-" clip-path="url(#p599d532f35)" style="fill: var(--fig-accent); opacity: 0.1"/>
+" clip-path="url(#s2-cruce-confianza-clip-0)" style="fill: var(--fig-accent); opacity: 0.1"/>
    </g>
    <g id="patch_3">
     <path d="M 106.804776 103.172951 
@@ -28,27 +28,27 @@ L 458.837129 103.172951
 L 458.837129 74.929251 
 L 106.804776 74.929251 
 z
-" clip-path="url(#p599d532f35)" style="fill: var(--fig-ok); opacity: 0.1"/>
+" clip-path="url(#s2-cruce-confianza-clip-0)" style="fill: var(--fig-ok); opacity: 0.1"/>
    </g>
    <g id="LineCollection_1">
     <path d="M 106.804776 109.818528 
 L 106.804776 25.087427 
-" clip-path="url(#p599d532f35)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+" clip-path="url(#s2-cruce-confianza-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 215.614776 109.818528 
 L 215.614776 25.087427 
-" clip-path="url(#p599d532f35)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+" clip-path="url(#s2-cruce-confianza-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
    </g>
    <g id="LineCollection_3">
     <path d="M 337.225952 109.818528 
 L 337.225952 25.087427 
-" clip-path="url(#p599d532f35)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+" clip-path="url(#s2-cruce-confianza-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
    </g>
    <g id="LineCollection_4">
     <path d="M 458.837129 109.818528 
 L 458.837129 25.087427 
-" clip-path="url(#p599d532f35)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
+" clip-path="url(#s2-cruce-confianza-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="100.404188" y="47.951978" transform="rotate(-0 100.404188 47.951978)">barrera declarada</text>
@@ -79,7 +79,7 @@ L 458.837129 25.087427
 L 231.616246 45.854853 
 L 260.418893 89.051101 
 L 356.427717 89.051101 
-" clip-path="url(#p599d532f35)" style="fill: none; stroke: var(--fig-ink); stroke-width: 1.6; stroke-linecap: square"/>
+" clip-path="url(#s2-cruce-confianza-clip-0)" style="fill: none; stroke: var(--fig-ink); stroke-width: 1.6; stroke-linecap: square"/>
    </g>
    <g id="text_9">
     <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="122.806246" y="35.551972" transform="rotate(-0 122.806246 35.551972)">confianza · fuerte</text>
@@ -98,7 +98,7 @@ L 356.427717 89.051101
    </g>
    <g id="line2d_2">
     <defs>
-     <path id="m6be6f71441" d="M 0 4.25 
+     <path id="md60f562f11" d="M 0 4.25 
 C 1.127113 4.25 2.208214 3.802193 3.005204 3.005204 
 C 3.802193 2.208214 4.25 1.127113 4.25 0 
 C 4.25 -1.127113 3.802193 -2.208214 3.005204 -3.005204 
@@ -110,18 +110,18 @@ C -2.208214 3.802193 -1.127113 4.25 0 4.25
 z
 " style="stroke: var(--fig-accent)"/>
     </defs>
-    <g clip-path="url(#p599d532f35)">
-     <use xlink:href="#m6be6f71441" x="122.806246" y="45.854853" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s2-cruce-confianza-clip-0)">
+     <use xlink:href="#md60f562f11" x="122.806246" y="45.854853" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="line2d_3">
-    <g clip-path="url(#p599d532f35)">
-     <use xlink:href="#m6be6f71441" x="231.616246" y="45.854853" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s2-cruce-confianza-clip-0)">
+     <use xlink:href="#md60f562f11" x="231.616246" y="45.854853" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="line2d_4">
     <defs>
-     <path id="mb445e617fc" d="M 0 4.25 
+     <path id="m0ce430eca8" d="M 0 4.25 
 C 1.127113 4.25 2.208214 3.802193 3.005204 3.005204 
 C 3.802193 2.208214 4.25 1.127113 4.25 0 
 C 4.25 -1.127113 3.802193 -2.208214 3.005204 -3.005204 
@@ -133,19 +133,19 @@ C -2.208214 3.802193 -1.127113 4.25 0 4.25
 z
 " style="stroke: var(--fig-ok)"/>
     </defs>
-    <g clip-path="url(#p599d532f35)">
-     <use xlink:href="#mb445e617fc" x="260.418893" y="89.051101" style="fill: var(--fig-ok); stroke: var(--fig-ok)"/>
+    <g clip-path="url(#s2-cruce-confianza-clip-0)">
+     <use xlink:href="#m0ce430eca8" x="260.418893" y="89.051101" style="fill: var(--fig-ok); stroke: var(--fig-ok)"/>
     </g>
    </g>
    <g id="line2d_5">
-    <g clip-path="url(#p599d532f35)">
-     <use xlink:href="#mb445e617fc" x="356.427717" y="89.051101" style="fill: var(--fig-ok); stroke: var(--fig-ok)"/>
+    <g clip-path="url(#s2-cruce-confianza-clip-0)">
+     <use xlink:href="#m0ce430eca8" x="356.427717" y="89.051101" style="fill: var(--fig-ok); stroke: var(--fig-ok)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p599d532f35">
+  <clipPath id="s2-cruce-confianza-clip-0">
    <rect x="29.997717" y="4.32" width="435.24" height="127.512"/>
   </clipPath>
  </defs>

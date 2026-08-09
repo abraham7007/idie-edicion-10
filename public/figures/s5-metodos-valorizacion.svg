@@ -1,0 +1,108 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432.72 169.416" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 169.416 
+L 432.72 169.416 
+L 432.72 0 
+L 0 0 
+L 0 169.416 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 8.518812 160.545736 
+L 138.68198 160.545736 
+L 138.68198 8.870264 
+L 8.518812 8.870264 
+z
+" clip-path="url(#s5-metodos-valorizacion-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.1; stroke: var(--fig-ramp-1); stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 153.377822 160.545736 
+L 283.54099 160.545736 
+L 283.54099 8.870264 
+L 153.377822 8.870264 
+z
+" clip-path="url(#s5-metodos-valorizacion-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.1; stroke: var(--fig-ramp-2); stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 298.236832 160.545736 
+L 428.4 160.545736 
+L 428.4 8.870264 
+L 298.236832 8.870264 
+z
+" clip-path="url(#s5-metodos-valorizacion-clip-0)" style="fill: var(--fig-accent); opacity: 0.1; stroke: var(--fig-accent); stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ramp-3); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="14.81703" y="24.037811" transform="rotate(-0 14.81703 24.037811)">Costo</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(14.81703 53.904793)">Lo que costó crearlo o</text>
+    <text style="fill: var(--fig-ink); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(14.81703 62.933316)">lo que costaría rehacerlo</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-muted); font: 6.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="14.81703" y="89.258264" transform="rotate(-0 14.81703 89.258264)">Qué datos pide</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(14.81703 103.561855)">Gasto de I+D, personal,</text>
+    <text style="fill: var(--fig-ink); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(14.81703 112.000177)">materiales y tasas</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-muted); font: 6.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="14.81703" y="136.27766" transform="rotate(-0 14.81703 136.27766)">Dónde falla</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ramp-3); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="14.81703" y="150.581251" transform="rotate(-0 14.81703 150.581251)">Ignora el valor futuro</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ramp-3); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="159.67604" y="24.037811" transform="rotate(-0 159.67604 24.037811)">Mercado</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(159.67604 53.904793)">Lo que se pagó por</text>
+    <text style="fill: var(--fig-ink); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(159.67604 62.639426)">algo comparable</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-muted); font: 6.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="159.67604" y="89.258264" transform="rotate(-0 159.67604 89.258264)">Qué datos pide</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(159.67604 103.561855)">Operaciones comparables:</text>
+    <text style="fill: var(--fig-ink); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(159.67604 112.318608)">pago inicial, hitos, regalía</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-muted); font: 6.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="159.67604" y="136.27766" transform="rotate(-0 159.67604 136.27766)">Dónde falla</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ramp-3); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="159.67604" y="150.581251" transform="rotate(-0 159.67604 150.581251)">Casi nunca hay comparable</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-accent); font: 700 8.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="304.53505" y="24.037811" transform="rotate(-0 304.53505 24.037811)">Ingresos</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-ink); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(304.53505 53.661981)">El flujo futuro que</text>
+    <text style="fill: var(--fig-ink); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(304.53505 62.690504)">genera, traído a hoy</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-muted); font: 6.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="304.53505" y="89.258264" transform="rotate(-0 304.53505 89.258264)">Qué datos pide</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-ink); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(304.53505 103.561855)">Ventas previstas, costos,</text>
+    <text style="fill: var(--fig-ink); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(304.53505 112.000177)">tasa de descuento y riesgo</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: var(--fig-muted); font: 6.5px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="304.53505" y="136.27766" transform="rotate(-0 304.53505 136.27766)">Dónde falla</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: var(--fig-accent); font: 6.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="304.53505" y="150.581251" transform="rotate(-0 304.53505 150.581251)">Cadena larga de supuestos</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-metodos-valorizacion-clip-0">
+   <rect x="4.32" y="4.32" width="424.08" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

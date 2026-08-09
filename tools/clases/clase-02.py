@@ -1816,7 +1816,7 @@ GLOSARIO = envolver(
 
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes citadas y vía de acceso a cada una", "i-quote")
     + "\n"
     + tabla(
         ["Fuente", "Sirve a", "Acceso"],
@@ -1936,7 +1936,7 @@ LAMINAS = [
     # ── CIERRE ──
     L("queda-establecido", "Cinco puntos establecidos sobre explotación del resultado, titularidad y transferencia tecnológica", "Resumen", "i-check", RESUMEN),
     L("glosario", "Doce términos de explotación y transferencia", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("referencias", "Fuentes citadas y vía de acceso a cada una", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 if __name__ == "__main__":

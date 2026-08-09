@@ -1097,7 +1097,7 @@ RESUMEN = envolver(
 )
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes citadas y vía de acceso a cada una", "i-quote")
     + "\n"
     + tabla(
         ["Fuente", "Sirve a", "Acceso"],
@@ -1805,7 +1805,7 @@ LAMINAS = [
     # ── CIERRE ──
     L("problemas-frecuentes", "Errores frecuentes en una postulación y su detección", "Problemas", "i-alert", PROBLEMAS),
     L("glosario", "Doce términos de los dos temas, con su equivalente en inglés", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("referencias", "Fuentes citadas y vía de acceso a cada una", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 

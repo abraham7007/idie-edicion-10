@@ -194,7 +194,7 @@ COSTO_MEDIOS = envolver(
     + "\n"
     + figura("s5-costo-medios",
              "Costo de obtención de cada medio de verificación del caso",
-             "La sesión 4 dejó la matriz con sus medios y sin precio. Ponerles precio es la primera línea del presupuesto.")
+             "La matriz llegó con sus medios de verificación y sin precio. Ponerles precio es el primer renglón del presupuesto.")
     + "\n"
     + criterio(
         "Un indicador cuyo medio de verificación nadie paga no se mide, y una "
@@ -316,9 +316,8 @@ PARTIDAS_NO_ADMISIBLES = envolver(
     ])
     + "\n"
     + aviso(
-        "Un gasto no elegible dentro del presupuesto no se descuenta sin más: "
-        "obliga a rehacer el cuadro completo en plena evaluación, con el reloj "
-        "de la convocatoria corriendo."
+        "Un gasto no elegible no se descuenta del cuadro: obliga a rehacerlo "
+        "entero en plena evaluación, con el reloj de la convocatoria corriendo."
     )
     + "\n"
     + criterio(
@@ -427,7 +426,7 @@ CONTRAPARTIDA_FIGURA = envolver(
              "La misma propuesta pide 0 % en efectivo a una entidad pública y 30 % a una universidad privada societaria.")
     + "\n"
     + criterio(
-        "La sesión 3 explicó qué es la contrapartida y quién la aporta. Aquí solo "
+        "Qué es la contrapartida y quién la aporta ya está dado. Aquí solo "
         "queda llenar la tabla: cada aporte comprometido lleva partida, monto y "
         "documento que lo acredita, firmado antes del cierre de la convocatoria."
     )
@@ -493,10 +492,10 @@ FLUJO_CAJA = envolver(
              "El gasto va siempre delante. El área entre las dos curvas es dinero que alguien tiene que poner antes.")
     + "\n"
     + problema(
-        "El proyecto se gana y no se puede arrancar",
+        "El proyecto se gana y no puede empezar",
         "El equipo tiene el resultado publicado y no tiene con qué comprar el primer lote de sensores.",
         "El primer desembolso llega contra hito, y el primer hito exige haber gastado.",
-        "Quién financia el hueco, con qué documento y a qué costo. Si la respuesta es «ya veremos», el proyecto arranca tarde.",
+        "Quién financia el hueco, con qué documento y a qué costo. Si la respuesta es «ya veremos», el primer hito se retrasa entero.",
     )
     + "\n"
     + fuente_pie(F_CASO, F_STARTUP)
@@ -674,7 +673,7 @@ CONVENIO = envolver(
 
 ANTES_DEL_DESEMBOLSO = envolver(
     cabecera("02 · Arranque",
-             "Condiciones previas al primer desembolso",
+             "Condiciones previas al primer desembolso de un fondo público",
              "i-milestone")
     + "\n"
     + figura("s5-antes-del-desembolso",
@@ -1091,7 +1090,7 @@ HISTORIA_DEL_PROYECTO = envolver(
             "No hay que escribir nada nuevo: hay que seleccionar",
         ]),
         ("Para qué sirve", "Después del cierre", [
-            "Es el material del <i>pitch</i> de la sesión 6",
+            "Es el material del <i>pitch</i> ante un comité",
             "Distingue la propuesta siguiente de un formulario",
             "Convence a un socio de que el equipo ejecuta",
         ]),
@@ -1149,8 +1148,8 @@ DATOS_ABIERTOS = envolver(
 SECCION_D = seccion(
     "04", TEMA_D,
     "Qué produce el proyecto, cuánto cuesta protegerlo y en qué orden se "
-    "protege y se cuenta. La sesión 2 explicó qué es una patente; aquí, cuándo "
-    "y con cargo a qué partida."
+    "protege y se cuenta. Qué es una patente ya está dado; aquí, en qué mes se "
+    "solicita y con cargo a qué partida."
 )
 
 PROTEGER_ANTES_PUBLICAR = envolver(
@@ -1404,9 +1403,9 @@ OTROS_RESULTADOS = envolver(
 # ==========================================================================
 SECCION_E = seccion(
     "05", TEMA_E,
-    "Cómo sale el resultado del proyecto y cuánto vale. La sesión 2 enseñó "
-    "tres vías de salida; aquí está el abanico completo y la pregunta que "
-    "aquella no toca."
+    "Cómo sale el resultado del proyecto y cuánto vale. Las tres vías de salida "
+    "ya están dadas; aquí está el abanico completo y la pregunta que ninguna de "
+    "las tres responde."
 )
 
 QUE_ES_TRANSFERIR = envolver(
@@ -1682,7 +1681,7 @@ ERRORES = envolver(
     + fichas([
         ("Presupuesto sin flujo de caja", "Tema 01", [
             "El gasto va delante del desembolso y nadie declaró quién cubre el hueco",
-            "El proyecto arranca tarde y el primer hito se retrasa entero",
+            "El primer hito se retrasa y con él todo el cronograma",
         ]),
         ("Gasto sin entregable", "Tema 02", [
             "El comprobante acredita el pago y no la ejecución",
@@ -1710,7 +1709,7 @@ ERRORES = envolver(
 )
 
 RESUMEN_FINAL = envolver(
-    cabecera("Cierre", "Puntos establecidos de la sesión", "i-check")
+    cabecera("Cierre", "Cinco puntos establecidos sobre presupuesto, ejecución y transferencia", "i-check")
     + "\n"
     + f"""\t\t\t\t<div class="compare" data-animate="fade-up">
 \t\t\t\t\t<div class="compare__panel">
@@ -1718,7 +1717,7 @@ RESUMEN_FINAL = envolver(
 \t\t\t\t\t\t<ol>
 \t\t\t\t\t\t\t<li>La forma del instrumento decide qué se presupuesta, qué se firma, qué se rinde y qué pasa con la propiedad intelectual.</li>
 \t\t\t\t\t\t\t<li>El presupuesto se construye de la actividad hacia el monto, y el tope de un rubro no significa nada sin su base de cálculo.</li>
-\t\t\t\t\t\t\t<li>El gasto va siempre delante del desembolso: el hueco de caja se declara y se financia, o el proyecto arranca tarde.</li>
+\t\t\t\t\t\t\t<li>El gasto va siempre delante del desembolso: el hueco de caja se declara y se financia, o el proyecto empieza tarde.</li>
 \t\t\t\t\t\t\t<li>Documentar es método: sin bitácora, versiones y datos con metadatos no hay prueba de autoría ni historia que contar.</li>
 \t\t\t\t\t\t\t<li>La solicitud de registro parte el proyecto en dos, y el trámite dura más que el financiamiento que lo pagó.</li>
 \t\t\t\t\t\t</ol>
@@ -1779,7 +1778,7 @@ GLOSARIO = envolver(
 )
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes citadas y vía de acceso a cada una", "i-quote")
     + "\n"
     # Dos tablas porque el constructor admite siete filas y la sesión cita once
     # fuentes. La lámina de referencias no cuenta para el tope de la anatomía.
@@ -1849,7 +1848,7 @@ LAMINAS = [
     L("tema-02", TEMA_B, "Tema 02", "i-file", SECCION_B),
     L("ciclo-de-vida", "Etapas del proyecto y momento de cada obligación", "Ciclo de vida", "i-gantt", CICLO_DE_VIDA),
     L("convenio", "Cláusulas del convenio que se leen antes de firmar", "El convenio", "i-file", CONVENIO),
-    L("antes-del-desembolso", "Condiciones previas al primer desembolso", "Antes de cobrar", "i-milestone", ANTES_DEL_DESEMBOLSO),
+    L("antes-del-desembolso", "Condiciones previas al primer desembolso de un fondo público", "Antes de cobrar", "i-milestone", ANTES_DEL_DESEMBOLSO),
     L("herramientas-02", "Herramientas 02 · Seguimiento de hitos y evidencia documental", "Herramientas 02", "i-sliders", HERR_02),
     L("informes", "Contenido del informe técnico y del informe financiero", "Los dos informes", "i-rubric", INFORMES),
     L("sustento", "Requisitos del comprobante que sustenta un gasto", "El comprobante", "i-file", SUSTENTO),
@@ -1894,9 +1893,9 @@ LAMINAS = [
     L("video-resumen", "Estructura del video de resumen del proyecto", "El video", "i-quote", VIDEO_RESUMEN),
     L("dossier", "Piezas del dossier final del proyecto", "El dossier", "i-file", DOSSIER),
     L("errores", "Errores frecuentes en la ejecución de un proyecto financiado", "Errores", "i-alert", ERRORES),
-    L("queda-establecido", "Puntos establecidos de la sesión", "Resumen", "i-check", RESUMEN_FINAL),
+    L("queda-establecido", "Cinco puntos establecidos sobre presupuesto, ejecución y transferencia", "Resumen", "i-check", RESUMEN_FINAL),
     L("glosario", "Glosario de presupuesto, ejecución y transferencia", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("referencias", "Fuentes citadas y vía de acceso a cada una", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 generar_desde({

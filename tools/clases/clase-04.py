@@ -852,7 +852,7 @@ HERR_04 = bloque_herramientas(
 # ==========================================================================
 RESUMEN_FINAL = envolver(
     cabecera("Cierre",
-             "Puntos establecidos de la sesión",
+             "Cinco puntos establecidos sobre la formulación de un proyecto de I+D+i",
              "i-check")
     + "\n"
     + f"""\t\t\t\t<div class="compare" data-animate="fade-up">
@@ -928,7 +928,7 @@ GLOSARIO = envolver(
 )
 
 REFERENCIAS = envolver(
-    cabecera("Cierre", "Fuentes de la sesión y vía de acceso", "i-quote")
+    cabecera("Cierre", "Fuentes citadas y vía de acceso a cada una", "i-quote")
     + "\n"
     + tabla(
         ["Fuente", "Sirve a", "Dónde está"],
@@ -1196,9 +1196,9 @@ LAMINAS = [
     L("revision-simulador", "Simulación: revisión con criterios de evaluación", "Revisar", "i-rubric", REVISION_SIM, "slide", REVISION_JS),
     L("errores", "Defectos frecuentes de una propuesta", "Errores", "i-alert", ERRORES),
 
-    L("queda-establecido", "Puntos establecidos de la sesión", "Resumen", "i-check", RESUMEN_FINAL),
+    L("queda-establecido", "Cinco puntos establecidos sobre la formulación de un proyecto de I+D+i", "Resumen", "i-check", RESUMEN_FINAL),
     L("glosario", "Glosario de formulación de proyectos", "Glosario", "i-book", GLOSARIO),
-    L("referencias", "Fuentes de la sesión y vía de acceso", "Referencias", "i-quote", REFERENCIAS),
+    L("referencias", "Fuentes citadas y vía de acceso a cada una", "Referencias", "i-quote", REFERENCIAS),
 ]
 
 generar_desde({

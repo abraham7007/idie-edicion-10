@@ -177,7 +177,10 @@ for (const s of sesiones) {
 			// La sesión 5 recorre cinco bloques —presupuesto, ejecución,
 			// documentación, resultados y transferencia— que no se pueden
 			// repartir entre dos sesiones sin romper la secuencia del proyecto.
-			["láminas", html.length, 40, { "03": 62, "05": 64 }[s] ?? 50],
+			// Su techo es además el más alto porque el docente pidió menos
+			// texto y más dato: una lámina de cifra con su figura se expone en
+			// menos de un minuto, no en los tres y medio de una de prosa.
+			["láminas", html.length, 40, { "03": 62, "05": 68 }[s] ?? 50],
 			// Sin techo de figuras: lo tuvo y marcaba fuera de norma a la
 			// sesión 1 con 31, que es justo la densidad que se pedía (§4.4).
 			// La sesión 3 inventaría fondos con una ficha por lámina, y una

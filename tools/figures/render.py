@@ -5879,31 +5879,6 @@ def fig_tramite_vs_proyecto():
     escribir(fig, "s5-tramite-vs-proyecto")
 
 
-# Títulos de propiedad industrial otorgados por INDECOPI. El récord de 2025 y
-# la concentración por sector, según la nota del Día del Inventor Peruano.
-SECTORES_TITULOS = ["Biotecnología", "Tecnología médica", "Productos farmacéuticos",
-                    "Ingeniería civil"]
-
-
-def fig_titulos_indecopi():
-    """Mil cuarenta y siete títulos en 2025, y cuatro sectores concentran el grueso."""
-    fig, ax = plt.subplots(figsize=(6.8, 2.5))
-    ax.text(0.0, 0.86, "1 047", fontsize=30, color=ACCENT, fontweight="bold", va="center")
-    ax.text(0.0, 0.52, "títulos otorgados en 2025, máximo histórico\n"
-                       "del sistema peruano de patentes", fontsize=7.8, color=INK, va="top")
-    ax.text(0.0, 0.20, "Cerca de 500 en el primer semestre de 2026",
-            fontsize=7.4, color=MUTED, va="top")
-    for i, sector in enumerate(SECTORES_TITULOS):
-        ax.add_patch(Rectangle((0.56, 0.88 - i * 0.20), 0.42, 0.15,
-                               facecolor=RAMPA[1], alpha=0.16, edgecolor="none"))
-        ax.text(0.58, 0.955 - i * 0.20, sector, fontsize=7.6, color=INK, va="center")
-    ax.text(0.56, 0.13, "Sectores donde se concentran", fontsize=7.0, color=MUTED, va="top")
-    ax.set_xlim(-0.01, 1.0)
-    ax.set_ylim(0.0, 1.12)
-    ax.axis("off")
-    escribir(fig, "s5-titulos-indecopi")
-
-
 # Qué foro admite qué resultado, y en qué mes del proyecto cae cada uno.
 FOROS = [
     ("Póster en congreso", 8, "Resultado parcial, sin detalle habilitante"),
@@ -6131,7 +6106,7 @@ def fig_brecha_peruana():
 
 
 FIGURAS += [fig_mapa_registros, fig_tasas_indecopi, fig_plazos_patente,
-            fig_tramite_vs_proyecto, fig_titulos_indecopi, fig_congresos_momento,
+            fig_tramite_vs_proyecto, fig_congresos_momento,
             fig_abanico_transferencia, fig_madurez_via, fig_metodos_valorizacion,
             fig_valorizacion_por_activo, fig_brecha_peruana]
 
@@ -6332,6 +6307,72 @@ def fig_cabe_en_la_partida():
 
 
 FIGURAS += [fig_cabe_en_la_partida]
+
+# --------------------------------------------------------------------------
+# Patentes universitarias en el Perú. Tablero Estadístico de Patentes y
+# Diseños Industriales de INDECOPI, resultados de 2025, publicado el 4 de
+# febrero de 2026. Las universidades presentaron el 79 % de las solicitudes
+# nacionales, y tres de cada cuatro fueron modelo de utilidad.
+# --------------------------------------------------------------------------
+UNIV_SOLICITUDES = [
+    ("Continental", 194, 39),
+    ("Privada del Norte", 101, 48),
+    ("San Luis Gonzaga", 85, 0),
+    ("Tecnológica del Perú", 83, 0),
+    ("César Vallejo", 0, 35),
+    ("Peruana de Ciencias", 0, 22),
+]
+
+
+def fig_universidades_patentes():
+    """Cuatro universidades concentran las solicitudes; el ranking de concedidas es otro."""
+    fig, ax = plt.subplots(figsize=(7.2, 3.0))
+    filas = [f for f in UNIV_SOLICITUDES]
+    for i, (nom, sol, con) in enumerate(filas):
+        y = len(filas) - i
+        if sol:
+            ax.barh(y + 0.16, sol, height=0.30, color=RAMPA[1], alpha=0.9, zorder=3)
+            ax.text(sol + 4, y + 0.16, str(sol), va="center", fontsize=7.6,
+                    color=RAMPA[2], fontweight="bold")
+        if con:
+            ax.barh(y - 0.18, con, height=0.30, color=ACCENT, alpha=0.9, zorder=3)
+            ax.text(con + 4, y - 0.18, str(con), va="center", fontsize=7.6,
+                    color=ACCENT, fontweight="bold")
+        ax.text(-6, y, nom, ha="right", va="center", fontsize=7.6, color=INK)
+    for i, (rot, color) in enumerate((("Solicitudes presentadas", RAMPA[1]),
+                                      ("Títulos concedidos", ACCENT))):
+        x = i * 92
+        ax.add_patch(Rectangle((x, 0.18), 5, 0.14, facecolor=color, edgecolor="none"))
+        ax.text(x + 8, 0.25, rot, fontsize=7.0, color=MUTED, va="center")
+    ax.set_xlim(-78, 232)
+    ax.set_ylim(0.0, len(filas) + 0.75)
+    ax.axis("off")
+    escribir(fig, "s5-universidades-patentes")
+
+
+# La composición de lo que la universidad peruana pide: tres de cada cuatro
+# solicitudes son modelo de utilidad, no patente de invención.
+def fig_invencion_vs_utilidad():
+    """Tres de cada cuatro solicitudes universitarias son modelo de utilidad."""
+    fig, ax = plt.subplots(figsize=(6.8, 1.9))
+    datos = [("Modelos de utilidad", 722, RAMPA[1]), ("Patentes de invención", 246, ACCENT)]
+    izq = 0
+    for nom, v, color in datos:
+        ax.barh(0, v, left=izq, height=0.44, color=color, alpha=0.9,
+                edgecolor=PAPER, linewidth=1.6, zorder=3)
+        ax.text(izq + v / 2, 0, f"{num(v, 0)}", ha="center", va="center",
+                fontsize=9.0, color="#ffffff", fontweight="bold")
+        ax.text(izq + v / 2, -0.34, nom, ha="center", va="top", fontsize=7.4, color=INK)
+        izq += v
+    ax.text(0, 0.40, "968 solicitudes universitarias en 2025 · 79 % del total nacional",
+            fontsize=8.0, color=INK, fontweight="bold", va="bottom")
+    ax.set_xlim(-10, 985)
+    ax.set_ylim(-0.85, 0.80)
+    ax.axis("off")
+    escribir(fig, "s5-invencion-vs-utilidad")
+
+
+FIGURAS += [fig_universidades_patentes, fig_invencion_vs_utilidad]
 
 def main() -> None:
     print(f"Generando {len(FIGURAS)} figuras en {SALIDA.relative_to(RAIZ)}/")

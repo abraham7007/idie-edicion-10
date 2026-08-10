@@ -1,0 +1,55 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 388.08 113.976" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 113.976 
+L 388.08 113.976 
+L 388.08 0 
+L 0 0 
+L 0 113.976 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 8.133467 69.4368 
+L 283.465809 69.4368 
+L 283.465809 41.3472 
+L 8.133467 41.3472 
+z
+" clip-path="url(#s5-invencion-vs-utilidad-0)" style="fill: var(--fig-ramp-2); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #ffffff; font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="145.799638" y="57.875437" transform="rotate(-0 145.799638 57.875437)">722</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="145.799638" y="82.759756" transform="rotate(-0 145.799638 82.759756)">Modelos de utilidad</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 283.465809 69.4368 
+L 377.277106 69.4368 
+L 377.277106 41.3472 
+L 283.465809 41.3472 
+z
+" clip-path="url(#s5-invencion-vs-utilidad-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: #ffffff; font: 700 9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="330.371457" y="57.875437" transform="rotate(-0 330.371457 57.875437)">246</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="330.371457" y="82.759756" transform="rotate(-0 330.371457 82.759756)">Patentes de invención</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-ink); font: 700 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="8.133467" y="28.19225" transform="rotate(-0 8.133467 28.19225)">968 solicitudes universitarias en 2025 · 79 % del total nacional</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-invencion-vs-utilidad-0">
+   <rect x="4.32" y="4.32" width="379.44" height="105.336"/>
+  </clipPath>
+ </defs>
+</svg>

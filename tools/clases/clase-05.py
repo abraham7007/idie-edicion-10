@@ -93,6 +93,15 @@ F_GOBERNANZA = ('Gobernanza de la investigación y futuros de la evaluación (20
 F_ALICIA = ('CONCYTEC · ALICIA, Acceso Libre a Información Científica para la '
             'Innovación · <a href="https://alicia.concytec.gob.pe">'
             'alicia.concytec.gob.pe</a>')
+F_TABLERO = ('INDECOPI · Tablero Estadístico de Patentes y Diseños '
+             'Industriales, resultados de 2025, publicado el 4 de febrero de '
+             '2026 · <a href="https://www.gob.pe/institucion/indecopi/noticias/'
+             '1355764-hito-en-la-innovacion-en-2025-se-protegieron-mas-de-mil-'
+             'inventos-en-el-peru-a-traves-del-sistema-de-patentes">indecopi '
+             'en gob.pe</a>')
+F_OTT = ('PROCIENCIA · concurso <i>Fortalecimiento de Oficinas de Transferencia '
+         'Tecnológica 2025-01</i> · '
+         '<a href="https://prociencia.gob.pe">prociencia.gob.pe</a>')
 F_CASO = ('Caso de clase · magnitudes didácticas del prototipo de monitoreo de '
           'colmenas, no medidas en campo')
 
@@ -189,7 +198,7 @@ AGENDA = envolver(
 
 COSTO_MEDIOS = envolver(
     cabecera("Punto de partida",
-             "Costo de los medios de verificación de la matriz",
+             "Costo de los cuatro medios de verificación del caso, en soles",
              "i-scale")
     + "\n"
     + figura("s5-costo-medios",
@@ -216,7 +225,7 @@ SECCION_A = seccion(
 
 INSTRUMENTO_OBLIGACION = envolver(
     cabecera("01 · El eje de la sesión",
-             "Obligaciones que impone cada forma de instrumento",
+             "Seis formas de instrumento y las seis obligaciones de cada una",
              "i-rubric")
     + "\n"
     + figura("s5-instrumento-obligacion",
@@ -234,7 +243,7 @@ INSTRUMENTO_OBLIGACION = envolver(
 
 ACTIVIDAD_PARTIDA = envolver(
     cabecera("01 · Estructura del presupuesto",
-             "Cadena de la actividad al monto presupuestado",
+             "Los cuatro pasos del costeo, de la actividad al monto",
              "i-flow")
     + "\n"
     + figura("s5-actividad-partida",
@@ -252,41 +261,34 @@ ACTIVIDAD_PARTIDA = envolver(
 
 PARTIDAS_ADMISIBLES = envolver(
     cabecera("01 · Partidas",
-             "Partidas presupuestales admisibles y su tope",
+             "Seis partidas admisibles y su tope en StartUp Perú y PROCIENCIA",
              "i-layers")
     + "\n"
     + fichas([
-        ("Honorarios e incentivos", "Equipo del proyecto", [
-            "Honorarios del líder y del equipo emprendedor",
-            "Incentivo al responsable técnico y a los coinvestigadores",
-            "<b>Tope de 40 % del capital semilla en StartUp Perú; 20 % del monto en PROCIENCIA</b>",
+        ("Honorarios e incentivos", "<b>Tope 40 % · 20 %</b>", [
+            "Líder, equipo, responsable técnico y coinvestigadores",
         ]),
-        ("Materiales e insumos", "Sin tope declarado", [
-            "Materia prima para el producto mínimo viable",
-            "Insumos de ensayo y suscripción a bases de datos, por el plazo del proyecto",
+        ("Materiales e insumos", "Sin tope", [
+            "Materia prima, ensayo y bases de datos",
         ]),
-        ("Consultorías especializadas", "Terceros, a suma alzada", [
-            "Asesoría de expertos o empresas, nacionales o extranjeras",
-            "A todo costo: honorario, pasaje y viático dentro del precio",
+        ("Consultorías", "A suma alzada", [
+            "Honorario, pasaje y viático dentro del precio",
         ]),
-        ("Servicios tecnológicos", "Terceros y proveedores", [
-            "Prototipado, validación, certificación y ensayo",
-            "Licencias de terceros y acompañamiento de incubadora",
+        ("Servicios tecnológicos", "Terceros", [
+            "Prototipado, ensayo, certificación y licencias",
         ]),
-        ("Pasajes y viáticos", "Escala oficial", [
-            "Trabajo de campo, capacitación y programas en el extranjero",
-            "Por escala oficial y no por gasto real · <b>tope de 8 % en PROCIENCIA</b>",
+        ("Pasajes y viáticos", "<b>Tope 8 %</b>", [
+            "Por escala oficial, no por gasto real",
         ]),
-        ("Equipos y bienes duraderos", "Cuando la convocatoria los admite", [
-            "Solo los vinculados a la naturaleza del proyecto",
-            "No todo concurso abre esta partida, y el destino del bien lo fija el convenio",
+        ("Equipos y bienes duraderos", "Si la convocatoria los abre", [
+            "Solo los vinculados al proyecto",
         ]),
     ])
     + "\n"
     + criterio(
-        "Las partidas y los topes cambian de una convocatoria a otra, y cambian "
-        "incluso entre las bases iniciales y las integradas. Lo que no cambia es "
-        "que cada gasto tiene que caber en una partida nombrada por las bases."
+        "Cada gasto tiene que caber en una partida nombrada por las bases. Los "
+        "topes cambian entre convocatorias y hasta entre bases iniciales e "
+        "integradas."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_PROCIENCIA)
@@ -294,24 +296,21 @@ PARTIDAS_ADMISIBLES = envolver(
 
 PARTIDAS_NO_ADMISIBLES = envolver(
     cabecera("01 · Partidas",
-             "Gastos no elegibles en una convocatoria pública",
+             "Tres familias de gasto no elegible en un fondo público",
              "i-alert")
     + "\n"
     + fichas([
-        ("Lo que sostiene a la entidad", "No al proyecto", [
-            "Personal administrativo y gastos administrativos en general",
-            "Luz, agua, telefonía fija y celular, internet",
-            "Son gastos que existirían igual sin el proyecto",
+        ("Lo que sostiene a la entidad", "Existiría sin el proyecto", [
+            "Personal administrativo",
+            "Luz, agua, telefonía, internet",
         ]),
         ("Lo financiero", "Nunca", [
-            "Mantenimiento de cuenta corriente y comisiones",
-            "Intereses y deuda previa",
-            "Multas y penalidades",
+            "Comisiones bancarias e intereses",
+            "Deuda previa, multas y penalidades",
         ]),
         ("Lo patrimonial", "Nunca", [
-            "Adquisición o alquiler de inmuebles",
-            "Adquisición o alquiler de vehículos",
-            "Equipos y bienes no vinculados a la ejecución",
+            "Inmuebles y vehículos",
+            "Equipos sin vínculo con la ejecución",
         ]),
     ])
     + "\n"
@@ -321,15 +320,12 @@ PARTIDAS_NO_ADMISIBLES = envolver(
     )
     + "\n"
     + criterio(
-        "La regla que ordena la lista: el fondo paga lo que el proyecto añade, "
-        "no lo que la entidad ya sostiene. El sueldo del administrador y la "
-        "factura de la luz existirían igual sin el proyecto, y por eso no entran."
+        "El fondo paga lo que el proyecto añade, no lo que la entidad ya sostiene."
     )
     + "\n"
     + en_la_practica(
-        "El alquiler de un vehículo no es elegible; el pasaje de campo sí, por "
-        "escala. El sensor de peso del prototipo es elegible; un equipo sin "
-        "vínculo con el proyecto, no. La frontera es la vinculación."
+        "El sensor de peso del prototipo entra; el alquiler de un vehículo, no. "
+        "La frontera es la vinculación con el proyecto."
     )
     + "\n"
     + fuente_pie(F_STARTUP)
@@ -337,7 +333,7 @@ PARTIDAS_NO_ADMISIBLES = envolver(
 
 TOPES_RUBRO = envolver(
     cabecera("01 · Partidas",
-             "Topes porcentuales por rubro y su base de cálculo",
+             "Cuatro topes por rubro y la base sobre la que se calculan",
              "i-scale")
     + "\n"
     + figura("s5-topes-rubro",
@@ -356,36 +352,34 @@ TOPES_RUBRO = envolver(
 HERR_01 = bloque_herramientas(
     "01", "05",
     "Costeo y presupuesto del proyecto",
-    "Para que el presupuesto salga de la matriz y siga cuadrando cuando el "
-    "plan de trabajo cambie. El objetivo no es la plantilla: es que cada monto "
-    "quede trazado a una actividad y a una partida.",
+    "Que cada monto se pueda seguir hasta una actividad y una partida.",
     [
         ("LibreOffice Calc", "The Document Foundation", [
-            "Hoja de cálculo abierta, sin licencia que renovar ni cuenta que crear",
-            "Referencias entre hojas: las actividades alimentan el cuadro de partidas",
-            "Guarda en formato abierto, el que exige un anexo verificable",
+            "Abierta, sin licencia ni cuenta",
+            "Las actividades alimentan el cuadro de partidas",
+            "Formato abierto, el del anexo verificable",
         ], "libreoffice.org"),
         ("Google Sheets", "Google", [
-            "Edición simultánea del equipo sobre el mismo cuadro, con historial de cambios",
-            "El historial sirve de prueba de quién cambió qué monto y cuándo",
-            "Exporta al formato cerrado que piden casi todas las bases",
+            "Edición simultánea con historial",
+            "El historial prueba quién cambió qué monto",
+            "Exporta al formato que piden las bases",
         ], "sheets.google.com"),
         ("GanttProject", "Comunidad libre", [
-            "Cronograma con dependencias, hitos y ruta crítica",
-            "Asigna recurso y costo por tarea, que es la unión entre plan y presupuesto",
-            "Exporta el cronograma como anexo, sin rehacerlo a mano",
+            "Dependencias, hitos y ruta crítica",
+            "Recurso y costo por tarea",
+            "Exporta el cronograma como anexo",
         ], "ganttproject.biz"),
     ],
     [
-        ("Trazabilidad", "que de un monto se llegue a la actividad que lo produce"),
-        ("Formato de salida", "que exporte al que piden las bases, sin copiar a mano"),
-        ("Historial", "que registre quién cambió qué, y no solo la hoja final"),
+        ("Trazabilidad", "del monto a la actividad que lo produce"),
+        ("Formato de salida", "el que piden las bases, sin copiar a mano"),
+        ("Historial", "quién cambió qué, no solo la hoja final"),
     ],
 )
 
 PARTIDA_PI_DIFUSION = envolver(
     cabecera("01 · Partidas",
-             "Partida de propiedad intelectual y difusión",
+             "La partida de propiedad intelectual y difusión: 5 % del capital semilla",
              "i-target")
     + "\n"
     + figura("s5-cabe-en-la-partida",
@@ -418,7 +412,7 @@ PARTIDA_PI_DIFUSION = envolver(
 
 CONTRAPARTIDA_FIGURA = envolver(
     cabecera("01 · Contrapartida",
-             "Reparto del costo según la figura del postulante",
+             "Contrapartida exigida a tres figuras de postulante, en porcentaje",
              "i-chart")
     + "\n"
     + figura("s5-contrapartida-figura",
@@ -436,7 +430,7 @@ CONTRAPARTIDA_FIGURA = envolver(
 
 DOS_INSTRUMENTOS = envolver(
     cabecera("01 · Dos instrumentos",
-             "Cifras comparadas de dos subvenciones del Estado",
+             "StartUp Perú 12G y PROCIENCIA E072: seis condiciones comparadas",
              "i-rubric")
     + "\n"
     + figura("s5-dos-instrumentos",
@@ -455,7 +449,7 @@ DOS_INSTRUMENTOS = envolver(
 
 DESEMBOLSO_HITOS = envolver(
     cabecera("01 · Desembolso",
-             "Cronograma de desembolsos frente a cronograma de actividades",
+             "Momento del desembolso en cuatro formas de instrumento",
              "i-gantt")
     + "\n"
     + tabla(
@@ -484,7 +478,7 @@ DESEMBOLSO_HITOS = envolver(
 
 FLUJO_CAJA = envolver(
     cabecera("01 · Desembolso",
-             "Hueco de caja entre el gasto y el desembolso",
+             "Hueco de caja de un proyecto de dieciocho meses, en miles de soles",
              "i-chart")
     + "\n"
     + figura("s5-flujo-caja",
@@ -503,7 +497,7 @@ FLUJO_CAJA = envolver(
 
 PRESUPUESTO_SIM = envolver(
     cabecera("01 · Simulación",
-             "Simulación: efecto de un cambio de actividad en el presupuesto",
+             "Simulación: honorarios, tope del 40 % y saldo del capital semilla",
              "i-sliders")
     + "\n"
     + f"""\t\t\t\t<div class="sim sim--stack" data-sim="presupuesto" data-animate="fade-up">
@@ -614,7 +608,7 @@ SECCION_B = seccion(
 
 CICLO_DE_VIDA = envolver(
     cabecera("02 · El calendario",
-             "Etapas del proyecto y momento de cada obligación",
+             "Cuatro etapas del proyecto y diez obligaciones con su mes",
              "i-gantt")
     + "\n"
     + figura("s5-ciclo-de-vida",
@@ -632,40 +626,33 @@ CICLO_DE_VIDA = envolver(
 
 CONVENIO = envolver(
     cabecera("02 · El convenio",
-             "Cláusulas del convenio que se leen antes de firmar",
+             "Seis cláusulas del convenio que se leen antes de firmar",
              "i-file")
     + "\n"
     + fichas([
         ("Objeto y entregables", "Qué se comprometió", [
-            "El hito comprometido queda fijado aquí, no en la propuesta",
-            "Cambiarlo después exige adenda y vuelve a evaluación",
+            "Cambiar un hito exige adenda y vuelve a evaluación",
         ]),
-        ("Desembolsos y condiciones", "Cuándo entra el dinero", [
-            "Qué documento dispara cada tramo",
-            "Qué ocurre si un hito se retrasa",
+        ("Desembolsos", "Qué dispara cada tramo", [
+            "Y qué ocurre si un hito se retrasa",
         ]),
         ("Propiedad de los resultados", "Quién será titular", [
-            "Titularidad de la propiedad intelectual generada",
-            "Reservas del Estado sobre uso y publicación",
+            "Y qué se reserva el Estado sobre uso y publicación",
         ]),
         ("Destino de los bienes", "Al cerrar", [
-            "Qué pasa con el equipo comprado con el fondo",
-            "Si se transfiere, a quién y con qué acta",
+            "A quién pasa el equipo y con qué acta",
         ]),
         ("Causales de resolución", "Cuándo se corta", [
-            "Incumplimiento de hitos y de rendición",
-            "Consecuencia: devolución de lo desembolsado",
+            "Devolución de lo desembolsado",
         ]),
-        ("Confidencialidad", "Qué no se cuenta", [
-            "Alcance y plazo de la reserva",
-            "Compatibilidad con la obligación de difusión de resultados",
+        ("Confidencialidad", "Alcance y plazo", [
+            "Compatible con la difusión obligatoria",
         ]),
     ])
     + "\n"
     + aviso(
-        "El convenio no repite la propuesta: la reemplaza. Lo que quedó bien "
-        "escrito en el proyecto y mal escrito en el convenio, vale como está en "
-        "el convenio."
+        "El convenio no repite la propuesta: la reemplaza. Lo mal escrito aquí "
+        "vale como está aquí."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_PROCIENCIA)
@@ -692,36 +679,34 @@ ANTES_DEL_DESEMBOLSO = envolver(
 HERR_02 = bloque_herramientas(
     "02", "05",
     "Seguimiento de hitos y evidencia documental",
-    "Para que en el mes catorce se pueda demostrar qué se hizo en el mes tres. "
-    "El objetivo no es gestionar el proyecto entero: es que cada hito tenga su "
-    "evidencia fechada y localizable.",
+    "Que en el mes catorce se pueda demostrar qué se hizo en el mes tres.",
     [
         ("Nextcloud", "Comunidad libre", [
-            "Almacenamiento propio con historial de versiones por archivo",
-            "El historial fecha cada versión, como pide una rendición",
-            "Se puede alojar en el servidor de la propia universidad",
+            "Historial de versiones por archivo",
+            "Cada versión queda fechada",
+            "Se aloja en el servidor de la universidad",
         ], "nextcloud.com"),
-        ("Zotero", "Corporation for Digital Scholarship", [
-            "Guarda la fuente y el documento juntos, con su fecha de consulta",
-            "Grupos compartidos: el equipo entero ve el mismo acervo",
-            "Exporta la bibliografía en el formato que pida la convocatoria",
+        ("Zotero", "Corp. for Digital Scholarship", [
+            "Fuente y documento juntos, con fecha",
+            "Grupos: el equipo ve el mismo acervo",
+            "Exporta al formato de la convocatoria",
         ], "zotero.org"),
         ("Obsidian", "Obsidian.md", [
-            "Notas en archivos de texto plano, legibles sin la aplicación",
-            "Enlaces entre notas: el hito apunta a la evidencia y al ensayo",
-            "Los archivos viven en el disco, así que entran en el control de versiones",
+            "Texto plano, legible sin la aplicación",
+            "El hito enlaza con su evidencia",
+            "Los archivos entran en control de versiones",
         ], "obsidian.md"),
     ],
     [
-        ("Fecha verificable", "que registre cuándo se creó cada cosa, no solo qué dice"),
-        ("Salida sin la herramienta", "que el archivo se lea sin el programa"),
-        ("Quién más entra", "que el equipo y la entidad accedan sin depender de una persona"),
+        ("Fecha verificable", "cuándo se creó, no solo qué dice"),
+        ("Salida sin la herramienta", "el archivo se lee sin el programa"),
+        ("Quién más entra", "el equipo accede sin depender de una persona"),
     ],
 )
 
 INFORMES = envolver(
     cabecera("02 · Rendición",
-             "Contenido del informe técnico y del informe financiero",
+             "Cuatro piezas del informe técnico y cuatro del financiero",
              "i-rubric")
     + "\n"
     + figura("s5-informes",
@@ -739,7 +724,7 @@ INFORMES = envolver(
 
 SUSTENTO = envolver(
     cabecera("02 · Rendición",
-             "Requisitos del comprobante que sustenta un gasto",
+             "Cinco requisitos del comprobante que sustenta un gasto",
              "i-file")
     + "\n"
     + tabla(
@@ -769,7 +754,7 @@ SUSTENTO = envolver(
 
 MODIFICACIONES = envolver(
     cabecera("02 · Modificaciones",
-             "Cambios que se comunican y cambios que se autorizan",
+             "Cinco modificaciones presupuestales y el trámite de cada una",
              "i-flow")
     + "\n"
     + figura("s5-modificaciones",
@@ -787,7 +772,7 @@ MODIFICACIONES = envolver(
 
 CIERRE_DOBLE = envolver(
     cabecera("02 · Cierre",
-             "Cierre técnico y cierre administrativo del proyecto",
+             "Duración del cierre técnico y del administrativo, en meses",
              "i-milestone")
     + "\n"
     + figura("s5-cierre-doble",
@@ -806,7 +791,7 @@ CIERRE_DOBLE = envolver(
 
 RENDICION_SIM = envolver(
     cabecera("02 · Simulación",
-             "Simulación: admisión de un gasto en la rendición",
+             "Simulación: las cuatro condiciones que admiten un gasto",
              "i-sliders")
     + "\n"
     + f"""\t\t\t\t<div class="sim sim--stack" data-sim="rendicion" data-animate="fade-up">
@@ -911,7 +896,7 @@ SECCION_C = seccion(
 
 DOCUMENTAR_ES_METODO = envolver(
     cabecera("03 · Por qué",
-             "Funciones de la documentación en un proyecto financiado",
+             "Cuatro funciones de la documentación en un proyecto financiado",
              "i-book")
     + "\n"
     + fichas([
@@ -943,7 +928,7 @@ DOCUMENTAR_ES_METODO = envolver(
 
 CAPAS_DOCUMENTACION = envolver(
     cabecera("03 · Las capas",
-             "Capas de la documentación de un proyecto",
+             "Las seis capas de documentación, de la bitácora al registro",
              "i-layers")
     + "\n"
     + figura("s5-capas-documentacion",
@@ -961,7 +946,7 @@ CAPAS_DOCUMENTACION = envolver(
 
 BITACORA = envolver(
     cabecera("03 · Bitácora",
-             "Valor probatorio de cada forma de registro",
+             "Fuerza probatoria de cuatro formas de registrar el desarrollo",
              "i-scale")
     + "\n"
     + figura("s5-bitacora-prueba",
@@ -982,7 +967,7 @@ BITACORA = envolver(
 
 VERSIONES_ARTEFACTO = envolver(
     cabecera("03 · Versiones",
-             "Artefactos de un prototipo electrónico que se versionan",
+             "Cinco artefactos de un prototipo electrónico y cómo se versionan",
              "i-layers")
     + "\n"
     + figura("s5-versiones-artefacto",
@@ -1001,36 +986,34 @@ VERSIONES_ARTEFACTO = envolver(
 HERR_03 = bloque_herramientas(
     "03", "05",
     "Documentación, trazabilidad y repositorios",
-    "Para que el desarrollo quede registrado mientras ocurre y el depósito "
-    "final sea citable. Tres herramientas cubren las seis capas: control de "
-    "versiones, documento técnico y depósito con identificador.",
+    "Registrar el desarrollo mientras ocurre y dejar el depósito citable.",
     [
         ("Git con GitLab o GitHub", "Comunidad y proveedores", [
-            "Cada cambio queda con autor, fecha y motivo, sin esfuerzo adicional",
-            "Sirve para firmware, esquemáticos en formato de texto y documentos en Markdown",
-            "Las etiquetas de versión marcan qué estado del código corresponde a cada hito",
+            "Cada cambio con autor, fecha y motivo",
+            "Firmware, esquemáticos y documentos",
+            "La etiqueta marca el estado de cada hito",
         ], "about.gitlab.com"),
         ("Zenodo", "CERN y Comisión Europea", [
-            "Deposita datos, código y documentos y devuelve un DOI permanente",
-            "El DOI hace citable el conjunto y fija su contenido en una fecha",
-            "Se enlaza con un repositorio de código para archivar cada versión publicada",
+            "Datos, código y documentos con DOI",
+            "El DOI fija el contenido en una fecha",
+            "Se enlaza con el repositorio de código",
         ], "zenodo.org"),
         ("ALICIA", "CONCYTEC", [
-            "Repositorio nacional que recolecta la producción de las instituciones peruanas",
-            "Es el destino que varias convocatorias exigen para tesis y artículos",
-            "Da visibilidad nacional a lo que en un repositorio propio no se encuentra",
+            "Repositorio nacional de acceso libre",
+            "Destino exigido para tesis y artículos",
+            "Da visibilidad que el repositorio propio no da",
         ], "alicia.concytec.gob.pe"),
     ],
     [
-        ("Identificador permanente", "que lo depositado se cite dentro de diez años"),
-        ("Qué admite", "que acepte el tipo de archivo real del proyecto, no solo texto"),
-        ("Qué exige el financiador", "que el destino sea uno de los que las bases reconocen"),
+        ("Identificador permanente", "citable dentro de diez años"),
+        ("Qué admite", "el tipo de archivo real, no solo texto"),
+        ("Qué exige el financiador", "que las bases reconozcan el destino"),
     ],
 )
 
 DATOS_Y_METADATOS = envolver(
     cabecera("03 · Datos",
-             "Componentes del plan de gestión de datos",
+             "Las seis decisiones de un plan de gestión de datos",
              "i-diagram")
     + "\n"
     + tabla(
@@ -1063,7 +1046,7 @@ DATOS_Y_METADATOS = envolver(
 
 DONDE_VA_CADA_COSA = envolver(
     cabecera("03 · Depósito",
-             "Destino de cada clase de material producido",
+             "Seis clases de material y su repositorio de destino",
              "i-network")
     + "\n"
     + figura("s5-donde-va-cada-cosa",
@@ -1075,42 +1058,27 @@ DONDE_VA_CADA_COSA = envolver(
 
 HISTORIA_DEL_PROYECTO = envolver(
     cabecera("03 · Historia",
-             "Construcción de la historia del proyecto",
+             "La historia del proyecto: qué se recoge, de dónde sale y para qué",
              "i-quote")
     + "\n"
     + fichas([
         ("Qué se recoge", "Durante, no al final", [
-            "La decisión que cambió el rumbo, con su fecha y su motivo",
+            "La decisión que cambió el rumbo, con fecha",
             "El ensayo que salió mal y lo que enseñó",
-            "La versión del prototipo antes y después de cada hito",
         ]),
         ("De dónde sale", "De la bitácora", [
-            "La bitácora ya tiene las fechas y los motivos",
-            "El control de versiones ya tiene el antes y el después",
-            "No hay que escribir nada nuevo: hay que seleccionar",
+            "Fechas, motivos, antes y después",
+            "No se escribe nada nuevo: se selecciona",
         ]),
         ("Para qué sirve", "Después del cierre", [
-            "Es el material del <i>pitch</i> ante un comité",
-            "Distingue la propuesta siguiente de un formulario",
-            "Convence a un socio de que el equipo ejecuta",
+            "Material del <i>pitch</i> ante un comité",
+            "Convence de que el equipo ejecuta",
         ]),
     ])
     + "\n"
-    + evitar(
-        "Escribir la historia el último mes. Lo que queda entonces es el "
-        "cronograma cumplido, que no es una historia: es un calendario."
-    )
-    + "\n"
-    + criterio(
-        "Una historia de proyecto tiene tres piezas: dónde estaba el equipo al "
-        "empezar, qué decisión cambió el rumbo y qué quedó demostrado al final. "
-        "Las tres salen de la bitácora si la bitácora existe."
-    )
-    + "\n"
     + ejemplo(
-        "«En el mes cuatro el sensor de peso derivaba con la temperatura. Se "
-        "cambió el montaje y se añadió compensación por firmware, y el error "
-        "bajó de 180 a 25 gramos.» Eso es historia: hay antes, decisión y "
+        "«Mes cuatro: el sensor de peso derivaba con la temperatura. Se cambió "
+        "el montaje y el error bajó de 180 a 25 gramos.» Antes, decisión y "
         "después, con número."
     )
     + "\n"
@@ -1119,7 +1087,7 @@ HISTORIA_DEL_PROYECTO = envolver(
 
 DATOS_ABIERTOS = envolver(
     cabecera("03 · Datos abiertos",
-             "Distancia entre declarar y compartir datos",
+             "Datos y código disponibles: 8 % declarado y 2 % real, 2016-2021",
              "i-chart")
     + "\n"
     + figura("s5-datos-compartidos",
@@ -1154,7 +1122,7 @@ SECCION_D = seccion(
 
 PROTEGER_ANTES_PUBLICAR = envolver(
     cabecera("04 · El orden",
-             "Orden entre la solicitud de registro y la divulgación",
+             "Antes y después de la solicitud: qué se documenta y qué se divulga",
              "i-flow")
     + "\n"
     + figura("s5-proteger-antes-publicar",
@@ -1172,7 +1140,7 @@ PROTEGER_ANTES_PUBLICAR = envolver(
 
 MAPA_REGISTROS = envolver(
     cabecera("04 · Registros",
-             "Figuras de protección disponibles y su vigencia",
+             "Seis figuras de protección industrial y su vigencia en el Perú",
              "i-rubric")
     + "\n"
     + figura("s5-mapa-registros",
@@ -1190,7 +1158,7 @@ MAPA_REGISTROS = envolver(
 
 TASAS_INDECOPI = envolver(
     cabecera("04 · Costo",
-             "Tasas de registro de propiedad industrial",
+             "Tasas de registro del TUPA de INDECOPI, vigentes desde julio de 2025",
              "i-fund")
     + "\n"
     + figura("s5-tasas-indecopi",
@@ -1214,7 +1182,7 @@ TASAS_INDECOPI = envolver(
 
 PLAZOS_PATENTE = envolver(
     cabecera("04 · Plazos",
-             "Plazos del procedimiento de patente en el Perú",
+             "Plazos del procedimiento de patente según la Decisión 486",
              "i-gantt")
     + "\n"
     + figura("s5-plazos-patente",
@@ -1233,36 +1201,34 @@ PLAZOS_PATENTE = envolver(
 HERR_04 = bloque_herramientas(
     "04", "05",
     "Búsqueda de antecedentes de patente",
-    "Para comprobar la novedad antes de pagar la tasa. Una búsqueda que "
-    "encuentra el antecedente ahorra el trámite entero; hecha después, solo "
-    "sirve para entender por qué se denegó.",
+    "Comprobar la novedad antes de pagar la tasa, no después de la denegación.",
     [
         ("Espacenet", "Oficina Europea de Patentes", [
-            "Más de cien millones de documentos de patente de todo el mundo",
-            "Búsqueda por clasificación internacional, que es como buscan los examinadores",
-            "Muestra en qué países está protegida la misma invención",
+            "Más de cien millones de documentos",
+            "Búsqueda por clasificación internacional",
+            "Muestra en qué países está protegida",
         ], "worldwide.espacenet.com"),
         ("Patentscope", "OMPI", [
-            "Cubre las solicitudes internacionales del PCT y las colecciones nacionales",
-            "Busca en el texto completo, no solo en título y resumen",
-            "Traduce la consulta a varios idiomas, útil cuando el antecedente es asiático",
+            "PCT y colecciones nacionales",
+            "Busca en el texto completo",
+            "Traduce la consulta a varios idiomas",
         ], "patentscope.wipo.int"),
         ("Buscador de INDECOPI", "INDECOPI", [
-            "Consulta las solicitudes y los títulos concedidos en el Perú",
-            "Muestra el estado del expediente, no solo el documento final",
-            "Es la fuente que hay que citar cuando el antecedente es peruano",
+            "Solicitudes y títulos concedidos en el Perú",
+            "Muestra el estado del expediente",
+            "La fuente que se cita si el antecedente es peruano",
         ], "servicio.indecopi.gob.pe"),
     ],
     [
-        ("Cobertura", "que incluya la jurisdicción donde se quiere proteger"),
-        ("Qué campo busca", "que llegue al texto completo, no solo al título"),
-        ("Estado del expediente", "que diga si la solicitud sigue viva o está abandonada"),
+        ("Cobertura", "la jurisdicción donde se quiere proteger"),
+        ("Qué campo busca", "el texto completo, no solo el título"),
+        ("Estado del expediente", "si la solicitud sigue viva o está abandonada"),
     ],
 )
 
 TRAMITE_VS_PROYECTO = envolver(
     cabecera("04 · El desfase",
-             "Duración del trámite frente a la duración del proyecto",
+             "Dieciocho meses de proyecto frente a cuarenta y dos de trámite",
              "i-alert")
     + "\n"
     + figura("s5-tramite-vs-proyecto",
@@ -1281,20 +1247,38 @@ TRAMITE_VS_PROYECTO = envolver(
 
 TITULOS_INDECOPI = envolver(
     cabecera("04 · El contexto",
-             "Títulos de propiedad industrial otorgados en el Perú",
+             "Universidades peruanas en el ranking de patentes de INDECOPI, 2025",
              "i-chart")
     + "\n"
-    + figura("s5-titulos-indecopi",
-             "Títulos otorgados en 2025 y sectores donde se concentran",
-             "Mil cuarenta y siete títulos, máximo histórico, concentrados en cuatro sectores.")
+    + figura("s5-universidades-patentes",
+             "Solicitudes presentadas y títulos concedidos por universidad, 2025",
+             "Quien más solicita no es quien más obtiene: Continental encabeza en solicitudes y Privada del Norte en concesiones.")
     + "\n"
-    + criterio(
-        "La cifra calibra en dos direcciones. Hacia arriba: el sistema concede "
-        "más que nunca. Hacia abajo: mil títulos al año en un país de treinta y "
-        "tres millones deja poco antecedente nacional con el que chocar."
+    + dato_clave(
+        "<b>968 solicitudes</b> universitarias en 2025, el <b>79 % del total "
+        "nacional</b> y un 34 % más que en 2024. Se concedieron 513 títulos a "
+        "nacionales, de un récord de 1 050 con extranjeros."
     )
     + "\n"
-    + fuente_pie(F_INDECOPI)
+    + fuente_pie(F_TABLERO)
+)
+
+COMPOSICION_SOLICITUDES = envolver(
+    cabecera("04 · El contexto",
+             "Composición de la solicitud universitaria peruana, 2025",
+             "i-layers")
+    + "\n"
+    + figura("s5-invencion-vs-utilidad",
+             "Reparto de las 968 solicitudes universitarias entre las dos figuras, 2025",
+             "Tres de cada cuatro solicitudes son modelo de utilidad, la figura de diez años y examen más barato.")
+    + "\n"
+    + criterio(
+        "El modelo de utilidad no es una patente de segunda: protege una mejora "
+        "funcional, cuesta la mitad y se resuelve antes. Que sea el 75 % de lo "
+        "que pide la universidad peruana dice qué produce."
+    )
+    + "\n"
+    + fuente_pie(F_TABLERO, F_TUPA)
 )
 
 TITULARIDAD_Y_CLAUSULAS = envolver(
@@ -1334,7 +1318,7 @@ TITULARIDAD_Y_CLAUSULAS = envolver(
 
 ARTICULOS = envolver(
     cabecera("04 · Publicación",
-             "Requisitos de publicación de un proyecto financiado",
+             "Cuatro obligaciones de publicación y su costo en el presupuesto",
              "i-book")
     + "\n"
     + tabla(
@@ -1363,7 +1347,7 @@ ARTICULOS = envolver(
 
 CONGRESOS = envolver(
     cabecera("04 · Difusión",
-             "Foro de difusión según la madurez del resultado",
+             "Cuatro foros de difusión y el mes del proyecto en que caben",
              "i-network")
     + "\n"
     + figura("s5-congresos-momento",
@@ -1382,7 +1366,7 @@ CONGRESOS = envolver(
 
 OTROS_RESULTADOS = envolver(
     cabecera("04 · Resultados",
-             "Resultados acreditables de un proyecto y su prueba",
+             "Ocho resultados acreditables y el documento que prueba cada uno",
              "i-layers")
     + "\n"
     + figura("s5-resultados-tipos",
@@ -1410,7 +1394,7 @@ SECCION_E = seccion(
 
 QUE_ES_TRANSFERIR = envolver(
     cabecera("05 · Definición",
-             "Condiciones que hacen posible una transferencia",
+             "Las tres condiciones que hacen posible una transferencia",
              "i-target")
     + "\n"
     + definicion(
@@ -1424,24 +1408,18 @@ QUE_ES_TRANSFERIR = envolver(
     )
     + "\n"
     + criterio(
-        "Las tres condiciones son acumulativas y la que más falla es la tercera. "
-        "Un resultado protegido y bien documentado sin receptor capaz de "
-        "absorberlo se queda en el expediente, que es exactamente lo que "
-        "describe el embudo peruano."
+        "Las tres son acumulativas y la que más falla es la tercera."
     )
     + "\n"
     + fichas([
-        ("Resultado protegido", "O deliberadamente abierto", [
+        ("Resultado protegido", "O abierto a propósito", [
             "Sin titularidad clara no hay nada que licenciar",
-            "Abrir también es una decisión, y hay que tomarla, no omitirla",
         ]),
-        ("Documentación suficiente", "Lo de la capa tres", [
-            "El receptor tiene que poder reproducirlo sin el equipo original",
-            "Un prototipo sin documentación se transfiere con las personas o no se transfiere",
+        ("Documentación suficiente", "La capa tres", [
+            "El receptor lo reproduce sin el equipo original",
         ]),
         ("Receptor con capacidad", "De absorberlo", [
-            "Alguien que pueda fabricar, operar o comercializar lo recibido",
-            "Sin capacidad de absorción, la licencia se firma y no pasa nada",
+            "Sin ella la licencia se firma y no pasa nada",
         ]),
     ])
     + "\n"
@@ -1450,7 +1428,7 @@ QUE_ES_TRANSFERIR = envolver(
 
 ABANICO = envolver(
     cabecera("05 · Alternativas",
-             "Formas de transferencia y de intercambio de conocimiento",
+             "Nueve formas de transferencia, de la publicación a la cesión",
              "i-diagram")
     + "\n"
     + figura("s5-abanico-transferencia",
@@ -1469,7 +1447,7 @@ ABANICO = envolver(
 
 MADUREZ_VIA = envolver(
     cabecera("05 · Madurez",
-             "Madurez mínima que exige cada vía de transferencia",
+             "Madurez mínima de seis vías de transferencia, en escala TRL",
              "i-ladder")
     + "\n"
     + figura("s5-madurez-via",
@@ -1488,36 +1466,34 @@ MADUREZ_VIA = envolver(
 HERR_05 = bloque_herramientas(
     "05", "05",
     "Vigilancia tecnológica y búsqueda de comparables",
-    "Para poner un número antes de negociar. El método de mercado necesita "
-    "operaciones comparables y el de ingresos necesita tamaño de mercado: sin "
-    "una fuente para cada cosa, la valorización es una opinión.",
+    "Poner un número antes de negociar: comparables y tamaño de mercado.",
     [
         ("Espacenet y Patentscope", "EPO y OMPI", [
-            "Vigilancia de quién patenta en el campo y con qué frecuencia",
-            "Los titulares que más solicitan son los primeros candidatos a licenciatario",
-            "La familia de patentes indica en qué mercados se juega la tecnología",
+            "Quién patenta en el campo y con qué frecuencia",
+            "Los que más solicitan son candidatos a licenciatario",
+            "La familia indica en qué mercados se juega",
         ], "worldwide.espacenet.com"),
         ("OpenAlex", "OurResearch", [
-            "Base abierta de producción científica, con instituciones y financiadores",
-            "Permite ver qué grupos trabajan el mismo problema y con quién colaboran",
-            "Acceso libre y descargable, sin suscripción institucional",
+            "Producción científica con institución y financiador",
+            "Qué grupos trabajan el mismo problema",
+            "Libre y descargable, sin suscripción",
         ], "openalex.org"),
-        ("Datos abiertos de INEI y de gremios", "Fuentes nacionales", [
-            "Tamaño del mercado peruano, el dato que pide el método de ingresos",
-            "Series oficiales con año y unidad, citables en la propuesta",
-            "Los gremios publican precios y volúmenes que la estadística general omite",
+        ("INEI y gremios sectoriales", "Fuentes nacionales", [
+            "Tamaño del mercado peruano",
+            "Series oficiales con año y unidad",
+            "Precios y volúmenes que la estadística omite",
         ], "inei.gob.pe"),
     ],
     [
-        ("Qué comparable devuelve", "que dé operaciones o magnitudes, no solo documentos"),
-        ("Acceso sostenido", "que se vuelva a consultar sin suscripción, para actualizar"),
-        ("Trazabilidad del dato", "que cada cifra tenga año, unidad y fuente citable"),
+        ("Qué comparable devuelve", "operaciones o magnitudes, no documentos"),
+        ("Acceso sostenido", "se vuelve a consultar sin suscripción"),
+        ("Trazabilidad del dato", "año, unidad y fuente citable"),
     ],
 )
 
 METODOS_VALORIZACION = envolver(
     cabecera("05 · Valorización",
-             "Métodos de valorización de un activo intangible",
+             "Costo, mercado e ingresos: los tres métodos de valorización",
              "i-scale")
     + "\n"
     + figura("s5-metodos-valorizacion",
@@ -1536,7 +1512,7 @@ METODOS_VALORIZACION = envolver(
 
 VALORIZACION_POR_ACTIVO = envolver(
     cabecera("05 · Valorización",
-             "Método aplicable según el tipo de activo",
+             "Método de valorización aplicable a cinco tipos de activo",
              "i-rubric")
     + "\n"
     + figura("s5-valorizacion-por-activo",
@@ -1583,27 +1559,26 @@ VALORIZAR_EL_CASO = envolver(
 
 BRECHA_PERUANA = envolver(
     cabecera("05 · El contexto",
-             "Embudo de la transferencia en la universidad peruana",
+             "Registro y licencia en la universidad peruana, 2016 y 2025",
              "i-chart")
     + "\n"
     + figura("s5-brecha-peruana",
-             "Universidades peruanas con política de propiedad intelectual, procedimiento y licencias",
-             "El cuello de botella no está en patentar: está en el paso siguiente, que casi nadie da.")
+             "Universidades con política de propiedad intelectual, procedimiento y licencias, 2016",
+             "El cuello de botella no está en registrar: está en el paso siguiente, que nadie ha vuelto a medir.")
     + "\n"
     + dato_clave(
-        "De las <b>142 universidades</b> del país, unas <b>10</b> tenían política "
-        "de propiedad intelectual y solo <b>4</b> procedimiento para transferir. "
-        "<b>Ninguna patente había llegado a licenciarse</b>. Datos de 2016."
+        "De las <b>142 universidades</b> del país, unas <b>10</b> tenían "
+        "política de propiedad intelectual y solo <b>4</b> procedimiento para "
+        "transferir. <b>Ninguna patente había llegado a licenciarse.</b>"
     )
     + "\n"
-    + conclusion(
-        "El hueco está después del registro",
-        "Registrar es el paso que el sistema ya sabe dar y que las tasas "
-        "reducidas favorecen. Falta el siguiente: valorizar, encontrar receptor "
-        "y negociar. Ninguna estadística nacional lo mide todavía.",
+    + en_la_practica(
+        "Una década después el registro se disparó, con 968 solicitudes "
+        "universitarias en 2025, y PROCIENCIA financia cinco oficinas de "
+        "transferencia. Cuántas patentes se licencian sigue sin publicarse."
     )
     + "\n"
-    + fuente_pie(F_CONCYTEC_TT, F_INDECOPI)
+    + fuente_pie(F_CONCYTEC_TT, F_TABLERO, F_OTT)
 )
 
 # ==========================================================================
@@ -1611,45 +1586,31 @@ BRECHA_PERUANA = envolver(
 # ==========================================================================
 VIDEO_RESUMEN = envolver(
     cabecera("Cierre",
-             "Estructura del video de resumen del proyecto",
+             "El video de resumen: tres minutos en cuatro movimientos",
              "i-quote")
     + "\n"
     + fichas([
-        ("Qué cuenta", "Tres minutos, cuatro movimientos", [
-            "El problema con su magnitud y su afectado nombrado",
-            "Qué se construyó y cómo funciona, con el prototipo a la vista",
-            "Qué se midió, con el número y su unidad",
-            "Qué sigue, y qué hace falta para que siga",
+        ("Cuatro movimientos", "Tres minutos", [
+            "Problema con su magnitud · 30 segundos",
+            "Qué se construyó, con el prototipo a la vista",
+            "Qué se midió, con número y unidad",
+            "Qué sigue y qué hace falta",
         ]),
-        ("Qué material exige", "Grabado durante, no al final", [
+        ("Material grabado durante", "No al final", [
             "Prototipo funcionando, en cada versión",
-            "Trabajo de campo con el beneficiario real",
-            "El equipo trabajando, no posando",
-            "Pantallas y datos en movimiento, no capturas fijas",
+            "Campo con el beneficiario real",
+            "Datos en movimiento, no capturas fijas",
         ]),
         ("Qué lo arruina", "Errores frecuentes", [
-            "Empezar por la institución y no por el problema",
-            "Locución sobre imágenes de archivo que no son del proyecto",
-            "Prometer impacto donde solo hubo producto",
+            "Empezar por la institución",
+            "Imágenes de archivo ajenas al proyecto",
+            "Prometer impacto donde hubo producto",
         ]),
     ])
     + "\n"
     + evitar(
-        "Dejar el video para el último mes. En el mes dieciocho el prototipo ya "
-        "está desmontado, el campo terminó y lo único grabable es una persona "
-        "hablando frente a una pared."
-    )
-    + "\n"
-    + criterio(
-        "El video no es difusión decorativa: en varias convocatorias el evento "
-        "público de cierre es obligatorio y sale de una partida con tope. "
-        "Grabarlo entra en el cronograma como cualquier otro hito."
-    )
-    + "\n"
-    + dato_clave(
-        "Tres minutos es el formato que aguantan tanto un comité como una feria. "
-        "De esos tres minutos, el problema ocupa treinta segundos y el resto se "
-        "reparte entre lo que se construyó y lo que se midió."
+        "Dejarlo para el mes dieciocho: el prototipo ya está desmontado y el "
+        "campo terminó."
     )
     + "\n"
     + fuente_pie(F_CASO)
@@ -1657,7 +1618,7 @@ VIDEO_RESUMEN = envolver(
 
 DOSSIER = envolver(
     cabecera("Cierre",
-             "Piezas del dossier final del proyecto",
+             "Seis piezas del dossier y el mes en que empieza cada una",
              "i-file")
     + "\n"
     + figura("s5-dossier",
@@ -1675,7 +1636,7 @@ DOSSIER = envolver(
 
 ERRORES = envolver(
     cabecera("Cierre",
-             "Errores frecuentes en la ejecución de un proyecto financiado",
+             "Seis errores frecuentes en la ejecución, uno por tema",
              "i-alert")
     + "\n"
     + fichas([
@@ -1829,70 +1790,71 @@ def L(slug, titulo, nav, icono, contenido, clases="slide", scripts=""):
 LAMINAS = [
     L("portada", "Portada", "Portada", "i-project", PORTADA, "slide slide--start"),
     L("agenda", "Contenidos de los cinco temas y las cinco paradas de herramientas", "Agenda", "i-flow", AGENDA),
-    L("costo-medios", "Costo de los medios de verificación de la matriz", "Costo de los medios", "i-scale", COSTO_MEDIOS),
+    L("costo-medios", "Costo de los cuatro medios de verificación del caso, en soles", "Costo de los medios", "i-scale", COSTO_MEDIOS),
 
     L("tema-01", TEMA_A, "Tema 01", "i-fund", SECCION_A),
-    L("instrumento-obligacion", "Obligaciones que impone cada forma de instrumento", "Instrumento y obligación", "i-rubric", INSTRUMENTO_OBLIGACION),
-    L("actividad-partida", "Cadena de la actividad al monto presupuestado", "De la actividad al monto", "i-flow", ACTIVIDAD_PARTIDA),
-    L("partidas-admisibles", "Partidas presupuestales admisibles y su tope", "Partidas admisibles", "i-layers", PARTIDAS_ADMISIBLES),
-    L("partidas-no-admisibles", "Gastos no elegibles en una convocatoria pública", "Gastos no elegibles", "i-alert", PARTIDAS_NO_ADMISIBLES),
-    L("topes-rubro", "Topes porcentuales por rubro y su base de cálculo", "Topes por rubro", "i-scale", TOPES_RUBRO),
+    L("instrumento-obligacion", "Seis formas de instrumento y las seis obligaciones de cada una", "Instrumento y obligación", "i-rubric", INSTRUMENTO_OBLIGACION),
+    L("actividad-partida", "Los cuatro pasos del costeo, de la actividad al monto", "De la actividad al monto", "i-flow", ACTIVIDAD_PARTIDA),
+    L("partidas-admisibles", "Seis partidas admisibles y su tope en StartUp Perú y PROCIENCIA", "Partidas admisibles", "i-layers", PARTIDAS_ADMISIBLES),
+    L("partidas-no-admisibles", "Tres familias de gasto no elegible en un fondo público", "Gastos no elegibles", "i-alert", PARTIDAS_NO_ADMISIBLES),
+    L("topes-rubro", "Cuatro topes por rubro y la base sobre la que se calculan", "Topes por rubro", "i-scale", TOPES_RUBRO),
     L("herramientas-01", "Herramientas 01 · Costeo y presupuesto del proyecto", "Herramientas 01", "i-sliders", HERR_01),
-    L("partida-pi-difusion", "Partida de propiedad intelectual y difusión", "Partida de PI", "i-target", PARTIDA_PI_DIFUSION),
-    L("contrapartida-figura", "Reparto del costo según la figura del postulante", "Contrapartida", "i-chart", CONTRAPARTIDA_FIGURA),
-    L("dos-instrumentos", "Cifras comparadas de dos subvenciones del Estado", "Dos instrumentos", "i-rubric", DOS_INSTRUMENTOS),
-    L("desembolso-hitos", "Cronograma de desembolsos frente a cronograma de actividades", "Desembolso", "i-gantt", DESEMBOLSO_HITOS),
-    L("flujo-caja", "Hueco de caja entre el gasto y el desembolso", "Flujo de caja", "i-chart", FLUJO_CAJA),
-    L("presupuesto-simulador", "Simulación: efecto de un cambio de actividad en el presupuesto", "Simular el presupuesto", "i-sliders", PRESUPUESTO_SIM, "slide", PRESUPUESTO_JS),
+    L("partida-pi-difusion", "La partida de propiedad intelectual y difusión: 5 % del capital semilla", "Partida de PI", "i-target", PARTIDA_PI_DIFUSION),
+    L("contrapartida-figura", "Contrapartida exigida a tres figuras de postulante, en porcentaje", "Contrapartida", "i-chart", CONTRAPARTIDA_FIGURA),
+    L("dos-instrumentos", "StartUp Perú 12G y PROCIENCIA E072: seis condiciones comparadas", "Dos instrumentos", "i-rubric", DOS_INSTRUMENTOS),
+    L("desembolso-hitos", "Momento del desembolso en cuatro formas de instrumento", "Desembolso", "i-gantt", DESEMBOLSO_HITOS),
+    L("flujo-caja", "Hueco de caja de un proyecto de dieciocho meses, en miles de soles", "Flujo de caja", "i-chart", FLUJO_CAJA),
+    L("presupuesto-simulador", "Simulación: honorarios, tope del 40 % y saldo del capital semilla", "Simular el presupuesto", "i-sliders", PRESUPUESTO_SIM, "slide", PRESUPUESTO_JS),
 
     L("tema-02", TEMA_B, "Tema 02", "i-file", SECCION_B),
-    L("ciclo-de-vida", "Etapas del proyecto y momento de cada obligación", "Ciclo de vida", "i-gantt", CICLO_DE_VIDA),
-    L("convenio", "Cláusulas del convenio que se leen antes de firmar", "El convenio", "i-file", CONVENIO),
+    L("ciclo-de-vida", "Cuatro etapas del proyecto y diez obligaciones con su mes", "Ciclo de vida", "i-gantt", CICLO_DE_VIDA),
+    L("convenio", "Seis cláusulas del convenio que se leen antes de firmar", "El convenio", "i-file", CONVENIO),
     L("antes-del-desembolso", "Condiciones previas al primer desembolso de un fondo público", "Antes de cobrar", "i-milestone", ANTES_DEL_DESEMBOLSO),
     L("herramientas-02", "Herramientas 02 · Seguimiento de hitos y evidencia documental", "Herramientas 02", "i-sliders", HERR_02),
-    L("informes", "Contenido del informe técnico y del informe financiero", "Los dos informes", "i-rubric", INFORMES),
-    L("sustento", "Requisitos del comprobante que sustenta un gasto", "El comprobante", "i-file", SUSTENTO),
-    L("modificaciones", "Cambios que se comunican y cambios que se autorizan", "Modificaciones", "i-flow", MODIFICACIONES),
-    L("cierre-doble", "Cierre técnico y cierre administrativo del proyecto", "Los dos cierres", "i-milestone", CIERRE_DOBLE),
-    L("rendicion-simulador", "Simulación: admisión de un gasto en la rendición", "Simular la rendición", "i-sliders", RENDICION_SIM, "slide", RENDICION_JS),
+    L("informes", "Cuatro piezas del informe técnico y cuatro del financiero", "Los dos informes", "i-rubric", INFORMES),
+    L("sustento", "Cinco requisitos del comprobante que sustenta un gasto", "El comprobante", "i-file", SUSTENTO),
+    L("modificaciones", "Cinco modificaciones presupuestales y el trámite de cada una", "Modificaciones", "i-flow", MODIFICACIONES),
+    L("cierre-doble", "Duración del cierre técnico y del administrativo, en meses", "Los dos cierres", "i-milestone", CIERRE_DOBLE),
+    L("rendicion-simulador", "Simulación: las cuatro condiciones que admiten un gasto", "Simular la rendición", "i-sliders", RENDICION_SIM, "slide", RENDICION_JS),
 
     L("tema-03", TEMA_C, "Tema 03", "i-book", SECCION_C),
-    L("documentar-es-metodo", "Funciones de la documentación en un proyecto financiado", "Por qué documentar", "i-book", DOCUMENTAR_ES_METODO),
-    L("capas-documentacion", "Capas de la documentación de un proyecto", "Las seis capas", "i-layers", CAPAS_DOCUMENTACION),
-    L("bitacora", "Valor probatorio de cada forma de registro", "La bitácora", "i-scale", BITACORA),
-    L("versiones-artefacto", "Artefactos de un prototipo electrónico que se versionan", "Versiones", "i-layers", VERSIONES_ARTEFACTO),
+    L("documentar-es-metodo", "Cuatro funciones de la documentación en un proyecto financiado", "Por qué documentar", "i-book", DOCUMENTAR_ES_METODO),
+    L("capas-documentacion", "Las seis capas de documentación, de la bitácora al registro", "Las seis capas", "i-layers", CAPAS_DOCUMENTACION),
+    L("bitacora", "Fuerza probatoria de cuatro formas de registrar el desarrollo", "La bitácora", "i-scale", BITACORA),
+    L("versiones-artefacto", "Cinco artefactos de un prototipo electrónico y cómo se versionan", "Versiones", "i-layers", VERSIONES_ARTEFACTO),
     L("herramientas-03", "Herramientas 03 · Documentación, trazabilidad y repositorios", "Herramientas 03", "i-sliders", HERR_03),
-    L("datos-y-metadatos", "Componentes del plan de gestión de datos", "Plan de datos", "i-diagram", DATOS_Y_METADATOS),
-    L("donde-va-cada-cosa", "Destino de cada clase de material producido", "Dónde se deposita", "i-network", DONDE_VA_CADA_COSA),
-    L("historia-del-proyecto", "Construcción de la historia del proyecto", "La historia", "i-quote", HISTORIA_DEL_PROYECTO),
-    L("datos-abiertos", "Distancia entre declarar y compartir datos", "Datos abiertos", "i-chart", DATOS_ABIERTOS),
+    L("datos-y-metadatos", "Las seis decisiones de un plan de gestión de datos", "Plan de datos", "i-diagram", DATOS_Y_METADATOS),
+    L("donde-va-cada-cosa", "Seis clases de material y su repositorio de destino", "Dónde se deposita", "i-network", DONDE_VA_CADA_COSA),
+    L("historia-del-proyecto", "La historia del proyecto: qué se recoge, de dónde sale y para qué", "La historia", "i-quote", HISTORIA_DEL_PROYECTO),
+    L("datos-abiertos", "Datos y código disponibles: 8 % declarado y 2 % real, 2016-2021", "Datos abiertos", "i-chart", DATOS_ABIERTOS),
 
     L("tema-04", TEMA_D, "Tema 04", "i-target", SECCION_D),
-    L("proteger-antes-publicar", "Orden entre la solicitud de registro y la divulgación", "Proteger y publicar", "i-flow", PROTEGER_ANTES_PUBLICAR),
-    L("mapa-registros", "Figuras de protección disponibles y su vigencia", "Mapa de registros", "i-rubric", MAPA_REGISTROS),
-    L("tasas-indecopi", "Tasas de registro de propiedad industrial", "Cuánto cuesta", "i-fund", TASAS_INDECOPI),
-    L("plazos-patente", "Plazos del procedimiento de patente en el Perú", "Plazos del trámite", "i-gantt", PLAZOS_PATENTE),
+    L("proteger-antes-publicar", "Antes y después de la solicitud: qué se documenta y qué se divulga", "Proteger y publicar", "i-flow", PROTEGER_ANTES_PUBLICAR),
+    L("mapa-registros", "Seis figuras de protección industrial y su vigencia en el Perú", "Mapa de registros", "i-rubric", MAPA_REGISTROS),
+    L("tasas-indecopi", "Tasas de registro del TUPA de INDECOPI, vigentes desde julio de 2025", "Cuánto cuesta", "i-fund", TASAS_INDECOPI),
+    L("plazos-patente", "Plazos del procedimiento de patente según la Decisión 486", "Plazos del trámite", "i-gantt", PLAZOS_PATENTE),
     L("herramientas-04", "Herramientas 04 · Búsqueda de antecedentes de patente", "Herramientas 04", "i-sliders", HERR_04),
-    L("tramite-vs-proyecto", "Duración del trámite frente a la duración del proyecto", "El desfase", "i-alert", TRAMITE_VS_PROYECTO),
-    L("titulos-indecopi", "Títulos de propiedad industrial otorgados en el Perú", "Títulos otorgados", "i-chart", TITULOS_INDECOPI),
+    L("tramite-vs-proyecto", "Dieciocho meses de proyecto frente a cuarenta y dos de trámite", "El desfase", "i-alert", TRAMITE_VS_PROYECTO),
+    L("titulos-indecopi", "Universidades peruanas en el ranking de patentes de INDECOPI, 2025", "Quién patenta", "i-chart", TITULOS_INDECOPI),
+    L("composicion-solicitudes", "Composición de la solicitud universitaria peruana, 2025", "Invención o utilidad", "i-layers", COMPOSICION_SOLICITUDES),
     L("titularidad-clausulas", "Titularidad de los resultados en un proyecto con fondo público", "Titularidad", "i-file", TITULARIDAD_Y_CLAUSULAS),
-    L("articulos", "Requisitos de publicación de un proyecto financiado", "Publicación", "i-book", ARTICULOS),
-    L("congresos", "Foro de difusión según la madurez del resultado", "Congresos", "i-network", CONGRESOS),
-    L("otros-resultados", "Resultados acreditables de un proyecto y su prueba", "Otros resultados", "i-layers", OTROS_RESULTADOS),
+    L("articulos", "Cuatro obligaciones de publicación y su costo en el presupuesto", "Publicación", "i-book", ARTICULOS),
+    L("congresos", "Cuatro foros de difusión y el mes del proyecto en que caben", "Congresos", "i-network", CONGRESOS),
+    L("otros-resultados", "Ocho resultados acreditables y el documento que prueba cada uno", "Otros resultados", "i-layers", OTROS_RESULTADOS),
 
     L("tema-05", TEMA_E, "Tema 05", "i-diagram", SECCION_E),
-    L("que-es-transferir", "Condiciones que hacen posible una transferencia", "Qué es transferir", "i-target", QUE_ES_TRANSFERIR),
-    L("abanico-transferencia", "Formas de transferencia y de intercambio de conocimiento", "El abanico", "i-diagram", ABANICO),
-    L("madurez-via", "Madurez mínima que exige cada vía de transferencia", "Madurez y vía", "i-ladder", MADUREZ_VIA),
+    L("que-es-transferir", "Las tres condiciones que hacen posible una transferencia", "Qué es transferir", "i-target", QUE_ES_TRANSFERIR),
+    L("abanico-transferencia", "Nueve formas de transferencia, de la publicación a la cesión", "El abanico", "i-diagram", ABANICO),
+    L("madurez-via", "Madurez mínima de seis vías de transferencia, en escala TRL", "Madurez y vía", "i-ladder", MADUREZ_VIA),
     L("herramientas-05", "Herramientas 05 · Vigilancia tecnológica y búsqueda de comparables", "Herramientas 05", "i-sliders", HERR_05),
-    L("metodos-valorizacion", "Métodos de valorización de un activo intangible", "Los tres métodos", "i-scale", METODOS_VALORIZACION),
-    L("valorizacion-por-activo", "Método aplicable según el tipo de activo", "Método por activo", "i-rubric", VALORIZACION_POR_ACTIVO),
+    L("metodos-valorizacion", "Costo, mercado e ingresos: los tres métodos de valorización", "Los tres métodos", "i-scale", METODOS_VALORIZACION),
+    L("valorizacion-por-activo", "Método de valorización aplicable a cinco tipos de activo", "Método por activo", "i-rubric", VALORIZACION_POR_ACTIVO),
     L("valorizar-el-caso", "Valorización del prototipo de colmenas por los tres métodos", "Valorizar el caso", "i-target", VALORIZAR_EL_CASO),
-    L("brecha-peruana", "Embudo de la transferencia en la universidad peruana", "El embudo peruano", "i-chart", BRECHA_PERUANA),
+    L("brecha-peruana", "Registro y licencia en la universidad peruana, 2016 y 2025", "Registro y licencia", "i-chart", BRECHA_PERUANA),
 
-    L("video-resumen", "Estructura del video de resumen del proyecto", "El video", "i-quote", VIDEO_RESUMEN),
-    L("dossier", "Piezas del dossier final del proyecto", "El dossier", "i-file", DOSSIER),
-    L("errores", "Errores frecuentes en la ejecución de un proyecto financiado", "Errores", "i-alert", ERRORES),
+    L("video-resumen", "El video de resumen: tres minutos en cuatro movimientos", "El video", "i-quote", VIDEO_RESUMEN),
+    L("dossier", "Seis piezas del dossier y el mes en que empieza cada una", "El dossier", "i-file", DOSSIER),
+    L("errores", "Seis errores frecuentes en la ejecución, uno por tema", "Errores", "i-alert", ERRORES),
     L("queda-establecido", "Cinco puntos establecidos sobre presupuesto, ejecución y transferencia", "Resumen", "i-check", RESUMEN_FINAL),
     L("glosario", "Glosario de presupuesto, ejecución y transferencia", "Glosario", "i-book", GLOSARIO),
     L("referencias", "Fuentes citadas y vía de acceso a cada una", "Referencias", "i-quote", REFERENCIAS),

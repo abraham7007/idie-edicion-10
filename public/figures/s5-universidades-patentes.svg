@@ -1,0 +1,152 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 410.4 174.96" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 174.96 
+L 410.4 174.96 
+L 410.4 0 
+L 0 0 
+L 0 174.96 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 105.408 166.2048 
+L 111.888 166.2048 
+L 111.888 162.7552 
+L 105.408 162.7552 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-ramp-2)"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 224.64 166.2048 
+L 231.12 166.2048 
+L 231.12 162.7552 
+L 224.64 162.7552 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-accent)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 105.408 22.5536 
+L 356.832 22.5536 
+L 356.832 15.1616 
+L 105.408 15.1616 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: var(--fig-ramp-3); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="362.016" y="20.954725" transform="rotate(-0 362.016 20.954725)">194</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 105.408 30.9312 
+L 155.952 30.9312 
+L 155.952 23.5392 
+L 105.408 23.5392 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="161.136" y="29.332325" transform="rotate(-0 161.136 29.332325)">39</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="97.632" y="24.917313" transform="rotate(-0 97.632 24.917313)">Continental</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 105.408 47.1936 
+L 236.304 47.1936 
+L 236.304 39.8016 
+L 105.408 39.8016 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: var(--fig-ramp-3); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="241.488" y="45.594725" transform="rotate(-0 241.488 45.594725)">101</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 105.408 55.5712 
+L 167.616 55.5712 
+L 167.616 48.1792 
+L 105.408 48.1792 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="172.8" y="53.972325" transform="rotate(-0 172.8 53.972325)">48</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="97.632" y="49.557312" transform="rotate(-0 97.632 49.557312)">Privada del Norte</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 105.408 71.8336 
+L 215.568 71.8336 
+L 215.568 64.4416 
+L 105.408 64.4416 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: var(--fig-ramp-3); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="220.752" y="70.234725" transform="rotate(-0 220.752 70.234725)">85</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="97.632" y="74.151" transform="rotate(-0 97.632 74.151)">San Luis Gonzaga</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 105.408 96.4736 
+L 212.976 96.4736 
+L 212.976 89.0816 
+L 105.408 89.0816 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+   </g>
+   <g id="text_9">
+    <text style="fill: var(--fig-ramp-3); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="218.16" y="94.874725" transform="rotate(-0 218.16 94.874725)">83</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="97.632" y="98.943" transform="rotate(-0 97.632 98.943)">Tecnológica del Perú</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 105.408 129.4912 
+L 150.768 129.4912 
+L 150.768 122.0992 
+L 105.408 122.0992 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="text_11">
+    <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="155.952" y="127.892325" transform="rotate(-0 155.952 127.892325)">35</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="97.632" y="123.609125" transform="rotate(-0 97.632 123.609125)">César Vallejo</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 105.408 154.1312 
+L 133.92 154.1312 
+L 133.92 146.7392 
+L 105.408 146.7392 
+z
+" clip-path="url(#s5-universidades-patentes-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+   </g>
+   <g id="text_13">
+    <text style="fill: var(--fig-accent); font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="139.104" y="152.532325" transform="rotate(-0 139.104 152.532325)">22</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="97.632" y="148.117312" transform="rotate(-0 97.632 148.117312)">Peruana de Ciencias</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="115.776" y="166.430156" transform="rotate(-0 115.776 166.430156)">Solicitudes presentadas</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: var(--fig-muted); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="235.008" y="166.430156" transform="rotate(-0 235.008 166.430156)">Títulos concedidos</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="s5-universidades-patentes-0">
+   <rect x="4.32" y="4.32" width="401.76" height="166.32"/>
+  </clipPath>
+ </defs>
+</svg>

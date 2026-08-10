@@ -206,9 +206,8 @@ COSTO_MEDIOS = envolver(
              "La matriz llegó con sus medios de verificación y sin precio. Ponerles precio es el primer renglón del presupuesto.")
     + "\n"
     + criterio(
-        "Un indicador cuyo medio de verificación nadie paga no se mide, y una "
-        "fila que no se mide no se rinde. Ponerle precio a la columna de medios "
-        "es el primer renglón del presupuesto."
+        "Un medio de verificación que nadie paga no se mide, y lo que no se mide "
+        "no se rinde."
     )
     + "\n"
     + fuente_pie(F_CASO)
@@ -233,9 +232,7 @@ INSTRUMENTO_OBLIGACION = envolver(
              "La subvención es la única que exige las seis. El premio no exige ninguna: se gana y se cobra.")
     + "\n"
     + criterio(
-        "Antes de escribir una sola partida hay que saber en qué fila está el "
-        "proyecto. La fila decide qué documentos existirán, quién los firma y "
-        "cuándo terminan las obligaciones."
+        "La fila del instrumento decide qué documentos existirán y quién los firma."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_PROCIENCIA, F_TUPA)
@@ -251,9 +248,8 @@ ACTIVIDAD_PARTIDA = envolver(
              "El presupuesto sale de la matriz hacia abajo. Nunca del monto máximo de la convocatoria hacia arriba.")
     + "\n"
     + evitar(
-        "Partir del tope de la convocatoria y repartirlo. El evaluador reconoce "
-        "un presupuesto construido al revés porque las partidas son redondas y "
-        "ninguna se puede seguir hasta una actividad de la matriz."
+        "Partir del tope y repartirlo. Se nota: las partidas salen redondas y "
+        "ninguna se puede seguir hasta una actividad."
     )
     + "\n"
     + fuente_pie(F_CASO, F_STARTUP)
@@ -341,9 +337,8 @@ TOPES_RUBRO = envolver(
              "El tope no dice nada sin su base: el 40 % es sobre el capital semilla y el 20 % sobre el monto financiado.")
     + "\n"
     + en_la_practica(
-        "El 40 % sobre un capital semilla de S/ 60 000 son S/ 24 000 para todo "
-        "el equipo y todo el proyecto. Con dos personas a tiempo completo doce "
-        "meses el presupuesto no cuadra, y eso se decide antes de postular."
+        "El 40 % de S/ 60 000 son S/ 24 000 para todo el equipo y todo el "
+        "proyecto. Dos personas a tiempo completo no caben."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_PROCIENCIA)
@@ -388,23 +383,18 @@ PARTIDA_PI_DIFUSION = envolver(
     + "\n"
     + fichas([
         ("Registro", "Tasas del TUPA", [
-            "Solicitud y examen de fondo de la figura elegida",
-            "Búsqueda de antecedentes, si se contrata",
+            "Solicitud, examen y búsqueda de antecedentes",
         ]),
         ("Publicación", "Acceso abierto", [
-            "Cargo por procesamiento de artículo, si la revista lo cobra",
-            "Depósito de datos con identificador",
+            "Cargo de la revista y depósito de datos",
         ]),
         ("Difusión", "Obligatoria en varias bases", [
-            "Evento público de cierre y su material",
-            "Inscripción a congreso y material audiovisual",
+            "Evento de cierre, congreso y audiovisual",
         ]),
     ])
     + "\n"
     + evitar(
-        "Dejar la propiedad intelectual y la difusión fuera del presupuesto. "
-        "Después no hay de dónde pagarlas, y el proyecto termina con resultados "
-        "sin registrar porque la tasa no estaba en ninguna partida."
+        "Dejarla fuera del presupuesto: después no hay de dónde pagar la tasa."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_TUPA)
@@ -420,31 +410,29 @@ CONTRAPARTIDA_FIGURA = envolver(
              "La misma propuesta pide 0 % en efectivo a una entidad pública y 30 % a una universidad privada societaria.")
     + "\n"
     + criterio(
-        "Qué es la contrapartida y quién la aporta ya está dado. Aquí solo "
-        "queda llenar la tabla: cada aporte comprometido lleva partida, monto y "
-        "documento que lo acredita, firmado antes del cierre de la convocatoria."
+        "Cada aporte lleva partida, monto y documento, firmado antes del cierre "
+        "de la convocatoria."
     )
     + "\n"
     + fuente_pie(F_PROCIENCIA, F_STARTUP)
 )
 
-DOS_INSTRUMENTOS = envolver(
-    cabecera("01 · Dos instrumentos",
-             "StartUp Perú 12G y PROCIENCIA E072: seis condiciones comparadas",
-             "i-rubric")
+FICHA_STARTUP = envolver(
+    cabecera("01 · El instrumento del caso",
+             "Condiciones económicas de StartUp Perú 12G, convocatoria 2025",
+             "i-fund")
     + "\n"
-    + figura("s5-dos-instrumentos",
-             "Seis condiciones económicas de StartUp Perú 12G y de PROCIENCIA E072",
-             "Ambas son subvenciones y ninguna cifra coincide: el monto varía por un factor de cuarenta y cinco.")
+    + figura("s5-ficha-startup",
+             "Montos y porcentajes que fijan el presupuesto de un capital semilla",
+             "Seis cifras bastan para saber si el proyecto cabe en la convocatoria.")
     + "\n"
     + dato_clave(
-        "Las bases citadas son las <b>integradas y modificadas</b>: el tope de "
-        "recursos humanos subió del 15 % al 20 % y el de viáticos del 5 % al 8 % "
-        "respecto de las iniciales. Presupuestar con la primera versión "
-        "publicada sale mal."
+        "Cada convocatoria fija las suyas y cambian entre la versión inicial de "
+        "las bases y la integrada. Se leen antes de escribir el presupuesto, no "
+        "después."
     )
     + "\n"
-    + fuente_pie(F_STARTUP, F_PROCIENCIA)
+    + fuente_pie(F_STARTUP)
 )
 
 DESEMBOLSO_HITOS = envolver(
@@ -455,22 +443,17 @@ DESEMBOLSO_HITOS = envolver(
     + tabla(
         ["Instrumento", "Cómo entra el dinero", "Qué lo dispara"],
         [
-            ["StartUp Perú 12G", "Por hitos negociados en la reunión previa",
-             "Hito verificado y aprobado por el ejecutivo del proyecto"],
-            ["PROCIENCIA E072", "Hasta 20 % referencial y el saldo en un segundo desembolso",
-             "Firma del contrato y avance verificado"],
-            ["Beca", "Por armadas, mientras dura el programa",
-             "Matrícula vigente y permanencia acreditada"],
-            ["Beneficio tributario", "No hay desembolso: se deduce del impuesto",
-             "Declaración anual, sobre gasto ya ejecutado"],
+            ["Subvención a empresa", "Por hitos negociados", "Hito verificado y aprobado"],
+            ["Subvención a investigación", "Un adelanto y el saldo", "Firma y avance verificado"],
+            ["Beca", "Por armadas", "Matrícula y permanencia"],
+            ["Beneficio tributario", "No hay desembolso", "Declaración anual del impuesto"],
         ],
         "Tabla 1 · Momento del desembolso según la forma del instrumento",
     )
     + "\n"
     + criterio(
-        "El cronograma de actividades dice cuándo se trabaja y el de desembolsos "
-        "cuándo entra el dinero. No coinciden nunca, y la diferencia entre ambos "
-        "hay que financiarla por otra vía."
+        "Actividades y desembolsos no coinciden nunca, y la diferencia hay que "
+        "financiarla por otra vía."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_PROCIENCIA)
@@ -616,9 +599,8 @@ CICLO_DE_VIDA = envolver(
              "Cada cosa tiene su mes. La propiedad intelectual va antes de divulgar y la documentación empieza el primer día.")
     + "\n"
     + criterio(
-        "Casi todo lo que se hace tarde se hace tarde por no tener el calendario "
-        "delante. Los dos retrasos más caros: documentar cuando hay que rendir, "
-        "y pensar en proteger cuando el resultado ya se presentó en un congreso."
+        "Los dos retrasos más caros: documentar cuando hay que rendir y proteger "
+        "cuando el resultado ya se presentó."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_D486, F_CASO)
@@ -668,9 +650,8 @@ ANTES_DEL_DESEMBOLSO = envolver(
              "Cinco trámites separan ganar de cobrar, y ninguno se puede empezar antes de ganar.")
     + "\n"
     + en_la_practica(
-        "En StartUp Perú la <b>reunión previa es obligatoria</b>: sin ella no hay "
-        "desembolso. Ahí se ajusta la propuesta y se fija el plan de trabajo con "
-        "sus hitos, y después se rinde contra ese plan y no contra la propuesta."
+        "Sin reunión previa no hay desembolso. Ahí se fija el plan de trabajo, y "
+        "después se rinde contra ese plan."
     )
     + "\n"
     + fuente_pie(F_STARTUP)
@@ -714,9 +695,8 @@ INFORMES = envolver(
              "No comparten ninguna pieza y se entregan juntos. Uno prueba el resultado, el otro prueba el gasto.")
     + "\n"
     + criterio(
-        "El informe técnico se escribe contra hitos, no contra actividades. "
-        "«Se realizaron doce visitas» no es un hito: el hito es el documento, el "
-        "ensayo o el prototipo que esas visitas produjeron."
+        "El hito no es «se realizaron doce visitas»: es el documento o el ensayo "
+        "que esas visitas produjeron."
     )
     + "\n"
     + fuente_pie(F_STARTUP, F_PROCIENCIA)
@@ -730,23 +710,18 @@ SUSTENTO = envolver(
     + tabla(
         ["Qué se presenta", "Qué debe decir", "Por qué se observa"],
         [
-            ["Comprobante de pago", "Razón social de la entidad ejecutora, no de una persona",
-             "A nombre de un integrante, el gasto no es del proyecto"],
-            ["Detalle del bien o servicio", "Concepto que se pueda reconocer en una partida",
-             "«Servicios varios» no se puede clasificar ni verificar"],
-            ["Fecha", "Posterior al acta de inicio y anterior al cierre del tramo",
-             "El gasto previo a la firma no es elegible"],
-            ["Constancia de pago", "Transferencia o depósito desde la cuenta del proyecto",
-             "El pago en efectivo sin trazabilidad se observa"],
-            ["Entregable asociado", "Informe, acta o producto que el gasto produjo",
-             "Un servicio pagado sin producto no acredita ejecución"],
+            ["Comprobante", "A nombre de la entidad ejecutora", "No de un integrante"],
+            ["Detalle", "Concepto clasificable en una partida", "«Servicios varios» no vale"],
+            ["Fecha", "Entre el acta de inicio y el cierre del tramo", "Antes de la firma no es elegible"],
+            ["Constancia de pago", "Desde la cuenta del proyecto", "El efectivo sin rastro se observa"],
+            ["Entregable", "Informe, acta o producto", "El pago solo prueba el pago"],
         ],
         "Tabla 2 · Qué mira quien revisa un comprobante",
     )
     + "\n"
     + evitar(
-        "Guardar los comprobantes para el final del tramo. La factura que falta "
-        "aparece siempre, y aparece cuando el proveedor ya no responde."
+        "Guardarlos para el final del tramo: la factura que falta aparece cuando "
+        "el proveedor ya no responde."
     )
     + "\n"
     + fuente_pie(F_STARTUP)
@@ -762,9 +737,8 @@ MODIFICACIONES = envolver(
              "El umbral del 5 % separa lo que se comunica de lo que espera autorización antes de gastarse.")
     + "\n"
     + dato_clave(
-        "En StartUp Perú, una variación de los recursos no reembolsables "
-        "<b>superior al 5 %</b> deja de ser un ajuste y se deriva a la unidad de "
-        "evaluación. El umbral se busca en el manual operativo del propio fondo."
+        "Una variación <b>superior al 5 %</b> deja de ser ajuste y vuelve a "
+        "evaluación. El umbral está en el manual operativo del fondo."
     )
     + "\n"
     + fuente_pie(F_STARTUP)
@@ -901,25 +875,20 @@ DOCUMENTAR_ES_METODO = envolver(
     + "\n"
     + fichas([
         ("Probar quién lo hizo", "Frente a una disputa", [
-            "Un registro fechado sostiene la autoría cuando alguien la discute",
-            "Sin fecha verificable, la palabra de las partes vale lo mismo",
+            "Sin fecha verificable, las dos palabras valen igual",
         ]),
         ("Permitir reproducirlo", "Frente a un evaluador", [
-            "Un resultado que nadie puede repetir no acredita nada",
-            "La documentación técnica convierte un prototipo en producto transferible",
+            "Lo que nadie repite no acredita nada",
         ]),
         ("Sostener la rendición", "Frente al fondo", [
-            "El informe técnico se arma con lo que ya está documentado",
-            "Reconstruir el mes tres en el mes catorce cuesta más que anotarlo",
+            "El informe se arma con lo ya documentado",
         ]),
         ("Contar la historia", "Frente al siguiente fondo", [
-            "La evolución del proyecto es el material del <i>pitch</i>",
-            "No se puede fabricar al final: o se recogió durante, o no existe",
+            "O se recogió durante, o no existe",
         ]),
     ], columnas=2)
     + "\n"
     + criterio(
-        "Documentar no es un trámite añadido al trabajo: es parte del método. "
         "Un ensayo sin bitácora es un ensayo que hay que volver a hacer."
     )
     + "\n"
@@ -936,9 +905,8 @@ CAPAS_DOCUMENTACION = envolver(
              "Publicar en un repositorio es la quinta capa. Sin las cuatro anteriores no hay nada que publicar.")
     + "\n"
     + evitar(
-        "Confundir documentar con subir al repositorio. Un repositorio con el "
-        "código final y sin historia no dice qué se probó, qué se descartó ni "
-        "cuándo, que es justo lo que se necesita para rendir y para proteger."
+        "Confundir documentar con subir al repositorio. El código final sin "
+        "historia no dice qué se probó ni qué se descartó."
     )
     + "\n"
     + fuente_pie(F_CONCYTEC_TT)
@@ -975,9 +943,8 @@ VERSIONES_ARTEFACTO = envolver(
              "El código es uno de los cinco. La placa, la lista de materiales y los ensayos también cambian de versión.")
     + "\n"
     + en_la_practica(
-        "La versión 3 del firmware solo tiene sentido junto a la revisión B de la "
-        "placa y a la lista de materiales que cambió el sensor de peso. Las tres "
-        "por separado y sin referencia cruzada valen lo mismo que ninguna."
+        "La versión 3 del firmware solo tiene sentido con la revisión B de la "
+        "placa y su lista de materiales."
     )
     + "\n"
     + fuente_pie(F_CASO)
@@ -1019,26 +986,19 @@ DATOS_Y_METADATOS = envolver(
     + tabla(
         ["Componente", "Qué declara", "Cuándo se decide"],
         [
-            ["Qué datos se producen", "Tipo, volumen y formato de cada conjunto",
-             "Al formular, no al terminar"],
-            ["Cómo se nombran", "Convención de nombres y estructura de carpetas",
-             "Antes del primer ensayo"],
-            ["Qué metadatos llevan", "Variables, unidades, instrumento y condiciones",
-             "Al cerrar cada ensayo"],
-            ["Dónde se depositan", "Repositorio y momento del depósito",
-             "Antes de publicar el artículo"],
-            ["Con qué licencia", "Qué puede hacer un tercero con ellos",
-             "Al depositar, y compatible con el convenio"],
-            ["Qué no se abre", "Datos personales o comprometidos por confidencialidad",
-             "Al firmar el convenio"],
+            ["Qué se produce", "Tipo, volumen y formato", "Al formular"],
+            ["Cómo se nombran", "Convención y estructura de carpetas", "Antes del primer ensayo"],
+            ["Qué metadatos", "Variable, unidad, instrumento", "Al cerrar cada ensayo"],
+            ["Dónde se depositan", "Repositorio y momento", "Antes de publicar"],
+            ["Con qué licencia", "Qué puede hacer un tercero", "Al depositar"],
+            ["Qué no se abre", "Datos personales y confidenciales", "Al firmar el convenio"],
         ],
         "Tabla 3 · Las seis decisiones de un plan de gestión de datos",
     )
     + "\n"
     + criterio(
-        "Un dato sin unidad, sin instrumento y sin condiciones de medida no es "
-        "un dato: es una columna de números. La diferencia se decide al "
-        "registrarlo, no al depositarlo."
+        "Un dato sin unidad ni instrumento es una columna de números. Se decide "
+        "al registrarlo, no al depositarlo."
     )
     + "\n"
     + fuente_pie(F_DATOS_FIN, F_CASO)
@@ -1095,9 +1055,8 @@ DATOS_ABIERTOS = envolver(
              "Ocho de cada cien artículos declaran datos disponibles y dos los tienen de verdad.")
     + "\n"
     + dato_clave(
-        "La revisión reúne <b>105 estudios sobre 2 121 580 artículos</b> de 31 "
-        "especialidades. La disponibilidad declarada es del 8 % y la real del "
-        "2 %; el código llega a menos del 0,5 % desde 2016."
+        "<b>105 estudios sobre 2 121 580 artículos.</b> Disponibilidad declarada "
+        "8 %, real 2 %, y el código bajo el 0,5 %."
     )
     + "\n"
     + conclusion(
@@ -1130,9 +1089,8 @@ PROTEGER_ANTES_PUBLICAR = envolver(
              "La fecha de solicitud parte el proyecto en dos. Antes se documenta; después se cuenta.")
     + "\n"
     + criterio(
-        "Por qué la divulgación previa destruye la novedad ya está dado. Aquí se "
-        "decide <b>cuándo</b>, y la respuesta cabe en una fecha: la de la "
-        "solicitud, que entra en el cronograma como un hito más."
+        "El <b>cuándo</b> cabe en una fecha: la de la solicitud, que entra en el "
+        "cronograma como un hito más."
     )
     + "\n"
     + fuente_pie(F_D486, F_CASO)
@@ -1148,9 +1106,8 @@ MAPA_REGISTROS = envolver(
              "Cinco se registran ante INDECOPI. El secreto empresarial no se registra y dura mientras se guarde.")
     + "\n"
     + en_la_practica(
-        "El prototipo admite varias figuras a la vez: circuito y método de medida "
-        "a patente o modelo de utilidad, carcasa a diseño industrial, firmware a "
-        "derecho de autor y algoritmo de alerta como secreto."
+        "El prototipo admite varias a la vez: circuito a patente, carcasa a "
+        "diseño, firmware a derecho de autor y algoritmo a secreto."
     )
     + "\n"
     + fuente_pie(F_D486, F_INDECOPI)
@@ -1166,15 +1123,13 @@ TASAS_INDECOPI = envolver(
              "El modelo de utilidad cuesta la mitad que la patente y protege diez años en lugar de veinte.")
     + "\n"
     + dato_clave(
-        "El TUPA del <b>Decreto Supremo 088-2025-PCM</b>, vigente desde el 1 de "
-        "julio de 2025, redujo la solicitud de patente un 45 % y su examen de "
-        "fondo un 41 %; en modelo de utilidad, un 30 % y un 65 %."
+        "El <b>DS 088-2025-PCM</b> redujo la solicitud de patente un 45 % y su "
+        "examen un 41 %; el modelo de utilidad, un 30 % y un 65 %."
     )
     + "\n"
     + aviso(
-        "Las tasas no son el costo total. A ellas se suman la redacción de la "
-        "memoria descriptiva y las reivindicaciones, que es donde se decide si la "
-        "patente sirve, y las anualidades de mantenimiento durante toda la vigencia."
+        "A la tasa se suman la redacción de las reivindicaciones, donde se decide "
+        "si la patente sirve, y las anualidades."
     )
     + "\n"
     + fuente_pie(F_TUPA)
@@ -1190,9 +1145,8 @@ PLAZOS_PATENTE = envolver(
              "Dieciocho meses de confidencialidad, sesenta días para oponerse y seis meses para pedir el examen.")
     + "\n"
     + criterio(
-        "Los plazos los fija la Decisión 486 de la Comunidad Andina, que rige "
-        "igual en Perú, Colombia, Ecuador y Bolivia. Dos guías comerciales daban "
-        "plazos de oposición distintos; el artículo 42 dice sesenta días."
+        "Los fija la Decisión 486, que rige igual en Perú, Colombia, Ecuador y "
+        "Bolivia. No los fija INDECOPI."
     )
     + "\n"
     + fuente_pie(F_D486)
@@ -1273,9 +1227,8 @@ COMPOSICION_SOLICITUDES = envolver(
              "Tres de cada cuatro solicitudes son modelo de utilidad, la figura de diez años y examen más barato.")
     + "\n"
     + criterio(
-        "El modelo de utilidad no es una patente de segunda: protege una mejora "
-        "funcional, cuesta la mitad y se resuelve antes. Que sea el 75 % de lo "
-        "que pide la universidad peruana dice qué produce."
+        "El modelo de utilidad protege una mejora funcional, cuesta la mitad y se "
+        "resuelve antes. No es una patente de segunda."
     )
     + "\n"
     + fuente_pie(F_TABLERO, F_TUPA)
@@ -1288,29 +1241,19 @@ TITULARIDAD_Y_CLAUSULAS = envolver(
     + "\n"
     + fichas([
         ("Las bases del concurso", "Antes de postular", [
-            "Quién queda como titular y qué se reserva el Estado",
-            "Qué obligación de explotación aparece, y en qué plazo",
+            "Quién es titular y qué se reserva el Estado",
         ]),
         ("El convenio", "Antes de firmar", [
-            "El reparto entre entidad ejecutora y entidad asociada",
-            "Quién decide sobre solicitar, licenciar o abandonar",
+            "Quién decide solicitar, licenciar o abandonar",
         ]),
-        ("Lo que se pacta de verdad", "<i>Research Policy</i>, 2025", [
-            "Titularidad y libertad de divulgar se negocian juntas",
-            "El plazo de reserva de publicación es la cláusula que más afecta a una tesis",
+        ("Lo que se pacta", "<i>Research Policy</i>, 2025", [
+            "El plazo de reserva decide en qué año se sustenta la tesis",
         ]),
     ])
     + "\n"
-    + criterio(
-        "Antes de firmar hay que saber quién podrá publicar y cuándo. Un plazo "
-        "de reserva de dieciocho meses no impide la tesis, pero decide en qué "
-        "año se sustenta, y eso no se negocia después."
-    )
-    + "\n"
     + aviso(
-        "Dónde se fija la titularidad ya está dado: reglamento, convenio o "
-        "acuerdo de cesión. Con fondo público hay un cuarto documento por encima "
-        "de los tres, y son las bases del concurso."
+        "Con fondo público hay un documento por encima del reglamento y del "
+        "convenio: las bases del concurso."
     )
     + "\n"
     + fuente_pie(F_PI_CONVENIOS, F_STARTUP, F_PROCIENCIA)
@@ -1324,22 +1267,17 @@ ARTICULOS = envolver(
     + tabla(
         ["Qué exige", "Quién lo exige", "Qué implica en el presupuesto"],
         [
-            ["Publicar en acceso abierto", "Varias agencias financiadoras",
-             "Cargo por procesamiento del artículo, si la revista lo cobra"],
-            ["Depositar en el repositorio nacional", "Normativa peruana de acceso libre",
-             "Sin costo, pero exige la versión y los metadatos correctos"],
-            ["Reconocer al financiador", "Todas las bases",
-             "Ninguno: una línea de agradecimiento con el código del proyecto"],
-            ["Depositar los datos asociados", "Cada vez más revistas y agencias",
-             "Depósito con identificador persistente y curaduría de metadatos"],
+            ["Acceso abierto", "Agencias financiadoras", "Cargo de la revista, si lo cobra"],
+            ["Depósito en ALICIA", "Normativa peruana", "Sin costo, con metadatos correctos"],
+            ["Reconocer al financiador", "Todas las bases", "Una línea con el código"],
+            ["Depositar los datos", "Revistas y agencias", "Identificador y metadatos"],
         ],
         "Tabla 4 · Obligaciones de publicación y su reflejo en el presupuesto",
     )
     + "\n"
     + en_la_practica(
-        "El artículo se escribe después de la solicitud de registro y antes del "
-        "cierre administrativo. Publicado después del cierre, el informe final "
-        "ya no lo puede recoger, aunque sea el mismo trabajo."
+        "Después de la solicitud y antes del cierre. Publicado más tarde, el "
+        "informe final ya no lo recoge."
     )
     + "\n"
     + fuente_pie(F_ALICIA, F_DATOS_FIN)
@@ -1355,10 +1293,8 @@ CONGRESOS = envolver(
              "El póster, la ponencia y la demostración exigen madurez distinta, y ninguno va antes de la solicitud.")
     + "\n"
     + evitar(
-        "Llevar el prototipo a una feria antes de presentar la solicitud. Una "
-        "demostración pública con el dispositivo funcionando es divulgación "
-        "habilitante: pone la invención a disposición del público y con eso "
-        "termina la novedad."
+        "Llevar el prototipo a una feria antes de solicitar. Una demostración "
+        "pública es divulgación habilitante."
     )
     + "\n"
     + fuente_pie(F_D486, F_CASO)
@@ -1374,9 +1310,8 @@ OTROS_RESULTADOS = envolver(
              "Un proyecto produce más de un resultado, y cada uno se prueba con un documento distinto.")
     + "\n"
     + criterio(
-        "La alianza formada durante el proyecto también es un resultado y se "
-        "acredita igual: con un convenio firmado que declare objeto y plazo. Sin "
-        "documento no entra en el informe final ni sirve para la propuesta siguiente."
+        "La alianza también es resultado, y se acredita con un convenio firmado "
+        "que declare objeto y plazo."
     )
     + "\n"
     + fuente_pie(F_CASO, F_BM)
@@ -1436,10 +1371,8 @@ ABANICO = envolver(
              "La licencia y la <i>spin-off</i> son dos de nueve. Las otras siete también transfieren y ceden menos.")
     + "\n"
     + criterio(
-        "Licencia, <i>spin-off</i> y empresa independiente ocupan su lugar en el "
-        "espectro. La figura añade las formas que casi nadie cuenta como "
-        "transferencia: consultoría, uso de equipos, investigación por encargo "
-        "y apertura deliberada."
+        "La figura añade las formas que casi nadie cuenta como transferencia: "
+        "consultoría, uso de equipos, encargo y apertura."
     )
     + "\n"
     + fuente_pie(F_BM, F_CONCYTEC_TT)
@@ -1455,9 +1388,8 @@ MADUREZ_VIA = envolver(
              "Por debajo del nivel cuatro casi nadie licencia: lo que se transfiere entonces es trabajo, no tecnología.")
     + "\n"
     + en_la_practica(
-        "El prototipo, validado en campo con una asociación de productores, entra "
-        "en el tramo donde la licencia no exclusiva empieza a ser posible. La "
-        "cesión y la <i>spin-off</i> piden un nivel más y un receptor identificado."
+        "El prototipo, validado en campo, entra donde la licencia no exclusiva "
+        "empieza a ser posible. La cesión pide un nivel más."
     )
     + "\n"
     + fuente_pie(F_BM, F_CASO)
@@ -1501,10 +1433,8 @@ METODOS_VALORIZACION = envolver(
              "Ninguno da el valor: cada uno da un número distinto, y el rango entre ellos es la posición de negociación.")
     + "\n"
     + dato_clave(
-        "El método de costo <b>ignora el valor futuro</b>. El de mercado necesita "
-        "comparables que casi nunca existen. El de ingresos depende de una tasa "
-        "de descuento que para una <i>spin-off</i> universitaria no es la de una "
-        "empresa cotizada."
+        "Costo ignora el valor futuro. Mercado necesita comparables que casi "
+        "nunca existen. Ingresos depende de la tasa de descuento."
     )
     + "\n"
     + fuente_pie(F_OMPI)
@@ -1520,9 +1450,8 @@ VALORIZACION_POR_ACTIVO = envolver(
              "El secreto empresarial y la base de datos no tienen comparables: el método de mercado no aplica.")
     + "\n"
     + criterio(
-        "Una solicitud en trámite se valoriza casi siempre por costo: no hay "
-        "concesión que comparar ni flujo que descontar con confianza. Una patente "
-        "concedida en sector activo admite mercado e ingresos."
+        "La solicitud en trámite se valoriza por costo: no hay concesión que "
+        "comparar ni flujo que descontar."
     )
     + "\n"
     + fuente_pie(F_OMPI)
@@ -1536,21 +1465,16 @@ VALORIZAR_EL_CASO = envolver(
     + tabla(
         ["Método", "Cómo se arma el número", "Qué sale"],
         [
-            ["Costo", "Horas de desarrollo, materiales, ensayos y tasas de registro ya ejecutados",
-             "Un piso: nadie lo cede por menos de lo que costó"],
-            ["Mercado", "Regalía habitual del sector sobre el precio del dispositivo, si se encuentra comparable",
-             "Un rango, y una fuente que citar en la negociación"],
-            ["Ingresos", "Colmenas en producción × tasa de adopción × margen, descontado y ajustado por riesgo",
-             "Un techo optimista, con toda la incertidumbre de la cadena"],
+            ["Costo", "Horas, materiales, ensayos y tasas ya ejecutados", "El piso"],
+            ["Mercado", "Regalía del sector sobre el precio del dispositivo", "Un rango citable"],
+            ["Ingresos", "Colmenas × adopción × margen, descontado", "El techo optimista"],
         ],
         "Tabla 5 · Los tres métodos aplicados al mismo activo",
     )
     + "\n"
     + conclusion(
         "Tres números, una posición",
-        "Los tres métodos no compiten por acertar: acotan. El de costo pone el "
-        "piso, el de ingresos el techo y el de mercado dice qué se ha pagado por "
-        "algo parecido. Negociar sin ninguno de los tres es aceptar lo que "
+        "Los tres no compiten por acertar: acotan. Sin ninguno se acepta lo que "
         "proponga la otra parte.",
     )
     + "\n"
@@ -1626,9 +1550,8 @@ DOSSIER = envolver(
              "Ninguna pieza se puede fabricar el último mes: todas se recogen mientras el proyecto ocurre.")
     + "\n"
     + criterio(
-        "El dossier no lo pide el fondo: queda del proyecto cuando el expediente "
-        "se cierra, y es la materia prima del <i>Pitch Elevator</i> y de la "
-        "propuesta siguiente."
+        "El dossier no lo pide el fondo: queda del proyecto, y es la materia "
+        "prima del <i>pitch</i>."
     )
     + "\n"
     + fuente_pie(F_CASO)
@@ -1641,28 +1564,22 @@ ERRORES = envolver(
     + "\n"
     + fichas([
         ("Presupuesto sin flujo de caja", "Tema 01", [
-            "El gasto va delante del desembolso y nadie declaró quién cubre el hueco",
-            "El primer hito se retrasa y con él todo el cronograma",
+            "Nadie declaró quién cubre el hueco",
         ]),
         ("Gasto sin entregable", "Tema 02", [
-            "El comprobante acredita el pago y no la ejecución",
-            "El tramo se observa y con él se detiene el desembolso siguiente",
+            "Acredita el pago, no la ejecución",
         ]),
         ("Documentar al rendir", "Tema 03", [
-            "Reconstruir el mes tres en el mes catorce cuesta más y prueba menos",
-            "Sin bitácora no hay historia del proyecto ni fecha que oponer",
+            "Sin bitácora no hay fecha que oponer",
         ]),
         ("Publicar antes de solicitar", "Tema 04", [
-            "La divulgación previa destruye la novedad y no admite reparación",
-            "Una demostración en feria cuenta como divulgación",
+            "La novedad se pierde y no se repara",
         ]),
         ("Tasas fuera del presupuesto", "Tema 04", [
-            "El trámite sobrevive al proyecto y las anualidades siguen corriendo",
-            "La solicitud entra en abandono por una tasa que nadie previó",
+            "La solicitud entra en abandono",
         ]),
         ("Negociar sin número", "Tema 05", [
-            "Sin valorización se acepta lo que la otra parte proponga",
-            "Los tres métodos acotan: piso, techo y precedente",
+            "Se acepta lo que proponga la otra parte",
         ]),
     ])
     + "\n"
@@ -1685,12 +1602,9 @@ RESUMEN_FINAL = envolver(
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class="compare__panel">
 \t\t\t\t\t\t<h3>{ico("i-arrow-right")}Lo que se lleva a la sesión 6</h3>
-\t\t\t\t\t\t<p>El <b>dossier del proyecto</b>: expediente, documentación,
-\t\t\t\t\t\tregistros, publicaciones, historia y video. Aquí se produce
-\t\t\t\t\t\ty en la siguiente se defiende ante un comité.</p>
-\t\t\t\t\t\t<p>La limitación que se arrastra: hay un número de valorización y
-\t\t\t\t\t\tno hay contraparte. Encontrar receptor y negociar con él no lo mide
-\t\t\t\t\t\ttodavía ninguna estadística peruana.</p>
+\t\t\t\t\t\t<p>El <b>dossier</b>: expediente, documentación, registros,
+\t\t\t\t\t\tpublicaciones, historia y video.</p>
+\t\t\t\t\t\t<p>La limitación: hay número de valorización y no hay contraparte.</p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>"""
     + "\n"
@@ -1801,7 +1715,7 @@ LAMINAS = [
     L("herramientas-01", "Herramientas 01 · Costeo y presupuesto del proyecto", "Herramientas 01", "i-sliders", HERR_01),
     L("partida-pi-difusion", "La partida de propiedad intelectual y difusión: 5 % del capital semilla", "Partida de PI", "i-target", PARTIDA_PI_DIFUSION),
     L("contrapartida-figura", "Contrapartida exigida a tres figuras de postulante, en porcentaje", "Contrapartida", "i-chart", CONTRAPARTIDA_FIGURA),
-    L("dos-instrumentos", "StartUp Perú 12G y PROCIENCIA E072: seis condiciones comparadas", "Dos instrumentos", "i-rubric", DOS_INSTRUMENTOS),
+    L("ficha-startup", "Condiciones económicas de StartUp Perú 12G, convocatoria 2025", "El instrumento", "i-fund", FICHA_STARTUP),
     L("desembolso-hitos", "Momento del desembolso en cuatro formas de instrumento", "Desembolso", "i-gantt", DESEMBOLSO_HITOS),
     L("flujo-caja", "Hueco de caja de un proyecto de dieciocho meses, en miles de soles", "Flujo de caja", "i-chart", FLUJO_CAJA),
     L("presupuesto-simulador", "Simulación: honorarios, tope del 40 % y saldo del capital semilla", "Simular el presupuesto", "i-sliders", PRESUPUESTO_SIM, "slide", PRESUPUESTO_JS),

@@ -5310,44 +5310,36 @@ def fig_actividad_partida():
 
 
 # --------------------------------------------------------------------------
-# Las mismas seis preguntas a dos instrumentos distintos. Bases de StartUp
-# Perú 12G (ProInnóvate, 2025) y E072-2024-01-BM (PROCIENCIA, bases
-# integradas y modificadas, 2024). Consultadas el 9 de agosto de 2026.
+# Ficha económica del instrumento del caso. Bases del concurso Emprendimientos
+# Innovadores 12G de StartUp Perú, ProInnóvate, 2025. Consultadas el 9 de
+# agosto de 2026. Los montos se fijan por convocatoria.
 # --------------------------------------------------------------------------
-# Las celdas largas van partidas en dos líneas a mano: con una sola línea las
-# dos columnas de valor se solapan, que es el defecto que arrastró la sesión 4.
-DOS_INSTRUMENTOS = [
-    ("Monto máximo", "S/ 67 000", "S/ 3 000 000"),
-    ("Plazo", "Por hitos\nnegociados", "Hasta 36 meses"),
-    ("Cofinanciamiento", "70 %", "80 % pública\n60 % privada"),
-    ("Contrapartida\nmonetaria", "10 % mínimo", "0 % pública\n30 % privada"),
-    ("Tope de personal", "40 % del\ncapital semilla", "20 % del monto\nfinanciado"),
-    ("Primer desembolso", "Contra hito, tras\nreunión previa", "20 % referencial"),
+FICHA_STARTUP = [
+    ("Capital semilla", "S/ 60 000", "máximo"),
+    ("Asignación a incubadora", "S/ 7 000", "fija"),
+    ("Cofinanciamiento", "70 %", "del costo total"),
+    ("Contrapartida monetaria", "10 %", "mínimo"),
+    ("Contrapartida no monetaria", "20 %", "máximo"),
+    ("Tope de honorarios", "40 %", "del capital semilla"),
 ]
 
-COL_A, COL_B = 0.40, 0.72
 
-
-def fig_dos_instrumentos():
-    """Dos subvenciones del Estado y las seis cifras en que no se parecen."""
-    fig, ax = plt.subplots(figsize=(7.6, 3.8))
-    for i, (pregunta, a, b) in enumerate(DOS_INSTRUMENTOS):
-        y = len(DOS_INSTRUMENTOS) - i
-        if i % 2 == 0:
-            ax.add_patch(Rectangle((-0.02, y - 0.46), 1.06, 0.92,
-                                   facecolor=SURFACE, edgecolor="none", zorder=0))
-        ax.text(0.0, y, pregunta, ha="left", va="center", fontsize=7.4, color=MUTED)
-        ax.text(COL_A, y, a, ha="left", va="center", fontsize=7.8, color=INK)
-        ax.text(COL_B, y, b, ha="left", va="center", fontsize=7.8, color=INK)
-    ax.text(COL_A, len(DOS_INSTRUMENTOS) + 0.85, "StartUp Perú 12G", ha="left",
-            fontsize=8.2, color=ACCENT, fontweight="bold")
-    ax.text(COL_B, len(DOS_INSTRUMENTOS) + 0.85, "PROCIENCIA E072", ha="left",
-            fontsize=8.2, color=RAMPA[2], fontweight="bold")
-    ax.plot([0, 1.04], [len(DOS_INSTRUMENTOS) + 0.60] * 2, color=GRID, lw=0.9)
-    ax.set_xlim(-0.02, 1.06)
-    ax.set_ylim(0.25, len(DOS_INSTRUMENTOS) + 1.30)
+def fig_ficha_startup():
+    """Las seis cifras que fijan el presupuesto de un capital semilla."""
+    fig, ax = plt.subplots(figsize=(7.4, 2.7))
+    for i, (concepto, valor, nota) in enumerate(FICHA_STARTUP):
+        col, fila = i % 3, i // 3
+        x, y = col * 0.345, 1 - fila
+        ax.add_patch(Rectangle((x, y - 0.42), 0.31, 0.84, facecolor=SURFACE,
+                               edgecolor="none"))
+        ax.text(x + 0.015, y + 0.20, concepto, fontsize=7.2, color=MUTED, va="center")
+        ax.text(x + 0.015, y - 0.06, valor, fontsize=13.5, color=ACCENT,
+                fontweight="bold", va="center")
+        ax.text(x + 0.015, y - 0.30, nota, fontsize=6.9, color=INK, va="center")
+    ax.set_xlim(-0.01, 1.0)
+    ax.set_ylim(-0.55, 1.55)
     ax.axis("off")
-    escribir(fig, "s5-dos-instrumentos")
+    escribir(fig, "s5-ficha-startup")
 
 
 # --------------------------------------------------------------------------
@@ -5466,7 +5458,7 @@ def fig_flujo_caja():
 
 
 FIGURAS += [fig_instrumento_obligacion, fig_instrumento_pi, fig_costo_medios, fig_actividad_partida,
-            fig_dos_instrumentos, fig_topes_rubro, fig_contrapartida_figura,
+            fig_ficha_startup, fig_topes_rubro, fig_contrapartida_figura,
             fig_flujo_caja]
 
 

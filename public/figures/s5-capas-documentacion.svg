@@ -20,7 +20,7 @@ L 409.521869 35.4368
 L 409.521869 15.0912 
 L 42.910654 15.0912 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.16"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-1); opacity: 0.16"/>
    </g>
    <g id="patch_3">
     <path d="M 42.910654 35.4368 
@@ -28,7 +28,7 @@ L 46.76972 35.4368
 L 46.76972 15.0912 
 L 42.910654 15.0912 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_4">
     <path d="M 42.910654 65.3568 
@@ -36,7 +36,7 @@ L 409.521869 65.3568
 L 409.521869 45.0112 
 L 42.910654 45.0112 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.16"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-1); opacity: 0.16"/>
    </g>
    <g id="patch_5">
     <path d="M 42.910654 65.3568 
@@ -44,7 +44,7 @@ L 46.76972 65.3568
 L 46.76972 45.0112 
 L 42.910654 45.0112 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_6">
     <path d="M 42.910654 95.2768 
@@ -52,7 +52,7 @@ L 409.521869 95.2768
 L 409.521869 74.9312 
 L 42.910654 74.9312 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
    </g>
    <g id="patch_7">
     <path d="M 42.910654 95.2768 
@@ -60,7 +60,7 @@ L 46.76972 95.2768
 L 46.76972 74.9312 
 L 42.910654 74.9312 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2)"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-2)"/>
    </g>
    <g id="patch_8">
     <path d="M 42.910654 125.1968 
@@ -68,7 +68,7 @@ L 409.521869 125.1968
 L 409.521869 104.8512 
 L 42.910654 104.8512 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
    </g>
    <g id="patch_9">
     <path d="M 42.910654 125.1968 
@@ -76,7 +76,7 @@ L 46.76972 125.1968
 L 46.76972 104.8512 
 L 42.910654 104.8512 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-2)"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-2)"/>
    </g>
    <g id="patch_10">
     <path d="M 42.910654 155.1168 
@@ -84,7 +84,7 @@ L 409.521869 155.1168
 L 409.521869 134.7712 
 L 42.910654 134.7712 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.16"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-3); opacity: 0.16"/>
    </g>
    <g id="patch_11">
     <path d="M 42.910654 155.1168 
@@ -92,7 +92,7 @@ L 46.76972 155.1168
 L 46.76972 134.7712 
 L 42.910654 134.7712 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3)"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-3)"/>
    </g>
    <g id="patch_12">
     <path d="M 42.910654 185.0368 
@@ -100,7 +100,7 @@ L 409.521869 185.0368
 L 409.521869 164.6912 
 L 42.910654 164.6912 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.16"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-3); opacity: 0.16"/>
    </g>
    <g id="patch_13">
     <path d="M 42.910654 185.0368 
@@ -108,7 +108,7 @@ L 46.76972 185.0368
 L 46.76972 164.6912 
 L 42.910654 164.6912 
 z
-" clip-path="url(#s5-capas-documentacion-clip-0)" style="fill: var(--fig-ramp-3)"/>
+" clip-path="url(#s5-capas-documentacion-0)" style="fill: var(--fig-ramp-3)"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ramp-1); font: 700 8.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="23.615327" y="27.581875" transform="rotate(-0 23.615327 27.581875)">1</text>
@@ -185,7 +185,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-capas-documentacion-clip-0">
+  <clipPath id="s5-capas-documentacion-0">
    <rect x="4.32" y="4.32" width="412.92" height="188.496"/>
   </clipPath>
  </defs>

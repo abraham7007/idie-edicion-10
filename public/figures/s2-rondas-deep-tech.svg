@@ -27,12 +27,12 @@ z
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="ma6899cf5b7" d="M 0 0 
+       <path id="s2-rondas-deep-tech-0" d="M 0 0 
 L 0 3 
 " style="stroke: var(--fig-ink); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#ma6899cf5b7" x="52.242239" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-0" x="52.242239" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -42,7 +42,7 @@ L 0 3
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#ma6899cf5b7" x="142.472027" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-0" x="142.472027" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -52,7 +52,7 @@ L 0 3
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#ma6899cf5b7" x="232.701814" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-0" x="232.701814" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -62,7 +62,7 @@ L 0 3
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use xlink:href="#ma6899cf5b7" x="322.931601" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-0" x="322.931601" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -72,7 +72,7 @@ L 0 3
     <g id="xtick_5">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#ma6899cf5b7" x="413.161388" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-0" x="413.161388" y="181.728" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -85,16 +85,16 @@ L 0 3
      <g id="line2d_6">
       <path d="M 47.73075 172.303459 
 L 471.81075 172.303459 
-" clip-path="url(#s2-rondas-deep-tech-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-rondas-deep-tech-5)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_7">
       <defs>
-       <path id="mef1cc0aa55" d="M 0 0 
+       <path id="s2-rondas-deep-tech-1" d="M 0 0 
 L -3 0 
 " style="stroke: var(--fig-ink); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mef1cc0aa55" x="47.73075" y="172.303459" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-1" x="47.73075" y="172.303459" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -105,11 +105,11 @@ L -3 0
      <g id="line2d_8">
       <path d="M 47.73075 129.821629 
 L 471.81075 129.821629 
-" clip-path="url(#s2-rondas-deep-tech-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-rondas-deep-tech-5)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_9">
       <g>
-       <use xlink:href="#mef1cc0aa55" x="47.73075" y="129.821629" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-1" x="47.73075" y="129.821629" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_7">
@@ -120,11 +120,11 @@ L 471.81075 129.821629
      <g id="line2d_10">
       <path d="M 47.73075 87.339799 
 L 471.81075 87.339799 
-" clip-path="url(#s2-rondas-deep-tech-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-rondas-deep-tech-5)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_11">
       <g>
-       <use xlink:href="#mef1cc0aa55" x="47.73075" y="87.339799" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-1" x="47.73075" y="87.339799" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
@@ -135,11 +135,11 @@ L 471.81075 87.339799
      <g id="line2d_12">
       <path d="M 47.73075 44.857968 
 L 471.81075 44.857968 
-" clip-path="url(#s2-rondas-deep-tech-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-rondas-deep-tech-5)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.55; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_13">
       <g>
-       <use xlink:href="#mef1cc0aa55" x="47.73075" y="44.857968" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
+       <use xlink:href="#s2-rondas-deep-tech-1" x="47.73075" y="44.857968" style="fill: var(--fig-ink); stroke: var(--fig-ink); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
@@ -149,257 +149,257 @@ L 471.81075 44.857968
     <g id="ytick_5">
      <g id="line2d_14">
       <defs>
-       <path id="mc15affaee5" d="M 0 0 
+       <path id="s2-rondas-deep-tech-2" d="M 0 0 
 L -2 0 
 " style="stroke: var(--fig-muted); stroke-width: 0.6"/>
       </defs>
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_6">
      <g id="line2d_15">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="178.883978" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="178.883978" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_7">
      <g id="line2d_16">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="176.420374" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="176.420374" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_8">
      <g id="line2d_17">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="174.247321" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="174.247321" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_9">
      <g id="line2d_18">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="159.515154" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="159.515154" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_10">
      <g id="line2d_19">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="152.034475" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="152.034475" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_11">
      <g id="line2d_20">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="146.726849" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="146.726849" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_12">
      <g id="line2d_21">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="142.609934" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="142.609934" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_13">
      <g id="line2d_22">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="139.24617" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="139.24617" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_14">
      <g id="line2d_23">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="136.402148" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="136.402148" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_15">
      <g id="line2d_24">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="133.938544" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="133.938544" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_16">
      <g id="line2d_25">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="131.765491" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="131.765491" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_17">
      <g id="line2d_26">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="117.033324" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="117.033324" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_18">
      <g id="line2d_27">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="109.552645" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="109.552645" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_19">
      <g id="line2d_28">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="104.245018" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="104.245018" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_20">
      <g id="line2d_29">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="100.128104" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="100.128104" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_21">
      <g id="line2d_30">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="96.764339" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="96.764339" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_22">
      <g id="line2d_31">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="93.920317" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="93.920317" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_23">
      <g id="line2d_32">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="91.456713" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="91.456713" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_24">
      <g id="line2d_33">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="89.283661" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="89.283661" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_25">
      <g id="line2d_34">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="74.551493" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="74.551493" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_26">
      <g id="line2d_35">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="67.070814" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="67.070814" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_27">
      <g id="line2d_36">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="61.763188" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="61.763188" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_28">
      <g id="line2d_37">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="57.646273" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="57.646273" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_29">
      <g id="line2d_38">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="54.282509" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="54.282509" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_30">
      <g id="line2d_39">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="51.438487" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="51.438487" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_31">
      <g id="line2d_40">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="48.974883" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="48.974883" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_32">
      <g id="line2d_41">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="46.80183" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="46.80183" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_33">
      <g id="line2d_42">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="32.069663" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="32.069663" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_34">
      <g id="line2d_43">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="24.588984" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="24.588984" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_35">
      <g id="line2d_44">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="19.281358" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="19.281358" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_36">
      <g id="line2d_45">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="15.164443" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="15.164443" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_37">
      <g id="line2d_46">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="11.800679" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="11.800679" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_38">
      <g id="line2d_47">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="8.956657" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="8.956657" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_39">
      <g id="line2d_48">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="6.493053" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="6.493053" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_40">
      <g id="line2d_49">
       <g>
-       <use xlink:href="#mc15affaee5" x="47.73075" y="4.32" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s2-rondas-deep-tech-2" x="47.73075" y="4.32" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
@@ -420,7 +420,7 @@ L 471.81075 181.728
    </g>
    <g id="line2d_50">
     <defs>
-     <path id="m22d4c7d101" d="M 0 3.75 
+     <path id="s2-rondas-deep-tech-3" d="M 0 3.75 
 C 0.994512 3.75 1.948425 3.354876 2.65165 2.65165 
 C 3.354876 1.948425 3.75 0.994512 3.75 0 
 C 3.75 -0.994512 3.354876 -1.948425 2.65165 -2.65165 
@@ -432,8 +432,8 @@ C -1.948425 3.354876 -0.994512 3.75 0 3.75
 z
 " style="stroke: var(--fig-navy)"/>
     </defs>
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m22d4c7d101" x="83.822665" y="110.498987" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-3" x="83.822665" y="110.498987" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="text_11">
@@ -441,8 +441,8 @@ z
     <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(93.822665 128.942805)">ronda inicial · 2,85</text>
    </g>
    <g id="line2d_51">
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m22d4c7d101" x="110.891601" y="83.976034" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-3" x="110.891601" y="83.976034" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="text_12">
@@ -451,7 +451,7 @@ z
    </g>
    <g id="line2d_52">
     <defs>
-     <path id="m152b49c7c4" d="M 0 3.75 
+     <path id="s2-rondas-deep-tech-4" d="M 0 3.75 
 C 0.994512 3.75 1.948425 3.354876 2.65165 2.65165 
 C 3.354876 1.948425 3.75 0.994512 3.75 0 
 C 3.75 -0.994512 3.354876 -1.948425 2.65165 -2.65165 
@@ -463,8 +463,8 @@ C -1.948425 3.354876 -0.994512 3.75 0 3.75
 z
 " style="stroke: var(--fig-accent)"/>
     </defs>
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m152b49c7c4" x="167.285218" y="163.747741" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-4" x="167.285218" y="163.747741" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="text_13">
@@ -472,8 +472,8 @@ z
     <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(176.285218 157.250366)">Serie B · 0,159</text>
    </g>
    <g id="line2d_53">
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m22d4c7d101" x="257.515005" y="115.274887" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-3" x="257.515005" y="115.274887" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="text_14">
@@ -481,8 +481,8 @@ z
     <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(266.515005 133.718705)">ronda inicial · 2,2</text>
    </g>
    <g id="line2d_54">
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m22d4c7d101" x="291.351176" y="83.976034" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-3" x="291.351176" y="83.976034" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="text_15">
@@ -490,8 +490,8 @@ z
     <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(221.666426 72.478659)">expansión · 12</text>
    </g>
    <g id="line2d_55">
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m152b49c7c4" x="327.44309" y="32.069663" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-4" x="327.44309" y="32.069663" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="text_16">
@@ -499,8 +499,8 @@ z
     <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(264.092965 21.572288)">Serie B · 200</text>
    </g>
    <g id="line2d_56">
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m22d4c7d101" x="336.466069" y="91.456713" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-3" x="336.466069" y="91.456713" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="text_17">
@@ -508,8 +508,8 @@ z
     <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(340.466069 121.900532)">Serie A · 8</text>
    </g>
    <g id="line2d_57">
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m22d4c7d101" x="363.535005" y="71.187729" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-3" x="363.535005" y="71.187729" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="text_18">
@@ -517,8 +517,8 @@ z
     <text style="fill: var(--fig-ink); font: 7.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(371.535005 91.631548)">ronda posterior · 24</text>
    </g>
    <g id="line2d_58">
-    <g clip-path="url(#s2-rondas-deep-tech-clip-0)">
-     <use xlink:href="#m22d4c7d101" x="408.649899" y="46.597965" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s2-rondas-deep-tech-5)">
+     <use xlink:href="#s2-rondas-deep-tech-3" x="408.649899" y="46.597965" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="text_19">
@@ -528,7 +528,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s2-rondas-deep-tech-clip-0">
+  <clipPath id="s2-rondas-deep-tech-5">
    <rect x="47.73075" y="4.32" width="424.08" height="177.408"/>
   </clipPath>
  </defs>

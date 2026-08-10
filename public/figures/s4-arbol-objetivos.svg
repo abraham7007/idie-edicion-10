@@ -29,7 +29,7 @@ L 191.808 54.394839
 L 191.808 23.098065 
 L 27.756 23.098065 
 z
-" clip-path="url(#s4-arbol-objetivos-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.16; stroke: var(--fig-ramp-1); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s4-arbol-objetivos-0)" style="fill: var(--fig-ramp-1); opacity: 0.16; stroke: var(--fig-ramp-1); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 215.244 54.394839 
@@ -37,7 +37,7 @@ L 379.296 54.394839
 L 379.296 23.098065 
 L 215.244 23.098065 
 z
-" clip-path="url(#s4-arbol-objetivos-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.16; stroke: var(--fig-ramp-1); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s4-arbol-objetivos-0)" style="fill: var(--fig-ramp-1); opacity: 0.16; stroke: var(--fig-ramp-1); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 43.38 116.988387 
@@ -45,7 +45,7 @@ L 355.86 116.988387
 L 355.86 78.180387 
 L 43.38 78.180387 
 z
-" clip-path="url(#s4-arbol-objetivos-clip-0)" style="fill: var(--fig-accent); opacity: 0.16; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s4-arbol-objetivos-0)" style="fill: var(--fig-accent); opacity: 0.16; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 16.038 182.711613 
@@ -53,7 +53,7 @@ L 129.312 182.711613
 L 129.312 143.903613 
 L 16.038 143.903613 
 z
-" clip-path="url(#s4-arbol-objetivos-clip-0)" style="fill: var(--fig-ok); opacity: 0.16; stroke: var(--fig-ok); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s4-arbol-objetivos-0)" style="fill: var(--fig-ok); opacity: 0.16; stroke: var(--fig-ok); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 144.936 182.711613 
@@ -61,7 +61,7 @@ L 258.21 182.711613
 L 258.21 143.903613 
 L 144.936 143.903613 
 z
-" clip-path="url(#s4-arbol-objetivos-clip-0)" style="fill: var(--fig-ok); opacity: 0.16; stroke: var(--fig-ok); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s4-arbol-objetivos-0)" style="fill: var(--fig-ok); opacity: 0.16; stroke: var(--fig-ok); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 273.834 182.711613 
@@ -69,7 +69,7 @@ L 387.108 182.711613
 L 387.108 143.903613 
 L 273.834 143.903613 
 z
-" clip-path="url(#s4-arbol-objetivos-clip-0)" style="fill: var(--fig-ok); opacity: 0.16; stroke: var(--fig-ok); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s4-arbol-objetivos-0)" style="fill: var(--fig-ok); opacity: 0.16; stroke: var(--fig-ok); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
@@ -148,7 +148,7 @@ L 206.660686 117.722708
   </g>
  </g>
  <defs>
-  <clipPath id="s4-arbol-objetivos-clip-0">
+  <clipPath id="s4-arbol-objetivos-0">
    <rect x="4.32" y="4.32" width="390.6" height="194.04"/>
   </clipPath>
  </defs>

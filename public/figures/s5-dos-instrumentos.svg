@@ -20,7 +20,7 @@ L 420.546667 56.913294
 L 420.546667 29.421345 
 L 4.32 29.421345 
 z
-" clip-path="url(#s5-dos-instrumentos-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-dos-instrumentos-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_3">
     <path d="M 4.32 116.6784 
@@ -28,7 +28,7 @@ L 420.546667 116.6784
 L 420.546667 89.186451 
 L 4.32 89.186451 
 z
-" clip-path="url(#s5-dos-instrumentos-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-dos-instrumentos-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_4">
     <path d="M 4.32 176.443506 
@@ -36,12 +36,12 @@ L 420.546667 176.443506
 L 420.546667 148.951557 
 L 4.32 148.951557 
 z
-" clip-path="url(#s5-dos-instrumentos-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-dos-instrumentos-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="line2d_1">
     <path d="M 12.173333 25.237787 
 L 420.546667 25.237787 
-" clip-path="url(#s5-dos-instrumentos-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#s5-dos-instrumentos-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-muted); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.173333" y="45.228913" transform="rotate(-0 12.173333 45.228913)">Monto máximo</text>
@@ -113,7 +113,7 @@ L 420.546667 25.237787
   </g>
  </g>
  <defs>
-  <clipPath id="s5-dos-instrumentos-clip-0">
+  <clipPath id="s5-dos-instrumentos-0">
    <rect x="4.32" y="4.32" width="424.08" height="210.672"/>
   </clipPath>
  </defs>

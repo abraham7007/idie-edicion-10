@@ -20,7 +20,7 @@ L 420.689455 38.219929
 L 420.689455 18.848541 
 L 4.32 18.848541 
 z
-" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-donde-va-cada-cosa-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_3">
     <path d="M 4.32 82.245812 
@@ -28,7 +28,7 @@ L 420.689455 82.245812
 L 420.689455 62.874424 
 L 4.32 62.874424 
 z
-" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-donde-va-cada-cosa-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_4">
     <path d="M 4.32 126.271694 
@@ -36,12 +36,12 @@ L 420.689455 126.271694
 L 420.689455 106.900306 
 L 4.32 106.900306 
 z
-" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-donde-va-cada-cosa-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="line2d_1">
     <path d="M 4.32 16.647247 
 L 420.689455 16.647247 
-" clip-path="url(#s5-donde-va-cada-cosa-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#s5-donde-va-cada-cosa-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.030545" y="30.757235" transform="rotate(-0 12.030545 30.757235)">Código y firmware</text>
@@ -109,7 +109,7 @@ L 420.689455 16.647247
   </g>
  </g>
  <defs>
-  <clipPath id="s5-donde-va-cada-cosa-clip-0">
+  <clipPath id="s5-donde-va-cada-cosa-0">
    <rect x="4.32" y="4.32" width="424.08" height="149.688"/>
   </clipPath>
  </defs>

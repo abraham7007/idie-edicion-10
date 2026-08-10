@@ -20,7 +20,7 @@ L 387.185347 30.711532
 L 387.185347 17.364091 
 L 247.961584 17.364091 
 z
-" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-ok); opacity: 0.16"/>
+" clip-path="url(#s5-modificaciones-0)" style="fill: var(--fig-ok); opacity: 0.16"/>
    </g>
    <g id="patch_3">
     <path d="M 247.961584 61.046626 
@@ -28,7 +28,7 @@ L 387.185347 61.046626
 L 387.185347 47.699185 
 L 247.961584 47.699185 
 z
-" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-ok); opacity: 0.16"/>
+" clip-path="url(#s5-modificaciones-0)" style="fill: var(--fig-ok); opacity: 0.16"/>
    </g>
    <g id="patch_4">
     <path d="M 247.961584 91.381721 
@@ -36,7 +36,7 @@ L 387.185347 91.381721
 L 387.185347 78.034279 
 L 247.961584 78.034279 
 z
-" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-warn); opacity: 0.16"/>
+" clip-path="url(#s5-modificaciones-0)" style="fill: var(--fig-warn); opacity: 0.16"/>
    </g>
    <g id="patch_5">
     <path d="M 247.961584 121.716815 
@@ -44,7 +44,7 @@ L 387.185347 121.716815
 L 387.185347 108.369374 
 L 247.961584 108.369374 
 z
-" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-accent); opacity: 0.16"/>
+" clip-path="url(#s5-modificaciones-0)" style="fill: var(--fig-accent); opacity: 0.16"/>
    </g>
    <g id="patch_6">
     <path d="M 247.961584 152.051909 
@@ -52,7 +52,7 @@ L 387.185347 152.051909
 L 387.185347 138.704468 
 L 247.961584 138.704468 
 z
-" clip-path="url(#s5-modificaciones-clip-0)" style="fill: var(--fig-accent); opacity: 0.16"/>
+" clip-path="url(#s5-modificaciones-0)" style="fill: var(--fig-accent); opacity: 0.16"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.187327 21.439591)">Mover monto dentro de</text>
@@ -92,7 +92,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-modificaciones-clip-0">
+  <clipPath id="s5-modificaciones-0">
    <rect x="4.32" y="4.32" width="390.6" height="160.776"/>
   </clipPath>
  </defs>

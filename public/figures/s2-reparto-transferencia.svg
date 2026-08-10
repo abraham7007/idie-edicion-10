@@ -20,7 +20,7 @@ L 178.970446 60.117677
 L 178.970446 26.496 
 L 9.864459 26.496 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.2; stroke: var(--fig-accent); stroke-width: 1.8; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-accent); opacity: 0.2; stroke: var(--fig-accent); stroke-width: 1.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 9.864459 99.462194 
@@ -28,7 +28,7 @@ L 178.970446 99.462194
 L 178.970446 65.840516 
 L 9.864459 65.840516 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.2; stroke: var(--fig-accent); stroke-width: 1.8; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-accent); opacity: 0.2; stroke: var(--fig-accent); stroke-width: 1.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 9.864459 138.80671 
@@ -36,7 +36,7 @@ L 178.970446 138.80671
 L 178.970446 105.185032 
 L 9.864459 105.185032 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.08; stroke: var(--fig-accent); stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-accent); opacity: 0.08; stroke: var(--fig-accent); stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 9.864459 178.151226 
@@ -44,7 +44,7 @@ L 178.970446 178.151226
 L 178.970446 144.529548 
 L 9.864459 144.529548 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-accent); opacity: 0.08; stroke: var(--fig-accent); stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-accent); opacity: 0.08; stroke: var(--fig-accent); stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 264.909554 60.117677 
@@ -52,7 +52,7 @@ L 434.015541 60.117677
 L 434.015541 26.496 
 L 264.909554 26.496 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-navy); opacity: 0.2; stroke: var(--fig-navy); stroke-width: 1.8; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-navy); opacity: 0.2; stroke: var(--fig-navy); stroke-width: 1.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 264.909554 99.462194 
@@ -60,7 +60,7 @@ L 434.015541 99.462194
 L 434.015541 65.840516 
 L 264.909554 65.840516 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-navy); opacity: 0.2; stroke: var(--fig-navy); stroke-width: 1.8; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-navy); opacity: 0.2; stroke: var(--fig-navy); stroke-width: 1.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 264.909554 138.80671 
@@ -68,7 +68,7 @@ L 434.015541 138.80671
 L 434.015541 105.185032 
 L 264.909554 105.185032 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-navy); opacity: 0.08; stroke: var(--fig-navy); stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-navy); opacity: 0.08; stroke: var(--fig-navy); stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 264.909554 178.151226 
@@ -76,17 +76,17 @@ L 434.015541 178.151226
 L 434.015541 144.529548 
 L 264.909554 144.529548 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-navy); opacity: 0.08; stroke: var(--fig-navy); stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-navy); opacity: 0.08; stroke: var(--fig-navy); stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
     <path d="M 184.514904 62.979097 
 Q 221.94 62.979097 257.799848 62.979097 
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.4; stroke-linecap: round"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.4; stroke-linecap: round"/>
     <path d="M 253.399848 60.779097 
 L 257.799848 62.979097 
 L 253.399848 65.179097 
 z
-" clip-path="url(#s2-reparto-transferencia-clip-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.4; stroke-linecap: round"/>
+" clip-path="url(#s2-reparto-transferencia-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.4; stroke-linecap: round"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(45.412108 41.045069)">Ensayo documentado que</text>
@@ -136,7 +136,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s2-reparto-transferencia-clip-0">
+  <clipPath id="s2-reparto-transferencia-0">
    <rect x="4.32" y="4.32" width="435.24" height="177.408"/>
   </clipPath>
  </defs>

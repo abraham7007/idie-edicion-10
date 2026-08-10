@@ -17,16 +17,16 @@ z
    <g id="LineCollection_1">
     <path d="M 212.287007 53.120479 
 L 212.287007 29.882156 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 212.287007 29.882156 
 L 276.925401 29.882156 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
    </g>
    <g id="line2d_1">
     <defs>
-     <path id="mbe7bcb64eb" d="M 0 2.75 
+     <path id="s3-arbol-sector-0" d="M 0 2.75 
 C 0.729309 2.75 1.428845 2.460243 1.944544 1.944544 
 C 2.460243 1.428845 2.75 0.729309 2.75 0 
 C 2.75 -0.729309 2.460243 -1.428845 1.944544 -1.944544 
@@ -38,33 +38,33 @@ C -1.428845 2.460243 -0.729309 2.75 0 2.75
 z
 " style="stroke: var(--fig-accent)"/>
     </defs>
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#mbe7bcb64eb" x="276.925401" y="29.882156" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-0" x="276.925401" y="29.882156" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="LineCollection_3">
     <path d="M 212.287007 53.120479 
 L 276.925401 53.120479 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
    </g>
    <g id="line2d_2">
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#mbe7bcb64eb" x="276.925401" y="53.120479" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-0" x="276.925401" y="53.120479" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="LineCollection_4">
     <path d="M 212.287007 169.312096 
 L 212.287007 76.358802 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
    </g>
    <g id="LineCollection_5">
     <path d="M 212.287007 76.358802 
 L 276.925401 76.358802 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
    </g>
    <g id="line2d_3">
     <defs>
-     <path id="m814bc10ae1" d="M 0 2.75 
+     <path id="s3-arbol-sector-1" d="M 0 2.75 
 C 0.729309 2.75 1.428845 2.460243 1.944544 1.944544 
 C 2.460243 1.428845 2.75 0.729309 2.75 0 
 C 2.75 -0.729309 2.460243 -1.428845 1.944544 -1.944544 
@@ -76,68 +76,68 @@ C -1.428845 2.460243 -0.729309 2.75 0 2.75
 z
 " style="stroke: var(--fig-navy)"/>
     </defs>
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#m814bc10ae1" x="276.925401" y="76.358802" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-1" x="276.925401" y="76.358802" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="LineCollection_6">
     <path d="M 212.287007 99.597126 
 L 276.925401 99.597126 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
    </g>
    <g id="line2d_4">
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#m814bc10ae1" x="276.925401" y="99.597126" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-1" x="276.925401" y="99.597126" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="LineCollection_7">
     <path d="M 212.287007 122.835449 
 L 276.925401 122.835449 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
    </g>
    <g id="line2d_5">
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#m814bc10ae1" x="276.925401" y="122.835449" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-1" x="276.925401" y="122.835449" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="LineCollection_8">
     <path d="M 212.287007 146.073772 
 L 276.925401 146.073772 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
    </g>
    <g id="line2d_6">
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#m814bc10ae1" x="276.925401" y="146.073772" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-1" x="276.925401" y="146.073772" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="LineCollection_9">
     <path d="M 212.287007 169.312096 
 L 276.925401 169.312096 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
    </g>
    <g id="line2d_7">
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#m814bc10ae1" x="276.925401" y="169.312096" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-1" x="276.925401" y="169.312096" style="fill: var(--fig-navy); stroke: var(--fig-navy)"/>
     </g>
    </g>
    <g id="LineCollection_10">
     <path d="M 147.648613 122.835449 
 L 147.648613 41.501317 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.6"/>
    </g>
    <g id="LineCollection_11">
     <path d="M 147.648613 41.501317 
 L 212.287007 41.501317 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.6"/>
    </g>
    <g id="LineCollection_12">
     <path d="M 147.648613 122.835449 
 L 212.287007 122.835449 
-" clip-path="url(#s3-arbol-sector-clip-0)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
+" clip-path="url(#s3-arbol-sector-3)" style="fill: none; stroke: var(--fig-navy); stroke-width: 1.6"/>
    </g>
    <g id="line2d_8">
     <defs>
-     <path id="mbaf1697604" d="M 0 3 
+     <path id="s3-arbol-sector-2" d="M 0 3 
 C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
 C 2.683901 1.55874 3 0.795609 3 0 
 C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
@@ -149,8 +149,8 @@ C -1.55874 2.683901 -0.795609 3 0 3
 z
 " style="stroke: var(--fig-muted)"/>
     </defs>
-    <g clip-path="url(#s3-arbol-sector-clip-0)">
-     <use xlink:href="#mbaf1697604" x="147.648613" y="82.168383" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+    <g clip-path="url(#s3-arbol-sector-3)">
+     <use xlink:href="#s3-arbol-sector-2" x="147.648613" y="82.168383" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="text_1">
@@ -208,7 +208,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s3-arbol-sector-clip-0">
+  <clipPath id="s3-arbol-sector-3">
    <rect x="4.32" y="4.32" width="385.02" height="194.04"/>
   </clipPath>
  </defs>

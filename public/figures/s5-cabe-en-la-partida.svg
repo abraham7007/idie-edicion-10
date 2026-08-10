@@ -17,22 +17,22 @@ z
    <g id="line2d_1">
     <path d="M 32.592 64.1952 
 L 32.592 69.1848 
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 77.232 64.1952 
 L 77.232 82.4904 
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 125.22 64.1952 
 L 125.22 95.796 
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
     <path d="M 266.58 64.1952 
 L 266.58 109.1016 
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="patch_2">
     <path d="M 8.04 63.0864 
@@ -40,7 +40,7 @@ L 57.144 63.0864
 L 57.144 39.8016 
 L 8.04 39.8016 
 z
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 57.144 63.0864 
@@ -48,7 +48,7 @@ L 97.32 63.0864
 L 97.32 39.8016 
 L 57.144 39.8016 
 z
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 97.32 63.0864 
@@ -56,7 +56,7 @@ L 153.12 63.0864
 L 153.12 39.8016 
 L 97.32 39.8016 
 z
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: var(--fig-ramp-2); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 153.12 63.0864 
@@ -64,7 +64,7 @@ L 380.04 63.0864
 L 380.04 39.8016 
 L 153.12 39.8016 
 z
-" clip-path="url(#s5-cabe-en-la-partida-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-cabe-en-la-partida-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="8.04" y="76.758494" transform="rotate(-0 8.04 76.758494)">Solicitud de patente</text>
@@ -96,7 +96,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-cabe-en-la-partida-clip-0">
+  <clipPath id="s5-cabe-en-la-partida-0">
    <rect x="4.32" y="4.32" width="390.6" height="127.512"/>
   </clipPath>
  </defs>

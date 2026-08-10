@@ -20,7 +20,7 @@ L 115.254952 140.274
 L 115.254952 133.722 
 L 106.638776 133.722 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-3)"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-3)"/>
    </g>
    <g id="patch_3">
     <path d="M 204.288776 140.274 
@@ -28,7 +28,7 @@ L 212.904952 140.274
 L 212.904952 133.722 
 L 204.288776 133.722 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_4">
     <path d="M 301.938776 140.274 
@@ -36,7 +36,7 @@ L 310.554952 140.274
 L 310.554952 133.722 
 L 301.938776 133.722 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-1)"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-1)"/>
    </g>
    <g id="patch_5">
     <path d="M 106.638776 38.3085 
@@ -44,7 +44,7 @@ L 336.403482 38.3085
 L 336.403482 21.1095 
 L 106.638776 21.1095 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-3); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="221.521129" y="31.806125" transform="rotate(-0 221.521129 31.806125)">80</text>
@@ -55,7 +55,7 @@ L 393.844658 38.3085
 L 393.844658 21.1095 
 L 336.403482 21.1095 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_2">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="365.12407" y="31.806125" transform="rotate(-0 365.12407 31.806125)">20</text>
@@ -70,7 +70,7 @@ L 278.962305 79.2585
 L 278.962305 62.0595 
 L 106.638776 62.0595 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-3); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_4">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="192.80054" y="72.756125" transform="rotate(-0 192.80054 72.756125)">60</text>
@@ -81,7 +81,7 @@ L 365.12407 79.2585
 L 365.12407 62.0595 
 L 278.962305 62.0595 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_5">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="322.043188" y="72.756125" transform="rotate(-0 322.043188 72.756125)">30</text>
@@ -92,7 +92,7 @@ L 393.844658 79.2585
 L 393.844658 62.0595 
 L 365.12407 62.0595 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_6">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="379.484364" y="72.756125" transform="rotate(-0 379.484364 72.756125)">10</text>
@@ -107,7 +107,7 @@ L 307.682893 120.2085
 L 307.682893 103.0095 
 L 106.638776 103.0095 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-3); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_8">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="207.160835" y="113.706125" transform="rotate(-0 207.160835 113.706125)">70</text>
@@ -118,7 +118,7 @@ L 336.403482 120.2085
 L 336.403482 103.0095 
 L 307.682893 103.0095 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-accent); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_9">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="322.043188" y="113.706125" transform="rotate(-0 322.043188 113.706125)">10</text>
@@ -129,7 +129,7 @@ L 393.844658 120.2085
 L 393.844658 103.0095 
 L 336.403482 103.0095 
 z
-" clip-path="url(#s5-contrapartida-figura-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-contrapartida-figura-0)" style="fill: var(--fig-ramp-1); opacity: 0.9; stroke: var(--fig-paper); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_10">
     <text style="fill: #ffffff; font: 700 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="365.12407" y="113.706125" transform="rotate(-0 365.12407 113.706125)">20</text>
@@ -150,7 +150,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-contrapartida-figura-clip-0">
+  <clipPath id="s5-contrapartida-figura-0">
    <rect x="8.988776" y="4.32" width="390.6" height="144.144"/>
   </clipPath>
  </defs>

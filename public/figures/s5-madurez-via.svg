@@ -28,7 +28,7 @@ z
      <g id="line2d_1">
       <path d="M 157.496471 154.008 
 L 157.496471 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_2"/>
      <g id="text_1">
@@ -39,7 +39,7 @@ L 157.496471 4.32
      <g id="line2d_3">
       <path d="M 176.643529 154.008 
 L 176.643529 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_4"/>
      <g id="text_2">
@@ -50,7 +50,7 @@ L 176.643529 4.32
      <g id="line2d_5">
       <path d="M 195.790588 154.008 
 L 195.790588 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_6"/>
      <g id="text_3">
@@ -61,7 +61,7 @@ L 195.790588 4.32
      <g id="line2d_7">
       <path d="M 214.937647 154.008 
 L 214.937647 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_8"/>
      <g id="text_4">
@@ -72,7 +72,7 @@ L 214.937647 4.32
      <g id="line2d_9">
       <path d="M 234.084706 154.008 
 L 234.084706 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_10"/>
      <g id="text_5">
@@ -83,7 +83,7 @@ L 234.084706 4.32
      <g id="line2d_11">
       <path d="M 253.231765 154.008 
 L 253.231765 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_12"/>
      <g id="text_6">
@@ -94,7 +94,7 @@ L 253.231765 4.32
      <g id="line2d_13">
       <path d="M 272.378824 154.008 
 L 272.378824 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_14"/>
      <g id="text_7">
@@ -105,7 +105,7 @@ L 272.378824 4.32
      <g id="line2d_15">
       <path d="M 291.525882 154.008 
 L 291.525882 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_16"/>
      <g id="text_8">
@@ -116,7 +116,7 @@ L 291.525882 4.32
      <g id="line2d_17">
       <path d="M 310.672941 154.008 
 L 310.672941 4.32 
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_18"/>
      <g id="text_9">
@@ -131,7 +131,7 @@ L 320.246471 28.730658
 L 320.246471 19.058511 
 L 147.922941 19.058511 
 z
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.8"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: var(--fig-ramp-2); opacity: 0.8"/>
    </g>
    <g id="text_10">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="144.093529" y="26.059085" transform="rotate(-0 144.093529 26.059085)">Publicación y congreso</text>
@@ -145,7 +145,7 @@ L 243.658235 51.759582
 L 243.658235 42.087434 
 L 167.07 42.087434 
 z
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.8"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: var(--fig-ramp-2); opacity: 0.8"/>
    </g>
    <g id="text_12">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="144.093529" y="49.088008" transform="rotate(-0 144.093529 49.088008)">Investigación por encargo</text>
@@ -159,7 +159,7 @@ L 320.246471 74.788505
 L 320.246471 65.116357 
 L 205.364118 65.116357 
 z
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.8"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: var(--fig-ramp-2); opacity: 0.8"/>
    </g>
    <g id="text_14">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="144.093529" y="72.014025" transform="rotate(-0 144.093529 72.014025)">Licencia no exclusiva</text>
@@ -173,7 +173,7 @@ L 320.246471 97.817428
 L 320.246471 88.14528 
 L 224.511176 88.14528 
 z
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: var(--fig-accent); opacity: 0.8"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: var(--fig-accent); opacity: 0.8"/>
    </g>
    <g id="text_16">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="144.093529" y="95.042948" transform="rotate(-0 144.093529 95.042948)">Licencia exclusiva</text>
@@ -187,7 +187,7 @@ L 320.246471 120.846351
 L 320.246471 111.174203 
 L 243.658235 111.174203 
 z
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: var(--fig-accent); opacity: 0.8"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: var(--fig-accent); opacity: 0.8"/>
    </g>
    <g id="text_18">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="144.093529" y="118.071871" transform="rotate(-0 144.093529 118.071871)">Cesión</text>
@@ -201,7 +201,7 @@ L 320.246471 143.875274
 L 320.246471 134.203126 
 L 243.658235 134.203126 
 z
-" clip-path="url(#s5-madurez-via-clip-0)" style="fill: var(--fig-accent); opacity: 0.8"/>
+" clip-path="url(#s5-madurez-via-0)" style="fill: var(--fig-accent); opacity: 0.8"/>
    </g>
    <g id="text_20">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="144.093529" y="141.100794" transform="rotate(-0 144.093529 141.100794)">Spin-off</text>
@@ -212,7 +212,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-madurez-via-clip-0">
+  <clipPath id="s5-madurez-via-0">
    <rect x="4.32" y="4.32" width="390.6" height="149.688"/>
   </clipPath>
  </defs>

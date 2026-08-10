@@ -71,52 +71,52 @@ z
    <g id="line2d_8">
     <path d="M 39.316893 98.0928 
 L 39.316893 84.61296 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_9">
     <path d="M 78.431068 115.6752 
 L 78.431068 129.15504 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_10">
     <path d="M 99.017476 98.0928 
 L 99.017476 54.1368 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_11">
     <path d="M 119.603883 115.6752 
 L 119.603883 159.6312 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_12">
     <path d="M 152.542136 98.0928 
 L 152.542136 84.61296 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_13">
     <path d="M 193.714951 115.6752 
 L 193.714951 129.15504 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_14">
     <path d="M 234.887767 98.0928 
 L 234.887767 54.1368 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_15">
     <path d="M 286.353786 115.6752 
 L 286.353786 129.15504 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_16">
     <path d="M 354.288932 98.0928 
 L 354.288932 84.61296 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_17">
     <path d="M 391.344466 115.6752 
 L 391.344466 159.6312 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="patch_3">
     <path d="M 29.023689 115.08912 
@@ -124,7 +124,7 @@ L 82.54835 115.08912
 L 82.54835 98.67888 
 L 29.023689 98.67888 
 z
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: var(--fig-ramp-1); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 82.54835 115.08912 
@@ -132,7 +132,7 @@ L 123.721165 115.08912
 L 123.721165 98.67888 
 L 82.54835 98.67888 
 z
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: var(--fig-ramp-2); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 123.721165 115.08912 
@@ -140,7 +140,7 @@ L 337.819806 115.08912
 L 337.819806 98.67888 
 L 123.721165 98.67888 
 z
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: var(--fig-ramp-3); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 337.819806 115.08912 
@@ -148,7 +148,7 @@ L 399.579029 115.08912
 L 399.579029 98.67888 
 L 337.819806 98.67888 
 z
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: var(--fig-accent); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: var(--fig-accent); opacity: 0.85; stroke: var(--fig-paper); stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_8">
     <text style="fill: var(--fig-ink); font: 6.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(13.489753 72.958412)">Resultado del</text>
@@ -203,9 +203,9 @@ z
    </g>
    <g id="line2d_18">
     <path d="M 39.316893 98.0928 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
     <defs>
-     <path id="m31471aa390" d="M 0 1.6 
+     <path id="s5-ciclo-de-vida-0" d="M 0 1.6 
 C 0.424325 1.6 0.831328 1.431414 1.131371 1.131371 
 C 1.431414 0.831328 1.6 0.424325 1.6 0 
 C 1.6 -0.424325 1.431414 -0.831328 1.131371 -1.131371 
@@ -217,77 +217,77 @@ C -0.831328 1.431414 -0.424325 1.6 0 1.6
 z
 " style="stroke: var(--fig-muted)"/>
     </defs>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="39.316893" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="39.316893" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_19">
     <path d="M 78.431068 115.6752 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="78.431068" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="78.431068" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_20">
     <path d="M 99.017476 98.0928 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="99.017476" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="99.017476" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_21">
     <path d="M 119.603883 115.6752 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="119.603883" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="119.603883" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_22">
     <path d="M 152.542136 98.0928 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="152.542136" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="152.542136" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_23">
     <path d="M 193.714951 115.6752 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="193.714951" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="193.714951" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_24">
     <path d="M 234.887767 98.0928 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="234.887767" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="234.887767" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_25">
     <path d="M 286.353786 115.6752 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="286.353786" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="286.353786" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_26">
     <path d="M 354.288932 98.0928 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="354.288932" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="354.288932" y="98.0928" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_27">
     <path d="M 391.344466 115.6752 
-" clip-path="url(#s5-ciclo-de-vida-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-ciclo-de-vida-clip-0)">
-     <use xlink:href="#m31471aa390" x="391.344466" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+" clip-path="url(#s5-ciclo-de-vida-1)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-ciclo-de-vida-1)">
+     <use xlink:href="#s5-ciclo-de-vida-0" x="391.344466" y="115.6752" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="s5-ciclo-de-vida-clip-0">
+  <clipPath id="s5-ciclo-de-vida-1">
    <rect x="4.32" y="4.32" width="424.08" height="205.128"/>
   </clipPath>
  </defs>

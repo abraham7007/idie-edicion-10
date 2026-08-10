@@ -20,7 +20,7 @@ L 150.351099 41.28
 L 150.351099 11.712 
 L 95.650649 11.712 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 168.246925 41.28 
@@ -28,7 +28,7 @@ L 222.947375 41.28
 L 222.947375 11.712 
 L 168.246925 11.712 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 240.843201 41.28 
@@ -36,7 +36,7 @@ L 295.543651 41.28
 L 295.543651 11.712 
 L 240.843201 11.712 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 313.439477 41.28 
@@ -44,7 +44,7 @@ L 368.139927 41.28
 L 368.139927 11.712 
 L 313.439477 11.712 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 386.035753 41.28 
@@ -52,47 +52,47 @@ L 440.736203 41.28
 L 440.736203 11.712 
 L 386.035753 11.712 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); opacity: 0.13; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 150.351099 26.496 
 Q 159.299012 26.496 166.905284 26.496 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 162.905284 24.496 
 L 166.905284 26.496 
 L 162.905284 28.496 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_8">
     <path d="M 222.947375 26.496 
 Q 231.895288 26.496 239.50156 26.496 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 235.50156 24.496 
 L 239.50156 26.496 
 L 235.50156 28.496 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_9">
     <path d="M 295.543651 26.496 
 Q 304.491564 26.496 312.097837 26.496 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 308.097837 24.496 
 L 312.097837 26.496 
 L 308.097837 28.496 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_10">
     <path d="M 368.139927 26.496 
 Q 377.08784 26.496 384.694113 26.496 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 380.694113 24.496 
 L 384.694113 26.496 
 L 380.694113 28.496 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_11">
     <path d="M 95.650649 110.272 
@@ -100,7 +100,7 @@ L 150.351099 110.272
 L 150.351099 80.704 
 L 95.650649 80.704 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_12">
     <path d="M 168.246925 110.272 
@@ -108,7 +108,7 @@ L 222.947375 110.272
 L 222.947375 80.704 
 L 168.246925 80.704 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_13">
     <path d="M 240.843201 110.272 
@@ -116,7 +116,7 @@ L 295.543651 110.272
 L 295.543651 80.704 
 L 240.843201 80.704 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_14">
     <path d="M 313.439477 110.272 
@@ -124,7 +124,7 @@ L 368.139927 110.272
 L 368.139927 80.704 
 L 313.439477 80.704 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
     <path d="M 386.035753 110.272 
@@ -132,77 +132,77 @@ L 440.736203 110.272
 L 440.736203 80.704 
 L 386.035753 80.704 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-navy); opacity: 0.13; stroke: var(--fig-navy); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_16">
     <path d="M 151.69274 95.488 
 Q 159.299012 95.488 166.905284 95.488 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 154.89274 97.088 
 L 151.69274 95.488 
 L 154.89274 93.888 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 163.705284 93.888 
 L 166.905284 95.488 
 L 163.705284 97.088 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_17">
     <path d="M 224.289016 95.488 
 Q 231.895288 95.488 239.50156 95.488 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 227.489016 97.088 
 L 224.289016 95.488 
 L 227.489016 93.888 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 236.30156 93.888 
 L 239.50156 95.488 
 L 236.30156 97.088 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_18">
     <path d="M 296.885292 95.488 
 Q 304.491564 95.488 312.097837 95.488 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 300.085292 97.088 
 L 296.885292 95.488 
 L 300.085292 93.888 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 308.897837 93.888 
 L 312.097837 95.488 
 L 308.897837 97.088 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_19">
     <path d="M 369.481568 95.488 
 Q 377.08784 95.488 384.694113 95.488 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 372.681568 97.088 
 L 369.481568 95.488 
 L 372.681568 93.888 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 381.494113 93.888 
 L 384.694113 95.488 
 L 381.494113 97.088 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_20">
     <path d="M 413.385978 63.456 
 Q 304.491564 63.456 196.938791 63.456 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 200.938791 65.456 
 L 196.938791 63.456 
 L 200.938791 61.456 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_21">
     <path d="M 95.650649 169.9008 
@@ -210,32 +210,32 @@ L 440.736203 169.9008
 L 440.736203 144.2752 
 L 95.650649 144.2752 
 z
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: var(--fig-accent); opacity: 0.1; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: var(--fig-accent); opacity: 0.1; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="LineCollection_1">
     <path d="M 123.000874 144.2752 
 L 123.000874 110.272 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 195.59715 144.2752 
 L 195.59715 110.272 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
    </g>
    <g id="LineCollection_3">
     <path d="M 268.193426 144.2752 
 L 268.193426 110.272 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
    </g>
    <g id="LineCollection_4">
     <path d="M 340.789702 144.2752 
 L 340.789702 110.272 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
    </g>
    <g id="LineCollection_5">
     <path d="M 413.385978 144.2752 
 L 413.385978 110.272 
-" clip-path="url(#s1-modelos-flujo-clip-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
+" clip-path="url(#s1-modelos-flujo-0)" style="fill: none; stroke-dasharray: 2.7,2.7; stroke-dashoffset: 0; stroke: var(--fig-accent); stroke-width: 0.9"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 6.9px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(95.999772 24.629011)">Investigación</text>
@@ -287,7 +287,7 @@ L 413.385978 110.272
   </g>
  </g>
  <defs>
-  <clipPath id="s1-modelos-flujo-clip-0">
+  <clipPath id="s1-modelos-flujo-0">
    <rect x="9.548089" y="4.32" width="435.24" height="177.408"/>
   </clipPath>
  </defs>

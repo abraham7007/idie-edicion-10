@@ -31,7 +31,7 @@ L 197.71081 120.744
 L 197.71081 67.009846 
 L 8.747107 67.009846 
 z
-" clip-path="url(#s3-cooperacion-origen-clip-0)" style="fill: var(--fig-accent); opacity: 0.85"/>
+" clip-path="url(#s3-cooperacion-origen-0)" style="fill: var(--fig-accent); opacity: 0.85"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="103.228959" y="51.231272" transform="rotate(-0 103.228959 51.231272)">Bilateral</text>
@@ -45,7 +45,7 @@ L 298.501289 120.744
 L 298.501289 67.009846 
 L 197.71081 67.009846 
 z
-" clip-path="url(#s3-cooperacion-origen-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+" clip-path="url(#s3-cooperacion-origen-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
    </g>
    <g id="text_3">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="248.10605" y="51.174897" transform="rotate(-0 248.10605 51.174897)">No gubernamental</text>
@@ -59,7 +59,7 @@ L 357.012893 120.744
 L 357.012893 67.009846 
 L 298.501289 67.009846 
 z
-" clip-path="url(#s3-cooperacion-origen-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.85"/>
+" clip-path="url(#s3-cooperacion-origen-0)" style="fill: var(--fig-ramp-1); opacity: 0.85"/>
    </g>
    <g id="text_5">
     <text style="fill: var(--fig-ink); font: 8.2px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="327.757091" y="51.231272" transform="rotate(-0 327.757091 51.231272)">Multilateral</text>
@@ -73,7 +73,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s3-cooperacion-origen-clip-0">
+  <clipPath id="s3-cooperacion-origen-0">
    <rect x="4.32" y="4.32" width="357.12" height="166.32"/>
   </clipPath>
  </defs>

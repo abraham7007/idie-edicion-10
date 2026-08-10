@@ -28,16 +28,16 @@ z
      <g id="line2d_1">
       <path d="M 159.367712 181.728 
 L 159.367712 4.32 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_2">
       <defs>
-       <path id="m0e38774052" d="M 0 0 
+       <path id="s3-bloques-presupuesto-0" d="M 0 0 
 L 0 3 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m0e38774052" x="159.367712" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-0" x="159.367712" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -48,11 +48,11 @@ L 0 3
      <g id="line2d_3">
       <path d="M 233.410019 181.728 
 L 233.410019 4.32 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m0e38774052" x="233.410019" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-0" x="233.410019" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -63,11 +63,11 @@ L 233.410019 4.32
      <g id="line2d_5">
       <path d="M 307.452327 181.728 
 L 307.452327 4.32 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m0e38774052" x="307.452327" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-0" x="307.452327" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -78,11 +78,11 @@ L 307.452327 4.32
      <g id="line2d_7">
       <path d="M 381.494635 181.728 
 L 381.494635 4.32 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m0e38774052" x="381.494635" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-0" x="381.494635" y="181.728" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -98,16 +98,16 @@ L 381.494635 4.32
      <g id="line2d_9">
       <path d="M 48.30425 142.124839 
 L 433.32425 142.124839 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_10">
       <defs>
-       <path id="m58ded08791" d="M 0 0 
+       <path id="s3-bloques-presupuesto-1" d="M 0 0 
 L -3 0 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m58ded08791" x="48.30425" y="142.124839" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-1" x="48.30425" y="142.124839" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -124,11 +124,11 @@ L -3 0
      <g id="line2d_11">
       <path d="M 48.30425 99.1162 
 L 433.32425 99.1162 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_12">
       <g>
-       <use xlink:href="#m58ded08791" x="48.30425" y="99.1162" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-1" x="48.30425" y="99.1162" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_7">
@@ -145,11 +145,11 @@ L 433.32425 99.1162
      <g id="line2d_13">
       <path d="M 48.30425 56.107561 
 L 433.32425 56.107561 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_14">
       <g>
-       <use xlink:href="#m58ded08791" x="48.30425" y="56.107561" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-1" x="48.30425" y="56.107561" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
@@ -166,11 +166,11 @@ L 433.32425 56.107561
      <g id="line2d_15">
       <path d="M 48.30425 13.098923 
 L 433.32425 13.098923 
-" clip-path="url(#s3-bloques-presupuesto-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-bloques-presupuesto-7)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_16">
       <g>
-       <use xlink:href="#m58ded08791" x="48.30425" y="13.098923" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-bloques-presupuesto-1" x="48.30425" y="13.098923" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
@@ -186,229 +186,229 @@ L 433.32425 13.098923
     <g id="ytick_5">
      <g id="line2d_17">
       <defs>
-       <path id="m278d162ede" d="M 0 0 
+       <path id="s3-bloques-presupuesto-2" d="M 0 0 
 L -2 0 
 " style="stroke: var(--fig-muted); stroke-width: 0.6"/>
       </defs>
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="172.186587" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="172.186587" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_6">
      <g id="line2d_18">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="164.613142" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="164.613142" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_7">
      <g id="line2d_19">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="159.239697" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="159.239697" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_8">
      <g id="line2d_20">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="155.071729" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="155.071729" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_9">
      <g id="line2d_21">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="151.666252" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="151.666252" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_10">
      <g id="line2d_22">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="148.786961" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="148.786961" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_11">
      <g id="line2d_23">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="146.292807" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="146.292807" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_12">
      <g id="line2d_24">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="144.092806" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="144.092806" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_13">
      <g id="line2d_25">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="129.177949" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="129.177949" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_14">
      <g id="line2d_26">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="121.604503" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="121.604503" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_15">
      <g id="line2d_27">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="116.231058" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="116.231058" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_16">
      <g id="line2d_28">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="112.06309" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="112.06309" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_17">
      <g id="line2d_29">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="108.657613" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="108.657613" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_18">
      <g id="line2d_30">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="105.778323" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="105.778323" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_19">
      <g id="line2d_31">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="103.284168" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="103.284168" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_20">
      <g id="line2d_32">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="101.084167" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="101.084167" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_21">
      <g id="line2d_33">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="86.16931" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="86.16931" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_22">
      <g id="line2d_34">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="78.595864" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="78.595864" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_23">
      <g id="line2d_35">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="73.222419" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="73.222419" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_24">
      <g id="line2d_36">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="69.054452" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="69.054452" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_25">
      <g id="line2d_37">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="65.648974" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="65.648974" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_26">
      <g id="line2d_38">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="62.769684" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="62.769684" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_27">
      <g id="line2d_39">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="60.275529" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="60.275529" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_28">
      <g id="line2d_40">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="58.075529" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="58.075529" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_29">
      <g id="line2d_41">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="43.160671" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="43.160671" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_30">
      <g id="line2d_42">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="35.587226" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="35.587226" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_31">
      <g id="line2d_43">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="30.213781" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="30.213781" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_32">
      <g id="line2d_44">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="26.045813" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="26.045813" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_33">
      <g id="line2d_45">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="22.640335" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="22.640335" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_34">
      <g id="line2d_46">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="19.761045" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="19.761045" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_35">
      <g id="line2d_47">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="17.26689" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="17.26689" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_36">
      <g id="line2d_48">
       <g>
-       <use xlink:href="#m278d162ede" x="48.30425" y="15.06689" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
+       <use xlink:href="#s3-bloques-presupuesto-2" x="48.30425" y="15.06689" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.6"/>
       </g>
      </g>
     </g>
@@ -429,7 +429,7 @@ L 433.32425 181.728
    </g>
    <g id="PathCollection_1">
     <defs>
-     <path id="m29cd67ed1a" d="M 0 4.949747 
+     <path id="s3-bloques-presupuesto-3" d="M 0 4.949747 
 C 1.312688 4.949747 2.571789 4.428211 3.5 3.5 
 C 4.428211 2.571789 4.949747 1.312688 4.949747 0 
 C 4.949747 -1.312688 4.428211 -2.571789 3.5 -3.5 
@@ -441,8 +441,8 @@ C -2.571789 4.428211 -1.312688 4.949747 0 4.949747
 z
 " style="stroke: var(--fig-accent); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </defs>
-    <g clip-path="url(#s3-bloques-presupuesto-clip-0)">
-     <use xlink:href="#m29cd67ed1a" x="318.558673" y="28.862945" style="fill: var(--fig-accent); fill-opacity: 0.5; stroke: var(--fig-accent); stroke-opacity: 0.5; stroke-width: 1.4"/>
+    <g clip-path="url(#s3-bloques-presupuesto-7)">
+     <use xlink:href="#s3-bloques-presupuesto-3" x="318.558673" y="28.862945" style="fill: var(--fig-accent); fill-opacity: 0.5; stroke: var(--fig-accent); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </g>
    </g>
    <g id="text_11">
@@ -451,7 +451,7 @@ z
    </g>
    <g id="PathCollection_2">
     <defs>
-     <path id="ma7402ddf13" d="M 0 8.602325 
+     <path id="s3-bloques-presupuesto-4" d="M 0 8.602325 
 C 2.281363 8.602325 4.469595 7.69593 6.082763 6.082763 
 C 7.69593 4.469595 8.602325 2.281363 8.602325 0 
 C 8.602325 -2.281363 7.69593 -4.469595 6.082763 -6.082763 
@@ -463,8 +463,8 @@ C -4.469595 7.69593 -2.281363 8.602325 0 8.602325
 z
 " style="stroke: var(--fig-ramp-3); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </defs>
-    <g clip-path="url(#s3-bloques-presupuesto-clip-0)">
-     <use xlink:href="#ma7402ddf13" x="277.835404" y="80.795865" style="fill: var(--fig-ramp-3); fill-opacity: 0.5; stroke: var(--fig-ramp-3); stroke-opacity: 0.5; stroke-width: 1.4"/>
+    <g clip-path="url(#s3-bloques-presupuesto-7)">
+     <use xlink:href="#s3-bloques-presupuesto-4" x="277.835404" y="80.795865" style="fill: var(--fig-ramp-3); fill-opacity: 0.5; stroke: var(--fig-ramp-3); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </g>
    </g>
    <g id="text_12">
@@ -473,7 +473,7 @@ z
    </g>
    <g id="PathCollection_3">
     <defs>
-     <path id="m8442bb78ae" d="M 0 12.806248 
+     <path id="s3-bloques-presupuesto-5" d="M 0 12.806248 
 C 3.396257 12.806248 6.653869 11.456901 9.055385 9.055385 
 C 11.456901 6.653869 12.806248 3.396257 12.806248 0 
 C 12.806248 -3.396257 11.456901 -6.653869 9.055385 -9.055385 
@@ -485,8 +485,8 @@ C -6.653869 11.456901 -3.396257 12.806248 0 12.806248
 z
 " style="stroke: var(--fig-ramp-2); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </defs>
-    <g clip-path="url(#s3-bloques-presupuesto-clip-0)">
-     <use xlink:href="#m8442bb78ae" x="214.899442" y="113.268568" style="fill: var(--fig-ramp-2); fill-opacity: 0.5; stroke: var(--fig-ramp-2); stroke-opacity: 0.5; stroke-width: 1.4"/>
+    <g clip-path="url(#s3-bloques-presupuesto-7)">
+     <use xlink:href="#s3-bloques-presupuesto-5" x="214.899442" y="113.268568" style="fill: var(--fig-ramp-2); fill-opacity: 0.5; stroke: var(--fig-ramp-2); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </g>
    </g>
    <g id="text_13">
@@ -495,7 +495,7 @@ z
    </g>
    <g id="PathCollection_4">
     <defs>
-     <path id="mfbc9c13fa9" d="M 0 23.569047 
+     <path id="s3-bloques-presupuesto-6" d="M 0 23.569047 
 C 6.250584 23.569047 12.246003 21.085664 16.665833 16.665833 
 C 21.085664 12.246003 23.569047 6.250584 23.569047 0 
 C 23.569047 -6.250584 21.085664 -12.246003 16.665833 -16.665833 
@@ -507,8 +507,8 @@ C -12.246003 21.085664 -6.250584 23.569047 0 23.569047
 z
 " style="stroke: var(--fig-ramp-1); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </defs>
-    <g clip-path="url(#s3-bloques-presupuesto-clip-0)">
-     <use xlink:href="#mfbc9c13fa9" x="196.388865" y="145.374011" style="fill: var(--fig-ramp-1); fill-opacity: 0.5; stroke: var(--fig-ramp-1); stroke-opacity: 0.5; stroke-width: 1.4"/>
+    <g clip-path="url(#s3-bloques-presupuesto-7)">
+     <use xlink:href="#s3-bloques-presupuesto-6" x="196.388865" y="145.374011" style="fill: var(--fig-ramp-1); fill-opacity: 0.5; stroke: var(--fig-ramp-1); stroke-opacity: 0.5; stroke-width: 1.4"/>
     </g>
    </g>
    <g id="text_14">
@@ -522,7 +522,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s3-bloques-presupuesto-clip-0">
+  <clipPath id="s3-bloques-presupuesto-7">
    <rect x="48.30425" y="4.32" width="385.02" height="177.408"/>
   </clipPath>
  </defs>

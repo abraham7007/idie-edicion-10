@@ -28,16 +28,16 @@ z
      <g id="line2d_1">
       <path d="M 70.421094 137.376 
 L 70.421094 4.32 
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_2">
       <defs>
-       <path id="m5f394ee736" d="M 0 0 
+       <path id="s2-helices-intencion-0" d="M 0 0 
 L 0 3 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m5f394ee736" x="70.421094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-0" x="70.421094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -48,11 +48,11 @@ L 0 3
      <g id="line2d_3">
       <path d="M 133.661094 137.376 
 L 133.661094 4.32 
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m5f394ee736" x="133.661094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-0" x="133.661094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -63,11 +63,11 @@ L 133.661094 4.32
      <g id="line2d_5">
       <path d="M 196.901094 137.376 
 L 196.901094 4.32 
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m5f394ee736" x="196.901094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-0" x="196.901094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -78,11 +78,11 @@ L 196.901094 4.32
      <g id="line2d_7">
       <path d="M 260.141094 137.376 
 L 260.141094 4.32 
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m5f394ee736" x="260.141094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-0" x="260.141094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -93,11 +93,11 @@ L 260.141094 4.32
      <g id="line2d_9">
       <path d="M 323.381094 137.376 
 L 323.381094 4.32 
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#m5f394ee736" x="323.381094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-0" x="323.381094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -108,11 +108,11 @@ L 323.381094 4.32
      <g id="line2d_11">
       <path d="M 386.621094 137.376 
 L 386.621094 4.32 
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_12">
       <g>
-       <use xlink:href="#m5f394ee736" x="386.621094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-0" x="386.621094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -123,11 +123,11 @@ L 386.621094 4.32
      <g id="line2d_13">
       <path d="M 449.861094 137.376 
 L 449.861094 4.32 
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.7; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_14">
       <g>
-       <use xlink:href="#m5f394ee736" x="449.861094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-0" x="449.861094" y="137.376" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_7">
@@ -142,12 +142,12 @@ L 449.861094 4.32
     <g id="ytick_1">
      <g id="line2d_15">
       <defs>
-       <path id="m4cef9347f4" d="M 0 0 
+       <path id="s2-helices-intencion-1" d="M 0 0 
 L -3 0 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m4cef9347f4" x="70.421094" y="109.982118" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-1" x="70.421094" y="109.982118" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
@@ -157,7 +157,7 @@ L -3 0
     <g id="ytick_2">
      <g id="line2d_16">
       <g>
-       <use xlink:href="#m4cef9347f4" x="70.421094" y="70.848" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-1" x="70.421094" y="70.848" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_10">
@@ -167,7 +167,7 @@ L -3 0
     <g id="ytick_3">
      <g id="line2d_17">
       <g>
-       <use xlink:href="#m4cef9347f4" x="70.421094" y="31.713882" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s2-helices-intencion-1" x="70.421094" y="31.713882" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_11">
@@ -182,7 +182,7 @@ L 93.819894 98.633224
 L 70.421094 98.633224 
 L 70.421094 121.331012 
 z
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: none; stroke-dasharray: 3.9,2.6; stroke-dashoffset: 0; stroke: var(--fig-muted); stroke-width: 1.3; stroke-linejoin: miter"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: none; stroke-dasharray: 3.9,2.6; stroke-dashoffset: 0; stroke: var(--fig-muted); stroke-width: 1.3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 70.421094 82.196894 
@@ -190,7 +190,7 @@ L 217.137894 82.196894
 L 217.137894 59.499106 
 L 70.421094 59.499106 
 z
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: var(--fig-navy)"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: var(--fig-navy)"/>
    </g>
    <g id="patch_5">
     <path d="M 70.421094 43.062776 
@@ -198,7 +198,7 @@ L 336.661494 43.062776
 L 336.661494 20.364988 
 L 70.421094 20.364988 
 z
-" clip-path="url(#s2-helices-intencion-clip-0)" style="fill: var(--fig-accent)"/>
+" clip-path="url(#s2-helices-intencion-2)" style="fill: var(--fig-accent)"/>
    </g>
    <g id="patch_6">
     <path d="M 70.421094 137.376 
@@ -226,7 +226,7 @@ L 449.861094 137.376
   </g>
  </g>
  <defs>
-  <clipPath id="s2-helices-intencion-clip-0">
+  <clipPath id="s2-helices-intencion-2">
    <rect x="70.421094" y="4.32" width="379.44" height="133.056"/>
   </clipPath>
  </defs>

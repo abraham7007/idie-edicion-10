@@ -20,7 +20,7 @@ L 98.021077 99.462194
 L 98.021077 14.513806 
 L 12.260769 14.513806 
 z
-" clip-path="url(#s5-actividad-partida-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.14; stroke: var(--fig-ramp-1); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-actividad-partida-0)" style="fill: var(--fig-ramp-1); opacity: 0.14; stroke: var(--fig-ramp-1); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 116.020154 99.462194 
@@ -28,7 +28,7 @@ L 201.780462 99.462194
 L 201.780462 14.513806 
 L 116.020154 14.513806 
 z
-" clip-path="url(#s5-actividad-partida-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.14; stroke: var(--fig-ramp-2); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-actividad-partida-0)" style="fill: var(--fig-ramp-2); opacity: 0.14; stroke: var(--fig-ramp-2); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 219.779538 99.462194 
@@ -36,7 +36,7 @@ L 305.539846 99.462194
 L 305.539846 14.513806 
 L 219.779538 14.513806 
 z
-" clip-path="url(#s5-actividad-partida-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.14; stroke: var(--fig-ramp-3); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-actividad-partida-0)" style="fill: var(--fig-ramp-3); opacity: 0.14; stroke: var(--fig-ramp-3); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 323.538923 99.462194 
@@ -44,7 +44,7 @@ L 409.299231 99.462194
 L 409.299231 14.513806 
 L 323.538923 14.513806 
 z
-" clip-path="url(#s5-actividad-partida-clip-0)" style="fill: var(--fig-accent); opacity: 0.14; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#s5-actividad-partida-0)" style="fill: var(--fig-accent); opacity: 0.14; stroke: var(--fig-accent); stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ramp-1); font: 700 7px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: middle" x="55.140923" y="33.435046" transform="rotate(-0 55.140923 33.435046)">Actividad</text>
@@ -107,7 +107,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-actividad-partida-clip-0">
+  <clipPath id="s5-actividad-partida-0">
    <rect x="4.32" y="4.32" width="412.92" height="105.336"/>
   </clipPath>
  </defs>

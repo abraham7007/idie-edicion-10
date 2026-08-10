@@ -28,7 +28,7 @@ z
      <g id="line2d_1">
       <path d="M 69.996847 165.096 
 L 69.996847 4.32 
-" clip-path="url(#s5-dossier-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-dossier-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_2"/>
      <g id="text_1">
@@ -39,7 +39,7 @@ L 69.996847 4.32
      <g id="line2d_3">
       <path d="M 116.305632 165.096 
 L 116.305632 4.32 
-" clip-path="url(#s5-dossier-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-dossier-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_4"/>
      <g id="text_2">
@@ -50,7 +50,7 @@ L 116.305632 4.32
      <g id="line2d_5">
       <path d="M 162.614417 165.096 
 L 162.614417 4.32 
-" clip-path="url(#s5-dossier-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-dossier-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_6"/>
      <g id="text_3">
@@ -61,7 +61,7 @@ L 162.614417 4.32
      <g id="line2d_7">
       <path d="M 208.923202 165.096 
 L 208.923202 4.32 
-" clip-path="url(#s5-dossier-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s5-dossier-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_8"/>
      <g id="text_4">
@@ -76,7 +76,7 @@ L 208.923202 26.7776
 L 208.923202 17.5904 
 L 85.433109 17.5904 
 z
-" clip-path="url(#s5-dossier-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.65"/>
+" clip-path="url(#s5-dossier-0)" style="fill: var(--fig-ramp-1); opacity: 0.65"/>
    </g>
    <g id="text_5">
     <text style="fill: var(--fig-ink); font: 700 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="65.365969" y="24.5435" transform="rotate(-0 65.365969 24.5435)">Expediente</text>
@@ -90,7 +90,7 @@ L 208.923202 52.2976
 L 208.923202 43.1104 
 L 100.869371 43.1104 
 z
-" clip-path="url(#s5-dossier-clip-0)" style="fill: var(--fig-ramp-1); opacity: 0.65"/>
+" clip-path="url(#s5-dossier-0)" style="fill: var(--fig-ramp-1); opacity: 0.65"/>
    </g>
    <g id="text_7">
     <text style="fill: var(--fig-ink); font: 700 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="65.365969" y="49.856313" transform="rotate(-0 65.365969 49.856313)">Documentación</text>
@@ -104,7 +104,7 @@ L 208.923202 77.8176
 L 208.923202 68.6304 
 L 116.305632 68.6304 
 z
-" clip-path="url(#s5-dossier-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.65"/>
+" clip-path="url(#s5-dossier-0)" style="fill: var(--fig-ramp-2); opacity: 0.65"/>
    </g>
    <g id="text_9">
     <text style="fill: var(--fig-ink); font: 700 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="65.365969" y="75.579844" transform="rotate(-0 65.365969 75.579844)">Registros</text>
@@ -118,7 +118,7 @@ L 208.923202 103.3376
 L 208.923202 94.1504 
 L 139.460025 94.1504 
 z
-" clip-path="url(#s5-dossier-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.65"/>
+" clip-path="url(#s5-dossier-0)" style="fill: var(--fig-ramp-2); opacity: 0.65"/>
    </g>
    <g id="text_11">
     <text style="fill: var(--fig-ink); font: 700 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="65.365969" y="100.896313" transform="rotate(-0 65.365969 100.896313)">Publicaciones</text>
@@ -132,7 +132,7 @@ L 208.923202 128.8576
 L 208.923202 119.6704 
 L 162.614417 119.6704 
 z
-" clip-path="url(#s5-dossier-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.65"/>
+" clip-path="url(#s5-dossier-0)" style="fill: var(--fig-ramp-3); opacity: 0.65"/>
    </g>
    <g id="text_13">
     <text style="fill: var(--fig-ink); font: 700 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="65.365969" y="126.416313" transform="rotate(-0 65.365969 126.416313)">Historia</text>
@@ -146,7 +146,7 @@ L 208.923202 154.3776
 L 208.923202 145.1904 
 L 193.486941 145.1904 
 z
-" clip-path="url(#s5-dossier-clip-0)" style="fill: var(--fig-ramp-3); opacity: 0.65"/>
+" clip-path="url(#s5-dossier-0)" style="fill: var(--fig-ramp-3); opacity: 0.65"/>
    </g>
    <g id="text_15">
     <text style="fill: var(--fig-ink); font: 700 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="65.365969" y="151.936313" transform="rotate(-0 65.365969 151.936313)">Video</text>
@@ -157,7 +157,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-dossier-clip-0">
+  <clipPath id="s5-dossier-0">
    <rect x="12.110866" y="4.32" width="412.92" height="160.776"/>
   </clipPath>
  </defs>

@@ -127,12 +127,13 @@ def escribir(fig, nombre: str) -> None:
     # regeneración produjera un archivo distinto aunque la figura no cambie.
     svg = re.sub(r"<metadata>.*?</metadata>", "", svg, flags=re.S)
     svg = re.sub(r"<!-- Created with matplotlib.*?-->", "", svg, flags=re.S)
-    # matplotlib nombra cada clip-path con un identificador aleatorio, así que
-    # regenerar una figura idéntica producía un archivo distinto y el control
-    # de versiones marcaba las ciento cuarenta como modificadas en cada pasada.
-    # Se sustituyen por un identificador derivado del nombre y del orden.
-    for i, viejo_id in enumerate(dict.fromkeys(re.findall(r'clipPath id="([^"]+)"', svg))):
-        svg = svg.replace(viejo_id, f"{nombre}-clip-{i}")
+    # matplotlib nombra con un identificador aleatorio —una letra y diez
+    # dígitos hexadecimales— tanto los clip-path como los trazos reutilizables
+    # de las marcas de eje. Regenerar una figura idéntica producía un archivo
+    # distinto, y el control de versiones marcaba las ciento cuarenta y cinco
+    # como modificadas en cada pasada. Se renumeran por orden de aparición.
+    for i, viejo_id in enumerate(dict.fromkeys(re.findall(r'\bid="([a-z][0-9a-f]{10})"', svg))):
+        svg = svg.replace(viejo_id, f"{nombre}-{i}")
 
     destino.write_text(svg.strip(), encoding="utf-8")
     print(f"  {destino.relative_to(RAIZ)}")

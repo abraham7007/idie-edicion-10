@@ -20,7 +20,7 @@ L 166.312654 38.3232
 L 166.312654 25.7568 
 L 98.089258 25.7568 
 z
-" clip-path="url(#s5-tramite-vs-proyecto-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+" clip-path="url(#s5-tramite-vs-proyecto-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="93.541031" y="34.213031" transform="rotate(-0 93.541031 34.213031)">Proyecto financiado</text>
@@ -34,7 +34,7 @@ L 280.018314 75.2832
 L 280.018314 62.7168 
 L 120.83039 62.7168 
 z
-" clip-path="url(#s5-tramite-vs-proyecto-clip-0)" style="fill: var(--fig-accent); opacity: 0.85"/>
+" clip-path="url(#s5-tramite-vs-proyecto-0)" style="fill: var(--fig-accent); opacity: 0.85"/>
    </g>
    <g id="text_3">
     <text style="fill: var(--fig-ink); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="93.541031" y="71.308313" transform="rotate(-0 93.541031 71.308313)">Trámite de patente</text>
@@ -49,12 +49,12 @@ z
    <g id="line2d_1">
     <path d="M 166.312654 85.632 
 L 166.312654 15.408 
-" clip-path="url(#s5-tramite-vs-proyecto-clip-0)" style="fill: none; stroke-dasharray: 4,3; stroke-dashoffset: 0; stroke: var(--fig-ink)"/>
+" clip-path="url(#s5-tramite-vs-proyecto-0)" style="fill: none; stroke-dasharray: 4,3; stroke-dashoffset: 0; stroke: var(--fig-ink)"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="s5-tramite-vs-proyecto-clip-0">
+  <clipPath id="s5-tramite-vs-proyecto-0">
    <rect x="14.705107" y="4.32" width="401.76" height="121.968"/>
   </clipPath>
  </defs>

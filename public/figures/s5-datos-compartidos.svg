@@ -20,7 +20,7 @@ L 373.6416 35.223329
 L 373.6416 20.63009 
 L 120.6816 20.63009 
 z
-" clip-path="url(#s5-datos-compartidos-clip-0)" style="fill: var(--fig-grid); opacity: 0.28"/>
+" clip-path="url(#s5-datos-compartidos-0)" style="fill: var(--fig-grid); opacity: 0.28"/>
    </g>
    <g id="patch_3">
     <path d="M 120.6816 78.144619 
@@ -28,7 +28,7 @@ L 373.6416 78.144619
 L 373.6416 63.551381 
 L 120.6816 63.551381 
 z
-" clip-path="url(#s5-datos-compartidos-clip-0)" style="fill: var(--fig-grid); opacity: 0.28"/>
+" clip-path="url(#s5-datos-compartidos-0)" style="fill: var(--fig-grid); opacity: 0.28"/>
    </g>
    <g id="patch_4">
     <path d="M 120.6816 121.06591 
@@ -36,7 +36,7 @@ L 373.6416 121.06591
 L 373.6416 106.472671 
 L 120.6816 106.472671 
 z
-" clip-path="url(#s5-datos-compartidos-clip-0)" style="fill: var(--fig-grid); opacity: 0.28"/>
+" clip-path="url(#s5-datos-compartidos-0)" style="fill: var(--fig-grid); opacity: 0.28"/>
    </g>
    <g id="patch_5">
     <path d="M 120.6816 35.223329 
@@ -44,7 +44,7 @@ L 140.9184 35.223329
 L 140.9184 20.63009 
 L 120.6816 20.63009 
 z
-" clip-path="url(#s5-datos-compartidos-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+" clip-path="url(#s5-datos-compartidos-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(18.876513 25.364055)">Declaran que los datos</text>
@@ -59,7 +59,7 @@ L 125.7408 78.144619
 L 125.7408 63.551381 
 L 120.6816 63.551381 
 z
-" clip-path="url(#s5-datos-compartidos-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+" clip-path="url(#s5-datos-compartidos-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
    </g>
    <g id="text_3">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(50.061731 68.459708)">Los datos están</text>
@@ -74,7 +74,7 @@ L 122.19936 121.06591
 L 122.19936 106.472671 
 L 120.6816 106.472671 
 z
-" clip-path="url(#s5-datos-compartidos-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+" clip-path="url(#s5-datos-compartidos-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
    </g>
    <g id="text_5">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(54.516763 111.483904)">El código está</text>
@@ -86,7 +86,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-datos-compartidos-clip-0">
+  <clipPath id="s5-datos-compartidos-0">
    <rect x="4.32" y="4.32" width="379.44" height="133.056"/>
   </clipPath>
  </defs>

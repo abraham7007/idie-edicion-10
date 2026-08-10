@@ -31,7 +31,7 @@ L 343.353415 21.446773
 L 343.353415 34.387002 
 L 114.262506 34.387002 
 z
-" clip-path="url(#s5-costo-medios-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+" clip-path="url(#s5-costo-medios-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(13.230063 25.76661)">Registro de sensores</text>
@@ -49,7 +49,7 @@ L 228.80796 59.50627
 L 228.80796 72.446499 
 L 114.262506 72.446499 
 z
-" clip-path="url(#s5-costo-medios-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+" clip-path="url(#s5-costo-medios-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
    </g>
    <g id="text_4">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(8.775031 63.8712)">Acta de la asociación</text>
@@ -67,7 +67,7 @@ L 410.171597 97.565767
 L 410.171597 110.505995 
 L 114.262506 110.505995 
 z
-" clip-path="url(#s5-costo-medios-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+" clip-path="url(#s5-costo-medios-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
    </g>
    <g id="text_7">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(4.32 101.930697)">Informe de laboratorio</text>
@@ -85,7 +85,7 @@ L 281.30796 135.625263
 L 281.30796 148.565492 
 L 114.262506 148.565492 
 z
-" clip-path="url(#s5-costo-medios-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
+" clip-path="url(#s5-costo-medios-0)" style="fill: var(--fig-ramp-2); opacity: 0.85"/>
    </g>
    <g id="text_10">
     <text style="fill: var(--fig-ink); font: 7.4px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace" transform="translate(39.96025 139.990193)">Encuesta a los</text>
@@ -103,7 +103,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-costo-medios-clip-0">
+  <clipPath id="s5-costo-medios-0">
    <rect x="114.262506" y="4.32" width="390.6" height="166.32"/>
   </clipPath>
  </defs>

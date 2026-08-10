@@ -16,53 +16,53 @@ z
   <g id="axes_1">
    <g id="line2d_1">
     <path d="M 10.064118 20.462824 
-" clip-path="url(#s5-versiones-artefacto-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.5; stroke-linecap: square"/>
+" clip-path="url(#s5-versiones-artefacto-2)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.5; stroke-linecap: square"/>
     <defs>
-     <path id="mf7e3743044" d="M -3 3 
+     <path id="s5-versiones-artefacto-0" d="M -3 3 
 L 3 3 
 L 3 -3 
 L -3 -3 
 z
 " style="stroke: var(--fig-accent); stroke-linejoin: miter"/>
     </defs>
-    <g clip-path="url(#s5-versiones-artefacto-clip-0)">
-     <use xlink:href="#mf7e3743044" x="10.064118" y="20.462824" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-linejoin: miter"/>
+    <g clip-path="url(#s5-versiones-artefacto-2)">
+     <use xlink:href="#s5-versiones-artefacto-0" x="10.064118" y="20.462824" style="fill: var(--fig-accent); stroke: var(--fig-accent); stroke-linejoin: miter"/>
     </g>
    </g>
    <g id="line2d_2">
     <path d="M 10.064118 49.813412 
-" clip-path="url(#s5-versiones-artefacto-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+" clip-path="url(#s5-versiones-artefacto-2)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
     <defs>
-     <path id="m603dd40e93" d="M -3 3 
+     <path id="s5-versiones-artefacto-1" d="M -3 3 
 L 3 3 
 L 3 -3 
 L -3 -3 
 z
 " style="stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
     </defs>
-    <g clip-path="url(#s5-versiones-artefacto-clip-0)">
-     <use xlink:href="#m603dd40e93" x="10.064118" y="49.813412" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
+    <g clip-path="url(#s5-versiones-artefacto-2)">
+     <use xlink:href="#s5-versiones-artefacto-1" x="10.064118" y="49.813412" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
     </g>
    </g>
    <g id="line2d_3">
     <path d="M 10.064118 79.164 
-" clip-path="url(#s5-versiones-artefacto-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-versiones-artefacto-clip-0)">
-     <use xlink:href="#m603dd40e93" x="10.064118" y="79.164" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
+" clip-path="url(#s5-versiones-artefacto-2)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-versiones-artefacto-2)">
+     <use xlink:href="#s5-versiones-artefacto-1" x="10.064118" y="79.164" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
     </g>
    </g>
    <g id="line2d_4">
     <path d="M 10.064118 108.514588 
-" clip-path="url(#s5-versiones-artefacto-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-versiones-artefacto-clip-0)">
-     <use xlink:href="#m603dd40e93" x="10.064118" y="108.514588" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
+" clip-path="url(#s5-versiones-artefacto-2)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-versiones-artefacto-2)">
+     <use xlink:href="#s5-versiones-artefacto-1" x="10.064118" y="108.514588" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
     </g>
    </g>
    <g id="line2d_5">
     <path d="M 10.064118 137.865176 
-" clip-path="url(#s5-versiones-artefacto-clip-0)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
-    <g clip-path="url(#s5-versiones-artefacto-clip-0)">
-     <use xlink:href="#m603dd40e93" x="10.064118" y="137.865176" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
+" clip-path="url(#s5-versiones-artefacto-2)" style="fill: none; stroke: var(--fig-ramp-2); stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#s5-versiones-artefacto-2)">
+     <use xlink:href="#s5-versiones-artefacto-1" x="10.064118" y="137.865176" style="fill: var(--fig-ramp-2); stroke: var(--fig-ramp-2); stroke-linejoin: miter"/>
     </g>
    </g>
    <g id="text_1">
@@ -98,7 +98,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-versiones-artefacto-clip-0">
+  <clipPath id="s5-versiones-artefacto-2">
    <rect x="4.32" y="4.32" width="390.6" height="149.688"/>
   </clipPath>
  </defs>

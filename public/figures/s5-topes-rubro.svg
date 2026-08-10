@@ -20,7 +20,7 @@ L 341.044138 37.08
 L 341.044138 27.252 
 L 4.32 27.252 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
    </g>
    <g id="patch_3">
     <path d="M 4.32 69.84 
@@ -28,7 +28,7 @@ L 341.044138 69.84
 L 341.044138 60.012 
 L 4.32 60.012 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
    </g>
    <g id="patch_4">
     <path d="M 4.32 102.6 
@@ -36,7 +36,7 @@ L 341.044138 102.6
 L 341.044138 92.772 
 L 4.32 92.772 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
    </g>
    <g id="patch_5">
     <path d="M 4.32 135.36 
@@ -44,7 +44,7 @@ L 341.044138 135.36
 L 341.044138 125.532 
 L 4.32 125.532 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-grid); opacity: 0.3"/>
    </g>
    <g id="patch_6">
     <path d="M 4.32 37.08 
@@ -52,7 +52,7 @@ L 139.009655 37.08
 L 139.009655 27.252 
 L 4.32 27.252 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="4.32" y="20.658" transform="rotate(-0 4.32 20.658)">Honorarios del equipo</text>
@@ -69,7 +69,7 @@ L 71.664828 69.84
 L 71.664828 60.012 
 L 4.32 60.012 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-accent); opacity: 0.9"/>
    </g>
    <g id="text_4">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="4.32" y="53.43425" transform="rotate(-0 4.32 53.43425)">Recursos humanos</text>
@@ -86,7 +86,7 @@ L 31.257931 102.6
 L 31.257931 92.772 
 L 4.32 92.772 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
    </g>
    <g id="text_7">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="4.32" y="86.19425" transform="rotate(-0 4.32 86.19425)">Pasajes y viáticos</text>
@@ -103,7 +103,7 @@ L 21.156207 135.36
 L 21.156207 125.532 
 L 4.32 125.532 
 z
-" clip-path="url(#s5-topes-rubro-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
+" clip-path="url(#s5-topes-rubro-0)" style="fill: var(--fig-ramp-2); opacity: 0.9"/>
    </g>
    <g id="text_10">
     <text style="fill: var(--fig-ink); font: 8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="4.32" y="118.95425" transform="rotate(-0 4.32 118.95425)">Difusión y transferencia</text>
@@ -117,7 +117,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-topes-rubro-clip-0">
+  <clipPath id="s5-topes-rubro-0">
    <rect x="4.32" y="4.32" width="390.6" height="144.144"/>
   </clipPath>
  </defs>

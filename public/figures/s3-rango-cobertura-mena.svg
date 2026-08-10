@@ -29,23 +29,23 @@ L 341.104619 176.184
 L 341.104619 4.32 
 L 166.095528 4.32 
 z
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: var(--fig-navy); opacity: 0.07; stroke: var(--fig-navy); stroke-linejoin: miter"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: var(--fig-navy); opacity: 0.07; stroke: var(--fig-navy); stroke-linejoin: miter"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <path d="M 166.095528 176.184 
 L 166.095528 4.32 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_2">
       <defs>
-       <path id="m80c191c3b5" d="M 0 0 
+       <path id="s3-rango-cobertura-mena-0" d="M 0 0 
 L 0 3 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m80c191c3b5" x="166.095528" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-0" x="166.095528" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -56,11 +56,11 @@ L 0 3
      <g id="line2d_3">
       <path d="M 224.431892 176.184 
 L 224.431892 4.32 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m80c191c3b5" x="224.431892" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-0" x="224.431892" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -71,11 +71,11 @@ L 224.431892 4.32
      <g id="line2d_5">
       <path d="M 282.768256 176.184 
 L 282.768256 4.32 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m80c191c3b5" x="282.768256" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-0" x="282.768256" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -86,11 +86,11 @@ L 282.768256 4.32
      <g id="line2d_7">
       <path d="M 341.104619 176.184 
 L 341.104619 4.32 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m80c191c3b5" x="341.104619" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-0" x="341.104619" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -101,11 +101,11 @@ L 341.104619 4.32
      <g id="line2d_9">
       <path d="M 399.440983 176.184 
 L 399.440983 4.32 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#m80c191c3b5" x="399.440983" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-0" x="399.440983" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -116,11 +116,11 @@ L 399.440983 4.32
      <g id="line2d_11">
       <path d="M 457.777347 176.184 
 L 457.777347 4.32 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-grid); stroke-opacity: 0.6; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="line2d_12">
       <g>
-       <use xlink:href="#m80c191c3b5" x="457.777347" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-0" x="457.777347" y="176.184" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -135,12 +135,12 @@ L 457.777347 4.32
     <g id="ytick_1">
      <g id="line2d_13">
       <defs>
-       <path id="md4fb13d9c3" d="M 0 0 
+       <path id="s3-rango-cobertura-mena-1" d="M 0 0 
 L -3 0 
 " style="stroke: var(--fig-muted); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="147.385168" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="147.385168" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
@@ -150,7 +150,7 @@ L -3 0
     <g id="ytick_2">
      <g id="line2d_14">
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="128.805276" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="128.805276" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
@@ -160,7 +160,7 @@ L -3 0
     <g id="ytick_3">
      <g id="line2d_15">
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="110.225384" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="110.225384" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_10">
@@ -170,7 +170,7 @@ L -3 0
     <g id="ytick_4">
      <g id="line2d_16">
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="91.645492" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="91.645492" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_11">
@@ -180,7 +180,7 @@ L -3 0
     <g id="ytick_5">
      <g id="line2d_17">
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="73.0656" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="73.0656" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_12">
@@ -190,7 +190,7 @@ L -3 0
     <g id="ytick_6">
      <g id="line2d_18">
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="54.485708" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="54.485708" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_13">
@@ -200,7 +200,7 @@ L -3 0
     <g id="ytick_7">
      <g id="line2d_19">
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="35.905816" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="35.905816" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_14">
@@ -210,7 +210,7 @@ L -3 0
     <g id="ytick_8">
      <g id="line2d_20">
       <g>
-       <use xlink:href="#md4fb13d9c3" x="119.426437" y="17.325924" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
+       <use xlink:href="#s3-rango-cobertura-mena-1" x="119.426437" y="17.325924" style="fill: var(--fig-muted); stroke: var(--fig-muted); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_15">
@@ -221,42 +221,42 @@ L -3 0
    <g id="LineCollection_1">
     <path d="M 399.440983 17.325924 
 L 399.440983 17.325924 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 311.936438 35.905816 
 L 399.440983 35.905816 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_3">
     <path d="M 311.936438 54.485708 
 L 311.936438 54.485708 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_4">
     <path d="M 282.768256 73.0656 
 L 282.768256 73.0656 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_5">
     <path d="M 224.431892 91.645492 
 L 311.936438 91.645492 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_6">
     <path d="M 166.095528 110.225384 
 L 341.104619 110.225384 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_7">
     <path d="M 166.095528 128.805276 
 L 282.768256 128.805276 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="LineCollection_8">
     <path d="M 224.431892 147.385168 
 L 224.431892 147.385168 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-opacity: 0.32; stroke-width: 3.4; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 119.426438 176.184 
@@ -266,10 +266,10 @@ L 504.446438 176.184
    <g id="LineCollection_9">
     <path d="M 399.440983 20.670305 
 L 399.440983 13.981544 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
     <path d="M 399.440983 20.670305 
 L 399.440983 13.981544 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
    </g>
    <g id="text_16">
     <text style="fill: var(--fig-muted); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="407.608074" y="19.498956" transform="rotate(-0 407.608074 19.498956)">90 % · razón única</text>
@@ -277,10 +277,10 @@ L 399.440983 13.981544
    <g id="LineCollection_10">
     <path d="M 311.936438 39.250197 
 L 311.936438 32.561436 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
     <path d="M 399.440983 39.250197 
 L 399.440983 32.561436 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
    </g>
    <g id="text_17">
     <text style="fill: var(--fig-muted); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="303.769347" y="38.023129" transform="rotate(-0 303.769347 38.023129)">75</text>
@@ -291,10 +291,10 @@ L 399.440983 32.561436
    <g id="LineCollection_11">
     <path d="M 311.936438 57.830089 
 L 311.936438 51.141328 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
     <path d="M 311.936438 57.830089 
 L 311.936438 51.141328 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
    </g>
    <g id="text_19">
     <text style="fill: var(--fig-muted); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="320.103528" y="56.658739" transform="rotate(-0 320.103528 56.658739)">75 % · razón única</text>
@@ -302,10 +302,10 @@ L 311.936438 51.141328
    <g id="LineCollection_12">
     <path d="M 282.768256 76.409981 
 L 282.768256 69.721219 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
     <path d="M 282.768256 76.409981 
 L 282.768256 69.721219 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
    </g>
    <g id="text_20">
     <text style="fill: var(--fig-muted); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="290.935347" y="75.238631" transform="rotate(-0 290.935347 75.238631)">70 % · razón única</text>
@@ -313,10 +313,10 @@ L 282.768256 69.721219
    <g id="LineCollection_13">
     <path d="M 224.431892 94.989872 
 L 224.431892 88.301111 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
     <path d="M 311.936438 94.989872 
 L 311.936438 88.301111 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
    </g>
    <g id="text_21">
     <text style="fill: var(--fig-muted); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="216.264801" y="93.762804" transform="rotate(-0 216.264801 93.762804)">60</text>
@@ -327,10 +327,10 @@ L 311.936438 88.301111
    <g id="LineCollection_14">
     <path d="M 166.095528 113.569764 
 L 166.095528 106.881003 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
     <path d="M 341.104619 113.569764 
 L 341.104619 106.881003 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
    </g>
    <g id="text_23">
     <text style="fill: var(--fig-muted); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="157.928437" y="112.342696" transform="rotate(-0 157.928437 112.342696)">50</text>
@@ -341,10 +341,10 @@ L 341.104619 106.881003
    <g id="LineCollection_15">
     <path d="M 166.095528 132.149656 
 L 166.095528 125.460895 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
     <path d="M 282.768256 132.149656 
 L 282.768256 125.460895 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-accent); stroke-width: 1.3"/>
    </g>
    <g id="text_25">
     <text style="fill: var(--fig-muted); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: end" x="157.928437" y="130.922588" transform="rotate(-0 157.928437 130.922588)">50</text>
@@ -355,10 +355,10 @@ L 282.768256 125.460895
    <g id="LineCollection_16">
     <path d="M 224.431892 150.729548 
 L 224.431892 144.040787 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
     <path d="M 224.431892 150.729548 
 L 224.431892 144.040787 
-" clip-path="url(#s3-rango-cobertura-mena-clip-0)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
+" clip-path="url(#s3-rango-cobertura-mena-4)" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.3"/>
    </g>
    <g id="text_27">
     <text style="fill: var(--fig-muted); font: 7.8px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="232.598983" y="149.558199" transform="rotate(-0 232.598983 149.558199)">60 % · razón única</text>
@@ -368,7 +368,7 @@ L 224.431892 144.040787
    </g>
    <g id="line2d_21">
     <defs>
-     <path id="me3ee99d4ab" d="M 0 3.5 
+     <path id="s3-rango-cobertura-mena-2" d="M 0 3.5 
 C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
 C 3.131218 1.81853 3.5 0.928211 3.5 0 
 C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
@@ -380,13 +380,13 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: var(--fig-muted)"/>
     </defs>
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#me3ee99d4ab" x="399.440983" y="17.325924" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-2" x="399.440983" y="17.325924" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_22">
     <defs>
-     <path id="m2f21c8e20e" d="M 0 3.5 
+     <path id="s3-rango-cobertura-mena-3" d="M 0 3.5 
 C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
 C 3.131218 1.81853 3.5 0.928211 3.5 0 
 C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
@@ -398,44 +398,44 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: var(--fig-accent)"/>
     </defs>
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#m2f21c8e20e" x="355.68871" y="35.905816" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-3" x="355.68871" y="35.905816" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="line2d_23">
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#me3ee99d4ab" x="311.936438" y="54.485708" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-2" x="311.936438" y="54.485708" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_24">
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#me3ee99d4ab" x="282.768256" y="73.0656" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-2" x="282.768256" y="73.0656" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
    <g id="line2d_25">
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#m2f21c8e20e" x="268.184165" y="91.645492" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-3" x="268.184165" y="91.645492" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="line2d_26">
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#m2f21c8e20e" x="253.600074" y="110.225384" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-3" x="253.600074" y="110.225384" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="line2d_27">
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#m2f21c8e20e" x="224.431892" y="128.805276" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-3" x="224.431892" y="128.805276" style="fill: var(--fig-accent); stroke: var(--fig-accent)"/>
     </g>
    </g>
    <g id="line2d_28">
-    <g clip-path="url(#s3-rango-cobertura-mena-clip-0)">
-     <use xlink:href="#me3ee99d4ab" x="224.431892" y="147.385168" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
+    <g clip-path="url(#s3-rango-cobertura-mena-4)">
+     <use xlink:href="#s3-rango-cobertura-mena-2" x="224.431892" y="147.385168" style="fill: var(--fig-muted); stroke: var(--fig-muted)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="s3-rango-cobertura-mena-clip-0">
+  <clipPath id="s3-rango-cobertura-mena-4">
    <rect x="119.426437" y="4.32" width="385.02" height="171.864"/>
   </clipPath>
  </defs>

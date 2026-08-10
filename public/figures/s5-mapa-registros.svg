@@ -20,7 +20,7 @@ L 420.546667 46.017355
 L 420.546667 22.190295 
 L 4.32 22.190295 
 z
-" clip-path="url(#s5-mapa-registros-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-mapa-registros-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_3">
     <path d="M 4.32 97.815311 
@@ -28,7 +28,7 @@ L 420.546667 97.815311
 L 420.546667 73.988251 
 L 4.32 73.988251 
 z
-" clip-path="url(#s5-mapa-registros-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-mapa-registros-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="patch_4">
     <path d="M 4.32 149.613267 
@@ -36,12 +36,12 @@ L 420.546667 149.613267
 L 420.546667 125.786207 
 L 4.32 125.786207 
 z
-" clip-path="url(#s5-mapa-registros-clip-0)" style="fill: var(--fig-surface)"/>
+" clip-path="url(#s5-mapa-registros-0)" style="fill: var(--fig-surface)"/>
    </g>
    <g id="line2d_1">
     <path d="M 4.32 19.600397 
 L 420.546667 19.600397 
-" clip-path="url(#s5-mapa-registros-clip-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#s5-mapa-registros-0)" style="fill: none; stroke: var(--fig-grid); stroke-width: 0.9; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-ink); font: 7.6px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="12.173333" y="36.221137" transform="rotate(-0 12.173333 36.221137)">Patente de invención</text>
@@ -131,7 +131,7 @@ L 420.546667 19.600397
   </g>
  </g>
  <defs>
-  <clipPath id="s5-mapa-registros-clip-0">
+  <clipPath id="s5-mapa-registros-0">
    <rect x="4.32" y="4.32" width="424.08" height="177.408"/>
   </clipPath>
  </defs>

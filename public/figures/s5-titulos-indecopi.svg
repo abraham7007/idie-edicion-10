@@ -20,7 +20,7 @@ L 376.246337 34.02
 L 376.246337 15.4575 
 L 218.459406 15.4575 
 z
-" clip-path="url(#s5-titulos-indecopi-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+" clip-path="url(#s5-titulos-indecopi-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
    </g>
    <g id="patch_3">
     <path d="M 218.459406 58.77 
@@ -28,7 +28,7 @@ L 376.246337 58.77
 L 376.246337 40.2075 
 L 218.459406 40.2075 
 z
-" clip-path="url(#s5-titulos-indecopi-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+" clip-path="url(#s5-titulos-indecopi-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
    </g>
    <g id="patch_4">
     <path d="M 218.459406 83.52 
@@ -36,7 +36,7 @@ L 376.246337 83.52
 L 376.246337 64.9575 
 L 218.459406 64.9575 
 z
-" clip-path="url(#s5-titulos-indecopi-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+" clip-path="url(#s5-titulos-indecopi-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
    </g>
    <g id="patch_5">
     <path d="M 218.459406 108.27 
@@ -44,7 +44,7 @@ L 376.246337 108.27
 L 376.246337 89.7075 
 L 218.459406 89.7075 
 z
-" clip-path="url(#s5-titulos-indecopi-clip-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
+" clip-path="url(#s5-titulos-indecopi-0)" style="fill: var(--fig-ramp-2); opacity: 0.16"/>
    </g>
    <g id="text_1">
     <text style="fill: var(--fig-accent); font: 700 30px 'IBM Plex Mono', 'DejaVu Sans Mono', monospace; text-anchor: start" x="8.076832" y="44.773125" transform="rotate(-0 8.076832 44.773125)">1 047</text>
@@ -74,7 +74,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="s5-titulos-indecopi-clip-0">
+  <clipPath id="s5-titulos-indecopi-0">
    <rect x="4.32" y="4.32" width="379.44" height="138.6"/>
   </clipPath>
  </defs>
